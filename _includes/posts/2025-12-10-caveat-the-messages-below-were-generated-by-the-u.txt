@@ -1,0 +1,1982 @@
+
+╭─── Claude Code v2.0.57 ──────────────────────────────────────────────────────╮
+│                                                │ Tips for getting started    │
+│               Welcome back andri!              │ Run /init to create a CLAU… │
+│                                                │ ─────────────────────────── │
+│                     ▐▛███▜▌                    │ Recent activity             │
+│                    ▝▜█████▛▘                   │ No recent activity          │
+│                      ▘▘ ▝▝                     │                             │
+│                                                │                             │
+│             Opus 4.5 · Claude Max              │                             │
+│   ~/…/homes/dolken.github.io/_includes/posts   │                             │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+> /login 
+  ⎿  Login successful
+
+> baca /home/mkt01/Public/dolken.github.io/public_html 
+
+● Bash(ls -la /home/mkt01/Public/dolken.github.io/public_html)
+  ⎿  total 8                                       
+     drwxrwxr-x  2 mkt01 mkt01 4096 Des 10 22:59 .
+     drwxrwxr-x 14 mkt01 mkt01 4096 Nov 20 07:06 ..
+
+● The /home/mkt01/Public/dolken.github.io/public_html directory exists but
+  is currently empty.
+
+> kita akan pindahkan rebuid dari 
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_site, ke  
+/home/mkt01/Public/dolken.github.io/public_html di ./rebuild.sh 
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/rebuild.sh)
+  ⎿  Read 204 lines
+
+● Saya akan memodifikasi rebuild.sh untuk mengubah output destination dari
+  _site ke /home/mkt01/Public/dolken.github.io/public_html.
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/rebuild.sh)
+  ⎿  Updated ../../rebuild.sh with 3 additions                           
+       16    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+       17    cd "$SCRIPT_DIR"
+       18    
+       19 +  # Output directory untuk production build
+       20 +  OUTPUT_DIR="/home/mkt01/Public/dolken.github.io/public_html"
+       21 +  
+       22    # Set PATH untuk Ruby gems
+       23    export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+       24    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/rebuild.sh)
+  ⎿  Updated ../../rebuild.sh with 5 additions                          
+       63    clean_build() {
+       64        print_info "Cleaning build directories..."
+       65        rm -rf _site _site_local .jekyll-cache .jekyll-metadata
+       66 +      # Clean output directory
+       67 +      if [ -d "$OUTPUT_DIR" ]; then
+       68 +          rm -rf "$OUTPUT_DIR"/*
+       69 +          print_info "Cleaned output directory: $OUTPUT_DIR"
+       70 +      fi
+       71        print_success "Clean completed"
+       72    }
+       73    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/rebuild.sh)
+  ⎿  Updated ../../rebuild.sh with 9 additions and 4 removals            
+       77    
+       78        print_info "Building Jekyll site..."
+       79        print_info "Config: $config_file"
+       80 +      print_info "Output: $OUTPUT_DIR"
+       81    
+       82 -      if bundle exec jekyll build --config "$config_file" 
+          - --future; then
+       82 +      # Pastikan output directory exists
+       83 +      mkdir -p "$OUTPUT_DIR"
+       84 +  
+       85 +      if bundle exec jekyll build --config "$config_file" 
+          + --destination "$OUTPUT_DIR" --future; then
+       86            print_success "Build completed successfully!"
+       87    
+       88            # Show build info
+       89 -          if [ -d "_site" ]; then
+       90 -              local file_count=$(find _site -type f | wc -l)
+       91 -              local size=$(du -sh _site | cut -f1)
+       89 +          if [ -d "$OUTPUT_DIR" ]; then
+       90 +              local file_count=$(find "$OUTPUT_DIR"
+          +   -type f | wc -l)
+       91 +              local size=$(du -sh "$OUTPUT_DIR" | cut -f1)
+       92                print_info "Generated $file_count files ($size)"
+       93 +              print_info "Output location: $OUTPUT_DIR"
+       94            fi
+       95        else
+       96            print_error "Build failed!"
+
+● Selesai! Saya sudah mengubah rebuild.sh dengan perubahan berikut:
+
+  1. Menambahkan variable OUTPUT_DIR (line 20):
+  OUTPUT_DIR="/home/mkt01/Public/dolken.github.io/public_html"
+  2. Update clean_build - sekarang juga membersihkan public_html directory
+  3. Update build_site - sekarang menggunakan --destination "$OUTPUT_DIR"
+  untuk build ke public_html
+
+  Sekarang ketika menjalankan:
+  - ./rebuild.sh build - akan build ke
+  /home/mkt01/Public/dolken.github.io/public_html
+  - ./rebuild.sh clean - akan membersihkan _site dan public_html
+  - ./rebuild.sh clean-build - clean lalu build ke public_html
+
+  Mau saya test jalankan build sekarang?
+
+> jangan gunakan '/home/mkt01/Public/dolken.github.io/public_html' tapi 
+../../public_html 
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/rebuild.sh)
+  ⎿  Updated ../../rebuild.sh with 1 addition and 1 removal              
+       17    cd "$SCRIPT_DIR"
+       18    
+       19    # Output directory untuk production build
+       20 -  OUTPUT_DIR="/home/mkt01/Public/dolken.github.io/public_html"
+       20 +  OUTPUT_DIR="../../public_html"
+       21    
+       22    # Set PATH untuk Ruby gems
+       23    export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+
+● Selesai! OUTPUT_DIR sekarang menggunakan path relatif ../../public_html.
+
+> ./rebuild.sh 
+
+● Bash(./rebuild.sh) timeout: 5m 0s
+  ⎿  ═══════════════════════════════════════════════
+       Jekyll Build - Jual Kayu Dolken Gelam
+     ═══════════════════════════════════════════════
+     … +19 lines (ctrl+o to expand)
+
+● Build berhasil!
+
+  - 187 files generated (46M)
+  - Output location: ../../public_html →
+  /home/mkt01/Public/dolken.github.io/public_html
+
+> baca : /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/scripts 
+
+● Bash(ls -la
+      /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/scripts)
+  ⎿  total 108                                      
+     drwxrwxr-x  3 mkt01 mkt01  4096 Nov 24 21:56 .
+     drwxrwxr-x 21 mkt01 mkt01  4096 Des 10 23:04 ..
+     … +9 lines (ctrl+o to expand)
+
+● Isi directory
+  /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/scripts:
+
+  Ruby Scripts:
+  | File                     | Size   | Deskripsi             |
+  |--------------------------|--------|-----------------------|
+  | generate-comments.rb     | 7.1 KB | Generate comments     |
+  | generate-reviews.rb      | 7.7 KB | Generate reviews      |
+  | update-post-hybrid.rb    | 7.6 KB | Update post hybrid    |
+  | update-product-hybrid.rb | 9.6 KB | Update product hybrid |
+
+  Documentation:
+  | File                       | Size   |
+  |----------------------------|--------|
+  | README-hybrid-strategy.md  | 14 KB  |
+  | README-post-engagement.md  | 10 KB  |
+  | README-review-generator.md | 9.6 KB |
+  | SCHEDULING-PATTERN.md      | 18 KB  |
+
+  Subdirectory:
+  - data/ - folder data
+
+  Mau saya baca file tertentu?
+
+> ya, pasang variable ON / OFF untuk mengaktifkan / menonaktifkan 
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-comment
+      s.rb)
+  ⎿  Read 256 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-reviews
+      .rb)
+  ⎿  Read 276 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-post-hybr
+      id.rb)
+  ⎿  Read 306 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-product-h
+      ybrid.rb)
+  ⎿  Read 360 lines
+
+● Saya akan menambahkan variable ON/OFF untuk mengaktifkan/menonaktifkan
+  setiap script.
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-comme
+        nts.rb)
+  ⎿  Updated ../../scripts/generate-comments.rb with 5 additions
+       20    
+       21    require 'yaml'
+       22    
+       23 +  # ============================================
+       24 +  # TOGGLE ON/OFF - Set to false to disable
+       25 +  # ============================================
+       26 +  ENABLED = true
+       27 +  
+       28    # Load building blocks from COMMENT-BLOCKS.md
+       29    BLOCKS_FILE = File.join(__dir__, 'data', 
+            'COMMENT-BLOCKS.md')
+       30    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-revie
+        ws.rb)
+  ⎿  Updated ../../scripts/generate-reviews.rb with 5 additions
+       23    
+       24    require 'yaml'
+       25    
+       26 +  # ============================================
+       27 +  # TOGGLE ON/OFF - Set to false to disable
+       28 +  # ============================================
+       29 +  ENABLED = true
+       30 +  
+       31    # Load building blocks from IMPROVEMENT-PLAN.md
+       32    PLAN_FILE = File.join(__dir__, 'data', 
+            'IMPROVEMENT-PLAN.md')
+       33    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-post-hy
+        brid.rb)
+  ⎿  Updated ../../scripts/update-post-hybrid.rb with 5 additions
+       18    require 'date'
+       19    require 'fileutils'
+       20    
+       21 +  # ============================================
+       22 +  # TOGGLE ON/OFF - Set to false to disable
+       23 +  # ============================================
+       24 +  ENABLED = true
+       25 +  
+       26    # Configuration
+       27    POSTS_DIR = '_posts'
+       28    BLOCKS_FILE = File.join(__dir__, 'data', 
+            'COMMENT-BLOCKS.md')
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-product
+        -hybrid.rb)
+  ⎿  Updated ../../scripts/update-product-hybrid.rb with 5 additions
+       20    require 'date'
+       21    require 'fileutils'
+       22    
+       23 +  # ============================================
+       24 +  # TOGGLE ON/OFF - Set to false to disable
+       25 +  # ============================================
+       26 +  ENABLED = true
+       27 +  
+       28    # Configuration
+       29    PRODUCTS_DIR = '_products'
+       30    PLAN_FILE = File.join(__dir__, 'data', 
+            'IMPROVEMENT-PLAN.md')
+
+● Sekarang saya tambahkan pengecekan di fungsi main untuk keluar jika
+  ENABLED = false:
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-comme
+        nts.rb)
+  ⎿  Updated ../../scripts/generate-comments.rb with 5 additions     
+       188    
+       189    # Main execution
+       190    def main
+       191 +    unless ENABLED
+       192 +      puts "⏸️  Comment Generator is DISABLED (ENABLED = 
+           + false)"
+       193 +      exit 0
+       194 +    end
+       195 +  
+       196      count = (ARGV[0] || 50).to_i
+       197      output_file = ARGV[1] || File.join(__dir__, 'data', 
+             'generated-comments.yml')
+       198    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-revie
+        ws.rb)
+  ⎿  Updated ../../scripts/generate-reviews.rb with 5 additions     
+       193    
+       194    # Main execution
+       195    def main
+       196 +    unless ENABLED
+       197 +      puts "⏸️  Review Generator is DISABLED (ENABLED = 
+           + false)"
+       198 +      exit 0
+       199 +    end
+       200 +  
+       201      count = (ARGV[0] || 50).to_i
+       202      output_file = ARGV[1] || File.join(__dir__, 'data', 
+             'generated-reviews.yml')
+       203    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-post-hy
+        brid.rb)
+  ⎿  Updated ../../scripts/update-post-hybrid.rb with 5 additions       
+       272    
+       273    # Main execution
+       274    def main
+       275 +    unless ENABLED
+       276 +      puts "⏸️  Post Hybrid Updater is DISABLED (ENABLED = 
+           + false)"
+       277 +      exit 0
+       278 +    end
+       279 +  
+       280      # Get all post files
+       281      post_files = Dir.glob(File.join(POSTS_DIR, '*.md')).sort
+       282    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-product
+        -hybrid.rb)
+  ⎿  Updated ../../scripts/update-product-hybrid.rb with 5 additions     
+       331    
+       332    # Main execution
+       333    def main
+       334 +    unless ENABLED
+       335 +      puts "⏸️  Product Hybrid Updater is DISABLED (ENABLED =
+           +  false)"
+       336 +      exit 0
+       337 +    end
+       338 +  
+       339      # Get all product files
+       340      product_files = Dir.glob(File.join(PRODUCTS_DIR, 
+             '*.md')).sort
+       341    
+
+● Selesai! Semua 4 script Ruby sudah ditambahkan variable ON/OFF:
+
+  | Script                   | Variable       | Lokasi  |
+  |--------------------------|----------------|---------|
+  | generate-comments.rb     | ENABLED = true | Line 26 |
+  | generate-reviews.rb      | ENABLED = true | Line 29 |
+  | update-post-hybrid.rb    | ENABLED = true | Line 24 |
+  | update-product-hybrid.rb | ENABLED = true | Line 26 |
+
+  Cara menggunakan:
+  - ENABLED = true → Script berjalan normal
+  - ENABLED = false → Script akan exit dengan pesan: ⏸️  [Script Name] is 
+  DISABLED (ENABLED = false)
+
+> sekarang set sebagai false semua, kita akan revisi 
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-comme
+        nts.rb)
+  ⎿  Updated ../../scripts/generate-comments.rb with 1 addition and 1      
+     removal
+       23    # ============================================
+       24    # TOGGLE ON/OFF - Set to false to disable
+       25    # ============================================
+       26 -  ENABLED = true
+       26 +  ENABLED = false
+       27    
+       28    # Load building blocks from COMMENT-BLOCKS.md
+       29    BLOCKS_FILE = File.join(__dir__, 'data', 
+            'COMMENT-BLOCKS.md')
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/generate-revie
+        ws.rb)
+  ⎿  Updated ../../scripts/generate-reviews.rb with 1 addition and 1 remova
+
+       26    # ============================================
+       27    # TOGGLE ON/OFF - Set to false to disable
+       28    # ============================================
+       29 -  ENABLED = true
+       29 +  ENABLED = false
+       30    
+       31    # Load building blocks from IMPROVEMENT-PLAN.md
+       32    PLAN_FILE = File.join(__dir__, 'data', 
+            'IMPROVEMENT-PLAN.md')
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-post-hy
+        brid.rb)
+  ⎿  Updated ../../scripts/update-post-hybrid.rb with 1 addition and 1     
+     removal
+       21    # ============================================
+       22    # TOGGLE ON/OFF - Set to false to disable
+       23    # ============================================
+       24 -  ENABLED = true
+       24 +  ENABLED = false
+       25    
+       26    # Configuration
+       27    POSTS_DIR = '_posts'
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/scripts/update-product
+        -hybrid.rb)
+  ⎿  Updated ../../scripts/update-product-hybrid.rb with 1 addition and 1 
+     removal
+       23    # ============================================
+       24    # TOGGLE ON/OFF - Set to false to disable
+       25    # ============================================
+       26 -  ENABLED = true
+       26 +  ENABLED = false
+       27    
+       28    # Configuration
+       29    PRODUCTS_DIR = '_products'
+
+● Selesai! Semua script sudah di-set ENABLED = false:
+
+  | Script                   | Status          |
+  |--------------------------|-----------------|
+  | generate-comments.rb     | ENABLED = false |
+  | generate-reviews.rb      | ENABLED = false |
+  | update-post-hybrid.rb    | ENABLED = false |
+  | update-product-hybrid.rb | ENABLED = false |
+
+  Siap untuk revisi.
+
+> /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_products ada 
+berapa rating di setiap product ? 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_products)
+  ⎿  kayu-dolken-10-12cm.md       
+     kayu-dolken-2-3cm.md
+     kayu-dolken-4-6cm.md
+     … +2 lines (ctrl+o to expand)
+
+● Search(pattern: "^rating:", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_products",
+        output_mode: "content")
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● Rating di setiap product:
+
+  | Product                | Rating |
+  |------------------------|--------|
+  | kayu-dolken-2-3cm.md   | 4.5    |
+  | kayu-dolken-4-6cm.md   | 4.6    |
+  | kayu-dolken-6-8cm.md   | 4.7    |
+  | kayu-dolken-8-10cm.md  | 4.8    |
+  | kayu-dolken-10-12cm.md | 4.5    |
+
+> rating count maksud saya 
+
+● Search(pattern: "^review_count:", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_products",
+        output_mode: "content")
+  ⎿  Found 5 lines (ctrl+o to expand)
+
+● Review count di setiap product:
+
+  | Product                | Review Count |
+  |------------------------|--------------|
+  | kayu-dolken-2-3cm.md   | 2            |
+  | kayu-dolken-4-6cm.md   | 54           |
+  | kayu-dolken-6-8cm.md   | 73           |
+  | kayu-dolken-8-10cm.md  | 91           |
+  | kayu-dolken-10-12cm.md | 41           |
+
+> terlalu banyak revisi jadi 3,4, maksimal 5 
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        2-3cm.md)
+  ⎿  File must be read first
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        4-6cm.md)
+  ⎿  File must be read first
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        6-8cm.md)
+  ⎿  File must be read first
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        8-10cm.md)
+  ⎿  File must be read first
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        10-12cm.md)
+  ⎿  File must be read first
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-2-
+      3cm.md)
+  ⎿  Read 168 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-4-
+      6cm.md)
+  ⎿  Read 168 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-6-
+      8cm.md)
+  ⎿  Read 179 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-8-
+      10cm.md)
+  ⎿  Read 173 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-10
+      -12cm.md)
+  ⎿  Read 174 lines
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        2-3cm.md)
+  ⎿  User rejected update to ../../_products/kayu-dolken-2-3cm.md
+       21    sku: DOLKEN-2-3
+       22    popular: false
+       23    rating: 4.5
+       24 -  review_count: 2
+       24 +  review_count: 3
+       25    total_updates: 2
+       26    last_modified_at: '2025-11-15 20:54:00 +0700'
+       27    show_bulk_offer: false
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        4-6cm.md)
+  ⎿  Interrupted · What should Claude do instead?
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        6-8cm.md)
+  ⎿  Interrupted · What should Claude do instead?
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        8-10cm.md)
+  ⎿  Interrupted · What should Claude do instead?
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        10-12cm.md)
+  ⎿  Interrupted · What should Claude do instead?
+
+> biarkan yang 2 
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        4-6cm.md)
+  ⎿  Updated ../../_products/kayu-dolken-4-6cm.md with 1 addition and 1    
+     removal
+       19    sku: DOLKEN-4-6
+       20    popular: false
+       21    rating: 4.6
+       22 -  review_count: 54
+       22 +  review_count: 4
+       23    total_updates: 2
+       24    last_modified_at: '2025-12-04 10:57:01 +0000'
+       25    show_bulk_offer: false
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        6-8cm.md)
+  ⎿  Updated ../../_products/kayu-dolken-6-8cm.md with 1 addition and 1    
+     removal
+       21    sku: DOLKEN-6-8
+       22    popular: false
+       23    rating: 4.7
+       24 -  review_count: 73
+       24 +  review_count: 5
+       25    total_updates: 5
+       26    last_modified_at: '2025-11-24 20:02:46 +0700'
+       27    show_bulk_offer: false
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        8-10cm.md)
+  ⎿  Updated ../../_products/kayu-dolken-8-10cm.md with 1 addition and 1   
+     removal
+       19    sku: DOLKEN-8-10
+       20    popular: true
+       21    rating: 4.8
+       22 -  review_count: 91
+       22 +  review_count: 5
+       23    total_updates: 0
+       24    show_bulk_offer: true
+       25    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_products/kayu-dolken-
+        10-12cm.md)
+  ⎿  Updated ../../_products/kayu-dolken-10-12cm.md with 1 addition and 1 
+     removal
+       19    sku: DOLKEN-10-12
+       20    popular: false
+       21    rating: 4.5
+       22 -  review_count: 41
+       22 +  review_count: 4
+       23    total_updates: 3
+       24    last_modified_at: '2025-12-04 10:57:01 +0000'
+       25    show_bulk_offer: true
+
+● Selesai! Review count sudah direvisi:
+
+  | Product                | Sebelum | Sesudah   |
+  |------------------------|---------|-----------|
+  | kayu-dolken-2-3cm.md   | 2       | 2 (tetap) |
+  | kayu-dolken-4-6cm.md   | 54      | 4         |
+  | kayu-dolken-6-8cm.md   | 73      | 5         |
+  | kayu-dolken-8-10cm.md  | 91      | 5         |
+  | kayu-dolken-10-12cm.md | 41      | 4         |
+
+> ./rebuild.sh 
+
+● Bash(./rebuild.sh) timeout: 5m 0s
+  ⎿  ═══════════════════════════════════════════════
+       Jekyll Build - Jual Kayu Dolken Gelam
+     ═══════════════════════════════════════════════
+     … +19 lines (ctrl+o to expand)
+
+● Build berhasil!
+
+  - 186 files generated (46M)
+  - Output: ../../public_html
+
+> baca /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/
+reusable/post-with-city 
+
+● Bash(ls -la /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includ
+      es/reusable/post-with-city)
+  ⎿  total 8                                      
+     drwxrwxr-x 2 mkt01 mkt01 4096 Des 10 23:16 .
+     drwxrwxr-x 3 mkt01 mkt01 4096 Des 10 23:16 ..
+
+● Directory /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_incl
+  udes/reusable/post-with-city ada tapi kosong (empty).
+
+> pindahkan block yang digunakan di setiap konten pada 
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_post_with_city, 
+seperti "{% include reusable/block--hero-jual-kayu-dolken.html %}" ke "{% 
+include reusable/post-with-city/block--hero-jual-kayu-dolken.html %}" dan 
+update konten nya 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_post_with_
+      city/)
+  ⎿  2025-11-15-jual-kayu-dolken-semarang.md
+     2025-11-15-jual-kayu-dolken-terdekat.md
+     2025-11-19-jual-kayu-dolken-bandung.md
+     2025-11-19-jual-kayu-dolken-karawang.md
+
+● Search(pattern: "{% include reusable/block--", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city",
+        output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "{% include", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city",
+        output_mode: "content")
+  ⎿  Found 0 lines 
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-11-
+      15-jual-kayu-dolken-semarang.md)
+  ⎿  Read 591 lines
+
+● Saya lihat banyak includes yang digunakan. Saya akan:
+  1. Copy semua block yang digunakan ke folder baru post-with-city
+  2. Update path di semua file _post_with_city
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/r
+      eusable/block--*.html)
+  ⎿  Interrupted · What should Claude do instead?
+
+> jangan copy tetapi mv (pindahkan) 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/r
+      eusable/block--*.html)
+  ⎿ /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/re
+    usable/block--aplikasi-kayu-dolken-gelam.html
+    /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/re
+    … +81 lines (ctrl+o to expand)
+
+
+
+● Dari file yang saya baca, ini block yang digunakan di _post_with_city:
+
+  1. block--hero-jual-kayu-dolken.html
+  2. block--mengapa-memilih-kami.html
+  3. block--area-pengiriman-kayu-dolken.html
+  4. block--keunggulan-kayu-dolken-gelam.html
+  5. block--jual-kayu-dolken-terdekat.html
+  6. block--aplikasi-kayu-dolken-gelam.html
+  7. block--cara-pemesanan-kayu-dolken.html
+  8. block--studi-kasus-proyek.html
+  9. block--testimoni-pelanggan.html
+  10. block--tips-memilih-ukuran-kayu-dolken.html
+  11. block--faq-kayu-dolken.html
+  12. block--tentang-kota-kami.html
+  13. block--relevansi-kayu-dolken.html
+  14. block--hubungi-kami.html
+  15. block--related-product-last-modified.html
+
+● Bash(cd /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/r
+      eusable && mv block--hero-jual-kayu-dolken.html
+      block--mengapa-memilih-kami.html block-…)
+  ⎿  (No content)
+
+● File sudah dipindahkan. Sekarang update path di semua file
+  _post_with_city:
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-11-
+      15-jual-kayu-dolken-terdekat.md)
+  ⎿  Read 731 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-11-
+      19-jual-kayu-dolken-bandung.md)
+  ⎿  Read 723 lines
+
+● Read(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-11-
+      19-jual-kayu-dolken-karawang.md)
+  ⎿  Read 705 lines
+
+● Sekarang saya update semua path include di 4 file _post_with_city:
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       527    ---
+       528    
+       529    <section id="hero-jual-kayu-dolken">
+       530 -    {% include reusable/block--hero-jual-kayu-dolken.html %}
+       530 +    {% include reusable/post-with-city/
+           +  block--hero-jual-kayu-dolken.html %}
+       531    </section>
+       532    
+       533    <section id="mengapa-memilih-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       531    </section>
+       532    
+       533    <section id="mengapa-memilih-kami">
+       534 -    {% include reusable/block--mengapa-memilih-kami.html %}
+       534 +    {% include reusable/post-with-city/
+           +  block--mengapa-memilih-kami.html %}
+       535    </section>
+       536    
+       537    <section id="area-pengiriman-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       535    </section>
+       536    
+       537    <section id="area-pengiriman-kayu-dolken">
+       538 -    {% include reusable/
+           -  block--area-pengiriman-kayu-dolken.html %}
+       538 +    {% include reusable/post-with-city/
+           +  block--area-pengiriman-kayu-dolken.html %}
+       539    </section>
+       540    
+       541    <section id="keunggulan-kayu-dolken-gelam">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       539    </section>
+       540    
+       541    <section id="keunggulan-kayu-dolken-gelam">
+       542 -    {% include reusable/
+           -  block--keunggulan-kayu-dolken-gelam.html %}
+       542 +    {% include reusable/post-with-city/
+           +  block--keunggulan-kayu-dolken-gelam.html %}
+       543    </section>
+       544    
+       545    <section id="jual-kayu-dolken-terdekat">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       543    </section>
+       544    
+       545    <section id="jual-kayu-dolken-terdekat">
+       546 -  {% include reusable/block--jual-kayu-dolken-terdekat.html
+       546 +  {% include reusable/post-with-city/
+           +  block--jual-kayu-dolken-terdekat.html
+       547       nama_kota="Semarang"
+       548    %}
+       549    </section>
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       549    </section>
+       550    
+       551    <section id="aplikasi-kayu-dolken-gelam">
+       552 -    {% include reusable/
+           -  block--aplikasi-kayu-dolken-gelam.html %}
+       552 +    {% include reusable/post-with-city/
+           +  block--aplikasi-kayu-dolken-gelam.html %}
+       553    </section>
+       554    
+       555    <section id="cara-pemesanan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       553    </section>
+       554    
+       555    <section id="cara-pemesanan">
+       556 -    {% include reusable/
+           -  block--cara-pemesanan-kayu-dolken.html %}
+       556 +    {% include reusable/post-with-city/
+           +  block--cara-pemesanan-kayu-dolken.html %}
+       557    </section>
+       558    
+       559    <section id="studi-kasus-proyek">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       557    </section>
+       558    
+       559    <section id="studi-kasus-proyek">
+       560 -    {% include reusable/block--studi-kasus-proyek.html %}
+       560 +    {% include reusable/post-with-city/
+           +  block--studi-kasus-proyek.html %}
+       561    </section>
+       562    
+       563    <section id="testimoni-pelanggan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       561    </section>
+       562    
+       563    <section id="testimoni-pelanggan">
+       564 -    {% include reusable/block--testimoni-pelanggan.html %}
+       564 +    {% include reusable/post-with-city/
+           +  block--testimoni-pelanggan.html %}
+       565    </section>
+       566    
+       567    <section id="tips-memilih-ukuran">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       565    </section>
+       566    
+       567    <section id="tips-memilih-ukuran">
+       568 -    {% include reusable/
+           -  block--tips-memilih-ukuran-kayu-dolken.html %}
+       568 +    {% include reusable/post-with-city/
+           +  block--tips-memilih-ukuran-kayu-dolken.html %}
+       569    </section>
+       570    
+       571    <section id="faq-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       569    </section>
+       570    
+       571    <section id="faq-kayu-dolken">
+       572 -    {% include reusable/block--faq-kayu-dolken.html %}
+       572 +    {% include reusable/post-with-city/
+           +  block--faq-kayu-dolken.html %}
+       573    </section>
+       574    
+       575    <section id="tentang-kota-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       573    </section>
+       574    
+       575    <section id="tentang-kota-kami">
+       576 -    {% include reusable/block--tentang-kota-kami.html %}
+       576 +    {% include reusable/post-with-city/
+           +  block--tentang-kota-kami.html %}
+       577    </section>
+       578    
+       579    <section id="relevansi-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       577    </section>
+       578    
+       579    <section id="relevansi-kayu-dolken">
+       580 -    {% include reusable/block--relevansi-kayu-dolken.html %}
+       580 +    {% include reusable/post-with-city/
+           +  block--relevansi-kayu-dolken.html %}
+       581    </section>
+       582    
+       583    <section id="hubungi-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       581    </section>
+       582    
+       583    <section id="hubungi-kami">
+       584 -    {% include reusable/block--hubungi-kami.html %}
+       584 +    {% include reusable/post-with-city/
+           +  block--hubungi-kami.html %}
+       585    </section>
+       586    
+       587    
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-semarang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-semarang.md 
+     with 1 addition and 1 removal
+       587    
+       588    <!-- Related Products Section (Part of article content) -->
+       589    <div id="related-products" class="article-related-products 
+             mt-5">
+       590 -    {% include reusable/
+           -  block--related-product-last-modified.html %}
+       590 +    {% include reusable/post-with-city/
+           +  block--related-product-last-modified.html %}
+       591    </div>
+       592   \ No newline at end of file
+
+● Sekarang update file 2025-11-15-jual-kayu-dolken-terdekat.md:
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       672    </section>
+       673    
+       674    <section id="mengapa-memilih-kami">
+       675 -    {% include reusable/block--mengapa-memilih-kami.html %}
+       675 +    {% include reusable/post-with-city/
+           +  block--mengapa-memilih-kami.html %}
+       676    </section>
+       677    
+       678    <section id="area-pengiriman-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       676    </section>
+       677    
+       678    <section id="area-pengiriman-kayu-dolken">
+       679 -    {% include reusable/
+           -  block--area-pengiriman-kayu-dolken.html %}
+       679 +    {% include reusable/post-with-city/
+           +  block--area-pengiriman-kayu-dolken.html %}
+       680    </section>
+       681    
+       682    <section id="keunggulan-kayu-dolken-gelam">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       680    </section>
+       681    
+       682    <section id="keunggulan-kayu-dolken-gelam">
+       683 -    {% include reusable/
+           -  block--keunggulan-kayu-dolken-gelam.html %}
+       683 +    {% include reusable/post-with-city/
+           +  block--keunggulan-kayu-dolken-gelam.html %}
+       684    </section>
+       685    
+       686    <section id="jual-kayu-dolken-terdekat">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       684    </section>
+       685    
+       686    <section id="jual-kayu-dolken-terdekat">
+       687 -  {% include reusable/
+           -  block--jual-kayu-dolken-terdekat.html %}
+       687 +  {% include reusable/post-with-city/
+           +  block--jual-kayu-dolken-terdekat.html %}
+       688    </section>
+       689    
+       690    <section id="aplikasi-kayu-dolken-gelam">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       688    </section>
+       689    
+       690    <section id="aplikasi-kayu-dolken-gelam">
+       691 -    {% include reusable/
+           -  block--aplikasi-kayu-dolken-gelam.html %}
+       691 +    {% include reusable/post-with-city/
+           +  block--aplikasi-kayu-dolken-gelam.html %}
+       692    </section>
+       693    
+       694    <section id="cara-pemesanan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       692    </section>
+       693    
+       694    <section id="cara-pemesanan">
+       695 -    {% include reusable/
+           -  block--cara-pemesanan-kayu-dolken.html %}
+       695 +    {% include reusable/post-with-city/
+           +  block--cara-pemesanan-kayu-dolken.html %}
+       696    </section>
+       697    
+       698    <section id="studi-kasus-proyek">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       696    </section>
+       697    
+       698    <section id="studi-kasus-proyek">
+       699 -    {% include reusable/block--studi-kasus-proyek.html %}
+       699 +    {% include reusable/post-with-city/
+           +  block--studi-kasus-proyek.html %}
+       700    </section>
+       701    
+       702    <section id="testimoni-pelanggan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       700    </section>
+       701    
+       702    <section id="testimoni-pelanggan">
+       703 -    {% include reusable/block--testimoni-pelanggan.html %}
+       703 +    {% include reusable/post-with-city/
+           +  block--testimoni-pelanggan.html %}
+       704    </section>
+       705    
+       706    <section id="tips-memilih-ukuran">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       704    </section>
+       705    
+       706    <section id="tips-memilih-ukuran">
+       707 -    {% include reusable/
+           -  block--tips-memilih-ukuran-kayu-dolken.html %}
+       707 +    {% include reusable/post-with-city/
+           +  block--tips-memilih-ukuran-kayu-dolken.html %}
+       708    </section>
+       709    
+       710    <section id="faq-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       708    </section>
+       709    
+       710    <section id="faq-kayu-dolken">
+       711 -    {% include reusable/block--faq-kayu-dolken.html %}
+       711 +    {% include reusable/post-with-city/
+           +  block--faq-kayu-dolken.html %}
+       712    </section>
+       713    
+       714    <section id="tentang-kota-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       712    </section>
+       713    
+       714    <section id="tentang-kota-kami">
+       715 -    {% include reusable/block--tentang-kota-kami.html %}
+       715 +    {% include reusable/post-with-city/
+           +  block--tentang-kota-kami.html %}
+       716    </section>
+       717    
+       718    <section id="relevansi-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       716    </section>
+       717    
+       718    <section id="relevansi-kayu-dolken">
+       719 -    {% include reusable/block--relevansi-kayu-dolken.html %}
+       719 +    {% include reusable/post-with-city/
+           +  block--relevansi-kayu-dolken.html %}
+       720    </section>
+       721    
+       722    <section id="hubungi-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       720    </section>
+       721    
+       722    <section id="hubungi-kami">
+       723 -    {% include reusable/block--hubungi-kami.html %}
+       723 +    {% include reusable/post-with-city/
+           +  block--hubungi-kami.html %}
+       724    </section>
+       725    
+       726    <!-- Related Products Section (Part of article content) -->
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-15-jual-kayu-dolken-terdekat.md)
+  ⎿  Updated ../../_post_with_city/2025-11-15-jual-kayu-dolken-terdekat.md 
+     with 1 addition and 1 removal
+       725    
+       726    <!-- Related Products Section (Part of article content) -->
+       727    <div id="related-products" class="article-related-products 
+             mt-5">
+       728 -    {% include reusable/
+           -  block--related-product-last-modified.html %}
+       728 +    {% include reusable/post-with-city/
+           +  block--related-product-last-modified.html %}
+       729    </div>
+       730    
+
+● Sekarang update file 2025-11-19-jual-kayu-dolken-bandung.md:
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       660         ======================================================
+             ================== -->
+       661    
+       662    <section id="hero-jual-kayu-dolken">
+       663 -    {% include reusable/block--hero-jual-kayu-dolken.html %}
+       663 +    {% include reusable/post-with-city/
+           +  block--hero-jual-kayu-dolken.html %}
+       664    </section>
+       665    
+       666    <section id="mengapa-memilih-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       664    </section>
+       665    
+       666    <section id="mengapa-memilih-kami">
+       667 -    {% include reusable/block--mengapa-memilih-kami.html %}
+       667 +    {% include reusable/post-with-city/
+           +  block--mengapa-memilih-kami.html %}
+       668    </section>
+       669    
+       670    <section id="area-pengiriman-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       668    </section>
+       669    
+       670    <section id="area-pengiriman-kayu-dolken">
+       671 -    {% include reusable/
+           -  block--area-pengiriman-kayu-dolken.html %}
+       671 +    {% include reusable/post-with-city/
+           +  block--area-pengiriman-kayu-dolken.html %}
+       672    </section>
+       673    
+       674    <section id="keunggulan-kayu-dolken-gelam">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       672    </section>
+       673    
+       674    <section id="keunggulan-kayu-dolken-gelam">
+       675 -    {% include reusable/
+           -  block--keunggulan-kayu-dolken-gelam.html %}
+       675 +    {% include reusable/post-with-city/
+           +  block--keunggulan-kayu-dolken-gelam.html %}
+       676    </section>
+       677    
+       678    <section id="jual-kayu-dolken-terdekat">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       676    </section>
+       677    
+       678    <section id="jual-kayu-dolken-terdekat">
+       679 -  {% include reusable/block--jual-kayu-dolken-terdekat.html
+       679 +  {% include reusable/post-with-city/
+           +  block--jual-kayu-dolken-terdekat.html
+       680       nama_kota="Bandung"
+       681    %}
+       682    </section>
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       682    </section>
+       683    
+       684    <section id="aplikasi-kayu-dolken-gelam">
+       685 -    {% include reusable/
+           -  block--aplikasi-kayu-dolken-gelam.html %}
+       685 +    {% include reusable/post-with-city/
+           +  block--aplikasi-kayu-dolken-gelam.html %}
+       686    </section>
+       687    
+       688    <section id="cara-pemesanan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       686    </section>
+       687    
+       688    <section id="cara-pemesanan">
+       689 -    {% include reusable/
+           -  block--cara-pemesanan-kayu-dolken.html %}
+       689 +    {% include reusable/post-with-city/
+           +  block--cara-pemesanan-kayu-dolken.html %}
+       690    </section>
+       691    
+       692    <section id="studi-kasus-proyek">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       690    </section>
+       691    
+       692    <section id="studi-kasus-proyek">
+       693 -    {% include reusable/block--studi-kasus-proyek.html %}
+       693 +    {% include reusable/post-with-city/
+           +  block--studi-kasus-proyek.html %}
+       694    </section>
+       695    
+       696    <section id="testimoni-pelanggan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       694    </section>
+       695    
+       696    <section id="testimoni-pelanggan">
+       697 -    {% include reusable/block--testimoni-pelanggan.html %}
+       697 +    {% include reusable/post-with-city/
+           +  block--testimoni-pelanggan.html %}
+       698    </section>
+       699    
+       700    <section id="tips-memilih-ukuran">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       698    </section>
+       699    
+       700    <section id="tips-memilih-ukuran">
+       701 -    {% include reusable/
+           -  block--tips-memilih-ukuran-kayu-dolken.html %}
+       701 +    {% include reusable/post-with-city/
+           +  block--tips-memilih-ukuran-kayu-dolken.html %}
+       702    </section>
+       703    
+       704    <section id="faq-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       702    </section>
+       703    
+       704    <section id="faq-kayu-dolken">
+       705 -    {% include reusable/block--faq-kayu-dolken.html %}
+       705 +    {% include reusable/post-with-city/
+           +  block--faq-kayu-dolken.html %}
+       706    </section>
+       707    
+       708    <section id="tentang-kota-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       706    </section>
+       707    
+       708    <section id="tentang-kota-kami">
+       709 -    {% include reusable/block--tentang-kota-kami.html %}
+       709 +    {% include reusable/post-with-city/
+           +  block--tentang-kota-kami.html %}
+       710    </section>
+       711    
+       712    <section id="relevansi-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       710    </section>
+       711    
+       712    <section id="relevansi-kayu-dolken">
+       713 -    {% include reusable/block--relevansi-kayu-dolken.html %}
+       713 +    {% include reusable/post-with-city/
+           +  block--relevansi-kayu-dolken.html %}
+       714    </section>
+       715    
+       716    <section id="hubungi-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       714    </section>
+       715    
+       716    <section id="hubungi-kami">
+       717 -    {% include reusable/block--hubungi-kami.html %}
+       717 +    {% include reusable/post-with-city/
+           +  block--hubungi-kami.html %}
+       718    </section>
+       719    
+       720    <!-- Related Products Section (Part of article content) -->
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-bandung.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-bandung.md  
+     with 1 addition and 1 removal
+       719    
+       720    <!-- Related Products Section (Part of article content) -->
+       721    <div id="related-products" class="article-related-products 
+             mt-5">
+       722 -    {% include reusable/
+           -  block--related-product-last-modified.html %}
+       722 +    {% include reusable/post-with-city/
+           +  block--related-product-last-modified.html %}
+       723    </div>
+       724   \ No newline at end of file
+
+● Terakhir, update file 2025-11-19-jual-kayu-dolken-karawang.md:
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       640         ======================================================
+             ================== -->
+       641    
+       642    <section id="hero-jual-kayu-dolken">
+       643 -    {% include reusable/block--hero-jual-kayu-dolken.html %}
+       643 +    {% include reusable/post-with-city/
+           +  block--hero-jual-kayu-dolken.html %}
+       644    </section>
+       645    
+       646    <section id="mengapa-memilih-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       644    </section>
+       645    
+       646    <section id="mengapa-memilih-kami">
+       647 -    {% include reusable/block--mengapa-memilih-kami.html %}
+       647 +    {% include reusable/post-with-city/
+           +  block--mengapa-memilih-kami.html %}
+       648    </section>
+       649    
+       650    <section id="area-pengiriman-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       648    </section>
+       649    
+       650    <section id="area-pengiriman-kayu-dolken">
+       651 -    {% include reusable/
+           -  block--area-pengiriman-kayu-dolken.html %}
+       651 +    {% include reusable/post-with-city/
+           +  block--area-pengiriman-kayu-dolken.html %}
+       652    </section>
+       653    
+       654    <section id="keunggulan-kayu-dolken-gelam">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       652    </section>
+       653    
+       654    <section id="keunggulan-kayu-dolken-gelam">
+       655 -    {% include reusable/
+           -  block--keunggulan-kayu-dolken-gelam.html %}
+       655 +    {% include reusable/post-with-city/
+           +  block--keunggulan-kayu-dolken-gelam.html %}
+       656    </section>
+       657    
+       658    <section id="jual-kayu-dolken-terdekat">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       656    </section>
+       657    
+       658    <section id="jual-kayu-dolken-terdekat">
+       659 -  {% include reusable/block--jual-kayu-dolken-terdekat.html
+       659 +  {% include reusable/post-with-city/
+           +  block--jual-kayu-dolken-terdekat.html
+       660       nama_kota="Karawang"
+       661    %}
+       662    </section>
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       662    </section>
+       663    
+       664    <section id="aplikasi-kayu-dolken-gelam">
+       665 -    {% include reusable/
+           -  block--aplikasi-kayu-dolken-gelam.html %}
+       665 +    {% include reusable/post-with-city/
+           +  block--aplikasi-kayu-dolken-gelam.html %}
+       666    </section>
+       667    
+       668    <section id="cara-pemesanan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       666    </section>
+       667    
+       668    <section id="cara-pemesanan">
+       669 -    {% include reusable/
+           -  block--cara-pemesanan-kayu-dolken.html %}
+       669 +    {% include reusable/post-with-city/
+           +  block--cara-pemesanan-kayu-dolken.html %}
+       670    </section>
+       671    
+       672    <section id="studi-kasus-proyek">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       670    </section>
+       671    
+       672    <section id="studi-kasus-proyek">
+       673 -    {% include reusable/block--studi-kasus-proyek.html %}
+       673 +    {% include reusable/post-with-city/
+           +  block--studi-kasus-proyek.html %}
+       674    </section>
+       675    
+       676    <section id="testimoni-pelanggan">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       674    </section>
+       675    
+       676    <section id="testimoni-pelanggan">
+       677 -    {% include reusable/block--testimoni-pelanggan.html %}
+       677 +    {% include reusable/post-with-city/
+           +  block--testimoni-pelanggan.html %}
+       678    </section>
+       679    
+       680    <section id="tips-memilih-ukuran">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       678    </section>
+       679    
+       680    <section id="tips-memilih-ukuran">
+       681 -    {% include reusable/
+           -  block--tips-memilih-ukuran-kayu-dolken.html %}
+       681 +    {% include reusable/post-with-city/
+           +  block--tips-memilih-ukuran-kayu-dolken.html %}
+       682    </section>
+       683    
+       684    <section id="faq-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       682    </section>
+       683    
+       684    <section id="faq-kayu-dolken">
+       685 -    {% include reusable/block--faq-kayu-dolken.html %}
+       685 +    {% include reusable/post-with-city/
+           +  block--faq-kayu-dolken.html %}
+       686    </section>
+       687    
+       688    <section id="tentang-kota-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       686    </section>
+       687    
+       688    <section id="tentang-kota-kami">
+       689 -    {% include reusable/block--tentang-kota-kami.html %}
+       689 +    {% include reusable/post-with-city/
+           +  block--tentang-kota-kami.html %}
+       690    </section>
+       691    
+       692    <section id="relevansi-kayu-dolken">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       690    </section>
+       691    
+       692    <section id="relevansi-kayu-dolken">
+       693 -    {% include reusable/block--relevansi-kayu-dolken.html %}
+       693 +    {% include reusable/post-with-city/
+           +  block--relevansi-kayu-dolken.html %}
+       694    </section>
+       695    
+       696    <section id="hubungi-kami">
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       694    </section>
+       695    
+       696    <section id="hubungi-kami">
+       697 -    {% include reusable/block--hubungi-kami.html %}
+       697 +    {% include reusable/post-with-city/
+           +  block--hubungi-kami.html %}
+       698    </section>
+       699    
+       700    <!-- Related Products Section (Part of article content) -->
+
+● Update(~/Public/dolken.github.io/homes/dolken.github.io/_post_with_city/2025-1
+        1-19-jual-kayu-dolken-karawang.md)
+  ⎿  Updated ../../_post_with_city/2025-11-19-jual-kayu-dolken-karawang.md 
+     with 1 addition and 1 removal
+       699    
+       700    <!-- Related Products Section (Part of article content) -->
+       701    <div id="related-products" class="article-related-products 
+             mt-5">
+       702 -    {% include reusable/
+           -  block--related-product-last-modified.html %}
+       702 +    {% include reusable/post-with-city/
+           +  block--related-product-last-modified.html %}
+       703    </div>
+       704    
+
+● Selesai! Semua file sudah diupdate. Verifikasi isi folder post-with-city:
+
+● Bash(ls -la /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includ
+      es/reusable/post-with-city/)
+  ⎿  total 148                                     
+     drwxrwxr-x 2 mkt01 mkt01  4096 Des 10 23:19 .
+     drwxrwxr-x 4 mkt01 mkt01  4096 Des 10 23:20 ..
+     … +28 lines (ctrl+o to expand)
+
+● Selesai! Ringkasan:
+
+  15 Block files dipindahkan ke _includes/reusable/post-with-city/:
+  - block--hero-jual-kayu-dolken.html
+  - block--mengapa-memilih-kami.html
+  - block--area-pengiriman-kayu-dolken.html
+  - block--keunggulan-kayu-dolken-gelam.html
+  - block--jual-kayu-dolken-terdekat.html
+  - block--aplikasi-kayu-dolken-gelam.html
+  - block--cara-pemesanan-kayu-dolken.html
+  - block--studi-kasus-proyek.html
+  - block--testimoni-pelanggan.html
+  - block--tips-memilih-ukuran-kayu-dolken.html
+  - block--faq-kayu-dolken.html
+  - block--tentang-kota-kami.html
+  - block--relevansi-kayu-dolken.html
+  - block--hubungi-kami.html
+  - block--related-product-last-modified.html
+
+  4 File _post_with_city sudah diupdate path include-nya:
+  - 2025-11-15-jual-kayu-dolken-semarang.md
+  - 2025-11-15-jual-kayu-dolken-terdekat.md
+  - 2025-11-19-jual-kayu-dolken-bandung.md
+  - 2025-11-19-jual-kayu-dolken-karawang.md
+
+  Mau test build?
+
+> ya, baca dulu /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_
+includes/reusable/shared 
+
+● Bash(ls -la /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includ
+      es/reusable/shared)
+  ⎿  total 8                                      
+     drwxrwxr-x 2 mkt01 mkt01 4096 Des 10 23:19 .
+     drwxrwxr-x 4 mkt01 mkt01 4096 Des 10 23:20 ..
+
+● Directory _includes/reusable/shared/ juga kosong.
+
+  Mau langsung test build, atau ada block yang mau dipindahkan ke shared/
+  juga?
+
+> jangan dulu rebuild ya, pindahkan juga block di 
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_posts, ke dalam 
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/reusabl
+e/post 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_posts/)
+  ⎿  2024-01-15-keunggulan-kayu-dolken-gelam-untuk-konstruksi.md
+     2024-02-10-cara-memilih-ukuran-kayu-dolken-yang-tepat.md
+     2024-03-05-perbedaan-kayu-gelam-dengan-kayu-lainnya.md
+     … +6 lines (ctrl+o to expand)
+
+● Search(pattern: "{% include reusable/block--", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_posts", output_mode:
+        "content")
+  ⎿  Found 0 lines 
+
+● Search(pattern: "{% include", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io/_posts", output_mode:
+        "content")
+  ⎿  Found 0 lines 
+
+● File di _posts/ tidak menggunakan {% include %} sama sekali - tidak ada
+  block yang digunakan.
+
+  Isi _posts/:
+  - 2024-01-15-keunggulan-kayu-dolken-gelam-untuk-konstruksi.md
+  - 2024-02-10-cara-memilih-ukuran-kayu-dolken-yang-tepat.md
+  - 2024-03-05-perbedaan-kayu-gelam-dengan-kayu-lainnya.md
+  - 2024-04-20-aplikasi-kayu-dolken-untuk-hotel-dan-cafe.md
+  - 2024-05-15-perawatan-kayu-dolken-gelam-agar-awet.md
+  - 2024-06-10-hitung-kebutuhan-kayu-dolken-untuk-proyek.md
+  - 2025-11-15-jual-kayu-dolken-jakarta-utara.md
+  - 2025-11-20-cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda.md
+  - 2025-11-21-inspirasi-kayu-dolken-untuk-cafe.md
+
+  Tidak ada block yang perlu dipindahkan. Mau lanjut rebuild?
+
+> /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts
+/tutorial block disini dipakai di konten apa ? 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/tutorial)
+  ⎿  block--cara-menghitung.html  
+     block--cara-merawat.html
+     block--cara-pemasangan.html
+     … +4 lines (ctrl+o to expand)
+
+● Search(pattern: "{% include posts/tutorial/", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io", output_mode:
+        "content")
+  ⎿  Found 0 lines 
+
+●
+
+● Search(pattern: "posts/tutorial", path:
+        "~/Public/dolken.github.io/homes/dolken.github.io", output_mode:
+        "content")
+  ⎿  Found 74 lines (ctrl+o to expand)
+
+● Block _includes/posts/tutorial/ dipakai di 1 post:
+
+  2025-11-20-cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda.md
+
+  Blocks yang digunakan:
+  - block--intro.html
+  - block--mengenal-ukuran.html
+  - block--panduan-pemilihan.html
+  - block--tips-praktis.html
+  - block--cara-pemasangan.html
+  - block--cara-merawat.html
+
+  Ada juga block--cara-menghitung.html di folder tapi tidak terpakai.
+
+  Struktur sudah benar di _includes/posts/tutorial/. Mau pindahkan ke
+  _includes/reusable/post/ dan update path-nya?
+
+> /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts
+/cara-memilih-ukuran-kayu-dolken-yang-tepat
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts/h
+itung-kebutuhan-kayu-dolken-untuk-proyek
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts/k
+eunggulan-kayu-dolken-gelam-untuk-konstruksi
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts/p
+erawatan-kayu-dolken-gelam-agar-awet
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts/p
+erbedaan-kayu-gelam-dengan-kayu-lainnya, pola lama ini membuat block per 
+konten, akan jadi pembirosan karena bisa terjadi banyak duplikasi 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/)
+  ⎿  block--article-feedback.html              
+     block--article-reviews.html
+     cara-memilih-ukuran-kayu-dolken-yang-tepat
+     … +9 lines (ctrl+o to expand)
+
+● Bash(for dir in cara-memilih-ukuran-kayu-dolken-yang-tepat
+      hitung-kebutuhan-kayu-dolken-untuk-proyek
+      keunggulan-kayu-dolken-gelam-untuk-konstruksi perawatan-kayu-dol…)
+  ⎿  === cara-memilih-ukuran-kayu-dolken-yang-tepat ===
+     block--cara-menghitung.html
+     block--faktor-pertimbangan.html
+     … +38 lines (ctrl+o to expand)
+
+● Betul! Pola lama ini sangat boros - ada 37 block files tersebar di 5
+  folder per-konten:
+
+  | Folder                                        | Jumlah Block |
+  |-----------------------------------------------|--------------|
+  | cara-memilih-ukuran-kayu-dolken-yang-tepat    | 9            |
+  | hitung-kebutuhan-kayu-dolken-untuk-proyek     | 8            |
+  | keunggulan-kayu-dolken-gelam-untuk-konstruksi | 5            |
+  | perawatan-kayu-dolken-gelam-agar-awet         | 8            |
+  | perbedaan-kayu-gelam-dengan-kayu-lainnya      | 6            |
+
+  Masalah:
+  - Banyak duplikasi (contoh: block--perbandingan-kayu.html,
+  block--testimoni-pengguna.html, block--kapan-memilih-kayu.html muncul di
+  beberapa folder)
+  - Sulit maintain - perubahan harus dilakukan di banyak tempat
+  - Tidak scalable untuk konten baru
+
+  Solusi yang lebih baik:
+  Konsolidasikan ke _includes/reusable/post/ dengan block yang reusable
+  (seperti yang sudah dilakukan untuk post-with-city).
+
+  Mau saya:
+  1. Analisis block mana yang duplikat dan bisa di-merge?
+  2. Atau hapus folder-folder lama ini (jika sudah tidak terpakai)?
+
+> /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts
+/tutorial ini tadi sudah dipisahkan, akan dipakai untuk konten jenis 
+tutorial 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/tutorial/)
+  ⎿  block--cara-menghitung.html  
+     block--cara-merawat.html
+     block--cara-pemasangan.html
+     … +4 lines (ctrl+o to expand)
+
+● Baik, jadi struktur yang sudah benar:
+
+  Sudah terorganisir:
+  - _includes/reusable/post-with-city/ → untuk konten _post_with_city (15
+  blocks)
+  - _includes/posts/tutorial/ → untuk konten tutorial (7 blocks)
+
+  Pola lama (perlu dihapus/konsolidasi):
+  - _includes/posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/
+  - _includes/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/
+  - _includes/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/
+  - _includes/posts/perawatan-kayu-dolken-gelam-agar-awet/
+  - _includes/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/
+
+  Mau hapus folder-folder pola lama ini? Atau ada block tertentu yang mau
+  dipindahkan dulu ke tutorial/ atau folder lain?
+
+> 5 folder per-konten, tadi kita bicarakan ini. apakah menurut anda bisa di 
+kelompokkan menjadi berapa konten yang 5 itu selain tutorial 
+
+● Saya analisis 5 folder tersebut berdasarkan jenis kontennya:
+
+  | Folder                 | Jenis Konten    | Block Utama
+                                               |
+  |------------------------|-----------------|------------------------------
+  ---------------------------------------------|
+  | cara-memilih-ukuran... | Guide/Panduan   | panduan-pemilihan,
+  faktor-pertimbangan, kesalahan-umum                    |
+  | hitung-kebutuhan...    | Calculator/Tool | calculator-tool,
+  formula-dasar, worksheet-template                        |
+  | keunggulan-kayu...     | Product Info    | keunggulan-utama,
+  aplikasi-umum, tips-memilih                             |
+  | perawatan-kayu...      | Guide/Panduan   |
+  perawatan-berdasarkan-aplikasi, perawatan-berdasarkan-usia, seasonal-care
+  |
+  | perbedaan-kayu...      | Comparison      | perbandingan-kayu,
+  karakteristik-unik, keunggulan-spesifik                |
+
+  Rekomendasi pengelompokan menjadi 3 kategori:
+
+  _includes/posts/
+  ├── tutorial/          ← sudah ada (7 blocks)
+  ├── guide/             ← BARU: panduan/how-to (gabung cara-memilih + 
+  perawatan)
+  ├── comparison/        ← BARU: perbandingan produk
+  └── shared/            ← block yang dipakai bersama (testimoni, 
+  konsultasi, dll)
+
+  Atau lebih simpel menjadi 2 kategori:
+
+  _includes/posts/
+  ├── tutorial/          ← sudah ada
+  └── article/           ← BARU: gabung semua (guide, comparison, 
+  product-info)
+
+  Menurut Anda lebih cocok yang mana? 3 kategori atau 2 kategori?
+
+> /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts
+/comparison
+/home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/posts/g
+uide, ini sudah ada, apa bedanya guide dan tutorial 
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/comparison/)
+  ⎿  (No content)
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/guide/)
+  ⎿  (No content)
+
+● Let me think about this:
+
+  Tutorial:
+  - Step-by-step instructions
+  - "Cara melakukan X"
+  - Fokus pada proses/langkah-langkah
+  - Contoh: "Cara menghitung kebutuhan kayu dolken"
+
+  Guide:
+  - Informasi lebih umum/panduan
+  - "Panduan memilih X" atau "Tips tentang X"
+  - Fokus pada pengetahuan/referensi
+  - Contoh: "Panduan memilih ukuran kayu dolken yang tepat"
+
+  Perbedaannya tipis, tapi:
+  - Tutorial = lebih hands-on, step-by-step, actionable
+  - Guide = lebih informatif, referensi, knowledge-based
+
+  Bisa juga:
+  - Tutorial = konten "how-to" dengan langkah jelas (numbered steps)
+  - Guide = konten informatif/panduan umum tanpa langkah spesifik
+
+  Kedua folder comparison/ dan guide/ ada tapi kosong.
+
+  Perbedaan Guide vs Tutorial:
+
+  | Aspek       | Tutorial                           | Guide
+            |
+  |-------------|------------------------------------|----------------------
+  ----------|
+  | Fokus       | Step-by-step, langkah demi langkah | Informatif, panduan
+  umum       |
+  | Format      | "Langkah 1, 2, 3..."               | "Tips, faktor
+  pertimbangan..." |
+  | Tujuan      | Melakukan sesuatu                  | Memahami sesuatu
+            |
+  | Contoh      | "Cara menghitung kebutuhan kayu"   | "Panduan memilih
+  ukuran kayu"  |
+  | User action | Follow the steps                   | Learn & decide
+            |
+
+  Jadi struktur final bisa:
+
+  _includes/posts/
+  ├── tutorial/      ← how-to step-by-step (7 blocks - sudah ada)
+  ├── guide/         ← panduan informatif (kosong - perlu isi)
+  ├── comparison/    ← perbandingan produk (kosong - perlu isi)
+  └── shared-block/  ← block bersama (sudah ada?)
+
+  Mau saya pindahkan block dari 5 folder lama ke kategori yang sesuai?
+
+> kalau begigtu revisi kategori nya agar tidak mirip, mau anda buat berapa 
+kategori ? 3, 4, 5, jenis konten ? 
+
+● Saya usulkan 4 kategori yang jelas berbeda:
+
+  | Kategori    | Fokus                      | Contoh Konten
+                                     |
+  |-------------|----------------------------|------------------------------
+  -----------------------------------|
+  | tutorial/   | DO - Langkah demi langkah  | Cara menghitung kebutuhan,
+  Cara memasang, Cara merawat          |
+  | knowledge/  | LEARN - Pengetahuan produk | Keunggulan kayu dolken,
+  Definisi & karakteristik, Aplikasi umum |
+  | comparison/ | COMPARE - Perbandingan     | Perbedaan kayu gelam vs kayu
+  lain, Perbandingan ukuran          |
+  | tips/       | QUICK - Saran praktis      | Tips memilih ukuran,
+  Kesalahan umum, Tips perawatan seasonal    |
+
+  Struktur final:
+  _includes/posts/
+  ├── tutorial/      ← "Cara melakukan X" (step-by-step)
+  ├── knowledge/     ← "Apa itu X, Mengapa X" (edukatif)
+  ├── comparison/    ← "X vs Y" (perbandingan)
+  ├── tips/          ← "Tips X" (praktis, singkat)
+  └── shared/        ← Block yang dipakai bersama
+
+  Perbedaan jelas:
+  - Tutorial = Ikuti langkah-langkahnya
+  - Knowledge = Pahami produknya
+  - Comparison = Bandingkan pilihannya
+  - Tips = Ambil saran praktisnya
+
+  Setuju dengan 4 kategori ini?
+
+> pakai bahasa indonesia saja 
+
+● Baik, revisi dengan bahasa Indonesia:
+
+  | Kategori      | Fokus                          | Contoh Konten
+                                           |
+  |---------------|--------------------------------|------------------------
+  -----------------------------------------|
+  | tutorial/     | LAKUKAN - Langkah demi langkah | Cara menghitung
+  kebutuhan, Cara memasang, Cara merawat          |
+  | pengetahuan/  | PELAJARI - Info produk         | Keunggulan kayu dolken,
+   Definisi & karakteristik, Aplikasi umum |
+  | perbandingan/ | BANDINGKAN - Perbandingan      | Perbedaan kayu gelam vs
+   kayu lain, Perbandingan ukuran          |
+  | tips/         | PRAKTIS - Saran singkat        | Tips memilih ukuran,
+  Kesalahan umum, Tips perawatan             |
+
+  Struktur final:
+  _includes/posts/
+  ├── tutorial/        ← "Cara melakukan X"
+  ├── pengetahuan/     ← "Apa itu X, Mengapa X"
+  ├── perbandingan/    ← "X vs Y"
+  ├── tips/            ← "Tips X"
+  └── bersama/         ← Block yang dipakai bersama
+
+  Setuju?
+
+> pengetahuan apa bisa jdai 'umum' ? 
+
+● Bisa! umum/ lebih singkat dan fleksibel.
+
+  Struktur final:
+  _includes/posts/
+  ├── tutorial/        ← "Cara melakukan X"
+  ├── umum/            ← Info umum produk, keunggulan, aplikasi
+  ├── perbandingan/    ← "X vs Y"
+  ├── tips/            ← "Tips X"
+  └── bersama/         ← Block yang dipakai bersama
+
+  | Kategori      | Fokus                                |
+  |---------------|--------------------------------------|
+  | tutorial/     | Langkah-langkah                      |
+  | umum/         | Info umum & pengetahuan produk       |
+  | perbandingan/ | Perbandingan produk                  |
+  | tips/         | Saran praktis                        |
+  | bersama/      | Block yang dipakai di semua kategori |
+
+  Setuju? Mau saya buat folder dan pindahkan block dari 5 folder lama?
+
+> kita coba 
+
+● Bash(mkdir -p /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_incl
+      udes/posts/{umum,perbandingan,tips,bersama})
+  ⎿  (No content)
+
+● Bash(ls /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts/shared-block/)
+  ⎿  block--kesimpulan-artikel.html
+
+● Folder baru sudah dibuat. Sekarang saya kategorikan dan pindahkan block
+  dari 5 folder lama:
+
+● Bash(cd /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts…)
+  ⎿  === umum/ ===                        
+     block--aplikasi-umum-kayu-dolken.html
+     block--cost-breakdown.html
+     … +7 lines (ctrl+o to expand)
+
+● Bash(cd /home/mkt01/Public/dolken.github.io/homes/dolken.github.io/_includes/p
+      osts…)
+  ⎿  === perbandingan/ ===          
+     block--diy-vs-professional.html
+     block--keunggulan-spesifik.html
+     block--perbandingan-kayu.html
+  ⎿  Interrupted · What should Claude do instead?
+
+> lanjut 
+  ⎿  Interrupted · What should Claude do instead?
+
+> kenapa kita kena RTO ? 
+  ⎿  Interrupted · What should Claude do instead?
+
+
+

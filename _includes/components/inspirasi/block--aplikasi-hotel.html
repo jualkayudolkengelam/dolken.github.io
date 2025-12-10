@@ -1,0 +1,777 @@
+{% comment %}
+  ============================================================================
+  Aplikasi Hotel/Cafe Block Component
+  ============================================================================
+
+  @file        _includes/components/inspirasi/block--aplikasi-hotel.html
+  @description Menyajikan berbagai aplikasi dan use case produk dalam konteks
+               spesifik (hotel, cafe, resort, dll). Membantu pembaca memahami
+               bagaimana produk dapat diimplementasikan di berbagai area dengan
+               menampilkan implementasi konkret, keunggulan, dan estimasi budget.
+               Ideal untuk showcase project ideas, case studies, dan inspirasi
+               penggunaan produk di industri hospitality.
+
+  @version     1.0.0
+  @date        2025-11-21
+  @author      jualkayudolkengelam
+
+  Heading Structure (SEO & Accessibility):
+  -----------------------------------------
+  - 1 × H2: Main section title (header card)
+  - 6 × H3: Card titles (one per card: card_1 to card_6)
+  - 12 × H4: Sub-headings (2 per card: h4_1, h4_2)
+  - 0 × H5, H6: Not used in this block
+
+  Features:
+  ---------
+  - Gradient header with icon, title (H2), and subtitle
+  - Up to 6 hardcoded cards (card_1 to card_6)
+  - Flexible layout: can use col-lg-6 (2 columns) or col-lg-4 (3 columns)
+  - Each card has:
+    - Icon circle header with H3 title and subtitle
+    - Implementation section (list)
+    - Benefit/Keunggulan section (list)
+    - Optional budget alert
+  - Responsive card grid layout
+  - Hover lift effect
+
+  Parameters:
+  -----------
+  - page.aplikasi_[name]: Object containing:
+    - title: H2 main section title → class="title"
+    - subtitle: Subtitle below title → class="subtitle"
+    - icon: Main header icon (Bootstrap icon class)
+    - gradient: Gradient color (purple, red, blue, green, orange, wood)
+    - paragraph_1: First paragraph after H2 (REQUIRED for SEO) → class="paragraph_1"
+    - paragraph_2: Second paragraph after H2 (REQUIRED for SEO) → class="paragraph_2"
+    - layout: Card layout ("2col" for col-lg-6, "3col" for col-lg-4)
+    - card_1, card_2, card_3, card_4, card_5, card_6: Cards (NO LOOP!)
+      Each card:
+      - title: H3 card title → class="title"
+      - subtitle: Card subtitle → class="subtitle"
+      - icon: Bootstrap icon class
+      - color: Card color (primary, info, success, warning, danger, secondary)
+      - intro: Paragraph after H3 (REQUIRED for SEO) → class="intro"
+      - h4_1: First H4 sub-heading → class="h4_1"
+      - paragraph_h4_1: Paragraph after first H4 → class="paragraph_h4_1"
+      - h4_2: Second H4 sub-heading → class="h4_2"
+      - paragraph_h4_2: Paragraph after second H4 → class="paragraph_h4_2"
+      - implementasi_title: Implementation section title → class="implementasi_title"
+      - implementasi: Array of implementation items → class="implementasi"
+      - benefit_title: Benefit section title → class="benefit_title"
+      - benefit: Array of benefit items → class="benefit"
+      - budget: Optional budget info → class="budget"
+        - label: Budget label text
+        - value: Budget value text
+
+  Class Mapping (Best Practice Pattern):
+  ---------------------------------------
+  Frontmatter key → HTML class name (Semantic Classes)
+
+  Header Section:
+  - title (header card) → <div class="card title border-0 shadow-lg">
+  - title (h2 text) → <h2 class="h2 mb-0 fw-bold text-white">
+  - subtitle → <p class="subtitle mb-0 mt-2 small">
+  - paragraph_1 → <p class="paragraph_1">
+  - paragraph_2 → <p class="paragraph_2">
+
+  Cards:
+  - card_1 → <div class="card_1">
+  - card_2 → <div class="card_2">
+  - card_3 → <div class="card_3">
+  - card_4 → <div class="card_4">
+  - card_5 → <div class="card_5">
+  - card_6 → <div class="card_6">
+
+  Card Content:
+  - title (card) → <h3 class="title h5 text-wood mb-0">
+  - subtitle (card) → <p class="subtitle small text-muted mb-0">
+  - intro → <p class="intro">
+  - h4_1 → <h4 class="h4_1 h6">
+  - paragraph_h4_1 → <p class="paragraph_h4_1 small">
+  - h4_2 → <h4 class="h4_2 h6">
+  - paragraph_h4_2 → <p class="paragraph_h4_2 small">
+  - implementasi_section → <div class="implementasi_section">
+  - implementasi_title → <p class="implementasi_title small mb-2">
+  - implementasi → <ul class="implementasi small mb-0">
+  - benefit_section → <div class="benefit_section">
+  - benefit_title → <p class="benefit_title small mb-2">
+  - benefit → <ul class="benefit small mb-0">
+  - budget → <div class="budget alert mb-0 py-2">
+  - label → <p class="label">
+  - value → <p class="value">
+
+  Usage:
+  ------
+  In content:
+  <section id="aplikasi-hotel">
+    {% include components/block--aplikasi-hotel.html %}
+  </section>
+
+  ============================================================================
+  COMPLETE YAML STRUCTURE - COPY & PASTE KE FRONTMATTER
+  ============================================================================
+
+  Instruksi Penggunaan:
+  1. Copy seluruh structure YAML di bawah ini
+  2. Paste ke frontmatter artikel Anda
+  3. Ganti semua teks "isi ..." dengan konten Anda
+  4. Hapus card yang tidak digunakan (misal: jika hanya perlu 4 cards, hapus card_5 dan card_6)
+  5. Field yang marked OPTIONAL bisa dihapus jika tidak digunakan
+
+  ---
+  # Section: Aplikasi untuk Hotel/Cafe/Villa/dsb
+  aplikasi_hotel:
+    # Header Section
+    title: "isi judul H2 (misal: Aplikasi untuk Hotel)"
+    subtitle: "isi subtitle di bawah title (OPTIONAL - hapus jika tidak perlu)"
+    icon: "bi-buildings-fill"  # Bootstrap icon class
+    gradient: "purple"  # Options: purple, red, blue, green, orange, wood
+
+    # Paragraphs (REQUIRED - untuk SEO & Accessibility)
+    paragraph_1: "isi paragraf pertama setelah H2, sebelum masuk ke cards. Jelaskan konteks umum atau overview dari section ini."
+    paragraph_2: "isi paragraf kedua untuk melengkapi penjelasan. Bisa digunakan untuk statistik, benefit umum, atau call-to-action."
+
+    layout: "2col"  # Options: "2col" (col-lg-6) atau "3col" (col-lg-4)
+
+    # CARD 1
+    card_1:
+      title: "isi judul H3 card #1 (misal: Feature Wall Lobby)"
+      subtitle: "isi subtitle card #1 (misal: Wall cladding dolken 2-3 cm)"
+      icon: "bi-building"  # Bootstrap icon class
+      color: "primary"  # Options: primary, info, success, warning, danger, secondary
+
+      # Paragraph after H3 (REQUIRED for SEO)
+      intro: "isi paragraf penjelasan singkat tentang card ini. Berikan konteks mengapa aplikasi ini penting atau menarik."
+
+      # H4 Sub-headings dengan paragraf (REQUIRED for SEO)
+      h4_1: "isi H4 pertama (misal: Teknik Pemasangan)"
+      paragraph_h4_1: "isi paragraf setelah H4 pertama. Jelaskan detail tentang topik H4 ini."
+
+      h4_2: "isi H4 kedua (misal: Material & Finishing)"
+      paragraph_h4_2: "isi paragraf setelah H4 kedua. Jelaskan detail tentang topik H4 ini."
+
+      implementasi_title: "Implementasi"  # OPTIONAL - default: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1 (misal: Susun dolken vertikal atau horizontal)"
+        - "isi implementasi item #2 (misal: Kombinasi dengan indirect lighting)"
+        - "isi implementasi item #3 (misal: Variasi panjang untuk efek 3D)"
+        - "isi implementasi item #4 (OPTIONAL)"
+      benefit_title: "Keunggulan"  # OPTIONAL - default: "Keunggulan"
+      benefit:
+        - "isi benefit item #1 (misal: First impression yang kuat)"
+        - "isi benefit item #2 (misal: Acoustical benefit)"
+        - "isi benefit item #3 (misal: Low maintenance)"
+        - "isi benefit item #4 (OPTIONAL)"
+      budget:  # OPTIONAL - hapus jika tidak ada budget info
+        label: "Estimasi Budget"  # OPTIONAL - default: "Estimasi Budget"
+        value: "isi estimasi budget (misal: Wall 3×4 m: Rp 12-15 juta)"
+
+    # CARD 2
+    card_2:
+      title: "isi judul H3 card #2 (misal: Partition Ruangan)"
+      subtitle: "isi subtitle card #2 (misal: Room divider semi-transparan)"
+      icon: "bi-grid-3x3-gap"
+      color: "info"
+      implementasi_title: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1"
+        - "isi implementasi item #2"
+        - "isi implementasi item #3"
+      benefit_title: "Benefit"
+      benefit:
+        - "isi benefit item #1"
+        - "isi benefit item #2"
+        - "isi benefit item #3"
+      # budget: OPTIONAL - bisa dihapus jika tidak perlu
+
+    # CARD 3
+    card_3:
+      title: "isi judul H3 card #3 (misal: Outdoor Gazebo & Pergola)"
+      subtitle: "isi subtitle card #3"
+      icon: "bi-house-door"
+      color: "success"
+      implementasi_title: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1"
+        - "isi implementasi item #2"
+        - "isi implementasi item #3"
+      benefit_title: "Keunggulan"
+      benefit:
+        - "isi benefit item #1"
+        - "isi benefit item #2"
+        - "isi benefit item #3"
+
+    # CARD 4
+    card_4:
+      title: "isi judul H3 card #4 (misal: Headboard Kamar)"
+      subtitle: "isi subtitle card #4"
+      icon: "bi-moon-stars"
+      color: "warning"
+      implementasi_title: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1"
+        - "isi implementasi item #2"
+        - "isi implementasi item #3"
+      benefit_title: "Plus Points"
+      benefit:
+        - "isi benefit item #1"
+        - "isi benefit item #2"
+        - "isi benefit item #3"
+
+    # CARD 5 (OPTIONAL - hapus jika tidak digunakan)
+    card_5:
+      title: "isi judul H3 card #5 (misal: Outdoor Seating Area)"
+      subtitle: "isi subtitle card #5"
+      icon: "bi-tree-fill"
+      color: "danger"
+      implementasi_title: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1"
+        - "isi implementasi item #2"
+        - "isi implementasi item #3"
+      benefit_title: "Why It Works"
+      benefit:
+        - "isi benefit item #1"
+        - "isi benefit item #2"
+        - "isi benefit item #3"
+      budget:  # OPTIONAL
+        value: "isi budget info (misal: Budget: Rp 3-7 juta - HUGE impact!)"
+
+    # CARD 6 (OPTIONAL - hapus jika tidak digunakan)
+    card_6:
+      title: "isi judul H3 card #6 (misal: Furniture Accent)"
+      subtitle: "isi subtitle card #6"
+      icon: "bi-table"
+      color: "secondary"
+      implementasi_title: "Implementasi"
+      implementasi:
+        - "isi implementasi item #1"
+        - "isi implementasi item #2"
+        - "isi implementasi item #3"
+      benefit_title: "Benefit"
+      benefit:
+        - "isi benefit item #1"
+        - "isi benefit item #2"
+        - "isi benefit item #3"
+  ---
+
+  Notes:
+  - Gunakan layout "2col" untuk 4-6 cards (2 columns wide)
+  - Gunakan layout "3col" untuk 3-6 cards (3 columns, lebih compact)
+  - Setiap card bisa punya unlimited items di implementasi & benefit (array)
+  - Budget section bisa ada di beberapa cards saja, tidak harus semua
+  - Icon list: https://icons.getbootstrap.com/
+  - Color options: primary (blue), info (cyan), success (green),
+                   warning (yellow), danger (red), secondary (gray)
+
+  ============================================================================
+{% endcomment %}
+
+{% assign section = include.data %}
+
+{% if section %}
+
+<!-- Header Section -->
+<div class="my-5">
+  <div class="card title border-0 shadow-lg">
+    <div class="card-body text-white text-center py-4 px-3"
+      {% if section.gradient == 'purple' %}
+        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"
+      {% elsif section.gradient == 'red' %}
+        style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #c44569 100%);"
+      {% elsif section.gradient == 'blue' %}
+        style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);"
+      {% elsif section.gradient == 'green' %}
+        style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);"
+      {% elsif section.gradient == 'orange' %}
+        style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);"
+      {% elsif section.gradient == 'wood' %}
+        style="background: linear-gradient(135deg, #D4A574 0%, #8B6914 50%, #6B5310 100%);"
+      {% else %}
+        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"
+      {% endif %}>
+      {% if section.icon %}
+      <i class="bi {{ section.icon }} mb-2" style="font-size: 2.5rem;"></i>
+      {% endif %}
+      <h2 class="h2 mb-0 fw-bold text-white">{{ section.title }}</h2>
+      {% if section.subtitle %}
+      <p class="subtitle mb-0 mt-2 small" style="opacity: 0.85;">
+        <i class="bi bi-stars me-1"></i>
+        {{ section.subtitle }}
+        <i class="bi bi-stars ms-1"></i>
+      </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Paragraphs (after H2, before H3 cards) -->
+{% if section.paragraph_1 %}
+<div class="my-4">
+  <p class="paragraph_1 lead">{{ section.paragraph_1 }}</p>
+</div>
+{% endif %}
+
+{% if section.paragraph_2 %}
+<div class="mb-4">
+  <p class="paragraph_2">{{ section.paragraph_2 }}</p>
+</div>
+{% endif %}
+
+<!-- Cards Grid -->
+<div class="row g-4 my-4">
+
+  <!-- CARD 1 -->
+  {% if section.card_1 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_1 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_1.color | default: 'primary' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_1.icon | default: 'bi-box' }} text-{{ section.card_1.color | default: 'primary' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_1.title }}</h3>
+          {% if section.card_1.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_1.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_1.intro %}
+        <p class="intro mb-3">{{ section.card_1.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_1.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_1.h4_1 }}</h4>
+        {% if section.card_1.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_1.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_1.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_1.h4_2 }}</h4>
+        {% if section.card_1.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_1.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_1.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-gear-fill me-1"></i>{{ section.card_1.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0">
+            {% for item in section.card_1.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_1.benefit %}
+        <div class="benefit_section {% if section.card_1.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-check-circle-fill me-1 text-{{ section.card_1.color | default: 'success' }}"></i>{{ section.card_1.benefit_title | default: "Keunggulan" }}
+          </p>
+          <ul class="benefit small mb-0">
+            {% for item in section.card_1.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_1.budget %}
+        <div class="budget alert alert-{{ section.card_1.color | default: 'success' }} mb-0 py-2">
+          <p class="label mb-1 small fw-semibold">
+            <i class="bi bi-cash-stack me-1"></i>{{ section.card_1.budget.label | default: "Estimasi Budget" }}
+          </p>
+          <p class="value mb-0 small">{{ section.card_1.budget.value }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- CARD 2 -->
+  {% if section.card_2 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_2 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_2.color | default: 'info' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_2.icon | default: 'bi-box' }} text-{{ section.card_2.color | default: 'info' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_2.title }}</h3>
+          {% if section.card_2.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_2.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_2.intro %}
+        <p class="intro mb-3">{{ section.card_2.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_2.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_2.h4_1 }}</h4>
+        {% if section.card_2.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_2.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_2.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_2.h4_2 }}</h4>
+        {% if section.card_2.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_2.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_2.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-gear-fill me-1"></i>{{ section.card_2.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0">
+            {% for item in section.card_2.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_2.benefit %}
+        <div class="benefit_section {% if section.card_2.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-check-circle-fill me-1 text-{{ section.card_2.color | default: 'success' }}"></i>{{ section.card_2.benefit_title | default: "Benefit" }}
+          </p>
+          <ul class="benefit small mb-0">
+            {% for item in section.card_2.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_2.budget %}
+        <div class="budget alert alert-{{ section.card_2.color | default: 'info' }} mb-0 py-2">
+          <p class="label mb-1 small fw-semibold">
+            <i class="bi bi-cash-stack me-1"></i>{{ section.card_2.budget.label | default: "Estimasi Budget" }}
+          </p>
+          <p class="value mb-0 small">{{ section.card_2.budget.value }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- CARD 3 -->
+  {% if section.card_3 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_3 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_3.color | default: 'success' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_3.icon | default: 'bi-box' }} text-{{ section.card_3.color | default: 'success' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_3.title }}</h3>
+          {% if section.card_3.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_3.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_3.intro %}
+        <p class="intro mb-3">{{ section.card_3.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_3.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_3.h4_1 }}</h4>
+        {% if section.card_3.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_3.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_3.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_3.h4_2 }}</h4>
+        {% if section.card_3.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_3.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_3.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-gear-fill me-1"></i>{{ section.card_3.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0">
+            {% for item in section.card_3.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_3.benefit %}
+        <div class="benefit_section {% if section.card_3.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-check-circle-fill me-1 text-{{ section.card_3.color | default: 'success' }}"></i>{{ section.card_3.benefit_title | default: "Keunggulan" }}
+          </p>
+          <ul class="benefit small mb-0">
+            {% for item in section.card_3.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_3.budget %}
+        <div class="budget alert alert-{{ section.card_3.color | default: 'success' }} mb-0 py-2">
+          <p class="label mb-1 small fw-semibold">
+            <i class="bi bi-cash-stack me-1"></i>{{ section.card_3.budget.label | default: "Estimasi Budget" }}
+          </p>
+          <p class="value mb-0 small">{{ section.card_3.budget.value }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- CARD 4 -->
+  {% if section.card_4 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_4 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_4.color | default: 'warning' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_4.icon | default: 'bi-box' }} text-{{ section.card_4.color | default: 'warning' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_4.title }}</h3>
+          {% if section.card_4.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_4.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_4.intro %}
+        <p class="intro mb-3">{{ section.card_4.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_4.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_4.h4_1 }}</h4>
+        {% if section.card_4.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_4.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_4.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_4.h4_2 }}</h4>
+        {% if section.card_4.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_4.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_4.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-gear-fill me-1"></i>{{ section.card_4.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0">
+            {% for item in section.card_4.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_4.benefit %}
+        <div class="benefit_section {% if section.card_4.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-check-circle-fill me-1 text-{{ section.card_4.color | default: 'success' }}"></i>{{ section.card_4.benefit_title | default: "Plus Points" }}
+          </p>
+          <ul class="benefit small mb-0">
+            {% for item in section.card_4.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_4.budget %}
+        <div class="budget alert alert-{{ section.card_4.color | default: 'warning' }} mb-0 py-2">
+          <p class="label mb-1 small fw-semibold">
+            <i class="bi bi-cash-stack me-1"></i>{{ section.card_4.budget.label | default: "Estimasi Budget" }}
+          </p>
+          <p class="value mb-0 small">{{ section.card_4.budget.value }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- CARD 5 -->
+  {% if section.card_5 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_5 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_5.color | default: 'danger' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_5.icon | default: 'bi-box' }} text-{{ section.card_5.color | default: 'danger' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_5.title }}</h3>
+          {% if section.card_5.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_5.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_5.intro %}
+        <p class="intro mb-3">{{ section.card_5.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_5.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_5.h4_1 }}</h4>
+        {% if section.card_5.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_5.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_5.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_5.h4_2 }}</h4>
+        {% if section.card_5.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_5.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_5.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-lightbulb-fill text-warning me-1"></i>{{ section.card_5.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0" style="font-size: 0.85rem;">
+            {% for item in section.card_5.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_5.benefit %}
+        <div class="benefit_section {% if section.card_5.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-star-fill text-warning me-1"></i>{{ section.card_5.benefit_title | default: "Why It Works" }}
+          </p>
+          <ul class="benefit small mb-0" style="font-size: 0.85rem;">
+            {% for item in section.card_5.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_5.budget %}
+        <div class="budget alert alert-{{ section.card_5.color | default: 'danger' }} mb-0 py-2" style="background-color: rgba(220, 53, 69, 0.1); border: none;">
+          <p class="value mb-0 small text-{{ section.card_5.color | default: 'danger' }}">
+            <i class="bi bi-cash-coin me-1"></i>
+            <strong>{{ section.card_5.budget.value }}</strong>
+          </p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- CARD 6 -->
+  {% if section.card_6 %}
+  <div class="{% if section.layout == '3col' %}col-md-6 col-lg-4{% else %}col-md-6{% endif %}">
+    <div class="card card_6 border-0 shadow-sm h-100 hover-lift">
+      <div class="card-header border-0 bg-transparent pt-4">
+        <div class="text-center">
+          <div class="icon bg-{{ section.card_6.color | default: 'secondary' }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+            <i class="bi {{ section.card_6.icon | default: 'bi-box' }} text-{{ section.card_6.color | default: 'secondary' }}" style="font-size: 2rem;"></i>
+          </div>
+          <h3 class="title h5 text-wood mb-0">{{ section.card_6.title }}</h3>
+          {% if section.card_6.subtitle %}
+          <p class="subtitle small text-muted mb-0">{{ section.card_6.subtitle }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-body pt-3">
+        <!-- Intro paragraph after H3 -->
+        {% if section.card_6.intro %}
+        <p class="intro mb-3">{{ section.card_6.intro }}</p>
+        {% endif %}
+
+        <!-- H4 Sub-headings with paragraphs -->
+        {% if section.card_6.h4_1 %}
+        <h4 class="h4_1 h6 text-wood mb-2">{{ section.card_6.h4_1 }}</h4>
+        {% if section.card_6.paragraph_h4_1 %}
+        <p class="paragraph_h4_1 small mb-3">{{ section.card_6.paragraph_h4_1 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_6.h4_2 %}
+        <h4 class="h4_2 h6 text-wood mb-2">{{ section.card_6.h4_2 }}</h4>
+        {% if section.card_6.paragraph_h4_2 %}
+        <p class="paragraph_h4_2 small mb-3">{{ section.card_6.paragraph_h4_2 }}</p>
+        {% endif %}
+        {% endif %}
+
+        {% if section.card_6.implementasi %}
+        <div class="implementasi_section mb-3">
+          <p class="implementasi_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-gear-fill me-1"></i>{{ section.card_6.implementasi_title | default: "Implementasi" }}
+          </p>
+          <ul class="implementasi small mb-0">
+            {% for item in section.card_6.implementasi %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_6.benefit %}
+        <div class="benefit_section {% if section.card_6.budget %}mb-3{% else %}mb-0{% endif %}">
+          <p class="benefit_title small mb-2 text-wood fw-semibold">
+            <i class="bi bi-check-circle-fill me-1 text-{{ section.card_6.color | default: 'success' }}"></i>{{ section.card_6.benefit_title | default: "Benefit" }}
+          </p>
+          <ul class="benefit small mb-0">
+            {% for item in section.card_6.benefit %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if section.card_6.budget %}
+        <div class="budget alert alert-{{ section.card_6.color | default: 'secondary' }} mb-0 py-2">
+          <p class="label mb-1 small fw-semibold">
+            <i class="bi bi-cash-stack me-1"></i>{{ section.card_6.budget.label | default: "Estimasi Budget" }}
+          </p>
+          <p class="value mb-0 small">{{ section.card_6.budget.value }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</div>
+
+{% endif %}

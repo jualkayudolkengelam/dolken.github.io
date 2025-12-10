@@ -1,0 +1,134 @@
+{% comment %}
+  ============================================================================
+  Intro Block Component
+  ============================================================================
+
+  @file        _includes/components/tutorial/block--intro.html
+  @description Menyajikan intro section tutorial dengan headline, deskripsi, dan highlight points.
+               Memberikan overview singkat artikel dan key takeaways untuk pembaca.
+               Ideal untuk semua jenis artikel tutorial sebagai pembuka yang engaging.
+
+  @version     1.0.0
+  @date        2025-11-21
+  @author      jualkayudolkengelam
+
+  Heading Structure (SEO & Accessibility):
+  -----------------------------------------
+  - 1 × H2: headline (main intro headline)
+  - 1 × H3: highlight_title (optional, untuk judul highlight section)
+  - 0 × H4, H5, H6: Not used in this block
+
+  Total Headings: 2 (with highlight_title) or 1 (without highlight_title)
+
+  Paragraphs & Content (REQUIRED for SEO):
+  - 1 deskripsi paragraph (intro description)
+  - N highlight_points items (array, minimal 3 recommended)
+
+  Total Content Sections: 1 paragraph + N bullet points
+
+  Features:
+  ---------
+  - Clean card design with shadow
+  - H2 headline with icon
+  - Deskripsi paragraph (intro description)
+  - H3 highlight section title (optional) with icon
+  - Bullet list highlight points with check icons
+  - Responsive layout (full-width card)
+  - Light background for highlight section
+  - Icon-based visual design
+
+  Parameters:
+  -----------
+  - page.intro: Object containing:
+    - headline: Catchy headline (1 kalimat) → class="headline"
+    - deskripsi: Deskripsi pembuka (2-3 kalimat) → class="deskripsi"
+    - highlight_title: Judul section highlight (optional) → class="highlight_title"
+    - highlight_points: Array of key takeaways/benefits → class="highlight_points"
+
+  Class Mapping (Best Practice Pattern):
+  ---------------------------------------
+  Frontmatter key → HTML class name
+  - intro → <div class="intro">
+  - headline → <h2 class="headline">
+  - deskripsi → <p class="deskripsi">
+  - highlight_points → <div class="highlight_points">
+  - highlight_title → <h3 class="highlight_title">
+
+  Usage:
+  ------
+  In content:
+  <section id="intro">
+    {% include components/tutorial/block--intro.html %}
+  </section>
+
+  ============================================================================
+  COMPLETE YAML STRUCTURE - COPY & PASTE KE FRONTMATTER
+  ============================================================================
+
+  Instruksi Penggunaan:
+  1. Copy seluruh structure YAML di bawah ini
+  2. Paste ke frontmatter artikel Anda
+  3. Ganti semua teks "isi ..." dengan konten Anda
+  4. Field yang marked OPTIONAL bisa dihapus jika tidak digunakan
+  5. Minimal 3 highlight_points direkomendasikan untuk engagement optimal
+
+  ---
+  # Section: Intro
+  intro:
+    # H2 Headline (REQUIRED)
+    headline: "isi headline catchy (misal: Panduan Lengkap Memilih Kayu Dolken untuk Pemula)"
+
+    # Deskripsi Pembuka (REQUIRED)
+    deskripsi: "isi deskripsi pembuka 2-3 kalimat untuk memberikan konteks artikel. Jelaskan apa yang akan pembaca pelajari dan mengapa artikel ini penting untuk dibaca."
+
+    # Highlight Section (OPTIONAL - hapus semua jika tidak perlu)
+    highlight_title: "isi judul H3 highlight (misal: Yang Akan Anda Pelajari:)"
+
+    # Highlight Points (REQUIRED, minimal 3 items recommended)
+    highlight_points:
+      - "isi bullet point #1 (misal: Memahami dasar-dasar kayu dolken dan karakteristiknya)"
+      - "isi bullet point #2 (misal: Cara memilih ukuran yang tepat sesuai kebutuhan proyek)"
+      - "isi bullet point #3 (misal: Tips menghemat budget tanpa mengorbankan kualitas)"
+      - "isi bullet point #4 (OPTIONAL, misal: Panduan pemasangan dan perawatan yang benar)"
+      - "isi bullet point #5 (OPTIONAL, misal: Menghitung kebutuhan material dengan akurat)"
+  ---
+
+  ============================================================================
+{% endcomment %}
+
+{% if page.intro %}
+{% assign section = page.intro %}
+
+<!-- Intro Card -->
+<div class="intro card border-0 shadow-sm my-4">
+  <div class="card-body p-4">
+    {% if section.headline %}
+    <h2 class="headline h3 text-wood fw-bold mb-3">
+      <i class="bi bi-book-half me-2 text-primary"></i>{{ section.headline }}
+    </h2>
+    {% endif %}
+
+    {% if section.deskripsi %}
+    <p class="deskripsi mb-4 text-muted">{{ section.deskripsi }}</p>
+    {% endif %}
+
+    {% if section.highlight_points %}
+    <div class="highlight_points bg-light p-3 rounded-3">
+      {% if section.highlight_title %}
+      <h3 class="highlight_title h6 fw-bold text-wood mb-3">
+        <i class="bi bi-stars text-warning me-2"></i>{{ section.highlight_title }}
+      </h3>
+      {% endif %}
+      <ul class="list-unstyled mb-0">
+        {% for point in section.highlight_points %}
+        <li class="{% if forloop.last %}mb-0{% else %}mb-2{% endif %}">
+          <i class="bi bi-check-circle-fill text-success me-2"></i>
+          <span class="small">{{ point }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
