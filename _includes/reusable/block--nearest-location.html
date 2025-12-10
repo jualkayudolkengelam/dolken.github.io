@@ -44,69 +44,89 @@
 
 <div class="container jual-kayu-dolken-terdekat">
   <div class="text-center mb-5">
+    <span class="badge bg-success bg-opacity-10 text-success mb-2 px-3 py-2">
+      <i class="bi bi-geo-alt me-1"></i>Area Layanan
+    </span>
     <h2 class="display-5 fw-bold text-wood mb-3">{{ location_title }}</h2>
     <p class="lead text-muted">{{ location_subtitle }}</p>
   </div>
 
   <div class="row g-4 mb-4">
+    <!-- Lokasi Kami -->
     <div class="col-lg-4 col-md-6">
-      <div class="card border-0 shadow-sm h-100">
+      <div class="card border-0 shadow h-100 overflow-hidden">
+        <div class="card-header bg-wood text-white text-center py-3">
+          <i class="bi bi-geo-alt-fill fs-3 mb-2 d-block"></i>
+          <h5 class="mb-0">Lokasi Kami</h5>
+        </div>
         <div class="card-body text-center p-4">
-          <i class="bi bi-geo-alt-fill text-wood mb-3" class="fs-3rem"></i>
-          <h5 class="mb-3">Lokasi Kami</h5>
-          <p class="text-muted mb-2"><strong>{{ site.business.location }}</strong></p>
-          <p class="text-muted small">Pusat distribusi kayu dolken gelam untuk wilayah Banten dan sekitarnya</p>
+          <p class="fs-5 fw-bold text-wood mb-2">{{ site.business.location }}</p>
+          <p class="text-muted small mb-3">Pusat distribusi kayu dolken gelam</p>
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <span class="badge bg-light text-dark">Serang</span>
+            <span class="badge bg-light text-dark">Cilegon</span>
+            <span class="badge bg-light text-dark">Tangerang</span>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Area Pengiriman Utama -->
     <div class="col-lg-4 col-md-6">
-      <div class="card border-0 shadow-sm h-100">
+      <div class="card border-0 shadow h-100 overflow-hidden">
+        <div class="card-header bg-success text-white text-center py-3">
+          <i class="bi bi-truck fs-3 mb-2 d-block"></i>
+          <h5 class="mb-0">Pengiriman Cepat</h5>
+        </div>
         <div class="card-body text-center p-4">
-          <i class="bi bi-truck text-wood mb-3" class="fs-3rem"></i>
-          <h5 class="mb-3">Area Pengiriman</h5>
-          <ul class="list-unstyled text-muted mb-0">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Banten (Serang, Tangerang, Cilegon)</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>DKI Jakarta</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bekasi & Depok</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bogor & Bandung</li>
-          </ul>
+          <p class="text-muted small mb-3">Area dengan estimasi 1-2 hari</p>
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <span class="badge bg-success">Jakarta</span>
+            <span class="badge bg-success">Bogor</span>
+            <span class="badge bg-success">Depok</span>
+            <span class="badge bg-success">Tangerang</span>
+            <span class="badge bg-success">Bekasi</span>
+            <span class="badge bg-success">Bandung</span>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Jangkauan Luas -->
     <div class="col-lg-4 col-md-6">
-      <div class="card border-0 shadow-sm h-100">
+      <div class="card border-0 shadow h-100 overflow-hidden">
+        <div class="card-header bg-info text-white text-center py-3">
+          <i class="bi bi-map fs-3 mb-2 d-block"></i>
+          <h5 class="mb-0">Seluruh Jawa</h5>
+        </div>
         <div class="card-body text-center p-4">
-          <i class="bi bi-map text-wood mb-3" class="fs-3rem"></i>
-          <h5 class="mb-3">Jangkauan Luas</h5>
-          <ul class="list-unstyled text-muted mb-0">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Bandung & Jawa Barat</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Semarang & Jawa Tengah</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Surabaya & Jawa Timur</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Denpasar & Bali</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Seluruh Jawa & Bali</li>
-          </ul>
+          <p class="text-muted small mb-3">Area dengan estimasi 2-4 hari</p>
+          <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <span class="badge bg-info">Semarang</span>
+            <span class="badge bg-info">Yogyakarta</span>
+            <span class="badge bg-info">Solo</span>
+            <span class="badge bg-info">Surabaya</span>
+            <span class="badge bg-info">Malang</span>
+            <span class="badge bg-info">Bali</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- CTA Card -->
   <div class="row">
     <div class="col-12">
-      <div class="card border-wood shadow" style="border-width: 2px;">
+      <div class="card bg-wood text-white shadow-lg border-0">
         <div class="card-body p-4">
           <div class="row align-items-center">
             <div class="col-md-8">
-              <h4 class="text-wood mb-3"><i class="bi bi-pin-map-fill me-2"></i>Cari Kayu Dolken Terdekat di Lokasi Anda?</h4>
-              <p class="mb-md-0 text-muted">Kami adalah supplier terpercaya kayu dolken gelam dengan jangkauan pengiriman ke seluruh Jawa dan Bali. Apapun kebutuhan proyek Anda - hotel, cafe, villa, taman, atau konstruksi - kami siap melayani dengan harga terbaik dan kualitas terjamin. Pengiriman cepat, stok selalu tersedia!</p>
+              <h4 class="mb-3"><i class="bi bi-pin-map-fill me-2"></i>Cari Kayu Dolken di Kota Anda?</h4>
+              <p class="mb-md-0 opacity-75">Hubungi kami untuk cek ketersediaan stok dan estimasi ongkir ke lokasi Anda. Pengiriman cepat, stok ready!</p>
             </div>
             <div class="col-md-4 text-md-end mt-3 mt-md-0">
-              <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20cari%20kayu%20dolken%20terdekat%20untuk%20area%20..." class="btn btn-success btn-lg w-100" target="_blank">
+              <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20cari%20kayu%20dolken%20terdekat%20untuk%20area%20..." class="btn btn-light btn-lg w-100 text-success fw-bold" target="_blank">
                 <i class="bi bi-whatsapp me-2"></i>Cek Ketersediaan
-              </a>
-              <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-wood btn-lg w-100 mt-2">
-                <i class="bi bi-telephone me-2"></i>Hubungi Kami
               </a>
             </div>
           </div>

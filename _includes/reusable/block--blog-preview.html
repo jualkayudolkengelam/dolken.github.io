@@ -57,6 +57,9 @@
 {% if all_posts.size > 0 %}
 <div class="container">
   <div class="text-center mb-5">
+    <span class="badge bg-wood text-white mb-2 px-3 py-2">
+      <i class="bi bi-journal-richtext me-1"></i>Blog
+    </span>
     <h2 class="display-6 fw-bold text-wood mb-3">{{ preview_title }}</h2>
     <p class="lead text-muted">{{ preview_subtitle }}</p>
   </div>
@@ -71,78 +74,54 @@
   <div class="row g-4">
     {% for post in sorted_posts limit:preview_limit %}
     <div class="col-md-6 col-lg-4">
-      <div class="card blog-card">
+      <div class="card blog-card border-0 shadow-sm h-100">
         {% if post.image %}
         <picture>
           <source srcset="{{ post.image | replace: '.jpeg', '.webp' | relative_url }}" type="image/webp">
-          <img src="{{ post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy">
+          <img src="{{ post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}" loading="lazy" style="height: 200px; object-fit: cover;">
         </picture>
         {% else %}
-        <div class="bg-gradient-wood d-flex align-items-center justify-content-center" style="height: 200px;">
-          <i class="bi bi-file-text text-white" class="fs-4rem"></i>
+        <div class="bg-wood d-flex align-items-center justify-content-center" style="height: 200px;">
+          <i class="bi bi-file-text text-white fs-1"></i>
         </div>
         {% endif %}
-        <div class="card-body">
-          <!-- Post Meta -->
-          <div class="post-meta text-muted small mb-2">
-            <p class="mb-1">
-              <i class="bi bi-calendar3 me-1"></i>{{ post.date | date: "%d %b %Y" }}
-            </p>
-            {% if post.last_modified_at %}
-            <p class="mb-1" title="Terakhir diperbarui">
-              <i class="bi bi-pencil-square me-1"></i>{{ post.last_modified_at | date: "%d %b %Y" }}
-            </p>
-            {% endif %}
-            {% if post.author %}
-            <p class="mb-1">
-              <i class="bi bi-person me-1"></i>{{ post.author }}
-            </p>
-            {% endif %}
+        <div class="card-body d-flex flex-column">
+          <!-- Categories & Date -->
+          <div class="d-flex justify-content-between align-items-center mb-2">
             {% if post.categories %}
-            <p class="mb-1">
-              <i class="bi bi-folder me-1"></i>
-              {% for category in post.categories %}
-                <a href="{{ site.baseurl }}/blog/kategori/{{ category | slugify }}" class="text-muted text-decoration-none">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+            <div>
+              {% for category in post.categories limit:1 %}
+              <span class="badge bg-secondary text-white small">{{ category }}</span>
               {% endfor %}
-            </p>
+            </div>
             {% endif %}
+            <small class="text-muted">
+              <i class="bi bi-calendar3 me-1"></i>{{ post.date | date: "%d %b %Y" }}
+            </small>
           </div>
 
-          <h5 class="card-title">
-            <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">{{ post.title }}</a>
+          <h5 class="card-title fw-bold">
+            <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark stretched-link">{{ post.title }}</a>
           </h5>
-          <p class="card-text">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+          <p class="card-text text-muted small flex-grow-1">{{ post.description | default: post.excerpt | strip_html | truncate: 100 }}</p>
 
           <!-- Engagement Stats -->
-          {% if post.like_count or post.comment_count or post.share_count %}
-          <div class="engagement-stats mb-3 d-flex align-items-center flex-wrap gap-3" class="text-sm">
+          {% if post.like_count or post.comment_count %}
+          <div class="d-flex gap-3 small text-muted mb-2">
             {% if post.like_count %}
-            <span class="d-flex align-items-center text-muted">
-              <i class="bi bi-heart-fill me-1 text-danger"></i>
-              <strong class="text-dark">{{ post.like_count }}</strong>
-              <span class="ms-1 small">suka</span>
-            </span>
+            <span><i class="bi bi-heart-fill text-danger me-1"></i>{{ post.like_count }}</span>
             {% endif %}
             {% if post.comment_count %}
-            <span class="d-flex align-items-center text-muted">
-              <i class="bi bi-chat-fill me-1 text-primary"></i>
-              <strong class="text-dark">{{ post.comment_count }}</strong>
-              <span class="ms-1 small">komentar</span>
-            </span>
-            {% endif %}
-            {% if post.share_count %}
-            <span class="d-flex align-items-center text-muted">
-              <i class="bi bi-share-fill me-1 text-success"></i>
-              <strong class="text-dark">{{ post.share_count }}</strong>
-              <span class="ms-1 small">dibagikan</span>
-            </span>
+            <span><i class="bi bi-chat-fill text-primary me-1"></i>{{ post.comment_count }}</span>
             {% endif %}
           </div>
           {% endif %}
 
-          <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-wood">
-            Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
-          </a>
+          <div class="mt-auto">
+            <span class="text-wood small fw-bold">
+              Baca Selengkapnya <i class="bi bi-arrow-right ms-1"></i>
+            </span>
+          </div>
         </div>
       </div>
     </div>

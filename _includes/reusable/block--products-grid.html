@@ -44,6 +44,9 @@
 
 <div class="container">
   <div class="text-center mb-5">
+    <span class="badge bg-wood text-white mb-2 px-3 py-2">
+      <i class="bi bi-box-seam me-1"></i>Produk Kami
+    </span>
     <h2 class="display-5 fw-bold text-wood mb-3">{{ grid_title }}</h2>
     <p class="lead text-muted">{{ grid_subtitle }}</p>
   </div>
@@ -124,16 +127,20 @@
 
     <!-- Custom Order -->
     <div class="col-lg-4 col-md-6">
-      <div class="card product-card h-100 bg-light">
-        <div class="card-header text-center bg-secondary text-white">
-          <i class="bi bi-chat-dots me-2"></i>Custom Order
-        </div>
-        <div class="card-body text-center d-flex flex-column justify-content-center">
-          <i class="bi bi-telephone-fill text-wood mb-3" class="fs-3rem"></i>
-          <h5 class="mb-3">Butuh Ukuran Khusus?</h5>
-          <p class="text-muted mb-4">Hubungi kami untuk pesanan custom sesuai kebutuhan proyek Anda</p>
-          <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20konsultasi%20pesanan%20custom" class="btn btn-outline-wood w-100" target="_blank">
-            <i class="bi bi-whatsapp me-2"></i>Konsultasi Gratis
+      <div class="card product-card h-100 border-0 shadow" style="background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);">
+        <div class="card-body text-center d-flex flex-column justify-content-center text-white p-4">
+          <div class="mb-3">
+            <i class="bi bi-gear-wide-connected fs-1 opacity-75"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Custom Order</h4>
+          <p class="opacity-75 mb-4">Butuh ukuran khusus atau jumlah besar? Kami siap membantu!</p>
+          <ul class="list-unstyled text-start mb-4 small">
+            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Ukuran sesuai kebutuhan</li>
+            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Harga grosir untuk jumlah besar</li>
+            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Konsultasi gratis</li>
+          </ul>
+          <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20konsultasi%20pesanan%20custom" class="btn btn-light btn-lg w-100 text-wood fw-bold" target="_blank">
+            <i class="bi bi-whatsapp me-2"></i>Hubungi Kami
           </a>
         </div>
       </div>
@@ -143,16 +150,21 @@
   <!-- Info Box -->
   <div class="row mt-5">
     <div class="col-12">
-      <div class="alert alert-info border-0 shadow-sm">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h5 class="alert-heading"><i class="bi bi-info-circle me-2"></i>Informasi Penting</h5>
-            <p class="mb-0">Harga dapat berubah sewaktu-waktu. Minimal pemesanan dan biaya pengiriman akan dihitung berdasarkan lokasi tujuan. Hubungi kami untuk informasi lebih detail dan penawaran terbaik.</p>
-          </div>
-          <div class="col-md-4 text-md-end mt-3 mt-md-0">
-            <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">
-              <i class="bi bi-envelope me-2"></i>Hubungi Kami
-            </a>
+      <div class="card border-0 bg-light">
+        <div class="card-body p-4">
+          <div class="row align-items-center">
+            <div class="col-md-1 text-center mb-3 mb-md-0">
+              <i class="bi bi-info-circle text-info fs-1"></i>
+            </div>
+            <div class="col-md-8">
+              <h5 class="fw-bold mb-2">Informasi Pemesanan</h5>
+              <p class="text-muted mb-0 small">Harga dapat berubah sewaktu-waktu. Minimal pemesanan dan ongkir dihitung berdasarkan lokasi. Hubungi kami untuk penawaran terbaik!</p>
+            </div>
+            <div class="col-md-3 text-md-end mt-3 mt-md-0">
+              <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20tanya%20harga%20dan%20ongkir" class="btn btn-success" target="_blank">
+                <i class="bi bi-whatsapp me-2"></i>Tanya Harga
+              </a>
+            </div>
           </div>
         </div>
       </div>

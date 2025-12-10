@@ -1,59 +1,89 @@
 <div class="container kayu-dolken">
   <div class="my-5 calculator-section-wrapper kalkulator-kayu-dolken">
     <!-- Section Header -->
-    <div class="card border-0 calculator-section-header-card shadow-lg mb-4">
-      <div class="card-body text-white text-center py-4" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);">
-        <i class="bi bi-calculator-fill mb-2" style="font-size: 2.5rem;"></i>
-        <h2 class="h2 mb-0 fw-bold text-white" id="heading-25">Kalkulator Kebutuhan Dolken</h2>
-        <p class="mb-0 mt-2 small" style="opacity: 0.9;">Hitung kebutuhan dolken Anda secara otomatis</p>
-      </div>
+    <div class="text-center mb-4">
+      <span class="badge bg-info bg-opacity-10 text-info mb-2 px-3 py-2">
+        <i class="bi bi-calculator me-1"></i>Tools Gratis
+      </span>
+      <h2 class="display-6 fw-bold mb-2">Kalkulator Kebutuhan Dolken</h2>
+      <p class="text-muted">Hitung kebutuhan dolken untuk proyek Anda secara otomatis</p>
     </div>
 
-    <!-- Calculator Form -->
-    <div class="card border-0 calculator-form-card shadow-sm">
-      <div class="card-body p-4">
-        <form id="calculator-form" class="needs-validation calculator-form" novalidate="">
-          <div class="row g-3 calculator-inputs-grid">
-
-            <div class="col-12 col-sm-6 calculator-input-col">
-              <label for="calc-panjang" class="form-label fw-bold">Total Panjang Pagar (meter)</label>
-              <input type="number" class="form-control form-control-lg calculator-input-field" id="calc-panjang" name="panjang" placeholder="Contoh: 40" min="0" step="any" required="">
-              <div class="invalid-feedback">
-                Mohon isi total panjang pagar (meter)
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 calculator-input-col">
-              <label for="calc-jarak" class="form-label fw-bold">Jarak Antar Tiang (meter)</label>
-              <input type="number" class="form-control form-control-lg calculator-input-field" id="calc-jarak" name="jarak" placeholder="Contoh: 1.5" min="0" step="any" required="">
-              <div class="invalid-feedback">
-                Mohon isi jarak antar tiang (meter)
-              </div>
-            </div>
-
+    <div class="row g-4">
+      <!-- Calculator Form -->
+      <div class="col-lg-8">
+        <div class="card border-0 shadow h-100">
+          <div class="card-header bg-info text-white py-3">
+            <h5 class="mb-0"><i class="bi bi-sliders me-2"></i>Masukkan Data Proyek</h5>
           </div>
+          <div class="card-body p-4">
+            <form id="calculator-form" class="needs-validation calculator-form" novalidate="">
+              <div class="row g-3 calculator-inputs-grid">
+                <div class="col-12 col-sm-6 calculator-input-col">
+                  <label for="calc-panjang" class="form-label fw-bold">Total Panjang Pagar (meter)</label>
+                  <input type="number" class="form-control form-control-lg calculator-input-field" id="calc-panjang" name="panjang" placeholder="Contoh: 40" min="0" step="any" required="">
+                  <div class="invalid-feedback">Mohon isi total panjang pagar</div>
+                </div>
+                <div class="col-12 col-sm-6 calculator-input-col">
+                  <label for="calc-jarak" class="form-label fw-bold">Jarak Antar Tiang (meter)</label>
+                  <input type="number" class="form-control form-control-lg calculator-input-field" id="calc-jarak" name="jarak" placeholder="Contoh: 1.5" min="0" step="any" required="">
+                  <div class="invalid-feedback">Mohon isi jarak antar tiang</div>
+                </div>
+              </div>
+              <div class="d-grid gap-2 mt-4">
+                <button type="submit" class="btn btn-info btn-lg text-white calculator-submit-btn">
+                  <i class="bi bi-calculator me-2"></i>Hitung Sekarang
+                </button>
+              </div>
+            </form>
 
-          <div class="d-grid gap-2 mt-4">
-            <button type="submit" class="btn btn-primary btn-lg calculator-submit-btn">
-              <i class="bi bi-calculator me-2"></i>Hitung Sekarang
-            </button>
-          </div>
-        </form>
-
-        <!-- Result Display -->
-        <div id="calculator-result" class="mt-4 d-none calculator-result-wrapper">
-          <div class="alert alert-success border-0 shadow-sm calculator-result-alert" role="alert">
-            <div class="d-flex align-items-center">
-              <i class="bi bi-check-circle-fill fs-3 me-3"></i>
-              <div class="flex-grow-1">
-                <h3 class="h5 mb-1 fw-bold" id="heading-26">Jumlah Dolken yang Dibutuhkan</h3>
-                <p class="mb-2 fs-4 fw-bold text-success" id="result-value">-</p>
-                <div class="d-flex align-items-center gap-2 calculator-rounded-result">
-                  <span class="small text-muted">Dibulatkan menjadi:</span>
-                  <span class="badge bg-success fs-6 px-3 py-2" id="result-rounded">-</span>
+            <!-- Result Display -->
+            <div id="calculator-result" class="mt-4 d-none calculator-result-wrapper">
+              <div class="alert alert-success border-0 shadow-sm calculator-result-alert" role="alert">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-check-circle-fill fs-3 me-3"></i>
+                  <div class="flex-grow-1">
+                    <h3 class="h5 mb-1 fw-bold" id="heading-26">Jumlah Dolken Dibutuhkan</h3>
+                    <p class="mb-2 fs-4 fw-bold text-success" id="result-value">-</p>
+                    <div class="d-flex align-items-center gap-2 calculator-rounded-result">
+                      <span class="small text-muted">Dibulatkan:</span>
+                      <span class="badge bg-success fs-6 px-3 py-2" id="result-rounded">-</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tips Sidebar -->
+      <div class="col-lg-4">
+        <div class="card border-0 bg-light h-100">
+          <div class="card-body p-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-lightbulb text-warning me-2"></i>Tips Perhitungan</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3 d-flex">
+                <i class="bi bi-1-circle-fill text-info me-2 mt-1"></i>
+                <span class="small">Jarak ideal antar tiang: <strong>1.5 - 2 meter</strong></span>
+              </li>
+              <li class="mb-3 d-flex">
+                <i class="bi bi-2-circle-fill text-info me-2 mt-1"></i>
+                <span class="small">Tambahkan <strong>10% cadangan</strong> untuk antisipasi</span>
+              </li>
+              <li class="mb-3 d-flex">
+                <i class="bi bi-3-circle-fill text-info me-2 mt-1"></i>
+                <span class="small">Ukuran populer: <strong>6-8 cm</strong> untuk pagar standar</span>
+              </li>
+              <li class="d-flex">
+                <i class="bi bi-4-circle-fill text-info me-2 mt-1"></i>
+                <span class="small">Hubungi kami untuk <strong>konsultasi gratis</strong></span>
+              </li>
+            </ul>
+            <hr>
+            <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20butuh%20bantuan%20menghitung%20kebutuhan%20dolken" class="btn btn-outline-info btn-sm w-100" target="_blank">
+              <i class="bi bi-whatsapp me-1"></i>Butuh Bantuan?
+            </a>
           </div>
         </div>
       </div>
