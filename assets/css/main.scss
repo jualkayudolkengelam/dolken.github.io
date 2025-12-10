@@ -248,6 +248,79 @@ a:hover {
   background-color: var(--light-bg);
 }
 
+.feature-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2) !important;
+}
+
+.feature-card:hover .rounded-circle {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card .rounded-circle {
+  transition: transform 0.3s ease;
+}
+
+/* Nearest Location Section Cards */
+.jual-kayu-dolken-terdekat .card {
+  transition: all 0.3s ease;
+}
+
+.jual-kayu-dolken-terdekat .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.jual-kayu-dolken-terdekat .card-header {
+  transition: all 0.3s ease;
+}
+
+.jual-kayu-dolken-terdekat .card:hover .card-header {
+  filter: brightness(1.1);
+}
+
+.jual-kayu-dolken-terdekat .card:hover .badge {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.jual-kayu-dolken-terdekat .badge {
+  transition: transform 0.3s ease;
+}
+
+/* Why Choose Us Section Cards */
+.why-choose-us .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.why-choose-us .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2) !important;
+}
+
+.why-choose-us .card .position-absolute {
+  transition: height 0.3s ease;
+}
+
+.why-choose-us .card:hover .position-absolute {
+  height: 8px !important;
+}
+
+.why-choose-us .card:hover .rounded-circle {
+  transform: scale(1.1);
+}
+
+.why-choose-us .card .rounded-circle {
+  transition: transform 0.3s ease;
+}
+
 .feature-icon {
   width: 70px;
   height: 70px;

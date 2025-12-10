@@ -45,21 +45,88 @@
 {% assign intro_title = include.title | default: "Spesifikasi Produk" %}
 
 <div class="container product-intro">
-  <div class="row mb-5">
-    <div class="col-lg-8 mx-auto text-center">
-      <div class="alert alert-wood text-white border-0 shadow-sm">
-        <h4 class="alert-heading"><i class="bi bi-info-circle me-2"></i>{{ intro_title }}</h4>
-        <hr class="border-white">
-        <div class="row text-start">
-          <div class="col-md-6">
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Panjang:</strong> 4 Meter</p>
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Material:</strong> Kayu Gelam Asli</p>
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Finishing:</strong> Natural/Poles</p>
-          </div>
-          <div class="col-md-6">
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Kualitas:</strong> Grade A Premium</p>
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Sifat:</strong> Anti Rayap, Tahan Air</p>
-            <p class="mb-2"><strong><i class="bi bi-check-circle me-2"></i>Garansi:</strong> Kualitas Terjamin</p>
+  <div class="text-center mb-4">
+    <span class="badge bg-wood text-white mb-2 px-3 py-2">
+      <i class="bi bi-box-seam me-1"></i>Katalog Produk
+    </span>
+    <h1 class="display-5 fw-bold text-wood mb-3">Kayu Dolken Gelam Premium</h1>
+    <p class="lead text-muted">Pilih ukuran diameter sesuai kebutuhan proyek Anda</p>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-lg-10 mx-auto">
+      <div class="card border-0 shadow">
+        <div class="card-header bg-wood text-white py-3">
+          <h5 class="mb-0"><i class="bi bi-clipboard-check me-2"></i>{{ intro_title }}</h5>
+        </div>
+        <div class="card-body p-4">
+          <div class="row g-3">
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-rulers text-primary"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Panjang</small>
+                  <p class="mb-0 fw-bold">4 Meter</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-success bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-tree text-success"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Material</small>
+                  <p class="mb-0 fw-bold">Kayu Gelam Asli</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-warning bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-award text-warning"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Kualitas</small>
+                  <p class="mb-0 fw-bold">Grade A Premium</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-info bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-droplet text-info"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Sifat</small>
+                  <p class="mb-0 fw-bold">Tahan Air</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-danger bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-shield-x text-danger"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Ketahanan</small>
+                  <p class="mb-0 fw-bold">Anti Rayap</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-secondary bg-opacity-10 p-2 me-3">
+                  <i class="bi bi-patch-check text-secondary"></i>
+                </div>
+                <div>
+                  <small class="text-muted">Garansi</small>
+                  <p class="mb-0 fw-bold">Kualitas Terjamin</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -45,48 +45,56 @@
 {% assign features_title = include.title | default: "Keunggulan Kayu Dolken Gelam Kami" %}
 
 <div class="container product-features">
+  <div class="text-center mb-5">
+    <span class="badge bg-success text-white mb-2 px-3 py-2">
+      <i class="bi bi-stars me-1"></i>Keunggulan
+    </span>
+    <h3 class="display-6 fw-bold text-wood mb-3">{{ features_title }}</h3>
+    <p class="text-muted">Mengapa kayu dolken gelam menjadi pilihan terbaik</p>
+  </div>
+
   <div class="row g-4 mb-5">
-    <div class="col-12">
-      <h3 class="text-wood mb-4"><i class="bi bi-stars me-2"></i>{{ features_title }}</h3>
-    </div>
-    <div class="col-md-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body">
-          <h5 class="card-title text-wood">
-            <i class="bi bi-shield-check me-2"></i>Kualitas Premium
-          </h5>
-          <p class="card-text">Kami hanya menyediakan kayu gelam pilihan dengan serat rapat, warna natural, dan bebas dari cacat. Setiap batang telah melalui proses seleksi ketat.</p>
+    <!-- Kualitas Premium -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0 shadow h-100 text-center p-4">
+        <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
+          <i class="bi bi-shield-check text-success fs-2"></i>
         </div>
+        <h5 class="fw-bold">Kualitas Premium</h5>
+        <p class="card-text text-muted small">Kayu gelam pilihan dengan serat rapat, warna natural, dan bebas cacat.</p>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body">
-          <h5 class="card-title text-wood">
-            <i class="bi bi-lightning me-2"></i>Kekuatan Maksimal
-          </h5>
-          <p class="card-text">Kayu gelam memiliki kepadatan tinggi yang menjadikannya salah satu kayu terkuat. Cocok untuk konstruksi yang membutuhkan kekuatan ekstra.</p>
+
+    <!-- Kekuatan Maksimal -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0 shadow h-100 text-center p-4">
+        <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
+          <i class="bi bi-lightning-charge text-warning fs-2"></i>
         </div>
+        <h5 class="fw-bold">Kekuatan Maksimal</h5>
+        <p class="card-text text-muted small">Kepadatan tinggi menjadikannya salah satu kayu terkuat untuk konstruksi.</p>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body">
-          <h5 class="card-title text-wood">
-            <i class="bi bi-droplet-half me-2"></i>Tahan Air & Cuaca
-          </h5>
-          <p class="card-text">Sifat alami kayu gelam yang tahan terhadap air, kelembaban, dan perubahan cuaca ekstrem membuatnya ideal untuk outdoor maupun indoor.</p>
+
+    <!-- Tahan Air -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0 shadow h-100 text-center p-4">
+        <div class="rounded-circle bg-info bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
+          <i class="bi bi-droplet-half text-info fs-2"></i>
         </div>
+        <h5 class="fw-bold">Tahan Air & Cuaca</h5>
+        <p class="card-text text-muted small">Tahan terhadap air, kelembaban, dan cuaca ekstrem - ideal outdoor & indoor.</p>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card border-0 shadow-sm h-100">
-        <div class="card-body">
-          <h5 class="card-title text-wood">
-            <i class="bi bi-bug me-2"></i>Anti Rayap Alami
-          </h5>
-          <p class="card-text">Tidak memerlukan treatment kimia tambahan. Kayu gelam secara alami resisten terhadap serangan rayap dan serangga perusak kayu lainnya.</p>
+
+    <!-- Anti Rayap -->
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0 shadow h-100 text-center p-4">
+        <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
+          <i class="bi bi-shield-x text-danger fs-2"></i>
         </div>
+        <h5 class="fw-bold">Anti Rayap Alami</h5>
+        <p class="card-text text-muted small">Resisten alami terhadap rayap tanpa perlu treatment kimia tambahan.</p>
       </div>
     </div>
   </div>
