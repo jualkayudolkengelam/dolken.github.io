@@ -1,0 +1,171 @@
+{% comment %}
+  ============================================================================
+  Schema Include - HowTo Product Pemesanan (HowTo)
+  ============================================================================
+
+  @file        _includes/schema/schema--howto-product-pemesanan.html
+  @description Schema markup for product ordering process using HowTo type.
+               Provides step-by-step guidance for ordering kayu dolken products.
+
+  @version     1.0.0
+  @date        2025-11-25
+  @author      jualkayudolkengelam
+  @copyright   2024-2025 Kayu Dolken Gelam - Amirudin Abdul Karim
+  @license     All rights reserved
+
+  Architecture:
+  -------------
+  - Block (_includes/products/block--product-cara-pemesanan.html): Visual display
+  - Schema (this file): HowTo schema markup for SEO
+  - Page wrapper (_layouts/node--product.html): Include schema before </body>
+
+  Features:
+  ---------
+  - Schema.org HowTo markup
+  - 6-step ordering process from page.cara_pemesanan frontmatter
+  - Perfect for Google Rich Results HowTo snippets
+  - Enhances product page SEO with actionable steps
+  - Includes estimated time, supply needed, and tools
+
+  Parameters:
+  -----------
+  - page.cara_pemesanan.langkah: Array of ordering steps
+    Each step should have:
+    - nomor: Step number (1-6)
+    - judul: Step title/name
+    - deskripsi: Step description/text
+    - icon: Bootstrap icon class (optional, for visual display)
+    - color: Color theme (optional, for visual display)
+
+  - page.title: Product title (used in HowTo name)
+  - page.description: Product description (used in HowTo description)
+  - page.image: Product image (used in HowTo image)
+  - page.url: Product URL (used in HowTo url)
+
+  Usage:
+  ------
+  {% include schema/schema--howto-product-pemesanan.html %}
+
+  Note: This schema reads directly from page frontmatter variables.
+        Ensure cara_pemesanan.langkah array is defined in product frontmatter.
+
+  Called from:
+  ------------
+  - _layouts/node--product.html (before </body> tag)
+  - Only included on product pages that have cara_pemesanan data
+
+  SEO Benefits:
+  -------------
+  - Enhanced SERP appearance with step snippets
+  - Better visibility for "how to order" searches
+  - Improved click-through rates
+  - Voice search optimization
+  - Featured snippet eligibility
+
+  ============================================================================
+{% endcomment %}
+
+<!-- Schema.org HowTo Markup for Product Ordering Process -->
+{% if page.cara_pemesanan.langkah %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "{{ page.cara_pemesanan.header.judul | default: 'Cara Pemesanan' }} {{ page.title }}",
+  "description": "{{ page.cara_pemesanan.intro.deskripsi | default: 'Panduan lengkap cara memesan produk. Proses mudah dan cepat dengan langkah sederhana.' | strip_html | escape }}",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ page.image | absolute_url }}",
+    "height": 600,
+    "width": 800
+  },
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": "IDR",
+    "value": "{{ page.price | default: 0 }}"
+  },
+  "totalTime": "PT15M",
+  "supply": [
+    {
+      "@type": "HowToSupply",
+      "name": "WhatsApp atau Telepon"
+    },
+    {
+      "@type": "HowToSupply",
+      "name": "Informasi kebutuhan proyek (jumlah, ukuran, lokasi)"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Smartphone dengan WhatsApp"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Koneksi internet atau telepon"
+    }
+  ],
+  "step": [{% for section in page.cara_pemesanan.sections %}
+    {
+      "@type": "HowToSection",
+      "name": "{{ section.judul | strip_html }}",
+      "position": {{ forloop.index }},
+      "itemListElement": [{% assign range_parts = section.range | split: '-' %}{% assign start_num = range_parts[0] | plus: 0 %}{% assign end_num = range_parts[1] | plus: 0 %}{% assign step_counter = 0 %}{% for step in page.cara_pemesanan.langkah %}{% if step.nomor >= start_num and step.nomor <= end_num %}{% assign step_counter = step_counter | plus: 1 %}
+        {
+          "@type": "HowToStep",
+          "position": {{ step_counter }},
+          "name": "{{ step.judul | escape }}",
+          "text": "{{ step.deskripsi | escape }}",
+          "url": "{{ page.url | absolute_url }}#product-cara-pemesanan",
+          "image": {
+            "@type": "ImageObject",
+            "url": "{{ page.image | absolute_url }}",
+            "height": 600,
+            "width": 800
+          }{% assign step_judul_lower = step.judul | downcase %}{% if step_judul_lower contains 'hubungi' or step.nomor == 2 %},
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "position": 1,
+              "text": "Hubungi {{ site.business.phone }} via telepon atau WhatsApp untuk respon cepat"
+            },
+            {
+              "@type": "HowToTip",
+              "position": 2,
+              "text": "Tim kami siap melayani konsultasi gratis untuk membantu menghitung kebutuhan proyek Anda"
+            }
+          ]{% elsif step_judul_lower contains 'pengiriman' or step.nomor == 5 %},
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "position": 1,
+              "text": "Pengiriman gratis ke seluruh area layanan kami dengan armada terpercaya"
+            },
+            {
+              "@type": "HowToTip",
+              "position": 2,
+              "text": "Waktu pengiriman 3-7 hari kerja tergantung lokasi"
+            }
+          ]{% elsif step_judul_lower contains 'bayar' or step_judul_lower contains 'cod' or step.nomor == 6 %},
+          "itemListElement": [
+            {
+              "@type": "HowToDirection",
+              "position": 1,
+              "text": "Bayar setelah barang sampai di lokasi Anda (Cash On Delivery)"
+            },
+            {
+              "@type": "HowToTip",
+              "position": 2,
+              "text": "Anda dapat mengecek kualitas produk terlebih dahulu sebelum melakukan pembayaran"
+            }
+          ]{% endif %}
+        }{% if step.nomor < end_num %},{% endif %}{% endif %}{% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],
+  "about": {
+    "@id": "{{ page.url | absolute_url }}#product"
+  }
+}
+</script>
+{% endif %}
