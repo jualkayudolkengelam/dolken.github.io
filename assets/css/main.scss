@@ -321,6 +321,108 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
+/* ==========================================================================
+   Product Page Card Hover Effects
+   ========================================================================== */
+
+/* Product Intro Section */
+.product-intro .card {
+  transition: all 0.3s ease;
+}
+
+.product-intro .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2) !important;
+}
+
+/* Product Features Section */
+.product-features .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.product-features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2) !important;
+}
+
+.product-features .card:hover .rounded-circle {
+  transform: scale(1.1);
+}
+
+.product-features .card .rounded-circle {
+  transition: transform 0.3s ease;
+}
+
+/* Application Examples Section */
+.application-examples .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.application-examples .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.application-examples .card-header {
+  transition: all 0.3s ease;
+}
+
+.application-examples .card:hover .card-header {
+  filter: brightness(1.1);
+}
+
+.application-examples .card:hover li {
+  transform: translateX(5px);
+}
+
+.application-examples .card li {
+  transition: transform 0.3s ease;
+}
+
+/* ==========================================================================
+   Mobile Touch/Tap Effects (Active States)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Feature Cards - Homepage */
+  .feature-card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.15) !important;
+  }
+
+  /* Nearest Location Cards - Homepage */
+  .jual-kayu-dolken-terdekat .card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  /* Why Choose Us Cards - Homepage */
+  .why-choose-us .card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.15) !important;
+  }
+
+  /* Product Intro Card - Product Page */
+  .product-intro .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.15) !important;
+  }
+
+  /* Product Features Cards - Product Page */
+  .product-features .card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 10px rgba(139, 69, 19, 0.15) !important;
+  }
+
+  /* Application Examples Cards - Product Page */
+  .application-examples .card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
 .feature-icon {
   width: 70px;
   height: 70px;
