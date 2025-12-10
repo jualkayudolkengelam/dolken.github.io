@@ -27,9 +27,9 @@ excerpt: Mengapa kayu gelam lebih unggul dibanding jenis kayu lainnya? Simak per
   lengkap karakteristik, harga, dan kegunaannya.
 rating: 4.7
 review_count: 32
-like_count: 58
-comment_count: 8
-share_count: 18
+like_count: 3
+comment_count: 3
+share_count: 3
 karakteristik_unik:
   nama_ilmiah: Melaleuca cajuputi
   kepadatan: 900-1000 kg/m³

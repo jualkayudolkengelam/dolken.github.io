@@ -27,9 +27,9 @@ url: "/2024/01/15/keunggulan-kayu-dolken-gelam-untuk-konstruksi/"
 excerpt: "Kayu dolken gelam memiliki berbagai keunggulan yang membuatnya menjadi pilihan utama untuk berbagai keperluan konstruksi dan dekorasi."
 rating: 4.6
 review_count: 43
-like_count: 71
-comment_count: 12
-share_count: 23
+like_count: 3
+comment_count: 3
+share_count: 3
 last_modified_at: '2025-11-24 20:32:38 +0700'
 definisi_kayu:
   nama_latin: Melaleuca cajuputi

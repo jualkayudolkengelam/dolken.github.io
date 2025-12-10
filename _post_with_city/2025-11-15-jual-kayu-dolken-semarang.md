@@ -519,7 +519,7 @@ area_pengiriman_detail:
   - nama: Java Mall
     icon: bi-cart
     warna: primary
-like_count: 4
+like_count: 3
 comment_count: 0
 share_count: 2
 total_updates: 1

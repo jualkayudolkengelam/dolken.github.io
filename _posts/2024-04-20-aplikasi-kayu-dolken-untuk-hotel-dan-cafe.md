@@ -28,9 +28,9 @@ url: "/2024/04/20/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/"
 excerpt: "Ide kreatif mengaplikasikan kayu dolken gelam untuk menciptakan suasana natural dan elegan di hotel dan cafe Anda."
 rating: 4.6
 review_count: 44
-like_count: 102
-comment_count: 24
-share_count: 42
+like_count: 3
+comment_count: 3
+share_count: 3
 last_modified_at: '2025-11-24 20:33:34 +0700'
 tips_desain:
   title: Tips Desain dengan Kayu Dolken

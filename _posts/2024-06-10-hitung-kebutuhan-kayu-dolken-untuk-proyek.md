@@ -27,9 +27,9 @@ url: "/2024/06/10/hitung-kebutuhan-kayu-dolken-untuk-proyek/"
 excerpt: "Panduan praktis menghitung jumlah kayu dolken yang dibutuhkan untuk proyek pagar, gazebo, dekorasi, dan konstruksi lainnya dengan akurat."
 rating: 4.6
 review_count: 24
-like_count: 96
-comment_count: 21
-share_count: 36
+like_count: 3
+comment_count: 3
+share_count: 3
 last_modified_at: '2025-11-24 20:33:34 +0700'
 labels:
   mengapa_perhitungan_title: Mengapa Perhitungan Akurat Penting?

@@ -27,9 +27,9 @@ url: "/2024/05/15/perawatan-kayu-dolken-gelam-agar-awet/"
 excerpt: "Panduan lengkap merawat kayu dolken gelam untuk memaksimalkan umur pakai hingga puluhan tahun dengan perawatan minimal."
 rating: 4.6
 review_count: 24
-like_count: 78
-comment_count: 16
-share_count: 30
+like_count: 3
+comment_count: 3
+share_count: 3
 labels:
   monthly_deep_clean: 'Pembersihan Mendalam Bulanan:'
   feature_wall_ceiling: 'Untuk Dinding/Plafon Dekoratif:'
