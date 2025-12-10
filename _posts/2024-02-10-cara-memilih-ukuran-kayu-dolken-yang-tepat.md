@@ -291,27 +291,27 @@ kesimpulan:
 </div>
 
 <section id="memahami-ukuran">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--memahami-ukuran.html %}
+  {% include posts/umum/block--memahami-ukuran.html %}
 </section>
 
 <section id="panduan-pemilihan">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--panduan-pemilihan.html %}
+  {% include posts/tutorial/block--panduan-pemilihan.html %}
 </section>
 
 <section id="faktor-pertimbangan">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--faktor-pertimbangan.html %}
+  {% include posts/bersama/block--faktor-pertimbangan.html %}
 </section>
 
 <section id="cara-menghitung">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--cara-menghitung.html %}
+  {% include posts/tutorial/block--cara-menghitung-pemilihan.html %}
 </section>
 
 <section id="kesalahan-umum">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--kesalahan-umum.html %}
+  {% include posts/tips/block--kesalahan-umum.html %}
 </section>
 
 <section id="konsultasi">
-  {% include posts/cara-memilih-ukuran-kayu-dolken-yang-tepat/block--konsultasi.html %}
+  {% include posts/bersama/block--konsultasi.html %}
 </section>
 
 <section id="kesimpulan">

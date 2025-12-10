@@ -283,27 +283,27 @@ last_modified_at: '2025-11-24 20:32:38 +0700'
 </div>
 
 <section id="karakteristik-unik">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--karakteristik-unik.html %}
+  {% include posts/umum/block--karakteristik-unik.html %}
 </section>
 
 <section id="perbandingan">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--perbandingan-kayu.html %}
+  {% include posts/perbandingan/block--perbandingan-kayu.html %}
 </section>
 
 <section id="keunggulan-spesifik">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--keunggulan-spesifik.html %}
+  {% include posts/perbandingan/block--keunggulan-spesifik.html %}
 </section>
 
 <section id="kapan-memilih">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--kapan-memilih-kayu.html %}
+  {% include posts/perbandingan/block--kapan-memilih-kayu.html %}
 </section>
 
 <section id="testimoni">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--testimoni-pengguna.html %}
+  {% include posts/bersama/block--testimoni-pengguna.html %}
 </section>
 
 <section id="tips-maksimalkan">
-  {% include posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/block--tips-maksimalkan.html %}
+  {% include posts/tips/block--tips-maksimalkan.html %}
 </section>
 
 <section id="kesimpulan">

@@ -185,23 +185,23 @@ total_updates: 1
 </div>
 
 <section id="definisi-kayu-dolken">
-  {% include posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/block--definisi-kayu-dolken.html %}
+  {% include posts/umum/block--definisi-kayu-dolken.html %}
 </section>
 
 <section id="keunggulan-utama">
-  {% include posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/block--keunggulan-utama-kayu-dolken.html %}
+  {% include posts/umum/block--keunggulan-utama-kayu-dolken.html %}
 </section>
 
 <section id="aplikasi-umum">
-  {% include posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/block--aplikasi-umum-kayu-dolken.html %}
+  {% include posts/umum/block--aplikasi-umum-kayu-dolken.html %}
 </section>
 
 <section id="tips-memilih">
-  {% include posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/block--tips-memilih-kayu-dolken.html %}
+  {% include posts/tips/block--tips-memilih-kayu-dolken.html %}
 </section>
 
 <section id="perawatan">
-  {% include posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/block--perawatan-kayu-dolken.html %}
+  {% include posts/tutorial/block--perawatan-kayu-dolken.html %}
 </section>
 
 <section id="kesimpulan">

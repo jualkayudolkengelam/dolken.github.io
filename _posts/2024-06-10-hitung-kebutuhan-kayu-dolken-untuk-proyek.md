@@ -404,35 +404,35 @@ total_updates: 2
 </div>
 
 <section id="mengapa-perhitungan-penting">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--mengapa-perhitungan-penting.html %}
+  {% include posts/umum/block--mengapa-perhitungan-penting.html %}
 </section>
 
 <section id="formula-dasar">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--formula-dasar.html %}
+  {% include posts/tutorial/block--formula-dasar.html %}
 </section>
 
 <section id="perhitungan-berbagai-aplikasi">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--perhitungan-berbagai-aplikasi.html %}
+  {% include posts/tutorial/block--perhitungan-berbagai-aplikasi.html %}
 </section>
 
 <section id="calculator-tool">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--calculator-tool.html %}
+  {% include posts/tutorial/block--calculator-tool.html %}
 </section>
 
 <section id="tips-menghitung">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--tips-menghitung.html %}
+  {% include posts/tips/block--tips-menghitung.html %}
 </section>
 
 <section id="common-mistakes">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--common-mistakes.html %}
+  {% include posts/tips/block--common-mistakes-hitung.html %}
 </section>
 
 <section id="worksheet-template">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--worksheet-template.html %}
+  {% include posts/tutorial/block--worksheet-template.html %}
 </section>
 
 <section id="quick-reference">
-  {% include posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/block--quick-reference.html %}
+  {% include posts/tips/block--quick-reference.html %}
 </section>
 
 <section id="kesimpulan">

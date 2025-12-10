@@ -417,35 +417,35 @@ last_modified_at: '2025-11-24 20:33:34 +0700'
 </div>
 
 <section id="mengapa-perawatan-penting">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--mengapa-perawatan-penting.html %}
+  {% include posts/umum/block--mengapa-perawatan-penting.html %}
 </section>
 
 <section id="perawatan-berdasarkan-aplikasi">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--perawatan-berdasarkan-aplikasi.html %}
+  {% include posts/tutorial/block--perawatan-berdasarkan-aplikasi.html %}
 </section>
 
 <section id="perawatan-berdasarkan-usia">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--perawatan-berdasarkan-usia.html %}
+  {% include posts/tutorial/block--perawatan-berdasarkan-usia.html %}
 </section>
 
 <section id="seasonal-care">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--seasonal-care.html %}
+  {% include posts/tips/block--seasonal-care.html %}
 </section>
 
 <section id="products-tools">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--products-tools.html %}
+  {% include posts/umum/block--products-tools.html %}
 </section>
 
 <section id="cost-breakdown">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--cost-breakdown.html %}
+  {% include posts/umum/block--cost-breakdown.html %}
 </section>
 
 <section id="common-mistakes">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--common-mistakes.html %}
+  {% include posts/tips/block--common-mistakes-perawatan.html %}
 </section>
 
 <section id="diy-vs-professional">
-  {% include posts/perawatan-kayu-dolken-gelam-agar-awet/block--diy-vs-professional.html %}
+  {% include posts/perbandingan/block--diy-vs-professional.html %}
 </section>
 
 <section id="kesimpulan">
