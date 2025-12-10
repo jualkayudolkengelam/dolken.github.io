@@ -1,0 +1,612 @@
+---
+---
+
+/* ==========================================================================
+   Kayu Dolken Gelam - Main Stylesheet
+   ========================================================================== */
+
+/* Import SCSS Partials */
+@import 'variables';
+@import 'utilities';
+@import 'components/related-articles';
+@import 'components/related-products';
+@import 'components/related-content';
+@import 'components/product-list';
+@import 'components/whatsapp';
+
+/* ==========================================================================
+   Custom Theme - Kayu Dolken Gelam (Brown Wood Theme)
+   ========================================================================== */
+
+/* Color Variables */
+:root {
+  --wood-brown: #8B4513;
+  --wood-light: #D2691E;
+  --wood-dark: #654321;
+  --wood-lightest: #DEB887;
+  --success-green: #28a745;
+  --light-bg: #f8f9fa;
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 56px; /* Space for fixed navbar */
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 72px; /* Slightly taller navbar on desktop */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Text Colors */
+.text-wood {
+  color: var(--wood-brown) !important;
+}
+
+.text-wood-light {
+  color: var(--wood-light) !important;
+}
+
+.text-wood-dark {
+  color: var(--wood-dark) !important;
+}
+
+/* Background Colors */
+.bg-wood {
+  background-color: var(--wood-brown) !important;
+  color: white;
+}
+
+.bg-wood-light {
+  background-color: var(--wood-lightest) !important;
+}
+
+/* Alert Wood */
+.alert-wood {
+  background-color: var(--wood-brown) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.alert-wood hr {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  opacity: 1;
+}
+
+.alert-wood .bi-check-circle {
+  color: #90EE90 !important;
+}
+
+/* Buttons */
+.btn-wood {
+  background-color: var(--wood-brown);
+  color: white;
+  border: none;
+}
+
+.btn-wood:hover {
+  background-color: var(--wood-dark);
+  color: white;
+}
+
+.btn-outline-wood {
+  border-color: var(--wood-brown);
+  color: var(--wood-brown);
+}
+
+.btn-outline-wood:hover {
+  background-color: var(--wood-brown);
+  color: white;
+  border-color: var(--wood-brown);
+}
+
+/* Links */
+a {
+  color: var(--wood-brown);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--wood-dark);
+}
+
+/* Navbar - Fixed Position */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1030 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar-brand .bi-tree-fill {
+  color: var(--wood-brown);
+}
+
+.nav-link.active {
+  color: var(--wood-brown) !important;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(101, 67, 33, 0.9) 100%),
+              url('/assets/images/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  margin-top: -1px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* Product Cards */
+.product-card {
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.3);
+}
+
+.product-card .card-header {
+  background: linear-gradient(135deg, var(--wood-brown) 0%, var(--wood-dark) 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--wood-brown);
+}
+
+/* Popular Product Card */
+.product-card.popular {
+  position: relative;
+  box-shadow: 0 5px 25px rgba(255, 193, 7, 0.4);
+  border: 3px solid #ffc107 !important;
+}
+
+.product-card.popular:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(255, 193, 7, 0.5);
+}
+
+.product-card.popular::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  border-radius: 0.375rem;
+  z-index: -1;
+  opacity: 0.3;
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.product-card.popular .card-body {
+  background: linear-gradient(to bottom, rgba(255, 193, 7, 0.05) 0%, transparent 100%);
+}
+
+.product-card.popular .product-price {
+  color: #ff6b00;
+  font-size: 2.3rem;
+}
+
+/* Features Section */
+.features-section {
+  background-color: var(--light-bg);
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--wood-brown) 0%, var(--wood-light) 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+}
+
+/* Gallery */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Post Content Styling */
+.post-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.post-body h2,
+.post-body h3,
+.post-body h4 {
+  color: var(--wood-brown);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-body blockquote {
+  border-left: 4px solid var(--wood-brown);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+.post-body ul,
+.post-body ol {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-body li {
+  margin-bottom: 0.5rem;
+}
+
+/* Blog Post Cards */
+.blog-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: var(--wood-brown);
+  border-color: var(--wood-brown);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--wood-brown);
+  border-color: var(--wood-brown);
+}
+
+.pagination .page-link:hover {
+  background-color: var(--wood-lightest);
+  border-color: var(--wood-brown);
+  color: var(--wood-dark);
+}
+
+/* Footer */
+.site-footer {
+  background-color: #212529;
+}
+
+.site-footer a:hover {
+  color: var(--wood-light) !important;
+}
+
+/* Utility Classes */
+.shadow-wood {
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+.border-wood {
+  border-color: var(--wood-brown) !important;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact Form */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--wood-brown);
+  box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Breadcrumb */
+.breadcrumb-item.active {
+  color: var(--wood-brown);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--wood-brown);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--wood-brown);
+  color: white;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--wood-dark);
+  transform: translateY(-5px);
+}
+
+/* Loading Spinner */
+.spinner-wood {
+  border-color: var(--wood-brown);
+  border-right-color: transparent;
+}
+
+/* Post Content - List Items with Icons */
+.post-content ul,
+.post-content ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-content li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.post-content li::before {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+/* Fix for emoji checkmark lists in blog posts */
+.post-content p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Heading size adjustments for better hierarchy */
+.post-body h3,
+h3.h3 {
+  font-size: 1.4rem !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.3;
+}
+
+.post-body h4,
+h4.h4 {
+  font-size: 1.25rem !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.post-body h5,
+h5.h5 {
+  font-size: 1.1rem !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.post-body h6,
+h6.h6 {
+  font-size: 1rem !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* Desktop layout: h4 and description on separate lines */
+@media (min-width: 769px) {
+  .card-body li:not(.tips-desain-list li),
+  .post-body li:not(.tips-desain-list li) {
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+
+  /* Icon and h4 on first line */
+  .card-body li:not(.tips-desain-list li) > i,
+  .post-body li:not(.tips-desain-list li) > i {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+
+  /* h4 stays inline with icon */
+  .card-body li:not(.tips-desain-list li) h4.h4,
+  .post-body li:not(.tips-desain-list li) h4.h4 {
+    display: inline !important;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Force description to next line */
+  h4.h4 + p.small,
+  h4.h4 ~ p.small {
+    display: block !important;
+    width: calc(100% - 1.75rem);
+    margin-left: 1.75rem !important; /* Align with h4 text, accounting for icon width */
+    padding-left: 0 !important;
+  }
+
+  /* Tips Desain List - Exception for proper icon/text alignment */
+  .card-body .tips-desain-list li {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+  }
+
+  .card-body .tips-desain-list li .bi {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    margin-right: 0.5rem;
+  }
+
+  .card-body .tips-desain-list .tips-item-content {
+    flex: 1;
+  }
+}
+
+/* Ensure text wraps properly on mobile */
+@media (max-width: 768px) {
+  .post-content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .post-content p,
+  .post-content li {
+    hyphens: auto;
+  }
+
+  /* Fix h4 heading display on mobile - reduce font size and enable wrapping */
+  .post-body h4,
+  h4.h4 {
+    font-size: 1.05rem !important;
+    display: inline !important;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Force description text to next line on mobile */
+  h4.h4 + p.small,
+  h4.h4 ~ p.small {
+    display: block !important;
+    margin-left: 1.75rem !important; /* Align with h4 text, accounting for icon width */
+    width: calc(100% - 1.75rem);
+    padding-left: 0 !important;
+  }
+
+  /* Keep list items in row layout but allow wrapping */
+  .card-body li:not(.tips-desain-list li),
+  .post-body li:not(.tips-desain-list li) {
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+
+  /* Icon stays inline with h4 */
+  .card-body li:not(.tips-desain-list li) > i,
+  .post-body li:not(.tips-desain-list li) > i {
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+  }
+
+  /* Tips Desain List - Exception for proper icon/text alignment on mobile */
+  .card-body .tips-desain-list li {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+  }
+
+  .card-body .tips-desain-list li .bi {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    margin-right: 0.5rem;
+  }
+
+  .card-body .tips-desain-list .tips-item-content {
+    flex: 1;
+  }
+}

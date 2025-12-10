@@ -1,0 +1,490 @@
+/* ==========================================================================
+   Utility Classes - Kayu Dolken Gelam
+   ========================================================================== */
+
+/* Image Heights */
+.img-height-180 {
+  height: $card-image-height-sm;
+}
+
+.img-height-200 {
+  height: $card-image-height;
+}
+
+.img-height-250 {
+  height: $card-image-height-md;
+}
+
+/* Object Fit */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Icon Sizes */
+.icon-sm {
+  font-size: $icon-size-sm;
+}
+
+.icon-md {
+  font-size: $icon-size-md;
+}
+
+.icon-lg {
+  font-size: $icon-size-lg;
+}
+
+/* Font Sizes */
+.text-xs {
+  font-size: $font-size-xs;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+/* Display Flex Utilities */
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Gradients */
+.bg-gradient-wood {
+  background: linear-gradient(135deg, $wood-brown 0%, $wood-light 100%);
+}
+
+.bg-wood-gradient {
+  background: linear-gradient(135deg, $wood-brown 0%, #A0522D 50%, #CD853F 100%);
+}
+
+/* Width & Height Utilities */
+.w-50 {
+  width: 50px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+.w-70 {
+  width: 70px;
+}
+
+.h-50 {
+  height: 50px;
+}
+
+.h-60 {
+  height: 60px;
+}
+
+.h-70 {
+  height: 70px;
+}
+
+/* Font Size REM Utilities */
+.fs-1-25rem {
+  font-size: 1.25rem;
+}
+
+.fs-1-5rem {
+  font-size: 1.5rem;
+}
+
+.fs-2-5rem {
+  font-size: 2.5rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
+}
+
+.fs-5rem {
+  font-size: 5rem;
+}
+
+.fs-10rem {
+  font-size: 10rem;
+}
+
+/* Opacity Utilities */
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-85 {
+  opacity: 0.85;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.opacity-95 {
+  opacity: 0.95;
+}
+
+/* ==========================================================================
+   Posts Block Utilities
+   ========================================================================== */
+
+/* Hover Effects */
+.hover-lift {
+  transition: $transition-transform;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-md !important;
+  }
+}
+
+/* Icon Box */
+.icon-box {
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Icon Wrapper for Posts */
+.icon-wrapper {
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow-sm;
+}
+
+/* Aplikasi Section */
+.aplikasi-sub-section {
+  h4 {
+    transition: $transition-default;
+
+    span {
+      transition: $transition-default;
+    }
+  }
+
+  &:hover h4 span {
+    padding-left: 5px;
+  }
+}
+
+.icon-align-h4 {
+  margin-top: 2px;
+}
+
+/* H4 Icon Text Alignment - for tips-praktis and tutorial blocks */
+.h4-icon-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 0;
+
+  i {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+  }
+
+  span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  + .paragraph {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
+/* Detail items in tutorial cards */
+.detail_1,
+.detail_2,
+.detail_3 {
+  min-width: 0;
+}
+
+.aplikasi-umum-kayu-dolken {
+  .card-header {
+    transition: $transition-default;
+  }
+
+  .card:hover .card-header {
+    transform: translateX(5px);
+  }
+}
+
+/* Kesimpulan Background Gradient */
+.bg-gradient {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Button Wood */
+.btn-wood {
+  background-color: $wood-brown;
+  border-color: $wood-brown;
+  color: white;
+
+  &:hover {
+    background-color: $wood-dark;
+    border-color: $wood-dark;
+    color: white;
+  }
+}
+
+/* Post Body Heading Margin Fix */
+.post-body .card-header h2, .post-body .card-header h3, .post-body .card-header h4, .post-body .card-header h5, .post-body .card-header h6{
+  margin-top:0;
+}
+
+.post-body .card-body h2, .post-body .card-body h3, .post-body .card-body h4, .post-body .card-body h5, .post-body .card-body h6{
+  margin-top:0;
+}
+
+/* Tips Icon Circle */
+.tip-icon-circle {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+}
+
+/* Circle Icon Utilities - Perfect Circles with Fixed Sizes */
+.circle-icon-sm {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.circle-icon-md {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.circle-icon-lg {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.circle-icon-xl {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+/* Comparison Table */
+.comparison-table {
+  th {
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+
+  td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+  }
+
+  tbody tr {
+    transition: $transition-fast;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.02);
+    }
+  }
+}
+
+/* Testimoni Card */
+.testimoni-card {
+  transition: $transition-default;
+
+  &:hover {
+    transform: translateX(5px);
+    box-shadow: $shadow-md !important;
+  }
+}
+
+.testimoni-icon-wrapper {
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Testimonial Quote Background Decoration */
+.testimonial-quote-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 4rem;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  opacity: 0.1;
+}
+
+/* ==========================================================================
+   Block Header Gradients (Perawatan Article)
+   ========================================================================== */
+
+/* Main Section Headers */
+.bg-gradient-green-header {
+  background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+}
+
+.bg-gradient-blue-header {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+}
+
+.bg-gradient-orange-header {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 50%, #b45309 100%);
+}
+
+.bg-gradient-cyan-header {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #155e75 100%);
+}
+
+.bg-gradient-purple-header {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 50%, #6d28d9 100%);
+}
+
+.bg-gradient-red-header {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);
+}
+
+/* Card Headers - Two Color Gradients */
+.bg-gradient-blue-card {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.bg-gradient-green-card {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bg-gradient-cyan-card {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.bg-gradient-orange-card {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.bg-gradient-info-card {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.bg-gradient-warning-card {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.bg-gradient-danger-card {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.bg-gradient-primary-card {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+/* Dynamic Color Gradients for Cards */
+.bg-gradient-card-info {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.bg-gradient-card-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.bg-gradient-card-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.bg-gradient-card-warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+/* ==========================================================================
+   Tentang Kota Block Styling
+   ========================================================================== */
+
+/* Tentang Kota Overview */
+.tentang-kota-overview {
+  border-left: 4px solid #3b82f6 !important;
+}
+
+/* Tentang Kota Section 1 */
+.tentang-kota-1 {
+  .card {
+    border-left: 3px solid #3b82f6;
+  }
+}
+
+/* Tentang Kota Section 2 */
+.tentang-kota-2 {
+  .card {
+    border-left: 3px solid #10b981;
+  }
+}
+
+/* Tentang Kota List - Strong as Block */
+.tentang-kota-list {
+  li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+
+    .bi-check-circle-fill {
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+    }
+  }
+
+  .tentang-kota-list-content {
+    flex: 1;
+    display: block;
+
+    strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+  }
+}
+
+/* Tips Desain List - Icon & Text Alignment */
+.card-body .tips-desain-list {
+  li {
+    display: flex !important;
+    align-items: flex-start !important;
+    line-height: 1.6;
+    flex-wrap: nowrap !important;
+
+    .bi {
+      flex-shrink: 0;
+      margin-top: 0.125rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .tips-item-content {
+    flex: 1;
+    display: block;
+  }
+}
+
