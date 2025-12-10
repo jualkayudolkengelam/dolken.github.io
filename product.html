@@ -1,0 +1,49 @@
+---
+layout: page
+title: Produk Kayu Dolken Gelam
+description: Daftar lengkap kayu dolken gelam panjang 4 meter dengan berbagai ukuran diameter. Harga kompetitif langsung dari supplier.
+keywords: harga kayu dolken gelam, jual dolken gelam 4 meter, dolken gelam murah
+image: /assets/images/jual-kayu-dolken-gelam-product-page-001.jpeg
+schema_type: CollectionPage
+custom_schema:
+  - schema/schema--product-catalog.html
+---
+
+<!-- Breadcrumb Navigation -->
+{% include reusable/block--breadcrumb.html current_title="Produk" %}
+
+<!-- Product Intro Section -->
+<section class="product-intro-section py-3">
+  {% include reusable/block--product-intro.html %}
+</section>
+
+<div class="container">
+<!-- Product List Component (with Schema) -->
+{% include reusable/block--product-list.html %}
+
+</div><!-- /.container -->
+
+<!-- Features Section -->
+<section class="product-features-section py-5">
+  {% include reusable/block--product-features.html %}
+</section>
+
+<!-- Application Examples Section -->
+<section class="application-examples-section py-5 bg-light">
+  {% include reusable/block--product-applications.html %}
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-wood text-white">
+  {% include reusable/block--cta-order.html
+     title="Tertarik dengan Produk Kami?"
+     subtitle="Hubungi kami sekarang untuk konsultasi gratis, info stok terkini, dan penawaran khusus!"
+  %}
+</section>
+
+<div class="container">
+<!-- Schemas for this page -->
+
+<!-- Product List Schema (ItemList with Product items) -->
+{% include schema/schema--product-list.html %}
+</div><!-- /.container -->
