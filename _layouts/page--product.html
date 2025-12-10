@@ -1,0 +1,157 @@
+{% comment %}
+============================================================================
+Page Wrapper: Product Pages (page--product.html)
+============================================================================
+
+@file        page--product.html
+@path        _layouts/page--product.html
+@type        Page (wrapper - variant)
+@variant     product (product detail pages)
+@description Product page wrapper with product-specific includes
+@author      arisciwek
+
+Drupal-style naming: page--product.html (variant of page.html)
+
+This is the product page wrapper, created to separate product-specific
+includes from the pure entity content (node--product.html).
+
+Architecture Principle:
+- Node templates = Pure entity content (no includes)
+- Page wrappers = Container for page-type-specific includes
+
+Related templates:
+- page.html (base page wrapper)
+- node--product.html (product entity content)
+
+Used by:
+- _products/*.md (all product pages)
+
+Site Structure:
+- HTML doctype and lang attribute
+- head.html (meta tags, CSS, scripts)
+- schema--product-page.html (combined product schema)
+- header.html (logo, navigation menu)
+- main.main-content:
+  - {{ content }} renders node--product.html (pure product entity)
+  - block--related-product--by-node.html (related products by category)
+  - block--related-content--by-node.html (related articles & tips)
+  - block--product-list.html (full product catalog)
+- footer.html (site footer with business info)
+- block--cta--whatsapp.html (floating WhatsApp button)
+
+Usage:
+Set in node--product.html frontmatter:
+  ---
+  layout: page--product
+  ---
+
+Hierarchy:
+_products/kayu-dolken-6-8cm.md
+└── node--product.html (layout: page--product)
+    └── page--product.html (this file - product wrapper)
+        ├── schema--product-page.html
+        ├── header.html
+        ├── {{ content }} renders node--product.html
+        ├── block--related-product--by-node.html
+        ├── block--related-content--by-node.html (artikel panduan)
+        ├── block--product-list.html
+        └── footer.html
+
+Architecture Principle:
+- Node = Pure entity (produk itu sendiri)
+- Page wrapper = Site structure + related blocks
+- All includes belong in page wrapper, NOT in node template!
+
+============================================================================
+{% endcomment %}<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'id' }}">
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+
+  <main class="main-content">
+    {{ content }}
+
+    <!-- Product-specific includes -->
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12">
+          {% include reusable/block--related-product--by-node.html %}
+        </div>
+      </div>
+
+      <!-- Related Articles Section -->
+      {% assign all_posts = site.posts | concat: site.post_with_city %}
+      {% if all_posts.size > 0 %}
+      <div class="row mt-5">
+        <div class="col-12">
+          {% include reusable/block--related-content--by-node.html title="Artikel Panduan & Tips" %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include reusable/block--cta--whatsapp.html %}
+
+  <!-- Collect all schemas at bottom before </body> -->
+
+  <!-- Product Page Schema (WebPage + Product in @graph) -->
+  {% include schema/schema--product-page.html product=page %}
+
+  <!-- HowTo Schema for Product Ordering Process (Priority) -->
+  {% if page.cara_pemesanan.langkah %}
+    {% include schema/schema--howto-product-pemesanan.html %}
+  {% endif %}
+
+  <!-- Breadcrumb Schema (BreadcrumbList) -->
+  {% include schema/schema--breadcrumb.html current_title=page.title %}
+
+  <!-- Image Gallery Schema (ImageGallery) -->
+  {% if page.images.size > 0 %}
+    {% include schema/schema--carousel--image.html images=page.images title=page.title %}
+  {% endif %}
+
+  <!-- Related Products Schema (ItemList with Product items) -->
+  {% comment %}
+  NOTE: final_products is set inside block--related-product--by-node.html
+  Variable is available in parent scope
+  {% endcomment %}
+  {% if final_products.size > 0 %}
+    {% include schema/schema--related-product--by-node.html products=final_products %}
+  {% endif %}
+
+  <!-- Related Articles Schema (ItemList with BlogPosting items) -->
+  {% comment %}
+  NOTE: final_posts is set inside block--related-content--by-node.html
+  Variable is available in parent scope
+  {% endcomment %}
+  {% if final_posts.size > 0 %}
+    {% include schema/schema--related-content--by-node.html posts=final_posts title="Artikel Panduan & Tips" %}
+  {% endif %}
+
+  <!-- FAQ Schema for Product Recommendations -->
+  {% if page.faq_rekomendasi.items %}
+    {% include schema/schema--faq-rekomendasi.html %}
+  {% endif %}
+
+  <!-- Area Pengiriman Schema (areaServed) -->
+  {% include schema/schema--area-pengiriman.html %}
+
+  <!-- Harga dan Pengiriman Schema (Offer + Payment Method) -->
+  {% comment %} DISABLED: Duplicate Offer already in schema--product-page.html {% endcomment %}
+  {% comment %} {% include schema/schema--harga-pengiriman.html %} {% endcomment %}
+
+  <!-- Product Features Schema (Specifications + Advantages) -->
+  {% if page.spesifikasi or page.keunggulan %}
+    {% include schema/schema--product-features.html %}
+  {% endif %}
+
+  <!-- Review Form (Floating Button + Modal) -->
+  {% include review-form-product.html %}
+  <script src="{{ '/assets/js/review-modal.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/review-form.js' | relative_url }}"></script>
+</body>
+</html>

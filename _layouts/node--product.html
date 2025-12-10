@@ -1,0 +1,222 @@
+---
+layout: page--product
+---
+{% comment %}
+============================================================================
+Content Template: Product Detail (node--product.html)
+============================================================================
+
+@file        node--product.html
+@path        _layouts/node--product.html
+@type        Node (content template - variant)
+@variant     product (product details)
+@description Content template for individual product detail pages
+@author      arisciwek
+
+Drupal-style naming: node--product.html (variant of node.html)
+
+This template wraps in page.html and provides product detail structure with
+image gallery, specifications, pricing, and related products.
+
+Related templates:
+- node.html (base content template - fallback)
+- node--page.html (static page content)
+- node--post.html (blog post content)
+- node--post-with-city.html (city post with location content)
+
+Used by:
+- _products/*.md (all product markdown files)
+- Individual product detail pages (e.g., /products/kayu-dolken-6-8cm/)
+
+Features:
+- Product image gallery with carousel
+- Product specifications (diameter, length, weight)
+- Pricing information with currency
+- Rating and review count display
+- Pure entity content (no page-level includes)
+- Related content managed by page--product.html wrapper
+
+Styling:
+- Bootstrap classes: container, row, col-lg-6, py-5
+- Two-column layout (image | details)
+- Responsive grid for mobile/tablet
+- Custom classes: product-image, product-details, product-specs
+
+Data Expected in Frontmatter:
+  ---
+  layout: node--product
+  title: Product Name
+  description: Product description
+  diameter: "6-8 cm"
+  length: "4 meter"
+  weight: "20-25 kg"
+  price: 28000
+  currency: IDR
+  rating: 4.8
+  reviewCount: 156
+  images:
+    - /assets/images/product-001.jpeg
+    - /assets/images/product-002.jpeg
+  ---
+
+Hierarchy:
+page--product.html (wrapper with header/footer + related blocks)
+└── node--product.html (this file - pure product entity content)
+    └── {{ content }} (product description from _products/*.md)
+
+Note: Related products, related articles, and product list are handled
+by page--product.html wrapper, NOT in this node template.
+
+============================================================================
+{% endcomment %}
+
+<!-- Product Detail Page -->
+<div class="container py-5">
+  <div class="row">
+    <!-- Product Image -->
+    <div class="col-lg-6 mb-4">
+      {% if page.images %}
+      {% include reusable/block--carousel--image.html
+         carousel_id="productCarousel"
+         images=page.images
+         images_alt=page.images_alt
+         title=page.title
+         gallery_name="Galeri Produk Kayu Dolken"
+      %}
+      {% elsif page.image %}
+      <!-- Single Image -->
+      <div class="product-image-container">
+        <picture>
+          <source srcset="{{ page.image | replace: '.jpeg', '.webp' | relative_url }}" type="image/webp">
+          <img src="{{ page.image | relative_url }}"
+               class="img-fluid rounded shadow"
+               alt="{% if page.image_alt %}{{ page.image_alt }}{% else %}{{ page.title }}{% endif %}"
+               loading="eager">
+        </picture>
+      </div>
+      {% else %}
+      <!-- No Image -->
+      <div class="text-center p-5 bg-light rounded">
+        <i class="bi bi-image" style="font-size: 8rem; color: #ccc;"></i>
+        <p class="text-muted mt-3">Gambar produk akan segera ditambahkan</p>
+      </div>
+      {% endif %}
+
+      <!-- Trust Badges (below carousel) -->
+      {% include reusable/block--trust-badges.html %}
+    </div>
+
+    <!-- Product Info -->
+    <div class="col-lg-6">
+      {% include reusable/block--breadcrumb.html current_title=page.title %}
+
+      <h1 class="display-5 fw-bold text-wood mb-3">{{ page.title }}</h1>
+
+      {% if page.popular %}
+      <span class="badge bg-warning text-dark mb-3"><i class="bi bi-star-fill me-1"></i> Produk Populer</span>
+      {% endif %}
+
+      <!-- Rating Display -->
+      {% if page.rating %}
+      <div class="product-rating mb-3">
+        <span class="text-warning me-2">
+          {% assign rating = page.rating %}
+          {% for i in (1..5) %}
+            {% if i <= rating %}
+              <i class="bi bi-star-fill"></i>
+            {% else %}
+              <i class="bi bi-star"></i>
+            {% endif %}
+          {% endfor %}
+        </span>
+        <span class="text-muted">
+          <strong>{{ page.rating }}/5</strong> ({{ page.review_count | default: 0 }} review)
+        </span>
+      </div>
+      {% endif %}
+
+      <div class="product-price-large mb-4">
+        <span class="h2 text-wood fw-bold">Rp {{ page.price | rupiah }}</span>
+        <p class="text-muted">per batang (4 meter)</p>
+        <p class="small text-success"><i class="bi bi-check-circle-fill me-1"></i> Harga sudah termasuk ongkir</p>
+      </div>
+
+      <!-- H2: Informasi Produk -->
+      <div class="mb-4">
+        <h2 class="visually-hidden">Informasi Produk</h2>
+
+        <!-- H3: Spesifikasi -->
+        <div class="card border-0 shadow-sm mb-4">
+          <div class="card-body">
+            <h3 class="h5 text-wood mb-3"><i class="bi bi-info-circle me-2"></i>Spesifikasi</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><strong>Diameter:</strong> {{ page.diameter }}</li>
+              <li class="mb-2"><strong>Panjang:</strong> 4 meter</li>
+              <li class="mb-2"><strong>Material:</strong> Kayu Gelam Asli</li>
+              <li class="mb-2"><strong>SKU:</strong> {{ page.sku }}</li>
+              <li class="mb-2"><strong>Stok:</strong> <span class="text-success">Ready Stock</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CTA Section (Full Width) -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card border-0 shadow-lg" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+        <div class="card-body text-center py-5 px-4">
+          <div class="mb-3">
+            <i class="bi bi-telephone-fill text-white mb-3" style="font-size: 3rem;"></i>
+          </div>
+          <h2 class="h3 text-white fw-bold mb-2">Hubungi Kami Sekarang!</h2>
+          <p class="text-white mb-2" style="opacity: 0.95; font-size: 1.1rem;">
+            Siap Melayani Kebutuhan {{ page.title }}!
+          </p>
+          <p class="text-white mb-4" style="opacity: 0.9;">
+            <i class="bi bi-whatsapp me-2"></i>Telepon / WhatsApp: <strong>{{ site.business.phone }}</strong>
+          </p>
+          <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20pesan%20{{ page.title }}%20-%20Rp%20{{ page.price | rupiah }}"
+             class="btn btn-light btn-lg px-5 py-3"
+             target="_blank"
+             style="font-size: 1.2rem; font-weight: 600; border-radius: 50px;">
+            <i class="bi bi-whatsapp me-2"></i>Chat WhatsApp Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- H2: Deskripsi Produk -->
+  {% if content != '' %}
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-wood text-white">
+          <h2 class="h4 mb-0"><i class="bi bi-file-text me-2"></i>Deskripsi Produk</h2>
+        </div>
+        <div class="card-body p-4">
+          <div class="product-description">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Customer Reviews Section -->
+  <div class="row mt-5">
+    <div class="col-12">
+      {% include products/block--product-review.html product=page %}
+    </div>
+  </div>
+</div>
+
+<!-- Initialize Carousel -->
+{% if page.images %}
+<script src="{{ '/assets/js/carousel.js' | relative_url }}" defer></script>
+{% endif %}

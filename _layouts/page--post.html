@@ -1,0 +1,216 @@
+{% comment %}
+============================================================================
+Page Wrapper: Blog Post Pages (page--post.html)
+============================================================================
+
+@file        page--post.html
+@path        _layouts/page--post.html
+@type        Page (wrapper - variant)
+@variant     post (blog post pages)
+@description Blog post page wrapper with post-specific includes
+@author      arisciwek
+
+Drupal-style naming: page--post.html (variant of page.html)
+
+This is the blog post page wrapper, created to separate post-specific
+includes from the pure entity content (node--post.html, node--post-with-city.html).
+
+Architecture Principle:
+- Node templates = Pure entity content (no includes)
+- Page wrappers = Container for page-type-specific includes
+
+Related templates:
+- page.html (base page wrapper)
+- node--post.html (blog post entity content)
+- node--post-with-city.html (city post entity content)
+
+Used by:
+- _posts/*.md (all blog posts)
+- _post_with_city/*.md (all city-based posts)
+
+Site Structure:
+- HTML doctype and lang attribute
+- head.html (meta tags, CSS, scripts)
+- Article schema (WebPage + BlogPosting in @graph)
+- header.html (logo, navigation menu)
+- main.main-content:
+  - {{ content }} renders node--post.html or node--post-with-city.html
+  - block--related-content--by-node.html (related articles)
+  - block--product-list.html (optional product catalog for conversions)
+- footer.html (site footer with business info)
+- block--cta--whatsapp.html (floating WhatsApp button)
+
+Usage:
+Set in node--post.html or node--post-with-city.html frontmatter:
+  ---
+  layout: page--post
+  ---
+
+Hierarchy:
+_posts/2025-11-20-article-title.md (frontmatter: layout: node--post)
+└── node--post.html (layout: page--post)
+    └── page--post.html (this file - post wrapper)
+        ├── Article schema
+        ├── header.html
+        ├── {{ content }} renders node--post.html
+        ├── block--related-content--by-node.html (artikel terkait)
+        ├── block--product-list.html (katalog produk untuk konversi)
+        └── footer.html
+
+Architecture Principle:
+- Node = Pure entity (artikel itu sendiri)
+- Page wrapper = Site structure + related blocks
+- All includes belong in page wrapper, NOT in node template!
+
+============================================================================
+{% endcomment %}<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'id' }}">
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+
+  <main class="main-content">
+    {{ content }}
+
+    <!-- Post-specific includes -->
+    <div class="container">
+      <!-- Article Feedback (Like/Dislike - Quick Engagement) -->
+      <div class="row">
+        <div class="col-12">
+          {% include posts/block--article-feedback.html %}
+        </div>
+      </div>
+
+      <!-- Article Reviews (Star Rating - Detailed Reviews + Google SERP) -->
+      <div class="row">
+        <div class="col-12">
+          {% include posts/block--article-reviews.html article=page %}
+        </div>
+      </div>
+
+      <!-- Related Articles Block -->
+      {% assign all_posts = site.posts | concat: site.post_with_city %}
+      {% if all_posts.size > 1 %}
+      <div class="row mt-5">
+        <div class="col-12">
+          {% include reusable/block--related-content--latest.html %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </main>
+
+  {% include footer.html %}
+  {% include reusable/block--cta--whatsapp.html %}
+
+  <!-- Collect all schemas at bottom before </body> -->
+
+  <!-- Breadcrumb Schema (BreadcrumbList) -->
+  {% include schema/schema--breadcrumb.html current_title=page.title parent_name="Blog" parent_url="/blog/" %}
+
+  <!-- Image Gallery Schema (ImageGallery) -->
+  {% if page.images.size > 0 %}
+    {% include schema/schema--carousel--image.html images=page.images title=page.title %}
+  {% endif %}
+
+  <!-- Article Schema (BlogPosting/Article) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description | strip_html | strip_newlines | escape }}",
+    "url": "{{ page.url | absolute_url }}",
+    "image": "{% if page.images %}{{ page.images[0] | absolute_url }}{% elsif page.image %}{{ page.image | absolute_url }}{% endif %}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}",
+    "author": {
+      "@type": "Person",
+      "name": "{% if page.author %}{{ page.author }}{% else %}Admin{% endif %}"{% if page.author_url %},
+      "url": "{{ page.author_url }}"{% endif %}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.business.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ '/assets/images/jual-kayu-dolken-gelam-lokalbisnis-001.jpeg' | absolute_url }}"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page.url | absolute_url }}"
+    }
+  }
+  </script>
+
+  <!-- Product Schema with Rating (for Rich Results star rating) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{ page.title }}",
+    "description": "{{ page.description | strip_html | strip_newlines | escape }}",
+    "image": "{% if page.images %}{{ page.images[0] | absolute_url }}{% elsif page.image %}{{ page.image | absolute_url }}{% endif %}",
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ site.business.name }}"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "IDR",
+      "lowPrice": "4500",
+      "highPrice": "17000",
+      "offerCount": "5",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "{{ site.business.name }}"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{ page.rating | default: 4.6 }}",
+      "reviewCount": "{{ page.review_count | default: 28 }}",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": {% include schema/schema--article-reviews.html article=page output_format="array" %}
+  }
+  </script>
+
+  <!-- FAQ Schema (FAQPage) -->
+  {% comment %}
+  NOTE: FAQ data is set in page frontmatter (faq_pemesanan, faq_produk, faq_pengiriman)
+  Only include if page has FAQ data
+  {% endcomment %}
+  {% if page.faq_pemesanan or page.faq_produk or page.faq_pengiriman %}
+    {% include schema/schema--faq-kayu-dolken.html %}
+  {% endif %}
+
+  <!-- Related Articles Schema (ItemList) -->
+  {% comment %}
+  NOTE: all_related is set inside block--related-content--latest.html (in node--post.html)
+  Variable is available in parent scope
+  {% endcomment %}
+  {% if all_related.size > 0 %}
+    {% include schema/schema--related-content--latest.html posts=all_related %}
+  {% endif %}
+
+  <!-- Page-specific scripts -->
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script src="{{ js_file | relative_url }}"></script>
+    {% endfor %}
+  {% endif %}
+
+  <!-- Review Form (Floating Button + Modal) -->
+  {% include review-form-post.html %}
+  <script src="{{ '/assets/js/review-modal.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/review-form.js' | relative_url }}"></script>
+
+  <!-- Article Feedback (Like/Dislike) -->
+  <script src="{{ '/assets/js/article-feedback.js' | relative_url }}"></script>
+</body>
+</html>
