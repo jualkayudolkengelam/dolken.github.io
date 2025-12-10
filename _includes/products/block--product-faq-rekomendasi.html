@@ -1,0 +1,124 @@
+{% comment %}
+  ============================================================================
+  Product Rekomendasi Block Component
+  ============================================================================
+
+  @file        _includes/products/block--product-rekomendasi.html
+  @description Reusable component for product recommendations section
+               Supports 3 variations: General, Why Popular, vs Material Comparison
+
+  @version     1.0.0
+  @date        2025-11-19
+  @author      jualkayudolkengelam
+
+  Features:
+  ---------
+  - H2 heading (main section with 3 variations)
+  - H3 subheading for recommendations overview
+  - H4 for each recommendation category
+  - Flexible content structure
+  - Supports sub-sections with dynamic content
+  - Numbered lists or bullet points
+  - Conditional rendering based on frontmatter
+  - Card-based layout with icons
+
+  Parameters:
+  -----------
+  - page.rekomendasi: Object containing:
+    - tipe: Type of recommendation section (optional)
+      - "penggunaan" (default): General usage recommendations
+      - "why_popular": Why this diameter is popular (8-10cm)
+      - "vs_material": Comparison vs other materials (10-12cm)
+    - judul: Custom H3 title (optional, overrides default)
+    - sections: Array of section objects, each with:
+      - heading: Bold section heading
+      - deskripsi: Description text (optional)
+      - items: Array of items (numbered or bulleted)
+
+  Usage:
+  ------
+  In frontmatter (4-6cm, 6-8cm - General Recommendations):
+  ---
+  rekomendasi:
+    tipe: "penggunaan"
+    sections:
+      - heading: "Untuk Pagar:"
+        deskripsi: "Jarak ideal antar dolken 10-15 cm untuk pagar yang kuat dan rapat."
+      - heading: "Untuk Pergola/Gazebo:"
+        deskripsi: "Dapat digunakan sebagai tiang penyangga dengan jarak sesuai desain struktur."
+  ---
+
+  In frontmatter (8-10cm - Why Popular):
+  ---
+  rekomendasi:
+    tipe: "why_popular"
+    judul: "Mengapa Diameter 8-10 cm Paling Populer?"
+    sections:
+      - items:
+          - "Keseimbangan Sempurna - Kuat namun tidak terlalu berat untuk handling"
+          - "Standar Industri - Banyak digunakan kontraktor profesional"
+          - "Cost Effective - Harga per kekuatan paling ekonomis"
+  ---
+
+  In frontmatter (10-12cm - vs Material Comparison):
+  ---
+  rekomendasi:
+    tipe: "vs_material"
+    judul: "Keunggulan Kayu Gelam vs Material Lain"
+    sections:
+      - heading: "vs Beton:"
+        items:
+          - "Lebih fleksibel, tidak retak"
+          - "Lebih mudah dipasang dan dipindahkan"
+      - heading: "vs Kayu Biasa:"
+        items:
+          - "Tidak perlu pengawetan kimia"
+          - "Tahan rayap dan jamur alami"
+  ---
+
+  In content:
+  {% include products/block--product-rekomendasi.html %}
+
+  ============================================================================
+{% endcomment %}
+
+{% if page.faq_rekomendasi %}
+<!-- H2: Main Section Header -->
+<div class="my-5 faq_rekomendasi__header">
+  <div class="card border-0 shadow-lg">
+    <div class="card-body text-white text-center py-4 px-3" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);">
+      <i class="bi {{ page.faq_rekomendasi.header.icon }} mb-2 fs-2-5rem header__icon"></i>
+      <h2 class="h2 mb-0 fw-bold text-white header__judul">{{ page.faq_rekomendasi.header.judul }}</h2>
+      <p class="mb-0 mt-2 small header__tagline" style="opacity: 0.85;">
+        <i class="bi bi-bookmark-star me-1"></i>
+        {{ page.faq_rekomendasi.header.tagline }}
+        <i class="bi bi-bookmark-star ms-1"></i>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- H3: FAQ Overview -->
+<div class="my-4 faq_rekomendasi__intro">
+  <div class="d-flex align-items-center mb-3">
+    <div class="bg-info bg-opacity-10 px-3 py-2 rounded-3 flex-grow-1">
+      <h3 class="h4 mb-0 text-wood fw-bold intro__judul">
+        <i class="bi {{ page.faq_rekomendasi.intro.icon }} text-info me-2 intro__icon"></i>{{ page.faq_rekomendasi.intro.judul }}
+      </h3>
+      <p class="small text-muted mb-0 mt-1 intro__deskripsi">{{ page.faq_rekomendasi.intro.deskripsi }}</p>
+    </div>
+  </div>
+
+  <!-- FAQ Rekomendasi Section -->
+  {% for faq in page.faq_rekomendasi.items %}
+  <div class="card border-0 shadow-sm mb-3 faq_rekomendasi__item">
+    <div class="card-body">
+      <h4 class="h5 text-wood mb-2 fw-bold faq__pertanyaan">
+        <i class="bi bi-question-circle-fill text-info me-2"></i>{{ faq.pertanyaan }}
+      </h4>
+      <p class="text-muted mb-0 faq__jawaban">{{ faq.jawaban }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

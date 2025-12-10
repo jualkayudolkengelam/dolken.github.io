@@ -1,0 +1,154 @@
+{% comment %}
+  ============================================================================
+  Product Cara Pemesanan Block Component
+  ============================================================================
+
+  @file        _includes/products/block--product-cara-pemesanan.html
+  @description Fully dynamic component for product ordering steps
+               All content loaded from page.cara_pemesanan frontmatter
+
+  @version     3.0.0
+  @date        2025-11-25
+  @author      jualkayudolkengelam
+
+  Features:
+  ---------
+  - Fully dynamic from frontmatter
+  - H2 heading for SEO
+  - 6-step order process (configurable sections)
+  - Numbered card layout with icons
+  - WhatsApp CTA at the bottom
+  - Responsive grid layout
+
+  Parameters (from frontmatter):
+  ------------------------------
+  page.cara_pemesanan:
+    header:
+      judul: Main heading text
+      icon: Bootstrap icon class
+      deskripsi: Contact info or subtitle
+    intro:
+      judul: Section intro heading
+      icon: Bootstrap icon class
+      deskripsi: Intro description
+    sections: Array of section dividers
+      - judul: Section title
+        icon: Bootstrap icon class
+        deskripsi: Section description
+        range: Step range (e.g., "1-3")
+    langkah: Array of steps
+      - nomor: Step number
+        judul: Step title
+        deskripsi: Step description
+        icon: Bootstrap icon class
+        color: Bootstrap color theme
+    cta:
+      judul: CTA heading
+      icon: Bootstrap icon class
+      deskripsi: CTA description (HTML allowed)
+      tombol_text: Button text
+      tombol_url: Button URL
+
+  Usage:
+  ------
+  In content:
+  <section id="product-cara-pemesanan">
+    {% include products/block--product-cara-pemesanan.html %}
+  </section>
+
+  ============================================================================
+{% endcomment %}
+
+{% if page.cara_pemesanan %}
+  <!-- Header Section -->
+  <div class="my-5 cara_pemesanan__header">
+    <div class="card border-0 shadow-lg">
+      <div class="card-body text-white text-center py-4 px-3" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 50%, #be185d 100%);">
+        <i class="bi {{ page.cara_pemesanan.header.icon }} mb-2 fs-2-5rem header__icon"></i>
+        <h2 class="h2 mb-0 fw-bold text-white header__judul">{{ page.cara_pemesanan.header.judul }}</h2>
+        <p class="mb-0 mt-2 small header__deskripsi" style="opacity: 0.85;">
+          <i class="bi bi-phone me-1"></i>
+          {% assign deskripsi_parsed = page.cara_pemesanan.header.deskripsi | replace: '{{ site.business.phone }}', site.business.phone %}
+          {{ deskripsi_parsed }}
+          <i class="bi bi-phone ms-1"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro Section -->
+  {% if page.cara_pemesanan.intro %}
+  <div class="my-4 cara_pemesanan__intro">
+    <div class="d-flex align-items-center mb-3">
+      <div class="bg-danger bg-opacity-10 px-3 py-2 rounded-3 flex-grow-1">
+        <h3 class="h4 mb-0 text-wood fw-bold intro__judul">
+          <i class="bi {{ page.cara_pemesanan.intro.icon }} text-danger me-2 intro__icon"></i>{{ page.cara_pemesanan.intro.judul }}
+        </h3>
+        <p class="small text-muted mb-0 mt-1 intro__deskripsi">{{ page.cara_pemesanan.intro.deskripsi }}</p>
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Dynamic Sections with Steps -->
+  {% for section in page.cara_pemesanan.sections %}
+    <!-- Section Header -->
+    <div class="card border-0 shadow-sm {% if forloop.first %}{% else %}my-4{% endif %} cara_pemesanan__sections">
+      <div class="card-body bg-light py-3">
+        <h4 class="h4 text-wood mb-2 fw-bold sections__judul">
+          <i class="bi {{ section.icon }} me-2 sections__icon"></i>{{ section.judul }}
+        </h4>
+        <p class="small text-muted mb-0 sections__deskripsi">{{ section.deskripsi }}</p>
+      </div>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="row g-4 my-4 cara_pemesanan__langkah-grid">
+      {% assign range_parts = section.range | split: '-' %}
+      {% assign start_num = range_parts[0] | plus: 0 %}
+      {% assign end_num = range_parts[1] | plus: 0 %}
+
+      {% for step in page.cara_pemesanan.langkah %}
+        {% if step.nomor >= start_num and step.nomor <= end_num %}
+        <div class="col-md-6 col-lg-4 cara_pemesanan__langkah">
+          <div class="card border-0 shadow-sm h-100 hover-lift">
+            <div class="card-body text-center position-relative">
+              <div class="position-absolute top-0 start-50 translate-middle">
+                <div class="bg-{{ step.color }} text-white rounded-circle d-flex align-items-center justify-content-center fw-bold shadow w-60 h-60 fs-1-5rem langkah__nomor">
+                  {{ step.nomor }}
+                </div>
+              </div>
+              <div class="mt-4 pt-2">
+                <div class="bg-{{ step.color }} bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3 w-70 h-70 langkah__icon-wrapper">
+                  <i class="bi {{ step.icon }} text-{{ step.color }} langkah__icon" style="font-size: 2rem;"></i>
+                </div>
+                <h4 class="h6 text-wood mb-2 fw-bold langkah__judul">{{ step.judul }}</h4>
+                <p class="small text-muted mb-0 langkah__deskripsi">{{ step.deskripsi }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  <!-- WhatsApp CTA -->
+  {% if page.cara_pemesanan.cta %}
+  {% assign cta_deskripsi_parsed = page.cara_pemesanan.cta.deskripsi | replace: '{{ site.business.phone }}', site.business.phone %}
+  {% assign cta_url_parsed = page.cara_pemesanan.cta.tombol_url | replace: '{{ site.business.whatsapp }}', site.business.whatsapp %}
+  <div class="card border-0 shadow-lg my-4 cara_pemesanan__cta" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+    <div class="card-body text-white text-center py-4">
+      <i class="bi {{ page.cara_pemesanan.cta.icon }} mb-3 cta__icon" style="font-size: 3rem;"></i>
+      <h4 class="h5 mb-3 fw-bold cta__judul">{{ page.cara_pemesanan.cta.judul }}</h4>
+      <p class="mb-3 cta__deskripsi">{{ cta_deskripsi_parsed }}</p>
+      <a href="{{ cta_url_parsed }}" class="btn btn-light btn-lg px-5 cta__tombol" target="_blank">
+        <i class="bi {{ page.cara_pemesanan.cta.icon }} me-2"></i>{{ page.cara_pemesanan.cta.tombol_text }}
+      </a>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.cara_pemesanan.intro %}
+  </div>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,100 @@
+{% comment %}
+  ============================================================================
+  Product Area Pengiriman Block Component
+  ============================================================================
+
+  @file        _includes/products/block--product-area-pengiriman.html
+  @description Reusable component for product delivery area section
+
+  @version     2.0.0
+  @date        2025-11-19
+  @author      jualkayudolkengelam
+
+  Features:
+  ---------
+  - H2 heading with gradient green
+  - H3 subheading for delivery scope
+  - Card-based layout for each province
+  - Color-coded cards by region
+  - Responsive grid layout
+
+  Parameters:
+  -----------
+  - site.data.area_pengiriman: Global delivery area data from _data/area_pengiriman.yml
+
+  Usage:
+  ------
+  <section id="product-area-pengiriman">
+    {% include products/block--product-area-pengiriman.html %}
+  </section>
+
+  ============================================================================
+{% endcomment %}
+
+<!-- Header Section -->
+<div class="my-5 area_pengiriman__header">
+  <div class="card border-0 shadow-lg">
+    <div class="card-body text-white text-center py-4 px-3" style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);">
+      <i class="bi {{ site.data.area_pengiriman.header.icon }} mb-2 fs-2-5rem header__icon"></i>
+      <h2 class="h2 mb-0 fw-bold text-white header__judul">{{ site.data.area_pengiriman.header.judul }}</h2>
+      <p class="mb-0 mt-2 small header__tagline" style="opacity: 0.85;">
+        <i class="bi bi-truck me-1"></i>
+        {{ site.data.area_pengiriman.header.tagline }}
+        <i class="bi bi-truck ms-1"></i>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- H3: Cakupan Wilayah Pengiriman -->
+<div class="my-4 area_pengiriman__intro">
+  <div class="d-flex align-items-center mb-3">
+    <div class="bg-primary bg-opacity-10 px-3 py-2 rounded-3 flex-grow-1">
+      <h3 class="h4 mb-0 text-wood fw-bold intro__judul">
+        <i class="bi {{ site.data.area_pengiriman.intro.icon }} text-primary me-2 intro__icon"></i>{{ site.data.area_pengiriman.intro.judul }}
+      </h3>
+      <p class="small text-muted mb-0 mt-1 intro__deskripsi">{{ site.data.area_pengiriman.intro.deskripsi }}</p>
+    </div>
+  </div>
+
+  <!-- Province Cards -->
+  <div class="row g-3 my-4 area_pengiriman__provinsi">
+    {% for provinsi in site.data.area_pengiriman.provinsi %}
+    <div class="col-md-6 col-lg-4 provinsi__item">
+      <div class="card border-0 shadow-sm h-100 hover-lift">
+        <div class="card-header bg-{{ provinsi.color }} {% if provinsi.color == 'warning' %}text-dark{% else %}text-white{% endif %} provinsi__header">
+          <h4 class="h5 mb-0 provinsi__nama">
+            <i class="bi {{ provinsi.icon }} me-2 provinsi__icon"></i>{{ provinsi.nama }}
+          </h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled small mb-0 provinsi__kota">
+            {% assign random_kota = provinsi.kota | sample: 5 %}
+            {% for kota in random_kota %}
+            <li class="mb-1 kota__item">
+              <i class="bi bi-check-circle-fill text-success me-2 kota__icon"></i>{{ kota }}
+            </li>
+            {% endfor %}
+            <li class="mb-0 text-muted kota__more">
+              <i class="bi bi-three-dots me-2"></i>dan lain-lain
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Info Alert -->
+  <div class="card border-0 shadow-sm mt-4 area_pengiriman__cta" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+    <div class="card-body text-white py-3">
+      <div class="d-flex align-items-center">
+        <i class="bi {{ site.data.area_pengiriman.cta.icon }} fs-3 me-3 cta__icon"></i>
+        <div>
+          <p class="mb-1 fw-bold cta__judul">{{ site.data.area_pengiriman.cta.judul }}</p>
+          <p class="mb-0 small cta__deskripsi">{{ site.data.area_pengiriman.cta.deskripsi }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
