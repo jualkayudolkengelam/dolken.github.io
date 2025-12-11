@@ -41,6 +41,25 @@ sitemap: false
 {%- endif %}
 </url>
 {%- endfor %}
+{%- for post in site.post_with_city %}
+<url>
+<loc>{{ post.url | absolute_url }}</loc>
+<lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
+{%- if post.images %}
+{%- for img in post.images %}
+<image:image>
+<image:loc>{{ img | absolute_url }}</image:loc>
+{%- if post.images_alt %}{% assign idx = forloop.index0 %}{% if post.images_alt[idx] %}<image:title>{{ post.images_alt[idx] | xml_escape }}</image:title>{% endif %}{% endif %}
+</image:image>
+{%- endfor %}
+{%- elsif post.image %}
+<image:image>
+<image:loc>{{ post.image | absolute_url }}</image:loc>
+{%- if post.image_alt %}<image:title>{{ post.image_alt | xml_escape }}</image:title>{% endif %}
+</image:image>
+{%- endif %}
+</url>
+{%- endfor %}
 {%- for page in site.pages %}
 {%- unless page.sitemap == false or page.url contains '/assets/' or page.url contains 'sitemap' %}
 {%- if page.url %}
