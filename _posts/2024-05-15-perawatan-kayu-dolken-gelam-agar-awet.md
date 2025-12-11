@@ -24,7 +24,7 @@ images_alt:
 - "Pemeriksaan kondisi kayu dolken secara berkala untuk mendeteksi tanda kerusakan awal seperti retak lubang rayap atau perubahan warna"
 - "Hasil perawatan kayu dolken yang rutin menunjukkan kondisi tetap prima dengan warna natural terjaga dan struktur tetap kuat puluhan tahun"
 url: "/2024/05/15/perawatan-kayu-dolken-gelam-agar-awet/"
-excerpt: "Panduan lengkap merawat kayu dolken gelam untuk memaksimalkan umur pakai hingga puluhan tahun dengan perawatan minimal."
+excerpt: "Petunjuk praktis perawatan kayu dolken gelam supaya tetap prima dan bertahan puluhan tahun dengan treatment yang mudah dilakukan."
 rating: 4.6
 review_count: 24
 like_count: 3
@@ -78,11 +78,11 @@ perawatan_aplikasi:
       frekuensi: Setiap 1-2 bulan
       icon: bi-droplet-fill
       steps:
-      - Sikat dengan sikat berbulu lembut untuk hilangkan debu
-      - Cuci dengan air bersih menggunakan selang
-      - Untuk kotoran membandel, gunakan sabun kayu mild
-      - Bilas hingga bersih
-      - Biarkan kering natural (jangan di bawah matahari langsung)
+      - Gosok menggunakan sikat berbulu halus untuk menyingkirkan debu
+      - Siram dengan air bersih memakai selang
+      - Untuk noda yang sulit, pakai sabun kayu ringan
+      - Bilas sampai bersih
+      - Biarkan mengering secara alami (hindari terik matahari langsung)
       dont:
       - Gunakan pressure washer (bisa merusak serat)
       - Pakai chemical harsh (bleach, dll)
@@ -91,10 +91,10 @@ perawatan_aplikasi:
       frekuensi: Setiap 6-12 bulan
       icon: bi-droplet-half
       fungsi:
-      - Melindungi dari kerusakan sinar UV
-      - Mempertahankan warna alami
-      - Mencegah kayu terlalu kering
-      - Memberi tampilan satin yang indah
+      - Memberikan proteksi dari paparan sinar UV
+      - Menjaga warna natural kayu
+      - Mencegah permukaan kayu mengering
+      - Menghasilkan tampilan satin yang menarik
       produk:
       - Minyak Jati (Teak Oil)
       - Minyak Biji Rami (Linseed Oil)
@@ -383,9 +383,9 @@ diy_vs_professional:
     - Pest infestation (rare tapi jika terjadi)
     - Complex installation
 kesimpulan:
-  ringkasan: Kayu dolken gelam adalah investasi yang luar biasa value for money-nya.
-    Dengan perawatan yang tepat dan konsisten, kayu ini bisa bertahan 30-50 tahun
-    dengan biaya maintenance yang sangat rendah.
+  ringkasan: Kayu dolken gelam merupakan pilihan investasi yang sangat menguntungkan.
+    Melalui perawatan rutin dan konsisten, material ini mampu bertahan 30-50 tahun
+    dengan ongkos pemeliharaan yang minimal.
   poin_penting:
   - Lifespan bisa mencapai 30-50 tahun
   - Maintenance cost sangat rendah (< Rp 1000/batang/tahun)
@@ -397,8 +397,8 @@ kesimpulan:
   - Prevention lebih murah dari repair
   - Document your maintenance untuk future reference
   cta_text: Beli Kayu Dolken Berkualitas, Perawatan Lebih Mudah!
-  cta_description: 'Kayu dolken gelam berkualitas tinggi dari kami lebih mudah dirawat
-    karena: Grade A bebas defect, properly dried, dan natural resistance optimal.'
+  cta_description: 'Kayu dolken gelam premium dari kami lebih praktis perawatannya
+    berkat: kualitas Grade A tanpa cacat, pengeringan sempurna, dan ketahanan alami yang optimal.'
   cta_link: "/kontak"
 total_updates: 10
 last_modified_at: '2025-11-24 20:33:34 +0700'
@@ -409,7 +409,7 @@ last_modified_at: '2025-11-24 20:33:34 +0700'
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9">
         <p class="lead text-muted">
-          Meskipun kayu dolken gelam terkenal dengan ketahanannya yang luar biasa, perawatan yang tepat dapat memperpanjang umur pakainya hingga 30-50 tahun atau bahkan lebih. Artikel ini akan membahas cara merawat kayu dolken gelam dengan benar.
+          Kayu dolken gelam memang dikenal sangat tahan lama secara alami, namun perawatan yang baik dapat memaksimalkan usia pakainya mencapai 30-50 tahun bahkan lebih lama. Panduan ini mengulas langkah-langkah merawat kayu dolken gelam secara optimal.
         </p>
       </div>
     </div>

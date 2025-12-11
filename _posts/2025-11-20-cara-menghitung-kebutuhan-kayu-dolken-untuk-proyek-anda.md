@@ -53,8 +53,8 @@ share_count: 0
 # INTRO SECTION (REQUIRED)
 # ============================================================================
 intro:
-  headline: "Menghitung kebutuhan kayu dolken dengan tepat adalah kunci kesuksesan proyek konstruksi Anda"
-  deskripsi: "Perhitungan yang akurat tidak hanya menghemat biaya, tetapi juga memastikan proyek berjalan lancar tanpa kekurangan atau kelebihan material. Dalam panduan ini, Anda akan mempelajari metode praktis untuk menghitung kebutuhan kayu dolken dengan tepat, lengkap dengan contoh perhitungan dan tips dari ahli."
+  headline: "Kalkulasi kebutuhan kayu dolken secara akurat merupakan faktor penentu keberhasilan proyek konstruksi Anda"
+  deskripsi: "Estimasi yang presisi tidak sekadar menghemat pengeluaran, melainkan juga menjamin kelancaran proyek tanpa masalah kekurangan atau kelebihan material. Melalui panduan ini, Anda akan mempelajari cara praktis mengestimasi kebutuhan kayu dolken secara tepat, disertai contoh kalkulasi dan saran dari praktisi."
   highlight_title: "Yang Akan Anda Pelajari:"
   highlight_points:
     - "Metode perhitungan kebutuhan kayu dolken yang akurat dan mudah dipahami"
@@ -69,7 +69,7 @@ mengenal_ukuran:
   # H2: Main Section Header
   title: "Mengenal Ukuran Kayu Dolken yang Tersedia"
   subtitle: "Pilih diameter yang sesuai dengan kebutuhan proyek Anda"
-  intro: "Memilih ukuran kayu dolken yang tepat adalah langkah penting sebelum melakukan perhitungan kebutuhan. Setiap ukuran diameter memiliki karakteristik, kegunaan, dan kelebihan yang berbeda. Pemilihan ukuran yang sesuai akan mempengaruhi kekuatan struktur, estetika, dan efisiensi biaya proyek Anda. Berikut adalah panduan lengkap untuk setiap ukuran yang tersedia di pasaran."
+  intro: "Menentukan ukuran kayu dolken yang sesuai merupakan tahap krusial sebelum menghitung kebutuhan material. Tiap diameter memiliki karakteristik, fungsi, dan keunggulan tersendiri. Pemilihan ukuran yang pas akan berdampak pada kekuatan struktur, tampilan visual, dan efisiensi anggaran proyek Anda. Berikut panduan komprehensif untuk setiap ukuran yang ada di pasaran."
   icon: "bi-rulers"
   gradient: "primary"
 
@@ -191,7 +191,7 @@ tips_praktis:
   # H2: Main Section Header
   title: "Tips Praktis Menghitung Kebutuhan Kayu Dolken"
   subtitle: "Panduan lengkap untuk perhitungan akurat dan efisien"
-  intro: "Menghitung kebutuhan kayu dolken membutuhkan pemahaman yang baik tentang dimensi proyek, jenis aplikasi, dan faktor-faktor tambahan yang sering diabaikan. Berikut adalah tips praktis yang akan membantu Anda mendapatkan estimasi yang tepat dan menghindari kesalahan umum yang bisa mengakibatkan pemborosan atau kekurangan material."
+  intro: "Mengestimasi kebutuhan kayu dolken memerlukan pemahaman mendalam tentang dimensi proyek, tipe aplikasi, dan faktor-faktor tambahan yang kerap terlewatkan. Berikut tips praktis yang akan membantu Anda memperoleh perhitungan yang presisi dan menghindari kesalahan yang umum terjadi yang dapat menyebabkan pemborosan atau kekurangan material."
   icon: "bi-lightbulb"
   gradient: "warning"
 

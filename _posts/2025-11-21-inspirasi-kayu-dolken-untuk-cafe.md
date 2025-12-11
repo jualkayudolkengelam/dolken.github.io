@@ -30,10 +30,10 @@ comment_count: 0
 share_count: 2
 mengapa_memilih:
   title: Mengapa Cafe Modern Memilih Kayu Dolken?
-  paragraph_1: Di era Instagram-able cafe, kayu dolken gelam menjadi pilihan cerdas
-    pemilik cafe yang ingin menciptakan interior unik dengan investasi terukur. Material
-    ini bukan sekadar elemen dekoratif—tetapi solusi desain yang menggabungkan estetika
-    natural, durabilitas tinggi, dan nilai Instagrammable yang mendongkrak branding
+  paragraph_1: Di era cafe yang harus tampil Instagramable, kayu dolken gelam menjadi opsi brilian
+    bagi pemilik cafe yang ingin menghadirkan interior khas dengan budget yang terkontrol. Material
+    ini bukan hanya dekorasi semata—melainkan solusi desain yang memadukan keindahan
+    alami, ketahanan luar biasa, dan daya tarik visual yang mampu mengangkat citra
     cafe Anda.
   card_1:
     title: Estetika Natural yang Timeless
@@ -44,14 +44,14 @@ mengapa_memilih:
       icon: bi-check-circle-fill
       color: success
       title: Biophilic Design
-      deskripsi: Membawa elemen alam ke dalam ruangan, menciptakan suasana rileks
-        dan nyaman yang membuat customer betah berlama-lama
+      deskripsi: Mengintegrasikan unsur alam ke dalam interior, membangun atmosfer tenang
+        dan nyaman yang membuat pengunjung betah menghabiskan waktu lebih lama
     item_2:
       icon: bi-check-circle-fill
       color: success
       title: Sustainable Material
-      deskripsi: Konsumen milenial dan Gen-Z lebih appreciate cafe yang menggunakan
-        material eco-friendly dan natural
+      deskripsi: Konsumen generasi milenial dan Gen-Z lebih menghargai cafe yang memanfaatkan
+        material ramah lingkungan dan bernuansa natural
     item_3:
       icon: bi-check-circle-fill
       color: success
@@ -98,10 +98,10 @@ aplikasi_hotel:
     konsep cafe Anda
   icon: bi-cup-hot-fill
   gradient: wood
-  paragraph_1: Kayu dolken menawarkan fleksibilitas luar biasa dalam aplikasi desain
-    cafe. Dengan diameter bervariasi (1-5 cm) dan panjang yang bisa disesuaikan, material
-    ini bisa diimplementasikan di berbagai area dengan fungsi dan estetika yang berbeda.
-    Berikut 6 ide aplikasi yang paling populer dan proven meningkatkan visual appeal
+  paragraph_1: Kayu dolken memberikan fleksibilitas tinggi dalam penerapan desain
+    cafe. Dengan pilihan diameter beragam (1-5 cm) dan panjang yang dapat disesuaikan, material
+    ini dapat diaplikasikan di berbagai area dengan fungsi dan tampilan visual yang beragam.
+    Berikut 6 ide aplikasi yang paling diminati dan terbukti meningkatkan daya tarik visual
     cafe Anda.
   paragraph_2: Setiap aplikasi di bawah sudah include estimasi material dan budget,
     sehingga Anda bisa merencanakan implementasi secara bertahap sesuai prioritas

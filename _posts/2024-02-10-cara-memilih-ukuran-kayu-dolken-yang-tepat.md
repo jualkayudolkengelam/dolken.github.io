@@ -19,7 +19,7 @@ images_alt:
   - "Contoh penggunaan kayu dolken diameter sedang 6-8cm untuk konstruksi pagar rumah dan gazebo yang membutuhkan kekuatan struktural menengah"
   - "Aplikasi kayu dolken diameter besar 8-12cm sebagai tiang pancang pondasi dan cerucuk untuk konstruksi berat yang memerlukan daya dukung tinggi"
 url: /2024/02/10/cara-memilih-ukuran-kayu-dolken-yang-tepat/
-excerpt: "Panduan lengkap memilih ukuran diameter kayu dolken gelam yang sesuai dengan kebutuhan proyek konstruksi atau dekorasi Anda."
+excerpt: "Cara memilih ukuran kayu dolken yang tepat untuk proyek Anda dimulai dari memahami fungsi, beban, dan lokasi pemasangan. Panduan lengkap diameter 2-12 cm beserta aplikasinya."
 rating: 4.6
 review_count: 42
 like_count: 3
@@ -253,8 +253,8 @@ kesalahan_umum:
 
 # Data untuk Block: Konsultasi
 konsultasi:
-  judul: "Konsultasi Gratis dengan Kami"
-  deskripsi: "Masih bingung memilih ukuran yang tepat? Kami siap membantu!"
+  judul: "Konsultasi Gratis dengan Tim Ahli"
+  deskripsi: "Butuh rekomendasi ukuran dolken yang pas untuk proyek Anda? Tim berpengalaman kami siap memberikan saran terbaik!"
   info_perlu_disiapkan:
     - "Jenis proyek (konstruksi/dekorasi)"
     - "Dimensi proyek (panjang, lebar, tinggi)"
@@ -265,7 +265,7 @@ konsultasi:
 
 # Data untuk Block: Kesimpulan
 kesimpulan:
-  ringkasan: "Memilih ukuran kayu dolken yang tepat memerlukan pertimbangan matang terhadap fungsi, beban, lokasi, dan budget. Dengan panduan ini, Anda bisa membuat keputusan yang tepat untuk proyek Anda."
+  ringkasan: "Penentuan diameter kayu dolken yang akurat merupakan kunci efisiensi proyek. Analisis mendalam terhadap kebutuhan struktural, kondisi lingkungan pemasangan, serta alokasi anggaran akan menghasilkan pilihan optimal yang menjamin keberhasilan proyek Anda."
   poin_penting:
     - "Pilih ukuran berdasarkan beban yang akan ditanggung"
     - "Pertimbangkan lokasi pemasangan (indoor/outdoor)"
@@ -282,8 +282,8 @@ kesimpulan:
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9">
         <p class="lead text-muted">
-          Memilih ukuran kayu dolken yang tepat adalah langkah penting dalam memastikan kesuksesan proyek Anda.
-          Ukuran yang tidak sesuai bisa mengakibatkan pemborosan biaya atau bahkan kegagalan struktur.
+          Kesuksesan proyek konstruksi atau dekorasi sangat bergantung pada ketepatan dalam menentukan ukuran material yang digunakan.
+          Kayu dolken yang terlalu kecil berisiko tidak mampu menopang beban, sementara ukuran berlebihan justru menguras anggaran tanpa manfaat tambahan.
         </p>
       </div>
     </div>

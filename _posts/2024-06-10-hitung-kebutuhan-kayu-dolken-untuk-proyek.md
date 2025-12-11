@@ -24,7 +24,7 @@ images_alt:
 - "Tabel konversi kebutuhan kayu dolken per meter persegi untuk berbagai aplikasi seperti ceiling dinding dekoratif dan pagar panel"
 - "Contoh kalkulator sederhana menghitung total biaya material kayu dolken dengan variabel jumlah batang harga satuan dan cadangan"
 url: "/2024/06/10/hitung-kebutuhan-kayu-dolken-untuk-proyek/"
-excerpt: "Panduan praktis menghitung jumlah kayu dolken yang dibutuhkan untuk proyek pagar, gazebo, dekorasi, dan konstruksi lainnya dengan akurat."
+excerpt: "Cara mudah mengestimasi kebutuhan kayu dolken untuk berbagai proyek seperti pagar, gazebo, dekorasi dinding, dan konstruksi lainnya."
 rating: 4.6
 review_count: 24
 like_count: 3
@@ -368,9 +368,9 @@ quick_reference:
     buffer: 20%
     notes: Custom cuts, trial & error
 kesimpulan:
-  ringkasan: Menghitung kebutuhan kayu dolken tidak sulit jika measurements akurat,
-    breakdown project by components, include proper buffer, double-check calculations,
-    dan konsultasi dengan supplier.
+  ringkasan: Kalkulasi kebutuhan kayu dolken sebenarnya sederhana asalkan pengukuran presisi,
+    pecah proyek per komponen, sertakan buffer yang cukup, verifikasi hitungan,
+    dan diskusikan dengan supplier.
   poin_penting:
   - Measurements akurat
   - Breakdown project by components
@@ -383,9 +383,9 @@ kesimpulan:
   - Project berjalan smooth
   - No surprises
   cta_text: Butuh Bantuan Menghitung?
-  cta_description: Kirimkan foto/sketch project, measurements, dan jenis aplikasi.
-    Tim kami akan verify calculations, provide detailed breakdown, dan give best price
-    quote.
+  cta_description: Kirimkan foto atau sketsa proyek, ukuran yang sudah diukur, dan jenis penggunaan.
+    Tim kami akan membantu memverifikasi hitungan, memberikan rincian lengkap, serta penawaran harga
+    terbaik.
   cta_link: "/kontak"
 total_updates: 2
 ---
@@ -395,8 +395,8 @@ total_updates: 2
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9">
         <p class="lead text-muted">
-          Salah satu pertanyaan paling sering dari customer adalah: "Berapa banyak kayu dolken yang saya butuhkan?"
-          Artikel ini akan memberikan panduan lengkap untuk menghitung kebutuhan material dengan akurat.
+          Pertanyaan yang kerap muncul dari pembeli adalah: "Berapa jumlah kayu dolken yang diperlukan untuk proyek saya?"
+          Panduan ini akan membantu Anda menghitung kebutuhan material secara tepat dan efisien.
         </p>
       </div>
     </div>

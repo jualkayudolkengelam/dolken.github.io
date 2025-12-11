@@ -45,15 +45,15 @@ area_pengiriman:
 # ============================================================================
 keunggulan_produk:
   - judul: "Kualitas Premium Grade A"
-    deskripsi: "Kayu gelam asli premium, tahan rayap alami dan tahan cuaca ekstrem, cocok untuk iklim Jakarta Utara"
+    deskripsi: "Kayu gelam pilihan terbaik, secara alami tahan terhadap rayap dan cuaca ekstrem, ideal untuk kondisi iklim Jakarta Utara"
     warna: "warning"
     icon: "bi-award-fill"
   - judul: "Harga Terbaik"
-    deskripsi: "Langsung dari supplier, harga mulai Rp 15.000/batang tanpa markup perantara"
+    deskripsi: "Beli langsung dari pemasok, harga dimulai dari Rp 15.000/batang tanpa biaya tambahan perantara"
     warna: "danger"
     icon: "bi-cash-coin"
   - judul: "Stok Selalu Ready"
-    deskripsi: "Tersedia berbagai ukuran diameter 2-3 cm hingga 10-12 cm untuk semua kebutuhan proyek"
+    deskripsi: "Stok lengkap dengan pilihan diameter dari 2-3 cm sampai 10-12 cm untuk berbagai keperluan proyek"
     warna: "info"
     icon: "bi-boxes"
 
@@ -62,7 +62,7 @@ keunggulan_produk:
 # ============================================================================
 keunggulan_layanan:
   - judul: "Pengiriman Gratis Jakarta Utara"
-    deskripsi: "Gratis ongkir untuk area Jakarta Utara, hemat biaya pengiriman untuk proyek Anda"
+    deskripsi: "Bebas biaya kirim ke seluruh Jakarta Utara, penghematan ongkos pengiriman untuk proyek Anda"
     warna: "success"
     icon: "bi-truck"
   - judul: "COD Tersedia"
@@ -70,7 +70,7 @@ keunggulan_layanan:
     warna: "primary"
     icon: "bi-shield-check"
   - judul: "Fast Response 24/7"
-    deskripsi: "Tim kami siap melayani Anda kapan saja untuk konsultasi gratis dan pemesanan cepat"
+    deskripsi: "Tim kami selalu siap sedia kapan pun untuk layanan konsultasi tanpa biaya dan proses order yang cepat"
     warna: "secondary"
     icon: "bi-headset"
 
@@ -181,15 +181,15 @@ area_pengiriman_detail:
 # ============================================================================
 keunggulan_kayu_dolken:
   - judul: "Tahan Lama Puluhan Tahun"
-    deskripsi: "Kayu gelam dapat bertahan 20-30 tahun tanpa treatment khusus, hemat biaya perawatan jangka panjang bahkan di area pesisir Jakarta Utara"
+    deskripsi: "Kayu gelam mampu bertahan hingga 20-30 tahun tanpa perlakuan khusus, menghemat ongkos pemeliharaan jangka panjang termasuk di kawasan pesisir Jakarta Utara"
     warna: "success"
     icon: "bi-clock-history"
   - judul: "Anti Rayap Alami"
-    deskripsi: "Tidak memerlukan obat anti rayap karena tekstur kayu gelam yang padat dan keras secara alami menolak rayap dan hama"
+    deskripsi: "Tanpa perlu tambahan obat anti rayap karena struktur kayu gelam yang padat dan keras sudah mampu menangkal rayap serta hama secara alami"
     warna: "danger"
     icon: "bi-bug"
   - judul: "Tahan Air & Cuaca Ekstrem"
-    deskripsi: "Cocok untuk aplikasi outdoor maupun indoor, tahan hujan deras, panas terik, dan kelembaban tinggi area Jakarta Utara"
+    deskripsi: "Sesuai untuk penggunaan luar ruangan maupun dalam ruangan, kuat menghadapi hujan lebat, terik matahari, dan tingkat kelembaban tinggi khas Jakarta Utara"
     warna: "primary"
     icon: "bi-cloud-rain"
   - judul: "Kuat & Padat"
