@@ -24,7 +24,7 @@ images_alt:
 - "Aplikasi kayu dolken gelam sebagai cerucuk pondasi bangunan menunjukkan keunggulan daya dukung beban tinggi untuk konstruksi di tanah lunak dan gambut"
 - "Perbandingan ketahanan kayu dolken gelam dengan kayu lainnya menunjukkan umur pakai puluhan tahun tanpa perawatan khusus di berbagai kondisi lingkungan"
 url: "/2024/01/15/keunggulan-kayu-dolken-gelam-untuk-konstruksi/"
-excerpt: "Kayu dolken gelam memiliki berbagai keunggulan yang membuatnya menjadi pilihan utama untuk berbagai keperluan konstruksi dan dekorasi."
+excerpt: "Keunggulan kayu dolken gelam untuk konstruksi mencakup kekuatan tinggi, tahan air, anti rayap alami, dan daya tahan puluhan tahun. Material ideal untuk pondasi, pagar, gazebo, dan berbagai proyek bangunan."
 rating: 4.6
 review_count: 43
 like_count: 3
@@ -45,8 +45,8 @@ keunggulan_utama:
 - judul: Kekuatan Luar Biasa
   icon: bi-shield-fill-check
   warna: primary
-  deskripsi: 'Kayu gelam memiliki tingkat kepadatan yang sangat tinggi, mencapai 900-1000
-    kg/m³. Kepadatan ini membuatnya:'
+  deskripsi: 'Dengan massa jenis mencapai 900-1000 kg/m³, kayu gelam termasuk kategori kayu super keras.
+    Densitas tinggi ini memberikan berbagai keuntungan:'
   poin:
   - Sangat kuat menahan beban
   - Tahan terhadap benturan
@@ -55,8 +55,8 @@ keunggulan_utama:
 - judul: Tahan Air dan Kelembaban
   icon: bi-droplet-fill
   warna: info
-  deskripsi: 'Salah satu keunggulan paling menonjol dari kayu gelam adalah ketahanannya
-    terhadap air:'
+  deskripsi: 'Kandungan minyak alami dalam serat kayu gelam membuatnya sangat resisten
+    terhadap paparan air dan kelembaban ekstrem:'
   poin:
   - Tidak mudah busuk meski terendam air
   - Tahan terhadap kelembaban tinggi
@@ -65,8 +65,8 @@ keunggulan_utama:
 - judul: Anti Rayap dan Serangga
   icon: bi-bug-fill
   warna: success
-  deskripsi: 'Kayu gelam secara alami mengandung zat yang tidak disukai rayap dan
-    serangga perusak kayu:'
+  deskripsi: 'Senyawa bioaktif dalam kayu gelam berfungsi sebagai penolak alami bagi rayap
+    dan berbagai jenis serangga perusak:'
   poin:
   - Tidak memerlukan treatment kimia tambahan
   - Hemat biaya perawatan
@@ -75,7 +75,8 @@ keunggulan_utama:
 - judul: Daya Tahan Jangka Panjang
   icon: bi-clock-history
   warna: warning
-  deskripsi: 'Dengan perawatan minimal, kayu dolken gelam bisa bertahan:'
+  deskripsi: 'Kayu dolken gelam dikenal sangat awet dan mampu bertahan hingga puluhan tahun
+    meskipun hanya dengan perawatan sederhana:'
   poin:
   - 20-30 tahun untuk penggunaan outdoor
   - Lebih dari 50 tahun untuk indoor
@@ -155,10 +156,10 @@ perawatan:
     icon: bi-search
     warna: success
 kesimpulan:
-  ringkasan: Kayu dolken gelam adalah pilihan yang sangat baik untuk berbagai keperluan
-    konstruksi dan dekorasi. Dengan kekuatan luar biasa, ketahanan terhadap air dan
-    rayap, serta daya tahan jangka panjang, kayu ini menawarkan nilai investasi yang
-    sangat baik.
+  ringkasan: Memilih kayu dolken gelam berarti berinvestasi pada material berkualitas tinggi
+    yang telah teruji selama bertahun-tahun. Kombinasi kekuatan superior, resistensi alami terhadap air
+    dan serangan hama, ditambah umur pakai yang panjang menjadikannya solusi ekonomis jangka panjang
+    untuk segala kebutuhan konstruksi maupun dekorasi.
   poin_penting:
   - Kekuatan luar biasa dengan kepadatan 900-1000 kg/m³
   - Tahan air dan kelembaban tinggi
@@ -176,8 +177,8 @@ total_updates: 1
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-9">
         <p class="lead text-muted">
-          Kayu dolken gelam telah lama dikenal sebagai salah satu jenis kayu terkuat dan paling tahan lama.
-          Tidak heran jika kayu ini menjadi pilihan favorit untuk berbagai proyek konstruksi, dari yang skala kecil hingga besar.
+          Sejak dahulu, kayu dolken gelam sudah dipercaya sebagai material konstruksi unggulan berkat kekuatan dan ketahanannya yang luar biasa.
+          Para kontraktor profesional dan penghobi DIY sama-sama menjadikan kayu ini sebagai andalan untuk berbagai proyek, mulai dari pondasi rumah hingga dekorasi taman.
         </p>
       </div>
     </div>
