@@ -35,168 +35,168 @@ area_pengiriman:
 - Banyumanik
 - Pedurungan
 keunggulan_durabilitas:
-  tahan_lama: Kayu gelam dapat bertahan 20-30 tahun tanpa treatment khusus, hemat
-    biaya perawatan jangka panjang bahkan dalam iklim pesisir Semarang
-  anti_rayap: Tidak memerlukan obat anti rayap karena tekstur kayu gelam yang padat
-    dan keras secara alami menolak rayap dan hama
-  tahan_cuaca: Cocok untuk aplikasi outdoor maupun indoor, tahan hujan deras, panas
-    terik, dan kelembaban tinggi khas Semarang
-  kuat_padat: Kepadatan tinggi memberikan kekuatan maksimal, cocok untuk beban berat
-    dan struktur penyangga permanen
+  tahan_lama: Kayu gelam mampu bertahan hingga 20-30 tahun tanpa perlakuan khusus, menghemat
+    ongkos pemeliharaan jangka panjang meskipun dalam kondisi iklim pesisir Semarang
+  anti_rayap: Tanpa perlu tambahan obat anti rayap karena struktur kayu gelam yang padat
+    dan keras sudah mampu menangkal rayap serta hama secara alami
+  tahan_cuaca: Sesuai untuk penggunaan luar ruangan maupun dalam ruangan, kuat menghadapi hujan lebat, terik matahari,
+    dan tingkat kelembaban tinggi yang khas Semarang
+  kuat_padat: Tingkat kepadatan tinggi menghasilkan kekuatan optimal, ideal untuk menopang beban berat
+    dan konstruksi penyangga yang permanen
 keunggulan_nilai:
-  ramah_lingkungan: Material kayu natural dan sustainable, ramah lingkungan dan biodegradable,
-    mendukung green building
-  estetika: Warna coklat natural yang indah, cocok untuk dekorasi modern maupun tradisional,
-    mempercantik bangunan
+  ramah_lingkungan: Bahan kayu alami yang berkelanjutan, tidak merusak lingkungan dan dapat terurai secara alami,
+    mendukung konsep bangunan hijau
+  estetika: Tampilan coklat alami yang menawan, sesuai untuk desain dekorasi modern ataupun klasik,
+    memperindah tampilan bangunan
 proses_awal_pemesanan:
-  pilih_ukuran: Lihat daftar produk lengkap di atas, pilih diameter sesuai kebutuhan
+  pilih_ukuran: Cek katalog produk lengkap di atas, tentukan diameter yang sesuai dengan keperluan
     proyek Anda
   hubungi: '081311400177'
-  konsultasi_gratis: Tim kami akan bantu hitung kebutuhan dan berikan rekomendasi
+  konsultasi_gratis: Tim kami siap membantu menghitung kebutuhan dan memberikan saran
     terbaik untuk proyek Anda
 finalisasi_pengiriman:
-  konfirmasi_pesanan: Pastikan jumlah, ukuran, dan alamat pengiriman di Semarang sudah
-    benar
-  pengiriman_gratis: Kami antar langsung ke lokasi Anda dengan armada terpercaya,
-    tepat waktu
-  bayar_cod: Bayar setelah barang sampai dan Anda cek kualitasnya, tidak ada risiko
+  konfirmasi_pesanan: Verifikasi jumlah, ukuran, dan alamat pengiriman di Semarang agar
+    tidak ada kesalahan
+  pengiriman_gratis: Kami kirim langsung ke lokasi Anda menggunakan armada terpercaya,
+    dijamin tepat waktu
+  bayar_cod: Lakukan pembayaran setelah barang tiba dan Anda cek kualitasnya, tanpa risiko apapun
 testimoni_residential:
-- nama: Pak Agus
-  lokasi: Kontraktor Tembalang
+- nama: Wawan Setiawan
+  lokasi: Pemborong Proyek Pedurungan
   rating: 5
   judul: Review Kualitas dan Pengiriman
-  komentar: Kualitas kayu dolken bagus sekali, pengiriman ke Tembalang cepat dan tepat
-    waktu!
+  komentar: Mutu kayu dolken sangat baik, pengiriman ke Tembalang cepat dan sesuai jadwal!
   warna: primary
-- nama: Bu Rina
-  lokasi: Banyumanik
+- nama: Dewi Kartika
+  lokasi: Perumahan Graha Estetika
   rating: 5
   judul: Review Pelayanan dan Hasil
-  komentar: Puas dengan pelayanan dan produknya. Untuk gazebo di rumah saya di Banyumanik
-    hasilnya sempurna!
+  komentar: Sangat puas dengan layanan dan produknya. Gazebo di rumah saya di Banyumanik
+    hasilnya luar biasa!
   warna: success
 testimoni_komersial:
-- nama: Pak Dedi
-  lokasi: Owner Cafe Kota Lama
+- nama: Bambang Prasetyo
+  lokasi: Pemilik Kedai Kopi Pandanaran
   rating: 5
   judul: Review Harga dan Kualitas
-  komentar: Harga bersaing, kualitas oke. Cocok untuk proyek cafe saya di Kota Lama.
-    Highly recommended!
+  komentar: Harga kompetitif, kualitas memuaskan. Pas untuk proyek cafe saya di Kota Lama.
+    Sangat direkomendasikan!
   warna: warning
-- nama: Pak Budi
-  lokasi: Developer Properti Semarang Selatan
+- nama: Teguh Santoso
+  lokasi: Perusahaan Properti
   rating: 5
   judul: Review Pelayanan Profesional
-  komentar: Pelayanan profesional, COD tersedia jadi aman. Terima kasih untuk pengiriman
+  komentar: Layanan profesional, tersedia sistem COD jadi aman. Terimakasih atas pengiriman
     gratis ke Semarang Selatan!
   warna: info
-- nama: Bu Sari Wulandari
-  lokasi: Owner Restoran di Simpang Lima
+- nama: Maya Anggraini
+  lokasi: Pemilik Warung Makan Srondol
   rating: 5
   judul: Material Terbaik untuk Restoran
-  komentar: Restoran saya di Simpang Lima pakai kayu dolken untuk pergola outdoor.
-    Sangat cocok untuk cuaca Semarang yang panas dan lembab. Kayu nya kuat dan estetis.
-    Pelanggan suka dengan nuansa natural!
+  komentar: Restoran saya di Simpang Lima menggunakan kayu dolken untuk pergola outdoor.
+    Sangat pas untuk iklim Semarang yang panas dan lembab. Kayunya kokoh dan indah.
+    Para pelanggan menyukai suasana natural yang dihasilkan!
   warna: success
-- nama: Pak Hendra Wijaya
-  lokasi: Kontraktor Hotel di Semarang
+- nama: Joko Widodo
+  lokasi: Perusahaan Konstruksi
   rating: 5
   judul: Partner Terpercaya untuk Proyek Besar
-  komentar: Sudah beberapa kali order untuk proyek hotel dan resort di area Semarang
-    dan sekitarnya. Kualitas konsisten bagus, stok selalu ready, pengiriman tepat
-    waktu. Jadi supplier langganan kami!
+  komentar: Sudah beberapa kali memesan untuk proyek hotel dan resort di wilayah Semarang
+    dan sekitarnya. Kualitas selalu konsisten baik, stok selalu tersedia, pengiriman
+    tepat waktu. Menjadi supplier andalan kami!
   warna: primary
 tips_ukuran:
 - kategori: Dekorasi Ringan
   aplikasi: Pagar, Taman
   diameter: 2-3 cm / 4-6 cm
   keunggulan:
-  - Lebih ekonomis dan mudah dipasang
-  - Estetika lebih ringan dan elegan
-  - Cocok untuk taman minimalis dan pagar residential
+  - Lebih hemat biaya dan praktis dipasang
+  - Tampilan lebih ringan dan elegan
+  - Ideal untuk taman minimalis dan pagar rumah
   warna: success
   icon: bi-tree
 - kategori: Struktur Sedang
   aplikasi: Gazebo, Pergola
   diameter: 6-8 cm
   keunggulan:
-  - Balance antara kekuatan dan harga
-  - Paling populer untuk residential dan cafe
-  - Ideal untuk gazebo outdoor dan pergola taman
+  - Seimbang antara kekuatan dan harga
+  - Paling diminati untuk hunian dan cafe
+  - Cocok untuk gazebo outdoor dan pergola taman
   warna: primary
   icon: bi-house-fill
 - kategori: Struktur Berat
   aplikasi: Tiang Utama, Pondasi
   diameter: 8-10 cm / 10-12 cm
   keunggulan:
-  - Kekuatan maksimal untuk beban berat
-  - Tahan beban berat jangka panjang
-  - Perfect untuk proyek komersial dan bangunan permanen
+  - Kekuatan optimal untuk beban berat
+  - Mampu menahan beban berat dalam jangka panjang
+  - Sempurna untuk proyek komersial dan bangunan permanen
   warna: danger
   icon: bi-building-fill
 keunggulan_produk:
 - judul: Kualitas Premium Grade A
-  deskripsi: Kayu gelam asli premium, tahan rayap alami dan tahan cuaca ekstrem, cocok
-    untuk iklim Semarang
+  deskripsi: Kayu gelam pilihan terbaik, secara alami tahan terhadap rayap dan cuaca ekstrem, ideal
+    untuk kondisi iklim Semarang
   warna: warning
   icon: bi-award-fill
 - judul: Harga Terbaik
-  deskripsi: Langsung dari supplier, harga mulai Rp 15.000/batang tanpa markup perantara
+  deskripsi: Beli langsung dari pemasok, harga dimulai dari Rp 15.000/batang tanpa biaya tambahan perantara
   warna: danger
   icon: bi-cash-coin
 - judul: Stok Selalu Ready
-  deskripsi: Tersedia berbagai ukuran diameter 2-3 cm hingga 10-12 cm untuk semua
-    kebutuhan proyek
+  deskripsi: Stok lengkap dengan pilihan diameter dari 2-3 cm sampai 10-12 cm untuk berbagai
+    keperluan proyek
   warna: info
   icon: bi-boxes
 keunggulan_layanan:
 - judul: Pengiriman Gratis Semarang
-  deskripsi: Gratis ongkir untuk area Kota Semarang, hemat biaya pengiriman untuk
+  deskripsi: Bebas biaya kirim ke seluruh Kota Semarang, penghematan ongkos pengiriman untuk
     proyek Anda
   warna: success
   icon: bi-truck
 - judul: COD Tersedia
-  deskripsi: Bayar setelah barang sampai dan Anda cek kualitasnya, aman dan terpercaya
+  deskripsi: Pembayaran setelah barang tiba dan Anda verifikasi kualitasnya, aman dan dapat dipercaya
   warna: primary
   icon: bi-shield-check
 - judul: Fast Response 24/7
-  deskripsi: Tim kami siap melayani Anda kapan saja untuk konsultasi gratis dan pemesanan
-    cepat
+  deskripsi: Tim kami selalu siap sedia kapan pun untuk layanan konsultasi tanpa biaya dan proses order
+    yang cepat
   warna: secondary
   icon: bi-headset
 faq_pemesanan:
-- pertanyaan: Berapa minimal pemesanan kayu dolken?
-  jawaban: Kami melayani pemesanan mulai dari 10 batang hingga proyek besar ratusan
-    batang. Untuk pembelian partai besar di area Semarang, kami berikan harga khusus
-    yang lebih kompetitif. Hubungi 081311400177 untuk konsultasi jumlah yang sesuai
-    budget dan kebutuhan proyek Anda.
+- pertanyaan: Berapakah jumlah order minimum untuk kayu dolken?
+  jawaban: Kami menerima pesanan mulai dari 10 batang untuk kebutuhan rumahan hingga
+    ribuan batang untuk proyek skala besar. Khusus pembelian dalam jumlah banyak di
+    wilayah Semarang dan sekitarnya, tersedia penawaran harga spesial. Silakan hubungi
+    081311400177 untuk mendapatkan quotation sesuai kebutuhan proyek Anda.
   icon: bi-cart-check
-- pertanyaan: Bagaimana cara mengecek kualitas kayu dolken sebelum bayar?
-  jawaban: Kami menyediakan sistem COD (Cash on Delivery) sehingga Anda bisa cek kualitas
-    kayu dolken terlebih dahulu sebelum membayar. Pastikan kayu tidak bengkok, tidak
-    ada retakan besar, diameter sesuai pesanan, dan kondisi fisik bagus. Tim kami
-    akan dampingi proses pengecekan untuk kepuasan Anda.
+- pertanyaan: Bisakah saya memeriksa kondisi kayu sebelum melakukan pembayaran?
+  jawaban: Tentu saja bisa. Kami menerapkan sistem bayar di tempat (COD) yang memungkinkan
+    Anda mengecek langsung kondisi kayu dolken saat barang tiba. Periksa kelurusan batang,
+    pastikan tidak ada cacat atau keretakan, dan ukur diameter apakah sesuai pesanan.
+    Tim pengiriman kami akan mendampingi proses pengecekan hingga Anda puas.
   icon: bi-clipboard-check
 faq_produk:
-- pertanyaan: Apakah kayu dolken perlu perawatan khusus di Semarang?
-  jawaban: Kayu dolken gelam tidak memerlukan perawatan khusus karena sudah tahan
-    rayap dan cuaca secara alami, sangat cocok untuk iklim Semarang yang lembab. Namun
-    untuk aplikasi outdoor di area pesisir seperti Tanjung Mas, Anda bisa menambahkan
-    coating atau vernis untuk mempercantik tampilan dan menambah daya tahan warna
-    natural kayu.
+- pertanyaan: Bagaimana cara merawat kayu dolken di lingkungan Semarang yang lembab?
+  jawaban: Kayu dolken gelam pada dasarnya sudah memiliki ketahanan alami terhadap
+    serangan rayap dan perubahan cuaca, sehingga sangat sesuai dengan kondisi iklim
+    Semarang. Untuk penggunaan di kawasan pantai seperti Marina atau Tanjung Mas,
+    disarankan memberikan lapisan pelindung berupa wood stain atau coating untuk
+    mempertahankan keindahan warna asli kayu lebih lama.
   icon: bi-tools
-- pertanyaan: Apakah bisa custom panjang kayu dolken?
-  jawaban: Ya, kami melayani custom panjang sesuai kebutuhan proyek Anda di Semarang.
-    Standar panjang kami 4 meter, namun bisa dipotong atau disesuaikan dengan spesifikasi
-    yang Anda inginkan untuk proyek spesifik seperti gazebo, pergola, atau pagar.
-    Hubungi tim kami di 081311400177 untuk diskusi detail ukuran custom.
+- pertanyaan: Apakah tersedia layanan pemotongan sesuai ukuran yang diinginkan?
+  jawaban: Benar, kami menyediakan jasa pemotongan kayu dolken sesuai spesifikasi
+    proyek Anda di Semarang. Ukuran standar yang kami sediakan adalah 4 meter per batang,
+    namun dapat kami sesuaikan untuk keperluan khusus seperti pembuatan saung, kanopi,
+    atau pagar dengan ukuran tertentu. Konsultasikan kebutuhan Anda di 081311400177.
   icon: bi-rulers
 faq_pengiriman:
-- pertanyaan: Berapa lama pengiriman ke Semarang?
-  jawaban: Untuk area Kota Semarang, pengiriman biasanya 1-3 hari kerja setelah konfirmasi
-    pesanan. Pengiriman gratis untuk seluruh wilayah Semarang termasuk Tembalang,
-    Banyumanik, Kota Lama, Simpang Lima, Pedurungan, dan area lainnya. Kami gunakan
-    armada terpercaya untuk memastikan barang sampai dengan aman.
+- pertanyaan: Berapa estimasi waktu pengiriman untuk wilayah Semarang?
+  jawaban: Pengiriman ke seluruh area Kota Semarang umumnya membutuhkan waktu 1-3 hari
+    kerja terhitung sejak pesanan dikonfirmasi. Kami memberikan layanan kirim gratis
+    yang menjangkau Tembalang, Banyumanik, Ngaliyan, Genuk, Gayamsari, Candisari,
+    hingga kawasan industri. Armada pengiriman kami berpengalaman dan menjamin keamanan
+    material sampai ke lokasi proyek Anda.
   icon: bi-truck
 relevansi_kayu_dolken:
   karakteristik_iklim: Dengan karakteristik Semarang sebagai <strong>kota pesisir</strong>
@@ -211,42 +211,44 @@ relevansi_kayu_dolken:
     icon: bi-check-circle-fill
   - nama: Pagar villa di Tembalang
     icon: bi-check-circle-fill
-  - nama: Landscaping Pelabuhan Tanjung Emas
+  - nama: Dekorasi resort di kawasan Bandungan
     icon: bi-check-circle-fill
 tentang_kota:
   tagline: Ibu Kota Jawa Tengah
   deskripsi_singkat: Pusat pemerintahan, ekonomi, dan budaya Jawa Tengah
-  overview: Semarang adalah ibu kota dan kota terbesar di Provinsi Jawa Tengah, Indonesia.
-    Kota ini memiliki luas wilayah <strong>373,78 km²</strong> dengan populasi sekitar
-    <strong>1,65 juta jiwa</strong> pada tahun 2017 dan kepadatan <strong>4.422 jiwa/km²</strong>.
-    Semarang terbagi menjadi <strong>16 kecamatan</strong> dan <strong>177 kelurahan</strong>,
-    menjadikannya pusat pemerintahan, ekonomi, dan budaya Jawa Tengah.
+  overview: Semarang merupakan ibu kota sekaligus kota terbesar di Provinsi Jawa Tengah.
+    Wilayahnya membentang seluas <strong>373,78 km²</strong> dengan jumlah penduduk mencapai
+    <strong>1,65 juta jiwa</strong> dan tingkat kepadatan <strong>4.422 jiwa/km²</strong>.
+    Secara administratif terbagi dalam <strong>16 kecamatan</strong> dan <strong>177 kelurahan</strong>,
+    menjadikannya pusat aktivitas pemerintahan, perekonomian, dan kebudayaan Jawa Tengah.
   tentang_kota_1:
-  - judul: Sejarah Semarang
+  - judul: Jejak Sejarah Semarang
     icon: bi-clock-history
-    subjudul: Asal-usul Nama dan Perkembangan
+    subjudul: Dari Kampung Nelayan ke Kota Metropolitan
     icon_subjudul: bi-book
-    deskripsi: Sejarah Semarang berawal kurang lebih pada <strong>abad ke-6 Masehi</strong>,
-      yaitu daerah pesisir yang bernama Pragota (sekarang Bergota) yang merupakan
-      bagian dari Kerajaan Mataram Kuno.
+    deskripsi: Semarang tumbuh dari permukiman kecil di pesisir utara Jawa pada
+      <strong>abad ke-15</strong>. Kota ini berkembang pesat setelah kedatangan
+      Laksamana Cheng Ho yang singgah di wilayah Simongan.
     fakta:
-    - Secara etimologis, nama "Semarang" berasal dari kata <strong>"asem"</strong>
-      (pohon asam) dan <strong>"arang"</strong> (jarang). Penamaan ini bermula ketika
-      Ki Ageng Pandanaran I datang ke Pulau Tirang dekat pelabuhan Bergota dan melihat
-      pohon asam yang jarang-jarang tumbuh.
-    - Sejak masa penjajahan Belanda, Semarang merupakan salah satu dari tiga pusat
-      pelabuhan penting (bersama Jakarta dan Surabaya).
-  - judul: Pelabuhan Tanjung Emas
+    - Nama "Semarang" konon berasal dari kata <strong>"asem arang"</strong> yang
+      merujuk pada pohon asam yang tumbuh berjauhan di daerah tersebut. Versi lain
+      menyebutkan nama ini diberikan oleh Ki Ageng Pandan Arang yang mendirikan
+      perkampungan di wilayah ini.
+    - Pada masa kolonial Belanda, Semarang tumbuh menjadi kota dagang yang ramai
+      dengan pembangunan berbagai infrastruktur seperti jalur kereta api dan gedung-gedung
+      megah di kawasan Kota Lama.
+  - judul: Kota Lama Semarang
     icon: bi-shop
-    subjudul: Peran Ekonomi dan Perdagangan
+    subjudul: Warisan Arsitektur Kolonial
     icon_subjudul: bi-graph-up
-    deskripsi: Pelabuhan Tanjung Emas merupakan <strong>landmark ekonomi penting</strong>
-      Semarang yang masih beroperasi hingga kini. Pelabuhan ini menjadi pintu gerbang
-      perdagangan Jawa Tengah dan sekitarnya.
+    deskripsi: Kawasan Kota Lama atau <strong>"Little Netherlands"</strong> merupakan
+      saksi bisu kejayaan Semarang di masa lalu. Area seluas 31 hektar ini menyimpan
+      puluhan bangunan bersejarah dengan arsitektur khas Eropa.
     fakta:
-    - Melayani ekspor-impor berbagai komoditas, keberadaan pelabuhan ini menjadikan
-      Semarang sebagai kota pelabuhan utama pada masa kolonial.
-    - Terus berkembang sebagai pusat regional hingga saat ini.
+    - Terdapat lebih dari 50 bangunan cagar budaya yang masih terawat dengan baik,
+      termasuk Gereja Blenduk yang dibangun tahun 1753.
+    - Kini kawasan ini menjadi destinasi wisata heritage yang populer dan lokasi
+      favorit untuk kegiatan fotografi serta acara budaya.
   tentang_kota_2:
   - judul: Landmark & Pusat Bisnis Modern
     icon: bi-building
@@ -393,13 +395,13 @@ studi_kasus_proyek:
     warna: success
     icon: bi-house-door
   proyek_publik:
-  - judul: Taman Kota Area Tanjung Mas
+  - judul: Taman Wisata Kampung Pelangi
     tahun: '2023'
-    deskripsi: Proyek landscaping taman kota di area Pelabuhan Tanjung Emas menggunakan
-      kayu dolken untuk tiang lampu taman dan pembatas area.
+    deskripsi: Proyek penataan kawasan wisata Kampung Pelangi Randusari menggunakan
+      kayu dolken untuk pagar pembatas dan ornamen taman.
     jumlah: 100 batang
     diameter: 6-8 cm
-    hasil: Tahan terhadap kelembaban tinggi area pelabuhan
+    hasil: Menambah estetika kawasan wisata dengan nuansa natural yang menarik
     warna: info
     icon: bi-signpost-2
   - judul: Jogging Track Bukit Candi Golf
@@ -504,7 +506,7 @@ area_pengiriman_detail:
     icon: bi-building
     warna: warning
   landmark_fasilitas:
-  - nama: Pelabuhan Tanjung Emas
+  - nama: Kawasan Industri Candi
     icon: bi-shop
     warna: info
   - nama: Undip Tembalang
