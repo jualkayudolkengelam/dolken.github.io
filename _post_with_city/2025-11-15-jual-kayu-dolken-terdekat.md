@@ -56,15 +56,15 @@ area_pengiriman:
 # ============================================================================
 keunggulan_produk:
   - judul: "Kualitas Premium Grade A"
-    deskripsi: "Kayu dolken gelam Grade A dengan kekuatan superior, ideal untuk berbagai kebutuhan konstruksi dari residential hingga komersial. Tahan beban berat dan kondisi cuaca ekstrem."
+    deskripsi: "Kayu dolken gelam kelas A dengan daya tahan unggul, cocok untuk beragam keperluan konstruksi mulai dari hunian sampai bangunan komersial. Mampu menopang beban berat dan tahan kondisi cuaca ekstrem."
     warna: "warning"
     icon: "bi-award-fill"
   - judul: "Harga Terbaik Langsung Supplier"
-    deskripsi: "Harga terjangkau mulai Rp 15.000/batang langsung dari supplier tanpa markup perantara. Harga spesial untuk pembelian partai besar, cocok untuk kontraktor dan developer."
+    deskripsi: "Penawaran harga ekonomis mulai Rp 15.000/batang langsung dari pemasok tanpa biaya perantara. Diskon khusus untuk pembelian dalam jumlah besar, sangat cocok untuk kontraktor dan pengembang properti."
     warna: "danger"
     icon: "bi-cash-coin"
   - judul: "Stok Lengkap Siap Kirim"
-    deskripsi: "Stok melimpah berbagai diameter 2-12 cm selalu ready stock. Siap memenuhi kebutuhan proyek skala kecil hingga besar dengan pengiriman cepat ke seluruh Jawa-Bali."
+    deskripsi: "Persediaan berlimpah berbagai diameter 2-12 cm selalu tersedia. Siap memenuhi keperluan proyek skala kecil maupun besar dengan pengiriman cepat ke seluruh Jawa-Bali."
     warna: "info"
     icon: "bi-boxes"
 
@@ -73,17 +73,52 @@ keunggulan_produk:
 # ============================================================================
 keunggulan_layanan:
   - judul: "Gratis Ongkir untuk pengiriman wilayah Jawa dan Bali"
-    deskripsi: "Pengiriman gratis ke area Jabodetabek dengan minimal pembelian. Pengiriman ke seluruh Jawa-Bali dengan biaya terjangkau. Hemat biaya logistik untuk proyek Anda."
+    deskripsi: "Layanan kirim gratis ke area Jabodetabek dengan minimum order tertentu. Pengiriman ke seluruh Jawa-Bali. Hemat pengeluaran logistik untuk proyek Anda."
     warna: "success"
     icon: "bi-truck"
   - judul: "COD & Invoice untuk Perusahaan"
-    deskripsi: "Sistem pembayaran fleksibel: COD untuk retail, invoice/tempo untuk perusahaan dan kontraktor. Cek kualitas dulu sebelum bayar, aman dan terpercaya."
+    deskripsi: "Opsi pembayaran fleksibel: bayar di tempat untuk pembelian retail, sistem invoice/termin untuk perusahaan dan kontraktor. Verifikasi kualitas sebelum bayar, aman dan terpercaya."
     warna: "primary"
     icon: "bi-shield-check"
   - judul: "Layanan Konsultasi Teknis"
-    deskripsi: "Tim berpengalaman siap konsultasi kebutuhan material untuk proyek residensial, komersial, atau industri. Hubungi kami 24/7 untuk solusi terbaik."
+    deskripsi: "Tim profesional siap memberikan konsultasi kebutuhan material untuk proyek residensial, komersial, maupun industri. Hubungi kami kapan saja untuk solusi terbaik."
     warna: "secondary"
     icon: "bi-headset"
+
+# ============================================================================
+# BLOCK KEUNGGULAN KAYU DOLKEN GELAM - deskripsi untuk block component
+# Judul sudah hardcoded di template, hanya deskripsi yang dinamis
+# ============================================================================
+block_keunggulan_gelam:
+  # Header Section
+  subjudul: "Pilihan terbaik untuk konstruksi dan dekorasi"
+
+  # H3 Karakteristik Section
+  karakteristik_deskripsi: "Kayu dolken gelam memiliki berbagai keunggulan yang menjadikannya pilihan utama untuk konstruksi dan dekorasi, dari ketahanan ekstrem hingga nilai estetika yang tinggi"
+
+  # H4 Durabilitas Section
+  durabilitas_deskripsi: "Keunggulan teknis kayu gelam yang menjamin kekuatan dan ketahanan luar biasa untuk berbagai kondisi."
+
+  # Card 1 - Tahan Lama
+  tahan_lama_deskripsi: "Masa pakai hingga 20-30 tahun tanpa perlakuan kimia khusus. Investasi hemat untuk proyek konstruksi jangka panjang di seluruh wilayah Jawa dan Bali."
+
+  # Card 2 - Anti Rayap
+  anti_rayap_deskripsi: "Struktur serat padat dan kandungan minyak alami menjadikan kayu gelam tidak menarik bagi rayap dan serangga perusak kayu lainnya."
+
+  # Card 3 - Tahan Cuaca
+  tahan_cuaca_deskripsi: "Performa stabil menghadapi perubahan cuaca ekstrem, baik terik matahari maupun hujan lebat. Ideal untuk aplikasi outdoor tanpa khawatir pelapukan."
+
+  # Card 4 - Kuat Padat
+  kuat_padat_deskripsi: "Tingkat kekerasan dan kepadatan tinggi menjamin kemampuan menahan beban berat. Cocok untuk scaffolding, pondasi, dan struktur penyangga."
+
+  # H4 Nilai Section
+  nilai_deskripsi: "Keunggulan tambahan yang memberikan nilai lebih untuk lingkungan dan estetika bangunan Anda."
+
+  # Card 5 - Ramah Lingkungan
+  ramah_lingkungan_deskripsi: "Sumber daya terbarukan dari hutan tanaman berkelanjutan. Mendukung konsep eco-friendly dan green building untuk proyek modern."
+
+  # Card 6 - Estetika
+  estetika_deskripsi: "Serat dan warna coklat natural yang khas memberikan tampilan elegan. Populer untuk pagar, pergola, gazebo, dan elemen dekoratif outdoor."
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - TEKS JUDUL & DESKRIPSI (REQUIRED)
@@ -118,28 +153,28 @@ area_pengiriman_detail:
   wilayah_pusat:
     - nama: "Jakarta Pusat & Selatan"
       kelurahan:
-        - "Menteng, Tanah Abang, Kemang"
-        - "Kebayoran Baru, Tebet, Kuningan"
+        - "Gambir, Senen, Cideng, Pasar Baru"
+        - "Pondok Indah, Cilandak, Pesanggrahan"
       warna: "primary"
     - nama: "Jakarta Utara & Timur"
       kelurahan:
-        - "Kelapa Gading, Sunter, Pluit"
-        - "Cakung, Duren Sawit, Cipinang"
+        - "Tanjung Priok, Koja, Pademangan"
+        - "Jatinegara, Matraman, Pulo Gadung"
       warna: "success"
     - nama: "Tangerang & BSD"
       kelurahan:
-        - "BSD City, Serpong, Alam Sutera"
-        - "Gading Serpong, Karawaci"
+        - "Ciputat, Pamulang, Pondok Aren"
+        - "Cikupa, Pasar Kemis, Balaraja"
       warna: "info"
     - nama: "Bekasi & Cikarang"
       kelurahan:
-        - "Bekasi Timur, Bekasi Barat, Jatiasih"
-        - "Cikarang Pusat, Cikarang Barat"
+        - "Pondok Gede, Jatibening, Bantargebang"
+        - "Cikarang Utara, Cikarang Selatan, Tambun"
       warna: "warning"
     - nama: "Bogor & Depok"
       kelurahan:
-        - "Bogor Tengah, Cibinong, Sentul City"
-        - "Margonda, Beji, Pancoran Mas"
+        - "Bogor Selatan, Tanah Sareal, Ciomas"
+        - "Cimanggis, Sawangan, Limo"
       warna: "danger"
 
 # ============================================================================
@@ -148,23 +183,23 @@ area_pengiriman_detail:
   wilayah_utara_selatan:
     - nama: "Bandung & Cimahi"
       kelurahan:
-        - "Bandung Kota, Dago, Riau"
-        - "Cimahi Utara, Cimahi Selatan"
+        - "Cicendo, Coblong, Sukajadi, Andir"
+        - "Cimahi Tengah, Padalarang, Ngamprah"
       warna: "danger"
     - nama: "Semarang & Ungaran"
       kelurahan:
-        - "Semarang Tengah, Simpang Lima"
-        - "Ungaran, Bawen, Ambarawa"
+        - "Candisari, Gajahmungkur, Ngaliyan"
+        - "Banyumanik, Tembalang, Gunungpati"
       warna: "primary"
     - nama: "Surabaya & Sidoarjo"
       kelurahan:
-        - "Surabaya Pusat, Gubeng, Wonokromo"
-        - "Sidoarjo, Waru, Gedangan"
+        - "Tegalsari, Sawahan, Genteng, Bubutan"
+        - "Candi, Porong, Tanggulangin"
       warna: "warning"
     - nama: "Denpasar & Badung (Bali)"
       kelurahan:
-        - "Denpasar Selatan, Sanur, Renon"
-        - "Kuta, Seminyak, Nusa Dua"
+        - "Denpasar Utara, Denpasar Timur, Kesiman"
+        - "Jimbaran, Canggu, Mengwi"
       warna: "info"
 
 # ============================================================================
@@ -173,134 +208,134 @@ area_pengiriman_detail:
   wilayah_pengembangan:
     - nama: "Yogyakarta & Sleman"
       kelurahan:
-        - "Malioboro, Prawirotaman, Kota Gede"
-        - "Sleman, Mlati, Depok"
+        - "Gondokusuman, Umbulharjo, Mergangsan"
+        - "Ngaglik, Godean, Gamping"
       warna: "primary"
     - nama: "Malang & Batu"
       kelurahan:
-        - "Malang Kota, Dinoyo, Soekarno-Hatta"
-        - "Batu, Selecta, Songgoriti"
+        - "Lowokwaru, Klojen, Blimbing"
+        - "Junrejo, Bumiaji, Pujon"
       warna: "info"
     - nama: "Gianyar & Ubud (Bali)"
       kelurahan:
-        - "Gianyar, Ubud, Sukawati"
-        - "Tegalalang, Payangan"
+        - "Blahbatuh, Tampaksiring, Kedewatan"
+        - "Mas, Peliatan, Sayan"
       warna: "wood"
     - nama: "Solo & Sukoharjo"
       kelurahan:
-        - "Solo Baru, Laweyan, Banjarsari"
-        - "Sukoharjo, Kartasura"
+        - "Jebres, Serengan, Pasar Kliwon"
+        - "Grogol, Mojolaban, Bendosari"
       warna: "success"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - KECAMATAN LAINNYA (OPTIONAL)
 # ============================================================================
   kecamatan_lainnya:
-    - "Purwakarta (Purwakarta Kota, Bungursari, Maniis)"
-    - "Subang (Subang Kota, Kalijati, Cijambe)"
-    - "Tasikmalaya (Tasikmalaya Kota, Singaparna, Ciawi)"
-    - "Garut (Garut Kota, Tarogong, Leles)"
-    - "Pekalongan (Pekalongan Kota, Batang, Wiradesa)"
-    - "Tegal (Tegal Kota, Slawi, Adiwerna)"
-    - "Purwokerto (Banyumas, Purwokerto Timur, Sokaraja)"
-    - "Probolinggo (Probolinggo Kota, Dringu, Kraksaan)"
-    - "Pasuruan (Pasuruan Kota, Pandaan, Bangil)"
-    - "Jember (Jember Kota, Ambulu, Tanggul)"
-    - "Banyuwangi (Banyuwangi Kota, Genteng, Rogojampi)"
-    - "Tabanan (Tabanan Kota, Kediri, Kerambitan) - Bali"
-    - "Singaraja (Buleleng, Singaraja, Lovina) - Bali"
+    - "Purwakarta (Plered, Jatiluhur, Babakancikao)"
+    - "Subang (Pagaden, Pamanukan, Ciasem)"
+    - "Tasikmalaya (Cihideung, Tawang, Mangkubumi)"
+    - "Garut (Tarogong Kidul, Tarogong Kaler, Karangpawitan)"
+    - "Pekalongan (Pekalongan Timur, Pekalongan Barat, Pekalongan Selatan)"
+    - "Tegal (Tegal Timur, Tegal Barat, Margadana)"
+    - "Purwokerto (Purwokerto Utara, Purwokerto Selatan, Sokaraja)"
+    - "Probolinggo (Mayangan, Kanigaran, Wonoasih)"
+    - "Pasuruan (Gadingrejo, Purworejo, Panggungrejo)"
+    - "Jember (Kaliwates, Patrang, Sumbersari)"
+    - "Banyuwangi (Giri, Glagah, Kalipuro)"
+    - "Tabanan (Kediri, Kerambitan, Penebel) - Bali"
+    - "Singaraja (Buleleng, Sukasada, Sawan) - Bali"
     - "Dan Lain-lain"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - LANDMARK WISATA (REQUIRED - min 3 items)
 # ============================================================================
   landmark_wisata:
-    - nama: "Monas & Ancol Jakarta"
-      icon: "bi-building"
+    - nama: "Taman Mini & Kepulauan Seribu Jakarta"
+      icon: "bi-geo-alt"
+      warna: "primary"
+    - nama: "Kebun Raya & Taman Safari Bogor"
+      icon: "bi-tree"
+      warna: "success"
+    - nama: "Tangkuban Perahu & Ciwidey Bandung"
+      icon: "bi-geo-alt"
+      warna: "info"
+    - nama: "Dataran Tinggi Dieng Wonosobo"
+      icon: "bi-geo-alt"
       warna: "warning"
-    - nama: "Puncak Bogor"
+    - nama: "Malioboro & Pantai Parangtritis Yogyakarta"
+      icon: "bi-geo-alt"
+      warna: "danger"
+    - nama: "Kota Lama & Sam Poo Kong Semarang"
       icon: "bi-building"
-      warna: "warning"
-    - nama: "Kawah Putih Bandung"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Candi Borobudur Magelang"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Candi Prambanan Yogyakarta"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Lawang Sewu Semarang"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Bromo Probolinggo"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Pantai Kuta & Tanah Lot Bali"
-      icon: "bi-building"
-      warna: "warning"
-    - nama: "Ubud & Tegalalang Bali"
-      icon: "bi-building"
+      warna: "primary"
+    - nama: "Kawah Ijen & Pulau Menjangan Banyuwangi"
+      icon: "bi-geo-alt"
+      warna: "success"
+    - nama: "Bedugul & Danau Beratan Bali"
+      icon: "bi-water"
+      warna: "info"
+    - nama: "Sanur & Seminyak Bali"
+      icon: "bi-geo-alt"
       warna: "warning"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - LANDMARK FASILITAS (REQUIRED - min 3 items)
 # ============================================================================
   landmark_fasilitas:
-    - nama: "BSD City & Alam Sutera Tangerang"
-      icon: "bi-shop"
-      warna: "success"
-    - nama: "Summarecon Bekasi & Grand Metropolitan"
-      icon: "bi-cart"
-      warna: "info"
-    - nama: "Universitas Indonesia (UI) Depok"
-      icon: "bi-mortarboard"
-      warna: "success"
-    - nama: "Universitas Gadjah Mada (UGM) Yogyakarta"
-      icon: "bi-mortarboard"
-      warna: "success"
-    - nama: "Universitas Brawijaya (UB) Malang"
-      icon: "bi-mortarboard"
-      warna: "success"
-    - nama: "Tunjungan Plaza & Galaxy Mall Surabaya"
-      icon: "bi-cart"
+    - nama: "Kawasan Industri MM2100 Bekasi"
+      icon: "bi-building"
       warna: "primary"
-    - nama: "Solo Paragon & Solo Grand Mall"
-      icon: "bi-cart"
+    - nama: "Kawasan Industri KIIC Karawang"
+      icon: "bi-building"
       warna: "info"
-    - nama: "Universitas Udayana (Unud) Bali"
-      icon: "bi-mortarboard"
+    - nama: "Kawasan Industri Jababeka Cikarang"
+      icon: "bi-building"
       warna: "success"
-    - nama: "Beachwalk Mall & Discovery Mall Bali"
-      icon: "bi-cart"
+    - nama: "Lippo Cikarang & Meikarta Bekasi"
+      icon: "bi-shop"
+      warna: "warning"
+    - nama: "Kawasan Industri Kendal Semarang"
+      icon: "bi-building"
+      warna: "primary"
+    - nama: "SIER (Surabaya Industrial Estate Rungkut)"
+      icon: "bi-building"
+      warna: "info"
+    - nama: "Kawasan Industri JIIPE Gresik"
+      icon: "bi-building"
+      warna: "success"
+    - nama: "Kawasan Industri Pasuruan (PIER)"
+      icon: "bi-building"
+      warna: "warning"
+    - nama: "Kawasan Pariwisata Nusa Dua Bali"
+      icon: "bi-shop"
       warna: "primary"
 
 # ============================================================================
 # KEUNGGULAN KAYU DOLKEN (Format Array - Direkomendasikan)
 # ============================================================================
 keunggulan_kayu_dolken:
-  - judul: "Awet 20-30 Tahun"
-    deskripsi: "Daya tahan luar biasa hingga 20-30 tahun tanpa treatment khusus. Sangat cocok untuk berbagai iklim di Jawa dan Bali dengan kondisi outdoor dan beban berat konstan."
+  - judul: "Durabilitas Tinggi"
+    deskripsi: "Masa pakai yang panjang hingga puluhan tahun berkat serat kayu yang rapat dan kuat. Pilihan tepat untuk investasi jangka panjang pada proyek konstruksi di berbagai wilayah Jawa dan Bali."
     warna: "success"
     icon: "bi-clock-history"
-  - judul: "Anti Rayap Natural"
-    deskripsi: "Tidak memerlukan obat anti rayap karena tekstur kayu sangat padat secara alami menolak serangan rayap. Ideal untuk warehouse, gudang, dan bangunan di area tropis yang lembab."
+  - judul: "Resistensi Hama Alami"
+    deskripsi: "Kandungan minyak alami dan kerapatan serat tinggi membuat kayu gelam tidak disukai rayap dan serangga perusak. Solusi hemat biaya tanpa perlu treatment kimia tambahan."
     warna: "danger"
     icon: "bi-bug"
-  - judul: "Tahan Cuaca Ekstrem"
-    deskripsi: "Cocok untuk outdoor dan indoor, tahan terhadap hujan, panas, dan kelembaban tinggi. Tidak mudah lapuk meskipun terpapar cuaca ekstrem musim hujan maupun kemarau."
+  - judul: "Adaptif Segala Cuaca"
+    deskripsi: "Performa konsisten di kondisi basah maupun kering. Tidak mudah retak saat musim kemarau dan tetap solid meski terendam air saat musim penghujan."
     warna: "primary"
     icon: "bi-cloud-rain"
-  - judul: "Kuat untuk Beban Berat"
-    deskripsi: "Kepadatan kayu sangat tinggi memberikan kekuatan maksimal untuk menahan beban berat. Sempurna untuk konstruksi, struktur penyangga, pabrik, warehouse, dan bangunan komersial."
+  - judul: "Struktur Kokoh & Solid"
+    deskripsi: "Bobot dan kepadatan tinggi menjamin kestabilan struktur untuk aplikasi penopang atap, pondasi ringan, scaffolding, dan berbagai kebutuhan konstruksi berat."
     warna: "warning"
     icon: "bi-hammer"
-  - judul: "Ramah Lingkungan"
-    deskripsi: "Material natural 100% sustainable dan biodegradable. Mendukung konsep green building dan konstruksi ramah lingkungan untuk hunian modern maupun komersial."
+  - judul: "Material Berkelanjutan"
+    deskripsi: "Berasal dari hutan tanaman yang dikelola secara berkelanjutan. Pilihan bijak untuk proyek yang mengutamakan aspek lingkungan dan keberlanjutan sumber daya alam."
     warna: "success"
     icon: "bi-recycle"
-  - judul: "Estetika Natural"
-    deskripsi: "Warna coklat natural yang indah memberikan kesan elegan dan natural. Cocok untuk landscaping taman, pergola, gazebo, pagar, dan berbagai dekorasi outdoor."
+  - judul: "Tampilan Alami Menarik"
+    deskripsi: "Tekstur dan warna kayu yang khas memberikan nilai estetika tersendiri. Banyak digunakan untuk elemen dekoratif seperti pagar, deck, pergola, dan landscape area outdoor."
     warna: "info"
     icon: "bi-palette"
 
@@ -308,49 +343,49 @@ keunggulan_kayu_dolken:
 # APLIKASI KAYU DOLKEN (OPTIONAL - tapi direkomendasikan)
 # ============================================================================
 aplikasi_kayu_dolken:
-  deskripsi: "Kayu dolken gelam sangat fleksibel untuk berbagai kebutuhan konstruksi residensial, komersial, dan industri di seluruh Jawa-Bali."
+  deskripsi: "Material kayu gelam menawarkan versatilitas luar biasa untuk beragam proyek pembangunan hunian, usaha, maupun kawasan industri di area Jawa hingga Bali."
 
   konstruksi_dekorasi:
-    - judul: "Konstruksi & Infrastruktur"
+    - judul: "Bangunan & Infrastruktur"
       icon: "bi-building"
       warna: "wood"
       aplikasi:
-        - "Struktur penyangga warehouse dan gudang"
-        - "Tiang pembatas area parkir dan loading"
-        - "Pondasi bangunan rumah dan villa"
-        - "Rangka konstruksi bangunan komersial"
-        - "Pagar pembatas perumahan dan properti"
-    - judul: "Dekorasi & Landscaping"
+        - "Penopang atap gudang dan fasilitas penyimpanan"
+        - "Palang pembatas zona parkir dan bongkar muat"
+        - "Dasar bangunan hunian dan vila"
+        - "Kerangka struktur gedung komersial"
+        - "Pagar keliling komplek perumahan"
+    - judul: "Estetika & Penataan Lahan"
       icon: "bi-palette-fill"
       warna: "primary"
       aplikasi:
-        - "Landscaping taman rumah dan villa"
-        - "Dekorasi taman hotel dan resort"
-        - "Pembatas parkir mall dan perkantoran"
-        - "Border tanaman area hijau perumahan"
-        - "Aksen natural halaman restoran dan cafe"
+        - "Penataan landscape halaman rumah dan vila"
+        - "Hiasan area hijau penginapan dan resort"
+        - "Pembagi area parkir pusat perbelanjaan dan kantor"
+        - "Tepian tanaman zona hijau perumahan"
+        - "Sentuhan alami pekarangan kedai dan kafe"
 
   furniture_komersial:
-    - judul: "Furniture & Fasilitas Outdoor"
+    - judul: "Perabot & Sarana Ruang Terbuka"
       icon: "bi-chair-fill"
       warna: "info"
       aplikasi:
-        - "Gazebo taman rumah dan perumahan"
-        - "Pergola area outdoor restoran"
-        - "Bangku taman kota dan taman publik"
-        - "Deck area kolam renang dan pantai"
-        - "Furniture outdoor villa dan hotel"
+        - "Saung taman hunian dan komplek perumahan"
+        - "Kanopi area luar restoran"
+        - "Tempat duduk taman publik dan ruang terbuka"
+        - "Lantai kayu area kolam dan tepi pantai"
+        - "Perabot outdoor vila dan penginapan"
 
-    - judul: "Klien Terpercaya di Jawa-Bali"
+    - judul: "Mitra Proyek Jawa-Bali"
       icon: "bi-briefcase-fill"
       warna: "success"
-      deskripsi: "Dipercaya oleh berbagai developer, kontraktor, dan pemilik properti untuk proyek berkualitas di seluruh Jawa dan Bali."
+      deskripsi: "Menjadi pilihan utama pengembang, pelaksana proyek, dan pemilik properti untuk pembangunan premium di wilayah Jawa dan Bali."
       aplikasi:
-        - "Developer perumahan di Jabodetabek"
-        - "Hotel dan resort di Bali dan Jawa"
-        - "Kontraktor konstruksi regional"
-        - "Pemilik villa dan properti wisata"
-        - "Pabrik dan warehouse di berbagai kota"
+        - "Pengembang properti kawasan Jabodetabek"
+        - "Penginapan dan resort di Bali serta Jawa"
+        - "Pelaksana proyek konstruksi wilayah"
+        - "Pemilik vila dan aset pariwisata"
+        - "Fasilitas produksi dan gudang berbagai kota"
 
 # ============================================================================
 # PROSES PEMESANAN - TAHAP AWAL (REQUIRED)
@@ -373,36 +408,36 @@ finalisasi_pengiriman:
 # ============================================================================
 studi_kasus_proyek:
   proyek_komersial:
-    - judul: "Landscaping Hotel di Seminyak Bali"
+    - judul: "Landscape Area Hijau Penginapan Seminyak Bali"
       tahun: "2024"
-      deskripsi: "Proyek landscaping dan pembatas area hijau untuk hotel resort di kawasan Seminyak, Bali. Klien membutuhkan material tahan lama untuk outdoor area yang terkena angin laut, hujan dan panas ekstrem."
+      deskripsi: "Pengerjaan penataan landscape dan sekat zona hijau resort di wilayah Seminyak, Bali. Pihak resort memerlukan bahan bangunan awet untuk area terbuka yang terpapar hembusan angin pantai, curah hujan tinggi, serta terik matahari."
       jumlah: "300 batang"
       diameter: "6-8 cm dan 8-10 cm"
-      hasil: "Border taman dan pembatas area kolam renang kokoh dan estetis. Setelah 1 tahun terpapar angin laut masih dalam kondisi prima tanpa perawatan khusus. Klien sangat puas."
+      hasil: "Tepian taman serta sekat area swimming pool tampil kuat dan menawan. Memasuki tahun kedua dengan paparan udara laut tetap prima tanpa pemeliharaan intensif. Pihak resort memberikan apresiasi tinggi."
       warna: "primary"
       icon: "bi-building"
-    - judul: "Pergola Restoran di BSD Tangerang"
+    - judul: "Struktur Atap Outdoor Resto BSD Tangerang"
       tahun: "2024"
-      deskripsi: "Pembangunan pergola dan gazebo untuk area outdoor restoran di BSD City, Tangerang. Membutuhkan material kuat untuk menahan beban dan cuaca ekstrem serta memberikan kesan natural."
+      deskripsi: "Pembuatan kanopi dan saung untuk zona outdoor tempat makan di BSD City, Tangerang. Dibutuhkan bahan kokoh penahan beban serta tahan kondisi cuaca sekaligus menghadirkan nuansa alami."
       jumlah: "180 batang"
       diameter: "8-10 cm"
-      hasil: "Pergola kokoh dan estetis menambah nilai restoran. Material kayu tahan panas dan hujan, tidak ada keluhan setelah 8 bulan penggunaan intens oleh pengunjung."
+      hasil: "Kanopi tampil solid dan menarik, meningkatkan daya tarik tempat makan. Bahan kayu bertahan terhadap terik dan hujan, nihil keluhan setelah 8 bulan pemakaian intensif oleh pelanggan."
       warna: "warning"
       icon: "bi-tree"
-    - judul: "Warehouse Area di Cikarang Bekasi"
+    - judul: "Konstruksi Loading Dock Warehouse Cikarang Bekasi"
       tahun: "2024"
-      deskripsi: "Struktur penyangga dan pembatas area loading dock warehouse logistik di Cikarang, Bekasi. Memerlukan material kuat untuk menahan beban berat truk dan forklift setiap hari."
+      deskripsi: "Konstruksi penopang dan pembatas zona bongkar muat gudang logistik di Cikarang, Bekasi. Diperlukan bahan tangguh penahan beban kendaraan berat dan forklift dalam operasional harian."
       jumlah: "250 batang"
       diameter: "10-12 cm"
-      hasil: "Struktur sangat kokoh menahan beban berat operasional harian. Setelah 1 tahun operasional warehouse, tidak ada kerusakan atau keluhan. Highly recommended."
+      hasil: "Konstruksi amat solid menahan tekanan operasional sehari-hari. Memasuki tahun kedua operasional gudang, belum ditemukan kerusakan maupun keluhan. Sangat direkomendasikan."
       warna: "success"
       icon: "bi-shop"
-    - judul: "Gazebo Villa di Ubud Bali"
+    - judul: "Pavilion Eco-Resort Ubud Bali"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo dan deck area outdoor untuk villa resort di kawasan Ubud, Bali. Digunakan untuk area istirahat dan viewing deck dengan pemandangan sawah."
+      deskripsi: "Pembuatan saung dan lantai kayu zona outdoor untuk vila resort di kawasan Ubud, Bali. Difungsikan sebagai tempat bersantai dan viewing deck menghadap hamparan sawah."
       jumlah: "170 batang"
       diameter: "8-10 cm"
-      hasil: "Gazebo nyaman dan kokoh dengan nuansa natural Bali. Material tahan panas dan hujan tropis tanpa perawatan khusus, sangat cocok dengan konsep eco-resort."
+      hasil: "Saung terasa teduh dan kokoh dengan atmosfer khas Bali. Bahan tahan terik serta hujan tropis tanpa pemeliharaan khusus, sangat selaras dengan konsep eco-resort."
       warna: "secondary"
       icon: "bi-building"
 
@@ -410,36 +445,36 @@ studi_kasus_proyek:
 # STUDI KASUS PROYEK - RESIDENSIAL (REQUIRED - min 2 items)
 # ============================================================================
   proyek_residensial:
-    - judul: "Pagar Perumahan di Serpong Tangerang"
+    - judul: "Pagar Cluster Developer Serpong Tangerang"
       tahun: "2024"
-      deskripsi: "Pemasangan pagar dan border taman untuk cluster perumahan developer di Serpong, Tangerang. Developer membutuhkan material berkualitas dengan harga kompetitif untuk 50 unit rumah."
+      deskripsi: "Instalasi pagar dan tepian taman untuk cluster hunian developer di Serpong, Tangerang. Pengembang memerlukan bahan premium dengan harga bersaing untuk 50 unit hunian."
       jumlah: "220 batang"
       diameter: "6-8 cm"
-      hasil: "Pagar kokoh dan estetis meningkatkan nilai jual rumah. Developer puas dan repeat order untuk cluster berikutnya di fase 2."
+      hasil: "Pagar tampil solid dan menarik, mendongkrak nilai properti. Pengembang merasa puas dan melakukan pemesanan ulang untuk cluster tahap berikutnya."
       warna: "success"
       icon: "bi-house-door"
-    - judul: "Gazebo Rumah di Bandung Utara"
+    - judul: "Gazebo Taman Rumah Dago Bandung"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo taman untuk rumah tinggal di area Dago, Bandung Utara. Pemilik rumah menginginkan gazebo yang awet dan estetis dengan nuansa natural pegunungan."
+      deskripsi: "Pembuatan saung taman untuk hunian pribadi di kawasan Dago, Bandung Utara. Pemilik menghendaki saung yang tahan lama dan menawan dengan suasana alami pegunungan."
       jumlah: "120 batang"
       diameter: "8-10 cm"
-      hasil: "Gazebo kokoh dan indah menjadi focal point taman. Setelah 6 bulan tidak ada tanda kerusakan atau rayap meskipun suhu dingin Bandung."
+      hasil: "Saung tampil kokoh dan menawan sebagai titik fokus taman. Memasuki bulan keenam belum tampak tanda kerusakan maupun serangan rayap meski suhu dingin Bandung."
       warna: "success"
       icon: "bi-sun"
-    - judul: "Landscaping Villa di Puncak Bogor"
+    - judul: "Dekorasi Landscape Vila Puncak Bogor"
       tahun: "2024"
-      deskripsi: "Dekorasi taman dan border landscape untuk villa di kawasan Puncak, Bogor. Menggunakan kayu dolken untuk aksen natural yang modern di area pegunungan."
+      deskripsi: "Dekorasi taman serta tepian landscape untuk vila di kawasan Puncak, Bogor. Memanfaatkan kayu dolken sebagai aksen alami bergaya modern di area dataran tinggi."
       jumlah: "100 batang"
       diameter: "4-6 cm"
-      hasil: "Taman terlihat lebih rapi dan natural. Material kayu awet meski terkena hujan lebat dan kabut pegunungan setiap hari."
+      hasil: "Taman tampak lebih tertata dan alami. Bahan kayu tetap awet walau terkena guyuran hujan deras dan kabut pegunungan setiap hari."
       warna: "info"
       icon: "bi-tree-fill"
-    - judul: "Pergola Rumah di Surabaya Barat"
+    - judul: "Pergola Halaman Citraland Surabaya"
       tahun: "2024"
-      deskripsi: "Pembangunan pergola halaman untuk rumah tinggal di Citraland, Surabaya Barat. Pemilik menginginkan area outdoor yang sejuk dan estetis untuk keluarga berkumpul."
+      deskripsi: "Pembuatan kanopi halaman untuk hunian pribadi di Citraland, Surabaya Barat. Pemilik menginginkan zona outdoor yang teduh dan menawan untuk berkumpul keluarga."
       jumlah: "110 batang"
       diameter: "8-10 cm"
-      hasil: "Pergola kokoh dan indah menciptakan area outdoor yang nyaman. Tahan cuaca panas Surabaya dan kelembaban tinggi tanpa perawatan khusus."
+      hasil: "Kanopi tampil solid dan indah menciptakan zona outdoor yang nyaman. Bertahan terhadap terik Surabaya dan kelembaban tinggi tanpa pemeliharaan khusus."
       warna: "success"
       icon: "bi-sun"
 
@@ -447,20 +482,20 @@ studi_kasus_proyek:
 # STUDI KASUS PROYEK - PUBLIK (OPTIONAL - min 2 items)
 # ============================================================================
   proyek_publik:
-    - judul: "Taman Publik di Yogyakarta"
+    - judul: "Fasilitas Taman Publik Malioboro Yogyakarta"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo dan area hijau untuk taman publik di kawasan Malioboro, Yogyakarta. Proyek pemerintah kota untuk fasilitas wisatawan dan warga yang nyaman."
+      deskripsi: "Pembuatan saung dan zona hijau untuk ruang publik di kawasan Malioboro, Yogyakarta. Program pemerintah kota guna menyediakan fasilitas nyaman bagi wisatawan dan warga."
       jumlah: "200 batang"
       diameter: "8-10 cm"
-      hasil: "Area istirahat pengunjung menjadi lebih nyaman dan asri. Gazebo tahan cuaca dan penggunaan intensif ribuan pengunjung setiap hari."
+      hasil: "Zona istirahat pengunjung menjadi lebih teduh dan asri. Saung bertahan terhadap cuaca serta pemakaian intensif ribuan pengunjung setiap hari."
       warna: "info"
       icon: "bi-signpost-2"
-    - judul: "Jogging Track Taman Kota Semarang"
+    - judul: "Border Jogging Track Taman Indonesia Kaya Semarang"
       tahun: "2024"
-      deskripsi: "Proyek pembatas jogging track dan landscaping di Taman Indonesia Kaya, Semarang. Menggunakan kayu dolken untuk border jalur dan area hijau publik yang ramai dikunjungi."
+      deskripsi: "Pengerjaan pembatas jalur lari dan penataan landscape di Taman Indonesia Kaya, Semarang. Memanfaatkan kayu dolken untuk tepian jalur serta zona hijau publik yang ramai pengunjung."
       jumlah: "160 batang"
       diameter: "6-8 cm"
-      hasil: "Taman kota lebih tertata dan aman untuk pengunjung. Material kayu tahan penggunaan publik intensif harian dan cuaca panas Semarang."
+      hasil: "Taman kota tampak lebih tertata dan aman bagi pengunjung. Bahan kayu bertahan terhadap pemakaian publik intensif sehari-hari serta terik Semarang."
       warna: "primary"
       icon: "bi-bicycle"
 
@@ -468,46 +503,46 @@ studi_kasus_proyek:
 # TESTIMONI - RESIDENTIAL (REQUIRED - min 2 items)
 # ============================================================================
 testimoni_residential:
-  - nama: "Pak Agung Nugroho"
-    lokasi: "Denpasar, Bali"
+  - nama: "Komang Wirawan"
+    lokasi: "Pemilik Villa Sanur"
     rating: 5
     judul: "Kualitas Premium untuk Villa"
-    komentar: "Kami pakai kayu dolken ini untuk landscaping villa di Denpasar. Kualitasnya luar biasa, tahan cuaca ekstrem dan angin laut. Sudah 1 tahun masih seperti baru meskipun terpapar panas dan hujan. Pengiriman juga cepat ke Bali. Sangat recommended untuk proyek villa!"
+    komentar: "Kami menggunakan kayu dolken ini untuk landscaping villa di Sanur. Kualitasnya sangat memuaskan, tahan cuaca ekstrem dan hembusan angin laut. Sudah setahun masih terlihat bagus meskipun terpapar panas dan hujan. Pengiriman ke Bali juga cepat. Sangat direkomendasikan untuk proyek villa!"
     warna: "primary"
-  - nama: "Bu Ratna Sari"
-    lokasi: "Serpong, Tangerang"
+  - nama: "Indah Permatasari"
+    lokasi: "Cluster Gading Serpong"
     rating: 5
     judul: "Pelayanan Profesional & Cepat"
-    komentar: "Order untuk pagar perumahan cluster kami di Serpong. Prosesnya sangat mudah, tim nya membantu konsultasi sampai detail. Kayu nya bagus, tidak ada yang bengkok. Harga juga kompetitif. Puas banget!"
+    komentar: "Memesan untuk pagar perumahan cluster kami di Serpong. Prosesnya sangat mudah, timnya membantu konsultasi hingga detail. Kayunya bagus, tidak ada yang bengkok. Harganya juga kompetitif. Sangat puas!"
     warna: "success"
 
 # ============================================================================
 # TESTIMONI - KOMERSIAL (REQUIRED - min 4 items)
 # ============================================================================
 testimoni_komersial:
-  - nama: "Pak Hendra Wijaya"
-    lokasi: "Project Manager Hotel di Bali"
+  - nama: "Made Suardana"
+    lokasi: "Manajer Proyek Resort Ubud"
     rating: 5
     judul: "Partner Terpercaya untuk Hospitality"
-    komentar: "Sudah beberapa kali pakai untuk proyek hotel dan resort di Bali. Kualitas selalu konsisten meskipun terpapar angin laut, pengiriman tepat waktu, dan harga kompetitif. Sistem invoice juga memudahkan untuk perusahaan. Highly recommended!"
+    komentar: "Sudah beberapa kali memakai untuk proyek hotel dan resort di Bali. Kualitas selalu konsisten meskipun terpapar angin laut, pengiriman tepat waktu, dan harga kompetitif. Sistem invoice juga memudahkan untuk perusahaan. Sangat direkomendasikan!"
     warna: "warning"
-  - nama: "Bu Linda Susanto"
-    lokasi: "Developer Perumahan BSD Tangerang"
+  - nama: "Sinta Dewi"
+    lokasi: "Pengembang Perumahan Serpong"
     rating: 5
     judul: "Solusi Terbaik untuk Developer"
-    komentar: "Sebagai developer, kami butuh supplier yang reliable dengan harga terbaik. Sudah pakai untuk 3 cluster perumahan di BSD dan Serpong, hasilnya selalu memuaskan. Stok ready, kualitas bagus, harga bersaing. Mantap!"
+    komentar: "Sebagai developer, kami membutuhkan supplier yang handal dengan harga terbaik. Sudah menggunakan untuk 3 cluster perumahan di BSD dan Serpong, hasilnya selalu memuaskan. Stok tersedia, kualitas bagus, harga bersaing. Mantap!"
     warna: "info"
-  - nama: "Pak Rudi Hartono"
-    lokasi: "Kontraktor di Bandung"
+  - nama: "Asep Sunarya"
+    lokasi: "Kontraktor Konstruksi Bandung"
     rating: 5
     judul: "Material Berkualitas Harga Bersaing"
-    komentar: "Untuk proyek konstruksi villa dan resort di Bandung, kualitas material sangat penting. Kayu dolken nya premium, cocok untuk berbagai aplikasi. Harga kompetitif dan pelayanan profesional. Sudah jadi partner terpercaya kami."
+    komentar: "Untuk proyek konstruksi villa dan resort di Bandung, kualitas material sangat penting. Kayu dolkennya premium, sesuai untuk berbagai aplikasi. Harga kompetitif dan pelayanan profesional. Sudah menjadi partner terpercaya kami."
     warna: "success"
-  - nama: "Pak Budi Santoso"
-    lokasi: "Manager Warehouse di Cikarang"
+  - nama: "Hendro Wibowo"
+    lokasi: "Pengelola Gudang Cikarang"
     rating: 5
     judul: "Tahan Beban Berat untuk Warehouse"
-    komentar: "Sudah 3x order untuk proyek warehouse di Cikarang dan Bekasi. Kualitas konsisten bagus untuk menahan beban berat, stok selalu ready, dan harga terbaik untuk volume besar. Tim nya responsif dan profesional. Jadi supplier langganan kami!"
+    komentar: "Sudah 3 kali order untuk proyek gudang di Cikarang dan Bekasi. Kualitas konsisten bagus untuk menahan beban berat, stok selalu tersedia, dan harga terbaik untuk volume besar. Timnya responsif dan profesional. Menjadi supplier andalan kami!"
     warna: "primary"
 
 # ============================================================================
@@ -546,112 +581,112 @@ tips_ukuran:
 # FAQ - PEMESANAN (REQUIRED - min 2 items)
 # ============================================================================
 faq_pemesanan:
-  - pertanyaan: "Berapa minimal pemesanan kayu dolken?"
-    jawaban: "Minimal pemesanan mulai dari 10 batang untuk kebutuhan retail dan rumah tangga. Untuk proyek skala besar seperti perumahan, hotel, atau konstruksi komersial, tersedia harga khusus dengan sistem bertingkat. Hubungi 081311400177 untuk konsultasi dan penawaran terbaik."
+  - pertanyaan: "Berapakah jumlah order minimum kayu dolken?"
+    jawaban: "Pemesanan minimum dimulai dari 10 batang untuk keperluan retail dan rumah tangga. Untuk proyek skala besar seperti perumahan, hotel, atau bangunan komersial, tersedia penawaran harga khusus dengan sistem bertingkat. Hubungi 081311400177 untuk konsultasi dan mendapatkan penawaran terbaik."
     icon: "bi-cart-check"
-  - pertanyaan: "Bagaimana cara memastikan kualitas kayu dolken sebelum bayar?"
-    jawaban: "Kami menyediakan sistem COD (Cash on Delivery) untuk pembelian retail, jadi Anda bisa cek fisik dulu sebelum bayar. Untuk perusahaan dan kontraktor, tersedia opsi sample gratis atau inspeksi saat barang tiba sebelum proses pembayaran. Pastikan kayu lurus, tidak retak, dan diameter sesuai pesanan."
+  - pertanyaan: "Bisakah saya memeriksa kondisi kayu sebelum melakukan pembayaran?"
+    jawaban: "Tentu bisa. Kami menyediakan sistem bayar di tempat (COD) untuk pembelian retail, sehingga Anda dapat mengecek fisik kayu terlebih dahulu sebelum membayar. Untuk perusahaan dan kontraktor, tersedia opsi sampel gratis atau inspeksi saat barang tiba sebelum proses pembayaran. Pastikan kayu lurus, tidak retak, dan diameter sesuai pesanan."
     icon: "bi-clipboard-check"
-  - pertanyaan: "Apakah tersedia harga khusus untuk volume besar?"
-    jawaban: "Ya, kami memberikan harga spesial untuk pembelian volume besar. Untuk developer, kontraktor, atau proyek yang membutuhkan ratusan hingga ribuan batang, tersedia harga terbaik dengan sistem pembayaran invoice/termin. Hubungi tim kami untuk diskusi dan negosiasi harga."
+  - pertanyaan: "Adakah penawaran khusus untuk pembelian dalam jumlah besar?"
+    jawaban: "Ya, kami memberikan harga spesial untuk pembelian volume besar. Untuk pengembang, kontraktor, atau proyek yang membutuhkan ratusan hingga ribuan batang, tersedia harga terbaik dengan sistem pembayaran invoice/termin. Hubungi tim kami untuk diskusi dan negosiasi harga."
     icon: "bi-percent"
 
 # ============================================================================
 # FAQ - PRODUK (REQUIRED - min 2 items)
 # ============================================================================
 faq_produk:
-  - pertanyaan: "Apakah kayu dolken gelam perlu perawatan rutin?"
-    jawaban: "Tidak perlu perawatan khusus. Kayu dolken gelam sangat cocok untuk iklim tropis di Jawa dan Bali yang cenderung panas dan lembab. Untuk aplikasi outdoor yang terkena hujan dan panas ekstrem, kayu ini tetap awet 20-30 tahun tanpa treatment tambahan. Opsional bisa tambah finishing coating untuk tampilan lebih glossy."
+  - pertanyaan: "Bagaimana cara merawat kayu dolken gelam?"
+    jawaban: "Kayu dolken gelam pada dasarnya tidak memerlukan perawatan khusus. Material ini sangat sesuai untuk iklim tropis di Jawa dan Bali yang cenderung panas dan lembab. Untuk penggunaan outdoor yang terpapar hujan dan terik matahari, kayu ini tetap awet 20-30 tahun tanpa treatment tambahan. Opsional bisa menambahkan finishing coating untuk tampilan lebih mengkilap."
     icon: "bi-tools"
-  - pertanyaan: "Apakah bisa request custom panjang kayu dolken?"
-    jawaban: "Ya, bisa custom panjang sesuai kebutuhan proyek Anda. Panjang standar kami 4 meter, tapi bisa disesuaikan untuk proyek spesifik seperti gazebo, pergola, deck, atau konstruksi bangunan. Diskusikan detail kebutuhan Anda dengan tim kami di 081311400177."
+  - pertanyaan: "Apakah tersedia layanan pemotongan sesuai ukuran yang diinginkan?"
+    jawaban: "Benar, bisa custom panjang sesuai keperluan proyek Anda. Panjang standar kami 4 meter, namun dapat disesuaikan untuk proyek spesifik seperti gazebo, pergola, deck, atau konstruksi bangunan. Diskusikan detail kebutuhan Anda dengan tim kami di 081311400177."
     icon: "bi-rulers"
-  - pertanyaan: "Bagaimana ciri-ciri kayu dolken gelam asli vs imitasi?"
-    jawaban: "Kayu dolken gelam asli memiliki ciri khas: warna coklat natural konsisten, tekstur sangat padat dan berat saat diangkat, permukaan keras tidak mudah tergores, dan beraroma khas kayu natural segar. Kami jamin 100% kayu gelam asli Grade A premium, cocok untuk berbagai aplikasi konstruksi yang membutuhkan kekuatan dan ketahanan maksimal."
+  - pertanyaan: "Apa ciri-ciri kayu dolken gelam asli yang berkualitas?"
+    jawaban: "Kayu dolken gelam asli memiliki karakteristik: warna coklat natural yang konsisten, tekstur sangat padat dan terasa berat saat diangkat, permukaan keras yang tidak mudah tergores, dan memiliki aroma khas kayu natural yang segar. Kami menjamin 100% kayu gelam asli Grade A premium, sesuai untuk berbagai aplikasi konstruksi yang membutuhkan kekuatan dan ketahanan optimal."
     icon: "bi-patch-check"
 
 # ============================================================================
 # FAQ - PENGIRIMAN (REQUIRED - min 1 item)
 # ============================================================================
 faq_pengiriman:
-  - pertanyaan: "Berapa lama estimasi waktu pengiriman ke kota saya?"
-    jawaban: "Estimasi pengiriman bervariasi tergantung lokasi: Jabodetabek 1-3 hari kerja, Bandung & Jawa Barat 2-4 hari, Semarang & Jawa Tengah 3-5 hari, Surabaya & Jawa Timur 4-6 hari, Bali 5-7 hari kerja. Gratis ongkir untuk area tertentu dengan minimal pembelian. Hubungi kami untuk info detail."
+  - pertanyaan: "Berapa estimasi waktu pengiriman ke berbagai wilayah?"
+    jawaban: "Estimasi pengiriman bervariasi sesuai lokasi tujuan: Jabodetabek 1-3 hari kerja, Bandung & Jawa Barat 2-4 hari, Semarang & Jawa Tengah 3-5 hari, Surabaya & Jawa Timur 4-6 hari, Bali 5-7 hari kerja. Layanan kirim gratis untuk area tertentu dengan minimum pembelian. Hubungi kami untuk informasi lebih detail."
     icon: "bi-truck"
-  - pertanyaan: "Apakah bisa pengiriman ke kawasan khusus seperti resort atau hotel?"
-    jawaban: "Ya, tentu bisa! Kami berpengalaman mengirim ke berbagai lokasi khusus seperti resort di Bali, hotel di kota besar, perumahan cluster, kawasan industri, dan area terpencil. Armada kami profesional dan bisa koordinasi untuk akses lokasi. Hubungi kami untuk diskusi detail pengiriman."
+  - pertanyaan: "Bisakah pengiriman dilakukan ke lokasi khusus seperti resort atau hotel?"
+    jawaban: "Tentu saja bisa! Kami berpengalaman mengirim ke berbagai lokasi khusus seperti resort di Bali, hotel di kota-kota besar, perumahan cluster, kawasan industri, hingga area terpencil. Armada kami profesional dan mampu berkoordinasi untuk akses lokasi. Hubungi kami untuk diskusi detail pengiriman."
     icon: "bi-geo-alt"
 
 # ============================================================================
 # RELEVANSI KAYU DOLKEN (REQUIRED)
 # ============================================================================
 relevansi_kayu_dolken:
-  karakteristik_iklim: "Wilayah Jawa dan Bali memiliki iklim tropis dengan cuaca yang bervariasi - dari panas terik Jakarta dan Surabaya, kelembaban tinggi di Semarang, hingga angin laut di kawasan pantai Bali. Material konstruksi outdoor membutuhkan daya tahan ekstra menghadapi kondisi ini. Kayu dolken gelam sangat cocok karena sifatnya yang tahan air, tahan rayap natural, tidak mudah lapuk, dan mampu menahan beban berat - ideal untuk berbagai aplikasi konstruksi dari residensial, komersial, hingga industri."
-  keunggulan_lokal: "Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca ekstrem</strong> sangat cocok untuk aplikasi seperti:"
+  karakteristik_iklim: "Kawasan Nusantara khususnya Jawa dan Bali memiliki kondisi iklim tropis dengan variasi cuaca beragam - mulai terik matahari Surabaya dan Semarang, tingkat kelembaban tinggi di Yogyakarta, hingga hembusan angin pesisir di sepanjang pantai selatan. Bahan bangunan untuk ruang terbuka memerlukan ketahanan ekstra menghadapi situasi ini. Kayu dolken gelam amat sesuai berkat karakternya yang kedap air, resisten rayap secara alami, tidak gampang lapuk, serta sanggup menanggung beban berat - ideal untuk beragam kebutuhan konstruksi mulai hunian, komersial, sampai kawasan industri."
+  keunggulan_lokal: "Karakter kayu yang <strong>kedap air, resisten rayap, dan tahan kondisi cuaca ekstrem</strong> amat sesuai untuk keperluan seperti:"
   aplikasi_lokal:
-    - nama: "Landscaping hotel dan resort di Bali, Bandung, dan destinasi wisata lainnya"
+    - nama: "Penataan landscape penginapan dan resort di Yogyakarta, Semarang, dan kawasan wisata lainnya"
       icon: "bi-check-circle-fill"
-    - nama: "Gazebo dan pergola taman rumah di perumahan Jakarta, Tangerang, Surabaya"
+    - nama: "Saung dan kanopi taman hunian di komplek Surabaya, Sidoarjo, Malang"
       icon: "bi-check-circle-fill"
-    - nama: "Pagar dan border perumahan cluster developer di BSD, Serpong, Cikarang"
+    - nama: "Pagar dan tepian komplek hunian developer di Gresik, Pasuruan, Mojokerto"
       icon: "bi-check-circle-fill"
-    - nama: "Deck kolam renang dan area outdoor villa di Puncak, Ubud, Malang"
+    - nama: "Lantai kayu area kolam dan zona outdoor vila di Batu, Trawas, Tretes"
       icon: "bi-check-circle-fill"
-    - nama: "Furniture outdoor restoran dan cafe di pusat kota besar"
+    - nama: "Perabot outdoor kedai dan tempat makan di kawasan urban strategis"
       icon: "bi-check-circle-fill"
 
 # ============================================================================
 # TENTANG KOTA (REQUIRED)
 # ============================================================================
 tentang_kota:
-  tagline: "Jangkauan Jawa & Bali"
-  deskripsi_singkat: "Melayani pengiriman kayu dolken gelam ke seluruh pulau Jawa dan Bali, dari Jakarta hingga Denpasar dengan layanan terpercaya."
-  overview: "Kami melayani pengiriman kayu dolken gelam ke seluruh wilayah Jawa dan Bali, mencakup kota-kota besar seperti Jakarta, Bandung, Semarang, Surabaya, Yogyakarta, hingga Denpasar. Dengan jangkauan luas dan jaringan logistik yang kuat, kami siap memenuhi kebutuhan material konstruksi Anda di berbagai lokasi dengan pengiriman cepat dan aman."
+  tagline: "Distribusi Nusantara"
+  deskripsi_singkat: "Menyediakan distribusi kayu dolken gelam ke berbagai wilayah Nusantara, dari Surabaya sampai Denpasar dengan pelayanan andal."
+  overview: "Kami mendistribusikan kayu dolken gelam ke berbagai wilayah strategis di Nusantara, meliputi kota-kota utama seperti Surabaya, Yogyakarta, Semarang, Bandung, Jabodetabek, sampai Denpasar. Didukung cakupan luas serta sistem distribusi yang solid, kami siap mencukupi keperluan bahan bangunan Anda di beragam titik dengan pengantaran sigap dan terjamin."
 
   tentang_kota_1:
-    - judul: "Jakarta - Ibu Kota & Pusat Bisnis"
+    - judul: "Surabaya - Metropolis Jawa Timur"
       icon: "bi-building"
-      subjudul: "Pusat Ekonomi dan Properti Indonesia"
+      subjudul: "Sentra Industri dan Perdagangan Timur"
       icon_subjudul: "bi-star"
-      deskripsi: "Jakarta sebagai ibu kota Indonesia adalah pusat ekonomi, bisnis, dan properti terbesar. Dengan pertumbuhan pesat sektor residensial dan komersial di area Jabodetabek (Jakarta, Bogor, Depok, Tangerang, Bekasi), kebutuhan material konstruksi berkualitas seperti kayu dolken gelam sangat tinggi. Dari perumahan mewah di Jakarta Selatan, apartemen di pusat kota, hingga villa di Puncak dan BSD, kayu dolken menjadi pilihan utama untuk landscaping dan konstruksi outdoor.\n\nProyek-proyek besar seperti mall, hotel, perkantoran, dan kawasan mixed-use di Jakarta membutuhkan material yang tahan cuaca ekstrem, polusi udara, dan penggunaan intensif. Kayu dolken gelam dengan sifat tahan air, anti rayap, dan awet puluhan tahun menjadi solusi ideal untuk berbagai aplikasi dari deck, gazebo, pergola, hingga furniture outdoor."
+      deskripsi: "Surabaya sebagai kota terbesar kedua di Indonesia menjadi pusat aktivitas industri, perdagangan, dan pengembangan properti di kawasan timur. Dengan pesatnya pembangunan sektor hunian dan komersial di area Gerbangkertosusila (Gresik, Bangkalan, Mojokerto, Surabaya, Sidoarjo, Lamongan), permintaan bahan konstruksi premium seperti kayu dolken gelam terus meningkat. Mulai dari perumahan elite di Surabaya Barat, apartemen di pusat kota, hingga vila di kawasan Batu dan Malang, kayu dolken menjadi andalan untuk penataan landscape dan konstruksi ruang terbuka.\n\nProyek-proyek skala besar seperti pusat perbelanjaan, penginapan, gedung perkantoran, dan kawasan terpadu di Surabaya memerlukan bahan yang tahan iklim panas, polusi, serta pemakaian intensif. Kayu dolken gelam dengan karakter tahan air, anti serangan rayap, dan bertahan puluhan tahun menjadi jawaban tepat untuk berbagai keperluan mulai lantai kayu, saung, kanopi, hingga perabot outdoor."
       fakta:
-        - "Jabodetabek memiliki populasi lebih dari 30 juta jiwa dengan pertumbuhan properti tertinggi"
-        - "Ribuan proyek residensial dan komersial baru setiap tahun membutuhkan material berkualitas"
-        - "Iklim panas-lembab Jakarta memerlukan material konstruksi yang tahan cuaca ekstrem"
+        - "Gerbangkertosusila memiliki populasi lebih dari 10 juta jiwa dengan laju pembangunan properti tinggi"
+        - "Ratusan proyek hunian dan komersial baru setiap tahun memerlukan bahan bangunan berkualitas"
+        - "Kondisi panas dan lembab Surabaya membutuhkan bahan konstruksi yang tahan kondisi ekstrem"
 
-    - judul: "Bali - Destinasi Wisata Dunia"
-      icon: "bi-sunset"
-      subjudul: "Surga Pariwisata & Hospitality"
+    - judul: "Yogyakarta - Kota Budaya & Pendidikan"
+      icon: "bi-mortarboard"
+      subjudul: "Destinasi Wisata Warisan & Kreativitas"
       icon_subjudul: "bi-star-fill"
-      deskripsi: "Bali adalah destinasi wisata kelas dunia dengan ribuan hotel, resort, villa, dan restoran yang membutuhkan material konstruksi berkualitas premium. Dari Seminyak, Canggu, Ubud, hingga Nusa Dua, setiap proyek hospitality memerlukan kayu dolken gelam untuk landscaping, deck kolam renang, gazebo, pergola, dan furniture outdoor yang tahan angin laut, kelembaban tinggi, dan panas tropis.\n\nKonsep arsitektur Bali yang menekankan keselarasan dengan alam membuat kayu natural seperti dolken gelam sangat populer. Material ini cocok untuk eco-resort, villa mewah, beach club, dan berbagai fasilitas wisata yang mengutamakan estetika natural dan daya tahan maksimal. Dengan karakteristik anti rayap natural dan awet hingga 30 tahun, kayu dolken gelam menjadi investasi jangka panjang untuk properti di Bali."
+      deskripsi: "Yogyakarta merupakan destinasi wisata budaya dengan ratusan penginapan, homestay, vila, dan tempat kuliner yang memerlukan bahan konstruksi berkualitas tinggi. Dari kawasan Malioboro, Prawirotaman, Kaliurang, hingga Parangtritis, setiap proyek hospitality membutuhkan kayu dolken gelam untuk penataan landscape, lantai kayu area outdoor, saung, kanopi, dan perabot ruang terbuka yang tahan kelembaban tinggi serta cuaca tropis.\n\nKonsep arsitektur Jogja yang mengutamakan harmoni dengan budaya lokal menjadikan kayu natural seperti dolken gelam diminati. Bahan ini sesuai untuk guest house, vila butik, kedai kopi, dan berbagai fasilitas wisata yang mengedepankan tampilan alami serta ketahanan maksimal. Dengan sifat anti rayap bawaan dan awet hingga 30 tahun, kayu dolken gelam menjadi pilihan investasi jangka panjang untuk properti di Yogyakarta."
       fakta:
-        - "Bali menerima jutaan wisatawan setiap tahun dengan ribuan fasilitas hospitality"
-        - "Industri pariwisata Bali mendorong permintaan tinggi untuk material konstruksi premium"
-        - "Iklim tropis Bali dengan angin laut membutuhkan material yang sangat tahan cuaca"
+        - "Yogyakarta menerima jutaan wisatawan domestik dan mancanegara setiap tahun dengan ratusan fasilitas hospitality"
+        - "Sektor pariwisata dan pendidikan Yogyakarta mendorong kebutuhan tinggi akan bahan konstruksi premium"
+        - "Iklim tropis Yogyakarta dengan kelembaban tinggi memerlukan bahan yang sangat tahan cuaca"
 
   tentang_kota_2:
-    - judul: "Kota-Kota Besar Lainnya"
+    - judul: "Wilayah Strategis Lainnya"
       icon: "bi-pin-map"
-      subjudul: "Bandung, Semarang, Surabaya, Yogyakarta"
+      subjudul: "Semarang, Bandung, Jabodetabek, Bali"
       icon_subjudul: "bi-geo-alt"
-      deskripsi: "Kami juga melayani kota-kota besar di Jawa dengan kebutuhan material konstruksi yang terus berkembang:"
+      deskripsi: "Kami turut melayani wilayah-wilayah strategis di Jawa dan Bali dengan permintaan bahan konstruksi yang terus bertumbuh:"
       list_item:
-        - "<strong>Bandung</strong> Kota kreatif dengan banyak cafe, resort pegunungan, dan villa yang membutuhkan kayu dolken untuk outdoor area"
-        - "<strong>Semarang</strong> Pusat perdagangan Jawa Tengah dengan pertumbuhan properti dan industri yang memerlukan material tahan kelembaban"
-        - "<strong>Surabaya</strong> Kota terbesar kedua Indonesia dengan banyak proyek komersial, perumahan, dan warehouse"
-        - "<strong>Yogyakarta</strong> Kota budaya dan pariwisata dengan hotel, homestay, dan villa yang mengutamakan material natural"
-        - "<strong>Malang</strong> Destinasi wisata pegunungan dengan villa dan resort yang membutuhkan kayu tahan cuaca dingin"
+        - "<strong>Semarang</strong> Sentra perdagangan Jawa Tengah dengan perkembangan properti dan industri yang memerlukan bahan tahan kelembaban"
+        - "<strong>Bandung</strong> Kota kreatif dengan beragam kedai kopi, resort dataran tinggi, dan vila yang memerlukan kayu dolken untuk zona outdoor"
+        - "<strong>Jabodetabek</strong> Kawasan metropolitan terbesar dengan ribuan proyek hunian, komersial, dan infrastruktur setiap tahun"
+        - "<strong>Bali</strong> Pulau pariwisata internasional dengan hotel, resort, dan vila yang mengutamakan bahan alami premium"
+        - "<strong>Solo & Sekitarnya</strong> Kawasan budaya dengan pertumbuhan hospitality dan properti yang memerlukan kayu tahan lama"
 
-    - judul: "Infrastruktur & Logistik"
+    - judul: "Sistem Distribusi & Pengantaran"
       icon: "bi-signpost-2"
-      subjudul: "Jaringan Pengiriman Luas & Terpercaya"
+      subjudul: "Jaringan Pengantaran Luas & Andal"
       icon_subjudul: "bi-truck"
-      deskripsi: "Jaringan pengiriman kami didukung oleh infrastruktur transportasi yang memadai:"
+      deskripsi: "Sistem distribusi kami ditopang oleh prasarana transportasi yang memadai:"
       list_item:
-        - "<strong>Jalur Tol Trans Jawa</strong> Akses cepat pengiriman dari Jakarta hingga Surabaya dan kota-kota besar lainnya"
-        - "<strong>Pelabuhan Tanjung Priok & Tanjung Perak</strong> Akses mudah untuk pengiriman antar pulau termasuk ke Bali"
-        - "<strong>Jalur Kereta Api</strong> Opsi logistik alternatif untuk pengiriman volume besar ke berbagai kota"
-        - "<strong>Bandara Internasional</strong> Tersedia di Jakarta, Surabaya, dan Bali untuk koordinasi pengiriman cepat"
-      info_tambahan: "Dengan armada sendiri dan mitra logistik terpercaya, kami menjamin pengiriman tepat waktu dan aman ke seluruh Jawa-Bali, dari kota besar hingga area terpencil."
+        - "<strong>Jalan Tol Trans Jawa</strong> Akses sigap pengantaran dari Surabaya hingga Jakarta dan kota-kota utama lainnya"
+        - "<strong>Pelabuhan Tanjung Perak & Benoa</strong> Akses lancar untuk distribusi antar pulau termasuk ke Bali"
+        - "<strong>Jalur Kereta Barang</strong> Alternatif logistik untuk pengantaran volume besar ke berbagai kota"
+        - "<strong>Bandara Juanda & Ngurah Rai</strong> Tersedia di Surabaya dan Bali untuk koordinasi pengantaran cepat"
+      info_tambahan: "Dengan armada pribadi dan rekanan logistik andal, kami memastikan pengantaran tepat waktu dan aman ke seluruh Jawa-Bali, dari kota utama hingga kawasan terpencil."
 
 # ============================================================================
 # SOCIAL METRICS (REQUIRED)

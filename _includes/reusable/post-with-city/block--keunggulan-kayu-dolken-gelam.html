@@ -3,53 +3,71 @@
   Keunggulan Kayu Dolken Gelam Block Component
   ============================================================================
 
-  @file        _includes/block--keunggulan-kayu-dolken-gelam.html
+  @file        _includes/reusable/post-with-city/block--keunggulan-kayu-dolken-gelam.html
   @description Reusable component that displays advantages of kayu dolken gelam
                with dynamic content based on location
 
-  @version     1.0.0
-  @date        2025-11-18
+  @version     2.1.0
+  @date        2025-12-12
   @author      jualkayudolkengelam
 
   Features:
   ---------
-  - H2 heading for SEO
+  - H2 heading for SEO (hardcoded)
   - Dynamic location-specific content
-  - 4 main durability advantages (customizable)
-  - 2 additional value advantages (customizable)
+  - 4 main durability advantages (descriptions customizable)
+  - 2 additional value advantages (descriptions customizable)
   - Responsive card grid layout
   - Icon-based visual design
+  - Titles hardcoded as semantic identifiers
+  - Descriptions configurable via front matter
 
-  Parameters:
-  -----------
+  Hardcoded Titles (semantic class):
+  ----------------------------------
+  - H2: "Keunggulan Kayu Dolken Gelam"
+  - H3: "Karakteristik Unggul Kayu Gelam"
+  - H4: "Durabilitas & Ketahanan"
+  - H4: "Nilai Tambah & Estetika"
+  - Cards: "Tahan Lama Puluhan Tahun", "Anti Rayap Alami",
+           "Tahan Air & Cuaca Ekstrem", "Kuat & Padat",
+           "Ramah Lingkungan", "Estetika Natural"
+
+  Parameters (descriptions only):
+  -------------------------------
   - page.nama_kota: City name for subtitle
-  - page.keunggulan_durabilitas: Array of 4 durability advantages
-    - tahan_lama: Longevity description
-    - anti_rayap: Anti-termite description
-    - tahan_cuaca: Weather resistance description
-    - kuat_padat: Strength description
-  - page.keunggulan_nilai: Array of 2 value advantages
-    - ramah_lingkungan: Eco-friendly description
-    - estetika: Aesthetic description
+  - page.block_keunggulan_gelam:
+    - subjudul: Subtitle under H2
+    - karakteristik_deskripsi: H3 description
+    - durabilitas_deskripsi: H4 durability section description
+    - tahan_lama_deskripsi: Card 1 description
+    - anti_rayap_deskripsi: Card 2 description
+    - tahan_cuaca_deskripsi: Card 3 description
+    - kuat_padat_deskripsi: Card 4 description
+    - nilai_deskripsi: H4 value section description
+    - ramah_lingkungan_deskripsi: Card 5 description
+    - estetika_deskripsi: Card 6 description
 
   Usage:
   ------
   In frontmatter:
   ---
   nama_kota: Semarang
-  keunggulan_durabilitas:
-    tahan_lama: "Kayu gelam dapat bertahan 20-30 tahun tanpa treatment khusus..."
-    anti_rayap: "Tidak memerlukan obat anti rayap..."
-    tahan_cuaca: "Cocok untuk aplikasi outdoor maupun indoor..."
-    kuat_padat: "Kepadatan tinggi memberikan kekuatan maksimal..."
-  keunggulan_nilai:
-    ramah_lingkungan: "Material kayu natural dan sustainable..."
-    estetika: "Warna coklat natural yang indah..."
+  block_keunggulan_gelam:
+    subjudul: "Pilihan terbaik untuk konstruksi dan dekorasi"
+    karakteristik_deskripsi: "Kayu dolken gelam memiliki berbagai keunggulan..."
+    durabilitas_deskripsi: "Keunggulan teknis kayu gelam..."
+    tahan_lama_deskripsi: "Masa pakai hingga 20-30 tahun..."
+    anti_rayap_deskripsi: "Struktur serat padat..."
+    tahan_cuaca_deskripsi: "Performa stabil menghadapi perubahan cuaca..."
+    kuat_padat_deskripsi: "Tingkat kekerasan dan kepadatan tinggi..."
+    nilai_deskripsi: "Keunggulan tambahan yang memberikan nilai lebih..."
+    ramah_lingkungan_deskripsi: "Sumber daya terbarukan..."
+    estetika_deskripsi: "Serat dan warna coklat natural..."
   ---
 
   In content:
   <section id="keunggulan-kayu-dolken-gelam">
-    {% include reusable/block--keunggulan-kayu-dolken-gelam.html %}
+    {% include reusable/post-with-city/block--keunggulan-kayu-dolken-gelam.html %}
   </section>
 
   ============================================================================
@@ -63,7 +81,7 @@
         <h2 class="h2 mb-0 fw-bold text-white">Keunggulan Kayu Dolken Gelam</h2>
         <p class="mb-0 mt-2 small" style="opacity: 0.85;">
           <i class="bi bi-tree me-1"></i>
-          Pilihan terbaik untuk konstruksi dan dekorasi{% if page.nama_kota %} di {{ page.nama_kota }}{% endif %}
+          {{ page.block_keunggulan_gelam.subjudul | default: "Pilihan terbaik untuk konstruksi dan dekorasi" }}{% if page.nama_kota %} di {{ page.nama_kota }}{% endif %}
           <i class="bi bi-tree ms-1"></i>
         </p>
       </div>
@@ -77,7 +95,7 @@
         <h3 class="h4 mb-0 text-wood fw-bold">
           <i class="bi bi-shield-fill-check text-success me-2"></i>Karakteristik Unggul Kayu Gelam
         </h3>
-        <p class="small text-muted mb-0 mt-1">Kayu dolken gelam memiliki berbagai keunggulan yang menjadikannya pilihan utama untuk konstruksi dan dekorasi{% if page.nama_kota %} di {{ page.nama_kota }}{% endif %}, dari ketahanan ekstrem hingga nilai estetika yang tinggi</p>
+        <p class="small text-muted mb-0 mt-1">{{ page.block_keunggulan_gelam.karakteristik_deskripsi | default: "Kayu dolken gelam memiliki berbagai keunggulan yang menjadikannya pilihan utama untuk konstruksi dan dekorasi" }}{% if page.nama_kota %} di {{ page.nama_kota }}{% endif %}</p>
       </div>
     </div>
 
@@ -86,7 +104,7 @@
       <h4 class="h4 text-wood mb-2 fw-bold">
         <i class="bi bi-shield-fill-check me-2"></i>Durabilitas & Ketahanan
       </h4>
-      <p class="small text-muted mb-0">Keunggulan teknis kayu gelam yang menjamin kekuatan dan ketahanan luar biasa untuk berbagai kondisi.</p>
+      <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.durabilitas_deskripsi | default: "Keunggulan teknis kayu gelam yang menjamin kekuatan dan ketahanan luar biasa untuk berbagai kondisi." }}</p>
     </div>
   </div>
 
@@ -98,7 +116,7 @@
             <i class="bi bi-clock-history text-success" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Tahan Lama Puluhan Tahun</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_durabilitas.tahan_lama | default: "Kayu gelam dapat bertahan 20-30 tahun tanpa treatment khusus, hemat biaya perawatan jangka panjang" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.tahan_lama_deskripsi | default: "Kayu gelam dapat bertahan 20-30 tahun tanpa treatment khusus, hemat biaya perawatan jangka panjang" }}</p>
         </div>
       </div>
     </div>
@@ -110,7 +128,7 @@
             <i class="bi bi-bug text-danger" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Anti Rayap Alami</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_durabilitas.anti_rayap | default: "Tidak memerlukan obat anti rayap karena tekstur kayu gelam yang padat dan keras secara alami menolak rayap dan hama" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.anti_rayap_deskripsi | default: "Tidak memerlukan obat anti rayap karena tekstur kayu gelam yang padat dan keras secara alami menolak rayap dan hama" }}</p>
         </div>
       </div>
     </div>
@@ -122,7 +140,7 @@
             <i class="bi bi-cloud-rain text-primary" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Tahan Air & Cuaca Ekstrem</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_durabilitas.tahan_cuaca | default: "Cocok untuk aplikasi outdoor maupun indoor, tahan hujan deras, panas terik, dan kelembaban tinggi" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.tahan_cuaca_deskripsi | default: "Cocok untuk aplikasi outdoor maupun indoor, tahan hujan deras, panas terik, dan kelembaban tinggi" }}</p>
         </div>
       </div>
     </div>
@@ -134,7 +152,7 @@
             <i class="bi bi-hammer text-warning" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Kuat & Padat</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_durabilitas.kuat_padat | default: "Kepadatan tinggi memberikan kekuatan maksimal, cocok untuk beban berat dan struktur penyangga permanen" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.kuat_padat_deskripsi | default: "Kepadatan tinggi memberikan kekuatan maksimal, cocok untuk beban berat dan struktur penyangga permanen" }}</p>
         </div>
       </div>
     </div>
@@ -145,7 +163,7 @@
       <h4 class="h4 text-wood mb-2 fw-bold">
         <i class="bi bi-heart-fill me-2"></i>Nilai Tambah & Estetika
       </h4>
-      <p class="small text-muted mb-0">Keunggulan tambahan yang memberikan nilai lebih untuk lingkungan dan estetika bangunan Anda.</p>
+      <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.nilai_deskripsi | default: "Keunggulan tambahan yang memberikan nilai lebih untuk lingkungan dan estetika bangunan Anda." }}</p>
     </div>
   </div>
 
@@ -157,7 +175,7 @@
             <i class="bi bi-recycle text-success" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Ramah Lingkungan</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_nilai.ramah_lingkungan | default: "Material kayu natural dan sustainable, ramah lingkungan dan biodegradable, mendukung green building" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.ramah_lingkungan_deskripsi | default: "Material kayu natural dan sustainable, ramah lingkungan dan biodegradable, mendukung green building" }}</p>
         </div>
       </div>
     </div>
@@ -169,7 +187,7 @@
             <i class="bi bi-palette text-info" style="font-size: 2rem;"></i>
           </div>
           <h5 class="h5 text-wood mb-2 fw-bold">Estetika Natural</h5>
-          <p class="small text-muted mb-0">{{ page.keunggulan_nilai.estetika | default: "Warna coklat natural yang indah, cocok untuk dekorasi modern maupun tradisional, mempercantik bangunan" }}</p>
+          <p class="small text-muted mb-0">{{ page.block_keunggulan_gelam.estetika_deskripsi | default: "Warna coklat natural yang indah, cocok untuk dekorasi modern maupun tradisional, mempercantik bangunan" }}</p>
         </div>
       </div>
     </div>
