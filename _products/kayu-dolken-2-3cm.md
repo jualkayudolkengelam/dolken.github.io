@@ -7,10 +7,10 @@ description: Jual kayu dolken gelam diameter 2-3 cm panjang 4 meter. Kualitas pr
 price: 15000
 diameter: 2 - 3 cm
 min_order: 1000
-image: "/assets/images/products/jual-kayu-dolken-gelam-2-3cm-001.jpeg"
+image: "/assets/images/products/jual-kayu-dolken-gelam-2-3cm-001.webp"
 image_alt: "Kayu dolken gelam diameter 2-3 cm panjang 4 meter kualitas premium untuk dekorasi interior hotel, cafe, restoran dan rumah mewah, tampilan natural elegan cocok untuk aksen dinding dan ceiling dekoratif"
 images:
-- "/assets/images/products/jual-kayu-dolken-gelam-2-3cm-001.jpeg"
+- "/assets/images/products/jual-kayu-dolken-gelam-2-3cm-001.webp"
 images_alt:
 - "Tumpukan kayu dolken gelam diameter 2-3 cm tersusun rapi di gudang supplier siap kirim untuk dekorasi interior hotel, cafe, dan rumah"
 sku: DOLKEN-2-3

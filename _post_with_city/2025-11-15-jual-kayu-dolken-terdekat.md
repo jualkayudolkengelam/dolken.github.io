@@ -17,17 +17,12 @@ description: "Jual kayu dolken terdekat - Hubungi 081311400177. Supplier kayu do
 date: 2025-11-15
 author: Admin
 author_url: https://jualkayudolkengelam.github.io
-image: /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-001.jpeg
+image: /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-001.webp
 image_alt: "Gudang penyimpanan kayu dolken gelam supplier terdekat melayani pengiriman Jakarta, Bogor, Bandung, Tangerang, Bekasi, Semarang hingga Surabaya dengan sistem COD dan gratis ongkir untuk pembelian partai"
 images:
-  - /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-001.jpeg
-  - /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-002.jpeg
-  - /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-003.jpeg
-  - /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-004.jpeg
+  - /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-001.webp
 images_alt:
-  - "Gudang penyimpanan kayu dolken gelam supplier terdekat dengan stok lengkap berbagai ukuran siap kirim ke Jakarta Bogor Bandung Tangerang Bekasi dan sekitarnya"
-  - "Armada pengiriman truk kayu dolken melayani distribusi ke seluruh wilayah Jabodetabek Jawa Tengah dan Jawa Timur dengan layanan cepat dan terpercaya"
-  - "Proses quality control kayu dolken gelam sebelum pengiriman memastikan setiap batang memenuhi standar kualitas diameter panjang dan kelurusan yang konsisten"
+  - "Proses loading kayu dolken gelam ke truk untuk pengiriman ke Jakarta Bogor Bandung Tangerang Bekasi dan sekitarnya"
   - "Tim customer service supplier kayu dolken terdekat siap membantu konsultasi pemilihan ukuran dan estimasi kebutuhan material untuk proyek konstruksi Anda"
 keywords: "jual kayu dolken terdekat, jual dolken terdekat, kayu dolken jakarta, dolken gelam tangerang, supplier kayu dolken, kayu dolken bekasi, dolken terdekat bogor"
 show_products: true
