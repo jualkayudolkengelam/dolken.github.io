@@ -63,12 +63,14 @@ defaults:
     values:
       layout: "post"
       author: "Admin"
+      author_url: "https://jualkayudolken.com"
   - scope:
       path: ""
       type: "post_with_city"
     values:
       layout: "node--post-with-city"
       author: "Admin"
+      author_url: "https://jualkayudolken.com"
   - scope:
       path: ""
       type: "pages"

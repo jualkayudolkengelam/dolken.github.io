@@ -22,6 +22,7 @@
 /* Color Variables */
 :root {
   --wood-brown: #8B4513;
+  --wood-brown-text: #5D3A1A;
   --wood-light: #D2691E;
   --wood-dark: #654321;
   --wood-lightest: #DEB887;
@@ -50,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Text Colors */
 .text-wood {
-  color: var(--wood-brown) !important;
+  color: var(--wood-brown-text) !important;
 }
 
 .text-wood-light {
@@ -59,6 +60,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-wood-dark {
   color: var(--wood-dark) !important;
+}
+
+.text-wood-brown {
+  color: var(--wood-brown-text) !important;
+}
+
+/* Card Header Text - Better Contrast */
+.card-header .text-wood,
+.card-header.text-wood,
+.card .card-header h1,
+.card .card-header h2,
+.card .card-header h3,
+.card .card-header h4,
+.card .card-header h5,
+.card .card-header h6 {
+  color: var(--wood-brown-text);
 }
 
 /* Background Colors */
@@ -465,7 +482,7 @@ a:hover {
 .post-body h2,
 .post-body h3,
 .post-body h4 {
-  color: var(--wood-brown);
+  color: var(--wood-brown-text);
   margin-top: 2rem;
   margin-bottom: 1rem;
 }

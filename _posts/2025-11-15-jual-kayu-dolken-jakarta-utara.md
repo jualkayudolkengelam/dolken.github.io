@@ -7,7 +7,6 @@ title: "Jual Kayu Dolken Jakarta Utara - Hub 081311400177 - Gratis Ongkir"
 description: "Jual kayu dolken Jakarta Utara dengan harga terbaik. Melayani pengiriman gratis ke seluruh Jakarta Utara. Hubungi 081311400177 untuk info dan pemesanan."
 date: 2025-11-15
 author: Admin
-author_url: https://jualkayudolkengelam.github.io
 image: /assets/images/posts/jual-kayu-dolken-jakarta-utara/jual-kayu-dolken-jakarta-utara-001.jpeg
 image_alt: "Stok kayu dolken gelam siap kirim ke Jakarta Utara meliputi Kelapa Gading, Ancol, Pademangan, Sunter dengan gratis ongkir, tersedia ukuran 4-6cm hingga 10-12cm untuk kebutuhan konstruksi dan dekorasi"
 images:
