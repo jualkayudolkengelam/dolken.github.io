@@ -55,16 +55,16 @@ area_pengiriman:
 # KEUNGGULAN - PRODUK (REQUIRED)
 # ============================================================================
 keunggulan_produk:
-  - judul: "Kualitas Premium untuk Industri"
-    deskripsi: "Kayu dolken gelam Grade A dengan kekuatan tinggi, cocok untuk kebutuhan industri manufaktur di KIIC dan kawasan pabrik Karawang. Tahan beban berat dan kondisi ekstrem area pabrik."
+  - judul: "Mutu Unggul untuk Sektor Industri"
+    deskripsi: "Kayu dolken gelam Grade A berkapasitas tinggi, ideal untuk keperluan industri manufaktur di KIIC dan zona pabrik Karawang. Mampu menahan tekanan berat dan situasi ekstrem lingkungan pabrik."
     warna: "warning"
     icon: "bi-award-fill"
-  - judul: "Harga Kompetitif se-Karawang"
-    deskripsi: "Harga terjangkau mulai Rp 15.000/batang dengan kualitas terjamin. Harga khusus untuk pembelian partai besar oleh pabrik dan developer di Karawang."
+  - judul: "Harga Bersaing se-Karawang"
+    deskripsi: "Tarif ekonomis mulai Rp 15.000/batang dengan mutu terjamin. Penawaran istimewa untuk order volume besar dari pabrik dan pengembang di Karawang."
     warna: "danger"
     icon: "bi-cash-coin"
-  - judul: "Stok Ready untuk Proyek Besar"
-    deskripsi: "Stok melimpah berbagai diameter 2-12 cm. Siap memenuhi kebutuhan proyek industri, pabrik, warehouse, dan konstruksi besar di Karawang."
+  - judul: "Persediaan Siap untuk Proyek Skala Besar"
+    deskripsi: "Persediaan berlimpah berbagai ukuran diameter 2-12 cm. Siap memenuhi keperluan proyek industri, fasilitas manufaktur, gudang, dan pembangunan besar di Karawang."
     warna: "info"
     icon: "bi-boxes"
 
@@ -72,16 +72,16 @@ keunggulan_produk:
 # KEUNGGULAN - LAYANAN (REQUIRED)
 # ============================================================================
 keunggulan_layanan:
-  - judul: "Gratis Ongkir Seluruh Karawang"
-    deskripsi: "Pengiriman gratis ke seluruh wilayah Karawang termasuk KIIC, Cikampek, dan Telukjambe. Hemat biaya logistik untuk proyek industri Anda."
+  - judul: "Bebas Biaya Kirim Seluruh Karawang"
+    deskripsi: "Pengantaran gratis ke seluruh area Karawang mencakup KIIC, Cikampek, dan Telukjambe. Hemat pengeluaran logistik untuk proyek industri Anda."
     warna: "success"
     icon: "bi-truck"
-  - judul: "COD & Invoice untuk Perusahaan"
-    deskripsi: "Sistem pembayaran fleksibel: COD untuk retail, invoice/tempo untuk perusahaan dan kontraktor. Cek kualitas dulu sebelum bayar, aman dan terpercaya."
+  - judul: "COD & Tagihan untuk Korporasi"
+    deskripsi: "Metode bayar fleksibel: COD untuk pembelian eceran, tagihan/tempo untuk korporasi dan pelaksana proyek. Periksa mutu dulu sebelum transaksi, aman dan terpercaya."
     warna: "primary"
     icon: "bi-shield-check"
-  - judul: "Layanan Konsultasi Teknis"
-    deskripsi: "Tim berpengalaman siap konsultasi kebutuhan material untuk proyek industri, warehouse, atau konstruksi. Hubungi kami 24/7 untuk solusi terbaik."
+  - judul: "Pendampingan Konsultasi Teknis"
+    deskripsi: "Tim berpengalaman siap mendampingi kebutuhan material untuk proyek industri, gudang, atau pembangunan. Hubungi kami 24/7 untuk solusi optimal."
     warna: "secondary"
     icon: "bi-headset"
 
@@ -89,28 +89,28 @@ keunggulan_layanan:
 # AREA PENGIRIMAN DETAIL - TEKS JUDUL & DESKRIPSI (REQUIRED)
 # ============================================================================
 area_pengiriman_detail:
-  judul_jangkauan: "Jangkauan Pengiriman Luas ke Seluruh Karawang"
-  deskripsi_jangkauan: "Kami melayani pengiriman kayu dolken gelam ke seluruh Kabupaten Karawang mencakup 30 kecamatan dari pusat kota hingga kawasan industri KIIC dan Cikampek. Gratis ongkir untuk semua area dengan minimal pembelian."
+  judul_jangkauan: "Cakupan Pengiriman Menyeluruh ke Seluruh Karawang"
+  deskripsi_jangkauan: "Kami mengantarkan kayu dolken gelam ke seluruh Kabupaten Karawang meliputi 30 kecamatan dari pusat kota hingga kawasan industri KIIC dan Cikampek. Bebas biaya kirim untuk semua area dengan pembelian minimal."
 
-  judul_pusat: "Wilayah Pusat Kota Karawang"
-  deskripsi_pusat: "Area strategis pusat Karawang dengan akses mudah ke kawasan bisnis dan pemerintahan. Melayani pengiriman cepat 1-2 hari kerja ke pusat kota dan sekitarnya."
+  judul_pusat: "Zona Pusat Kota Karawang"
+  deskripsi_pusat: "Zona strategis pusat Karawang dengan kemudahan akses ke kawasan bisnis dan pemerintahan. Melayani pengantaran cepat 1-2 hari kerja ke pusat kota dan sekitarnya."
 
-  judul_utara_selatan: "Wilayah Industri & Manufaktur"
-  deskripsi_utara_selatan: "Kawasan industri KIIC, Surya Cipta, dan area manufaktur lainnya yang menjadi tulang punggung ekonomi Karawang. Melayani kebutuhan material konstruksi pabrik, warehouse, dan fasilitas industri."
+  judul_utara_selatan: "Zona Industri & Manufaktur"
+  deskripsi_utara_selatan: "Kawasan industri KIIC, Surya Cipta, dan zona manufaktur lainnya yang menjadi pilar utama ekonomi Karawang. Melayani keperluan material konstruksi pabrik, gudang, dan sarana industri."
 
-  judul_pengembangan: "Area Pengembangan & Pinggiran"
-  deskripsi_pengembangan: "Wilayah berkembang seperti Cikampek, Rengasdengklok, dan Telukjambe dengan pertumbuhan perumahan dan industri pesat. Banyak proyek infrastruktur membutuhkan material berkualitas."
+  judul_pengembangan: "Zona Pengembangan & Pinggiran"
+  deskripsi_pengembangan: "Wilayah berkembang seperti Cikampek, Rengasdengklok, dan Telukjambe dengan pertumbuhan hunian dan industri pesat. Banyak proyek infrastruktur memerlukan material bermutu."
 
   judul_lainnya: "Kecamatan Lainnya di Karawang"
 
-  judul_landmark: "Kawasan Strategis & Industri"
-  deskripsi_landmark: "Melayani pengiriman ke kawasan industri terbesar di Indonesia seperti KIIC dan Surya Cipta City. Ideal untuk proyek komersial, pabrik, dan infrastruktur."
+  judul_landmark: "Titik Strategis & Zona Industri"
+  deskripsi_landmark: "Mengantarkan ke kawasan industri terbesar di Indonesia seperti KIIC dan Surya Cipta City. Tepat untuk proyek komersial, fasilitas manufaktur, dan infrastruktur."
 
-  judul_wisata: "Destinasi & Landmark Karawang"
-  deskripsi_wisata: "Karawang memiliki berbagai destinasi menarik seperti Pantai Tanjung Pakis, Situ Kamojing, dan kawasan bersejarah Rengasdengklok yang menjadi saksi proklamasi kemerdekaan RI."
+  judul_wisata: "Lokasi & Landmark Karawang"
+  deskripsi_wisata: "Karawang menyimpan berbagai lokasi menarik seperti Pantai Tanjung Pakis, Situ Kamojing, dan kawasan bersejarah Rengasdengklok yang menjadi saksi proklamasi kemerdekaan RI."
 
-  judul_fasilitas: "Fasilitas Pendidikan & Komersial"
-  deskripsi_fasilitas: "Melayani kebutuhan kampus seperti Unsika, mall seperti Resinda Park Mall, serta berbagai pabrik dan kawasan industri untuk konstruksi dan renovasi."
+  judul_fasilitas: "Sarana Pendidikan & Komersial"
+  deskripsi_fasilitas: "Melayani keperluan kampus seperti Unsika, pusat perbelanjaan seperti Resinda Park Mall, serta berbagai pabrik dan kawasan industri untuk pembangunan dan renovasi."
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - WILAYAH PUSAT (REQUIRED - min 3 items)
@@ -118,52 +118,52 @@ area_pengiriman_detail:
   wilayah_pusat:
     - nama: "Karawang Barat"
       kelurahan:
-        - "Nagasari, Adiarsa Barat, Tunggakjati"
-        - "Palumbonsari, Tanjungpura"
+        - "Adiarsa Barat, Nagasari, Tanjungpura"
+        - "Tunggakjati, Karawang Kulon"
       warna: "primary"
     - nama: "Karawang Timur"
       kelurahan:
-        - "Palumbonsari, Warungbambu, Margakaya"
-        - "Tegalsawah, Wanakerta"
+        - "Margakaya, Warungbambu, Tegalsawah"
+        - "Wanakerta, Palumbonsari"
       warna: "success"
     - nama: "Telukjambe Timur"
       kelurahan:
-        - "Sukaluyu, Jayamukti, Wadas"
-        - "Sirnabaya, Telukjambe"
+        - "Jayamukti, Sukaluyu, Sirnabaya"
+        - "Wadas, Pinayungan"
       warna: "info"
     - nama: "Telukjambe Barat"
       kelurahan:
-        - "Puseurjaya, Telukjambe, Sukamakmur"
-        - "Setialaksana, Sukaharja"
+        - "Sukamakmur, Puseurjaya, Sukaharja"
+        - "Setialaksana, Wanakerta"
       warna: "warning"
     - nama: "Klari"
       kelurahan:
-        - "Belendung, Duren, Gintungkerta"
-        - "Pancawati, Walahar"
+        - "Gintungkerta, Belendung, Pancawati"
+        - "Walahar, Duren"
       warna: "danger"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - WILAYAH UTARA & SELATAN (OPTIONAL)
 # ============================================================================
   wilayah_utara_selatan:
-    - nama: "KIIC (Kawasan Industri)"
+    - nama: "KIIC (Zona Industri)"
       kelurahan:
-        - "Kawasan Industri Karawang International"
-        - "Area pabrik Samsung, Toyota, Yamaha"
+        - "Zona Industri Karawang International"
+        - "Fasilitas manufaktur Samsung, Toyota, Yamaha"
       warna: "danger"
     - nama: "Surya Cipta City"
       kelurahan:
-        - "Kawasan Industri Surya Cipta"
-        - "Area manufaktur dan logistik"
+        - "Zona Industri Surya Cipta"
+        - "Fasilitas manufaktur dan distribusi"
       warna: "primary"
-    - nama: "Cikampek (Kawasan Industri Timur)"
+    - nama: "Cikampek (Zona Industri Timur)"
       kelurahan:
-        - "Dawuan, Mulyajaya, Cikampek Kota"
-        - "Cikampek Barat, Cikampek Timur"
+        - "Mulyajaya, Dawuan, Cikampek Kota"
+        - "Cikampek Timur, Cikampek Barat"
       warna: "warning"
-    - nama: "Kosambi (Kawasan Industri Barat)"
+    - nama: "Kosambi (Zona Industri Barat)"
       kelurahan:
-        - "Kosambi Dalam, Kosambi Barat"
+        - "Kosambi Barat, Kosambi Dalam"
         - "Kosambi Timur"
       warna: "info"
 
@@ -173,35 +173,35 @@ area_pengiriman_detail:
   wilayah_pengembangan:
     - nama: "Rengasdengklok"
       kelurahan:
-        - "Kalangsari, Duren Mekar, Rengasdengklok Utara"
-        - "Rengasdengklok Selatan"
+        - "Duren Mekar, Kalangsari, Rengasdengklok Selatan"
+        - "Rengasdengklok Utara"
       warna: "primary"
     - nama: "Purwakarta (perbatasan)"
       kelurahan:
-        - "Bungursari, Munjul, Nagrikidul"
-        - "Babakancikao"
+        - "Munjul, Bungursari, Babakancikao"
+        - "Nagrikidul"
       warna: "info"
     - nama: "Lemahabang"
       kelurahan:
-        - "Mulangsari, Kutamekar, Kalangsuria"
-        - "Lemahabang Kulon, Lemahabang Wetan"
+        - "Kutamekar, Mulangsari, Lemahabang Wetan"
+        - "Lemahabang Kulon, Kalangsuria"
       warna: "wood"
     - nama: "Tempuran"
       kelurahan:
-        - "Tempuran, Ciampel, Wanasari"
-        - "Pantai Bakti"
+        - "Ciampel, Tempuran, Pantai Bakti"
+        - "Wanasari"
       warna: "success"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - KECAMATAN LAINNYA (OPTIONAL)
 # ============================================================================
   kecamatan_lainnya:
-    - "Tirtajaya (Tirtajaya, Muara, Sampalan)"
-    - "Pedes (Pedes, Langensari, Tegalpapak)"
-    - "Ciampel (Ciampel, Ciptasari, Tambaksari)"
-    - "Jatisari (Jatisari, Cirejag, Caringin)"
-    - "Rawamerta (Rawamerta, Karangligar, Pusakajaya)"
-    - "Tegalwaru (Tegalwaru, Lamaran, Cibalongsari)"
+    - "Tirtajaya (Muara, Tirtajaya, Sampalan)"
+    - "Pedes (Langensari, Pedes, Tegalpapak)"
+    - "Ciampel (Ciptasari, Ciampel, Tambaksari)"
+    - "Jatisari (Cirejag, Jatisari, Caringin)"
+    - "Rawamerta (Karangligar, Rawamerta, Pusakajaya)"
+    - "Tegalwaru (Lamaran, Tegalwaru, Cibalongsari)"
 
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - LANDMARK WISATA (REQUIRED - min 3 items)
@@ -250,28 +250,28 @@ area_pengiriman_detail:
 # KEUNGGULAN KAYU DOLKEN (Format Array - Direkomendasikan)
 # ============================================================================
 keunggulan_kayu_dolken:
-  - judul: "Awet 20-30 Tahun"
-    deskripsi: "Daya tahan luar biasa hingga 20-30 tahun tanpa treatment khusus. Sangat cocok untuk area industri Karawang dengan kondisi outdoor dan beban berat konstan."
+  - judul: "Bertahan 20-30 Tahun"
+    deskripsi: "Ketahanan luar biasa mencapai 20-30 tahun tanpa perlakuan khusus. Sangat sesuai untuk zona industri Karawang dengan kondisi luar ruangan dan tekanan berat terus-menerus."
     warna: "success"
     icon: "bi-clock-history"
-  - judul: "Anti Rayap Natural"
-    deskripsi: "Tidak memerlukan obat anti rayap karena tekstur kayu sangat padat secara alami menolak serangan rayap. Ideal untuk warehouse dan gudang di area lembab."
+  - judul: "Kebal Rayap Alami"
+    deskripsi: "Tidak perlu obat anti rayap karena struktur kayu sangat rapat secara alami menangkal serangan rayap. Tepat untuk gudang dan tempat penyimpanan di zona lembab."
     warna: "danger"
     icon: "bi-bug"
-  - judul: "Tahan Cuaca Ekstrem"
-    deskripsi: "Cocok untuk outdoor dan indoor, tahan terhadap hujan, panas, dan kelembaban tinggi. Tidak mudah lapuk meskipun terpapar cuaca ekstrem area industri Karawang."
+  - judul: "Kuat Menghadapi Cuaca Keras"
+    deskripsi: "Pas untuk luar dan dalam ruangan, bertahan terhadap hujan, panas, dan kelembaban tinggi. Tidak gampang lapuk meski terpapar cuaca keras kawasan industri Karawang."
     warna: "primary"
     icon: "bi-cloud-rain"
-  - judul: "Kuat untuk Beban Industri"
-    deskripsi: "Kepadatan kayu sangat tinggi memberikan kekuatan maksimal untuk menahan beban berat peralatan industri. Sempurna untuk struktur penyangga pabrik dan warehouse."
+  - judul: "Tangguh untuk Tekanan Industri"
+    deskripsi: "Kerapatan kayu sangat tinggi menghadirkan kekuatan maksimal untuk menopang tekanan berat peralatan industri. Sempurna untuk penopang struktur pabrik dan gudang."
     warna: "warning"
     icon: "bi-hammer"
-  - judul: "Ramah Lingkungan"
-    deskripsi: "Material natural 100% sustainable dan biodegradable. Mendukung konsep green industry yang banyak diterapkan di pabrik-pabrik modern Karawang."
+  - judul: "Bersahabat dengan Lingkungan"
+    deskripsi: "Material alami 100% berkelanjutan dan dapat terurai. Mendukung konsep industri hijau yang banyak diterapkan di fasilitas manufaktur modern Karawang."
     warna: "success"
     icon: "bi-recycle"
-  - judul: "Estetika Natural"
-    deskripsi: "Warna coklat natural yang indah memberikan kesan profesional dan natural. Cocok untuk area kantor pabrik, landscaping, dan fasilitas umum perusahaan."
+  - judul: "Tampilan Alami Elegan"
+    deskripsi: "Warna coklat natural yang menawan menghadirkan kesan profesional dan natural. Pas untuk zona kantor pabrik, pertamanan, dan fasilitas umum perusahaan."
     warna: "info"
     icon: "bi-palette"
 
@@ -279,49 +279,49 @@ keunggulan_kayu_dolken:
 # APLIKASI KAYU DOLKEN (OPTIONAL - tapi direkomendasikan)
 # ============================================================================
 aplikasi_kayu_dolken:
-  deskripsi: "Kayu dolken gelam sangat fleksibel untuk berbagai kebutuhan konstruksi industri, komersial, dan residensial."
+  deskripsi: "Material kayu dolken gelam memiliki kegunaan luas untuk segala keperluan pembangunan sektor industri, bisnis, maupun hunian."
 
   konstruksi_dekorasi:
-    - judul: "Konstruksi & Industri"
+    - judul: "Pembangunan & Manufaktur"
       icon: "bi-building"
       warna: "wood"
       aplikasi:
-        - "Struktur penyangga warehouse dan pabrik"
-        - "Tiang pembatas area loading dock"
-        - "Pondasi bangunan fasilitas industri"
-        - "Rangka konstruksi gudang material"
-        - "Pagar pembatas area pabrik"
-    - judul: "Dekorasi & Landscaping"
+        - "Penopang struktur gudang dan fasilitas pabrik"
+        - "Tiang batas zona bongkar muat"
+        - "Dasar bangunan sarana industri"
+        - "Kerangka konstruksi tempat penyimpanan"
+        - "Pembatas perimeter zona manufaktur"
+    - judul: "Penataan & Pertamanan"
       icon: "bi-palette-fill"
       warna: "primary"
       aplikasi:
-        - "Landscaping area kantor pabrik"
-        - "Dekorasi taman kompleks industri"
-        - "Pembatas parkir karyawan"
-        - "Border tanaman area hijau pabrik"
-        - "Aksen natural halaman kantor"
+        - "Tata hijau lingkungan kantor manufaktur"
+        - "Ornamen taman kawasan industri"
+        - "Pemisah zona parkir pekerja"
+        - "Tepi tanaman ruang terbuka hijau"
+        - "Sentuhan alami pekarangan gedung"
 
   furniture_komersial:
-    - judul: "Fasilitas & Infrastruktur"
+    - judul: "Prasarana & Kelengkapan"
       icon: "bi-chair-fill"
       warna: "info"
       aplikasi:
-        - "Gazebo area istirahat karyawan"
-        - "Pergola kantin pabrik"
-        - "Bangku taman kompleks industri"
-        - "Standing display area produksi"
-        - "Furniture outdoor mess karyawan"
+        - "Saung tempat rehat pekerja"
+        - "Kanopi area makan pabrik"
+        - "Tempat duduk taman kawasan industri"
+        - "Display berdiri ruang produksi"
+        - "Perabot outdoor asrama pekerja"
 
-    - judul: "Klien Industri Terpercaya"
+    - judul: "Mitra Industri Andalan"
       icon: "bi-briefcase-fill"
       warna: "success"
-      deskripsi: "Dipercaya oleh berbagai perusahaan manufaktur dan kontraktor untuk proyek-proyek berkualitas di Karawang."
+      deskripsi: "Menjadi pilihan utama berbagai perusahaan manufaktur dan pelaksana proyek untuk kebutuhan material berkualitas di Karawang."
       aplikasi:
-        - "Pabrik di KIIC dan Surya Cipta"
-        - "Warehouse di Telukjambe"
-        - "Mess karyawan di area Cikampek"
-        - "Developer perumahan Karawang"
-        - "Kontraktor proyek infrastruktur"
+        - "Fasilitas manufaktur di KIIC dan Surya Cipta"
+        - "Gudang logistik di Telukjambe"
+        - "Asrama pekerja di kawasan Cikampek"
+        - "Pengembang perumahan Karawang"
+        - "Pelaksana proyek pembangunan"
 
 # ============================================================================
 # PROSES PEMESANAN - TAHAP AWAL (REQUIRED)
@@ -344,36 +344,36 @@ finalisasi_pengiriman:
 # ============================================================================
 studi_kasus_proyek:
   proyek_komersial:
-    - judul: "Landscaping Pabrik di KIIC"
+    - judul: "Penataan Taman Fasilitas Manufaktur KIIC"
       tahun: "2024"
-      deskripsi: "Proyek landscaping dan pembatas area hijau untuk pabrik manufaktur di kawasan KIIC. Klien membutuhkan material tahan lama untuk outdoor area yang terkena hujan dan panas ekstrem."
+      deskripsi: "Pengerjaan tata hijau dan batas zona green area untuk fasilitas manufaktur di kawasan KIIC. Klien memerlukan material awet untuk area luar ruangan yang terpapar cuaca sepanjang tahun."
       jumlah: "300 batang"
       diameter: "6-8 cm dan 8-10 cm"
-      hasil: "Border taman dan pembatas parkir kokoh dan estetis. Setelah 1 tahun masih dalam kondisi prima tanpa perawatan khusus. Klien sangat puas."
+      hasil: "Tepi taman dan pemisah zona parkir tampil kokoh dan menarik. Memasuki tahun kedua tetap prima tanpa pemeliharaan intensif. Klien memberikan apresiasi tinggi."
       warna: "primary"
       icon: "bi-building"
-    - judul: "Pergola Mess Karyawan di Telukjambe"
+    - judul: "Kanopi Asrama Pekerja Telukjambe"
       tahun: "2024"
-      deskripsi: "Pembangunan pergola dan gazebo untuk area istirahat mess karyawan pabrik di Telukjambe. Membutuhkan material kuat untuk menahan beban dan cuaca ekstrem."
+      deskripsi: "Pembuatan kanopi dan saung untuk zona rehat asrama pekerja pabrik di Telukjambe. Dibutuhkan material tangguh untuk menopang beban dan menghadapi kondisi cuaca keras."
       jumlah: "180 batang"
       diameter: "8-10 cm"
-      hasil: "Pergola kokoh dan nyaman untuk karyawan. Material kayu tahan panas dan hujan, tidak ada keluhan setelah 8 bulan penggunaan intens."
+      hasil: "Kanopi tangguh dan nyaman digunakan pekerja. Material kayu bertahan baik di cuaca panas dan basah, tanpa masalah setelah 8 bulan pemakaian rutin."
       warna: "warning"
       icon: "bi-tree"
-    - judul: "Warehouse Area di Cikampek"
+    - judul: "Zona Gudang Logistik Cikampek"
       tahun: "2024"
-      deskripsi: "Struktur penyangga dan pembatas area loading dock warehouse logistik di Cikampek. Memerlukan material kuat untuk menahan beban berat truk dan forklift."
+      deskripsi: "Penopang struktur dan batas area bongkar muat gudang logistik di Cikampek. Diperlukan material berkapasitas tinggi untuk menahan tekanan truk dan alat angkut."
       jumlah: "250 batang"
       diameter: "10-12 cm"
-      hasil: "Struktur sangat kokoh menahan beban berat. Setelah 1 tahun operasional warehouse, tidak ada kerusakan atau keluhan. Highly recommended."
+      hasil: "Konstruksi sangat tangguh menghadapi beban maksimal. Setelah setahun operasional gudang, kondisi tetap utuh tanpa keluhan apapun. Sangat direkomendasikan."
       warna: "success"
       icon: "bi-shop"
-    - judul: "Gazebo Kantor Pabrik di Surya Cipta"
+    - judul: "Saung Gedung Kantor Surya Cipta"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo dan area outdoor untuk kantor pabrik di kawasan Surya Cipta. Digunakan untuk area istirahat dan meeting outdoor karyawan."
+      deskripsi: "Pembuatan saung dan ruang luar untuk gedung kantor di kawasan Surya Cipta. Difungsikan sebagai tempat istirahat dan diskusi outdoor karyawan."
       jumlah: "170 batang"
       diameter: "8-10 cm"
-      hasil: "Gazebo nyaman dan kokoh untuk ratusan karyawan. Material tahan panas dan hujan area industri tanpa perawatan khusus."
+      hasil: "Saung nyaman dan solid untuk ratusan pengguna. Material bertahan di cuaca panas dan hujan kawasan industri tanpa pemeliharaan khusus."
       warna: "secondary"
       icon: "bi-building"
 
@@ -381,36 +381,36 @@ studi_kasus_proyek:
 # STUDI KASUS PROYEK - RESIDENSIAL (REQUIRED - min 2 items)
 # ============================================================================
   proyek_residensial:
-    - judul: "Pagar Perumahan di Karawang Barat"
+    - judul: "Pembatas Kompleks Hunian Karawang Barat"
       tahun: "2024"
-      deskripsi: "Pemasangan pagar dan border taman untuk cluster perumahan developer di Karawang Barat. Developer membutuhkan material berkualitas dengan harga kompetitif."
+      deskripsi: "Instalasi pembatas dan tepi taman untuk klaster hunian pengembang di Karawang Barat. Pengembang memerlukan material unggul dengan harga bersaing."
       jumlah: "220 batang"
       diameter: "6-8 cm"
-      hasil: "Pagar kokoh dan estetis meningkatkan nilai jual rumah. Developer puas dan repeat order untuk cluster berikutnya."
+      hasil: "Pembatas solid dan menarik mendongkrak nilai properti. Pengembang puas dan melakukan pemesanan ulang untuk klaster selanjutnya."
       warna: "success"
       icon: "bi-house-door"
-    - judul: "Gazebo Rumah di Telukjambe Timur"
+    - judul: "Saung Halaman Hunian Telukjambe Timur"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo taman untuk rumah tinggal di area Telukjambe Timur. Pemilik rumah menginginkan gazebo yang awet dan estetis."
+      deskripsi: "Pembuatan saung taman untuk rumah tinggal di kawasan Telukjambe Timur. Pemilik menghendaki saung yang tahan lama dan berpenampilan menarik."
       jumlah: "120 batang"
       diameter: "8-10 cm"
-      hasil: "Gazebo kokoh dan indah menjadi focal point taman. Setelah 6 bulan tidak ada tanda kerusakan atau rayap."
+      hasil: "Saung solid dan elegan menjadi titik fokus halaman. Setelah 6 bulan tidak tampak tanda kerusakan maupun serangan rayap."
       warna: "success"
       icon: "bi-sun"
-    - judul: "Landscaping Villa di Rengasdengklok"
+    - judul: "Tata Hijau Vila Rengasdengklok"
       tahun: "2024"
-      deskripsi: "Dekorasi taman dan border landscape untuk villa di area Rengasdengklok. Menggunakan kayu dolken untuk aksen natural yang modern."
+      deskripsi: "Ornamen taman dan tepi landscape untuk vila di kawasan Rengasdengklok. Memanfaatkan kayu dolken sebagai aksen alami bergaya modern."
       jumlah: "100 batang"
       diameter: "4-6 cm"
-      hasil: "Taman terlihat lebih rapi dan natural. Material kayu awet meski terkena hujan dan panas bergantian."
+      hasil: "Taman tampil lebih tertata dan natural. Material kayu bertahan baik meski terpapar hujan dan terik bergantian."
       warna: "info"
       icon: "bi-tree-fill"
-    - judul: "Pergola Rumah di Klari"
+    - judul: "Kanopi Halaman Hunian Klari"
       tahun: "2024"
-      deskripsi: "Pembangunan pergola halaman untuk rumah tinggal di Klari. Pemilik menginginkan area outdoor yang sejuk dan estetis untuk keluarga."
+      deskripsi: "Pembuatan kanopi pekarangan untuk rumah tinggal di Klari. Pemilik menginginkan ruang luar yang teduh dan indah untuk keluarga."
       jumlah: "110 batang"
       diameter: "8-10 cm"
-      hasil: "Pergola kokoh dan indah menciptakan area outdoor yang nyaman. Tahan cuaca panas Karawang tanpa perawatan khusus."
+      hasil: "Kanopi solid dan menawan menghadirkan ruang outdoor yang nyaman. Tahan cuaca panas Karawang tanpa pemeliharaan intensif."
       warna: "success"
       icon: "bi-sun"
 
@@ -418,20 +418,20 @@ studi_kasus_proyek:
 # STUDI KASUS PROYEK - PUBLIK (OPTIONAL - min 2 items)
 # ============================================================================
   proyek_publik:
-    - judul: "Taman Pabrik di Surya Cipta"
+    - judul: "Ruang Hijau Fasilitas Surya Cipta"
       tahun: "2024"
-      deskripsi: "Pembangunan gazebo dan area hijau untuk taman pabrik di kawasan Surya Cipta. Proyek CSR perusahaan untuk fasilitas karyawan yang nyaman."
+      deskripsi: "Pembuatan saung dan zona hijau untuk area pabrik di kawasan Surya Cipta. Program tanggung jawab sosial perusahaan untuk fasilitas pekerja yang asri."
       jumlah: "200 batang"
       diameter: "8-10 cm"
-      hasil: "Area istirahat karyawan menjadi lebih nyaman dan asri. Gazebo tahan cuaca dan penggunaan intensif ribuan karyawan."
+      hasil: "Zona istirahat pekerja menjadi lebih sejuk dan nyaman. Saung tahan cuaca dan pemakaian intensif ribuan pengguna."
       warna: "info"
       icon: "bi-signpost-2"
-    - judul: "Jogging Track Taman Kota Karawang"
+    - judul: "Jalur Lari Taman Publik Karawang"
       tahun: "2024"
-      deskripsi: "Proyek pembatas jogging track dan landscaping taman kota di pusat Karawang. Menggunakan kayu dolken untuk border jalur dan area hijau publik."
+      deskripsi: "Pengerjaan tepi jalur lari dan penataan taman publik di pusat Karawang. Memanfaatkan kayu dolken sebagai pembatas trek dan zona hijau masyarakat."
       jumlah: "160 batang"
       diameter: "6-8 cm"
-      hasil: "Taman kota lebih tertata dan aman untuk pengunjung. Material kayu tahan penggunaan publik intensif harian."
+      hasil: "Taman publik lebih rapi dan aman bagi pengunjung. Material kayu bertahan untuk pemakaian umum intensif setiap hari."
       warna: "primary"
       icon: "bi-bicycle"
 
@@ -439,77 +439,77 @@ studi_kasus_proyek:
 # TESTIMONI - RESIDENTIAL (REQUIRED - min 2 items)
 # ============================================================================
 testimoni_residential:
-  - nama: "Pak Agung Nugroho"
+  - nama: "Wahyu Prasetyo"
     lokasi: "KIIC, Karawang"
     rating: 5
-    judul: "Kualitas Premium untuk Pabrik"
-    komentar: "Kami pakai kayu dolken ini untuk landscaping pabrik di KIIC. Kualitasnya luar biasa, tahan cuaca ekstrem dan beban berat. Sudah 1 tahun masih seperti baru. Pengiriman juga cepat dan gratis ongkir. Sangat recommended untuk proyek industri!"
+    judul: "Mutu Unggul untuk Fasilitas Manufaktur"
+    komentar: "Kami gunakan kayu dolken ini untuk tata hijau pabrik di KIIC. Mutunya sangat bagus, bertahan di cuaca keras dan tekanan berat. Sudah setahun tetap prima. Pengantaran juga cepat dan bebas biaya kirim. Sangat direkomendasikan untuk proyek industri!"
     warna: "primary"
-  - nama: "Bu Ratna Sari"
+  - nama: "Dewi Anggraeni"
     lokasi: "Telukjambe, Karawang"
     rating: 5
-    judul: "Pelayanan Profesional & Cepat"
-    komentar: "Order untuk pagar perumahan cluster kami di Telukjambe. Prosesnya sangat mudah, tim nya membantu konsultasi sampai detail. Kayu nya bagus, tidak ada yang bengkok. Harga juga kompetitif. Puas!"
+    judul: "Pelayanan Profesional & Responsif"
+    komentar: "Pesan untuk pembatas klaster hunian kami di Telukjambe. Prosesnya sangat simpel, tim membantu konsultasi hingga detail. Kayu nya bagus, tidak ada yang bengkok. Harga juga bersaing. Puas!"
     warna: "success"
 
 # ============================================================================
 # TESTIMONI - KOMERSIAL (REQUIRED - min 4 items)
 # ============================================================================
 testimoni_komersial:
-  - nama: "Pak Hendra Wijaya"
+  - nama: "Darmawan Susilo"
     lokasi: "Project Manager di KIIC"
     rating: 5
-    judul: "Partner Terpercaya untuk Industri"
-    komentar: "Sudah beberapa kali pakai untuk proyek pabrik di KIIC dan Surya Cipta. Kualitas selalu konsisten, pengiriman tepat waktu, dan harga kompetitif. Sistem invoice juga memudahkan untuk perusahaan. Highly recommended!"
+    judul: "Mitra Andalan untuk Industri"
+    komentar: "Sudah beberapa kali memakai untuk proyek pabrik di KIIC dan Surya Cipta. Mutu selalu konsisten, pengantaran tepat waktu, dan harga bersaing. Sistem tagihan juga memudahkan untuk perusahaan. Sangat direkomendasikan!"
     warna: "warning"
-  - nama: "Bu Linda Susanto"
+  - nama: "Siti Nurhayati"
     lokasi: "Developer Perumahan Karawang"
     rating: 5
-    judul: "Solusi Terbaik untuk Developer"
-    komentar: "Sebagai developer, kami butuh supplier yang reliable dengan harga terbaik. Sudah pakai untuk 3 cluster perumahan, hasilnya selalu memuaskan. Stok ready, kualitas bagus, harga bersaing. Mantap!"
+    judul: "Solusi Optimal untuk Pengembang"
+    komentar: "Sebagai pengembang, kami butuh pemasok yang dapat diandalkan dengan harga terbaik. Sudah memakai untuk 3 klaster hunian, hasilnya selalu memuaskan. Stok tersedia, mutu bagus, harga bersaing. Mantap!"
     warna: "info"
-  - nama: "Pak Rudi Hartono"
+  - nama: "Bambang Wicaksono"
     lokasi: "Kontraktor di Karawang"
     rating: 5
-    judul: "Material Berkualitas Harga Bersaing"
-    komentar: "Untuk proyek konstruksi, kualitas material sangat penting. Kayu dolken nya premium, cocok untuk berbagai aplikasi. Harga kompetitif dan pelayanan profesional. Sudah jadi partner terpercaya kami."
+    judul: "Material Bermutu Harga Bersaing"
+    komentar: "Untuk proyek pembangunan, mutu material sangat penting. Kayu dolken nya premium, cocok untuk berbagai keperluan. Harga bersaing dan pelayanan profesional. Sudah menjadi mitra andalan kami."
     warna: "success"
-  - nama: "Pak Budi Santoso"
+  - nama: "Eko Supriyanto"
     lokasi: "Manager Warehouse di Cikampek"
     rating: 5
-    judul: "Tahan Beban Berat untuk Warehouse"
-    komentar: "Sudah 3x order untuk proyek warehouse di Cikampek. Kualitas konsisten bagus untuk menahan beban berat, stok selalu ready, dan harga terbaik untuk volume besar. Tim nya responsif dan profesional. Jadi supplier langganan kami!"
+    judul: "Tahan Tekanan Berat untuk Gudang"
+    komentar: "Sudah 3x order untuk proyek gudang di Cikampek. Mutu konsisten bagus untuk menahan tekanan berat, stok selalu tersedia, dan harga terbaik untuk volume besar. Tim nya responsif dan profesional. Jadi pemasok langganan kami!"
     warna: "primary"
 
 # ============================================================================
 # TIPS MEMILIH UKURAN (REQUIRED)
 # ============================================================================
 tips_ukuran:
-  - kategori: "Dekorasi Ringan"
-    aplikasi: "Pagar, Taman, Border"
+  - kategori: "Ornamen Ringan"
+    aplikasi: "Pembatas, Taman, Tepi"
     diameter: "2-3 cm / 4-6 cm"
     keunggulan:
-      - "Ringan dan mudah dipasang"
-      - "Cocok untuk landscaping taman"
-      - "Harga ekonomis untuk proyek kecil"
+      - "Ringan dan simpel dipasang"
+      - "Pas untuk pertamanan dan landscape"
+      - "Tarif ekonomis untuk proyek kecil"
     warna: "success"
     icon: "bi-tree"
-  - kategori: "Struktur Sedang"
-    aplikasi: "Gazebo, Pergola, Mess Karyawan"
+  - kategori: "Konstruksi Sedang"
+    aplikasi: "Saung, Kanopi, Asrama Pekerja"
     diameter: "6-8 cm"
     keunggulan:
-      - "Kekuatan optimal untuk beban sedang"
-      - "Ideal untuk gazebo dan pergola"
-      - "Balance antara kekuatan dan harga"
+      - "Kapasitas optimal untuk tekanan sedang"
+      - "Ideal untuk saung dan kanopi"
+      - "Keseimbangan antara kapasitas dan harga"
     warna: "primary"
     icon: "bi-house-fill"
-  - kategori: "Struktur Berat"
-    aplikasi: "Warehouse, Pabrik, Loading Dock"
+  - kategori: "Konstruksi Berat"
+    aplikasi: "Gudang, Pabrik, Zona Bongkar Muat"
     diameter: "8-10 cm / 10-12 cm"
     keunggulan:
-      - "Maksimal untuk beban industri berat"
-      - "Cocok untuk struktur pabrik dan warehouse"
-      - "Daya tahan ekstrem untuk proyek besar"
+      - "Maksimal untuk tekanan industri berat"
+      - "Pas untuk struktur pabrik dan gudang"
+      - "Ketahanan ekstrem untuk proyek skala besar"
     warna: "danger"
     icon: "bi-building-fill"
 
@@ -517,112 +517,112 @@ tips_ukuran:
 # FAQ - PEMESANAN (REQUIRED - min 2 items)
 # ============================================================================
 faq_pemesanan:
-  - pertanyaan: "Berapa minimal pemesanan kayu dolken?"
-    jawaban: "Kami melayani pemesanan mulai dari 10 batang untuk retail. Untuk proyek industri dan pabrik di Karawang, tersedia harga khusus dengan sistem bertingkat. Hubungi 081311400177 untuk penawaran terbaik."
+  - pertanyaan: "Berapa jumlah minimal order kayu dolken?"
+    jawaban: "Kami menerima order mulai dari 10 batang untuk pembelian eceran. Untuk proyek industri dan fasilitas manufaktur di Karawang, tersedia penawaran khusus dengan sistem berjenjang. Hubungi 081311400177 untuk penawaran terbaik."
     icon: "bi-cart-check"
-  - pertanyaan: "Bagaimana cara mengecek kualitas kayu dolken sebelum bayar?"
-    jawaban: "Kami menyediakan sistem COD (Cash on Delivery) untuk retail. Untuk perusahaan, Anda bisa cek sample dulu atau inspeksi saat barang sampai sebelum proses invoice. Pastikan kayu tidak bengkok, tidak retak, dan diameter sesuai pesanan. Tim kami akan mendampingi pengecekan."
+  - pertanyaan: "Bagaimana cara memeriksa mutu kayu dolken sebelum transaksi?"
+    jawaban: "Kami menyediakan sistem COD (Bayar di Tempat) untuk pembelian eceran. Untuk korporasi, Anda bisa memeriksa sampel dulu atau inspeksi saat barang tiba sebelum proses tagihan. Pastikan kayu tidak bengkok, tidak retak, dan diameter sesuai pesanan. Tim kami akan mendampingi pemeriksaan."
     icon: "bi-clipboard-check"
-  - pertanyaan: "Apakah ada diskon untuk pembelian partai besar?"
-    jawaban: "Ya, tersedia harga spesial untuk pembelian dalam jumlah besar. Untuk proyek pabrik, warehouse, atau developer yang membutuhkan ratusan hingga ribuan batang, kami berikan harga terbaik dengan sistem invoice/termin. Hubungi tim kami untuk negosiasi."
+  - pertanyaan: "Apakah tersedia potongan harga untuk order volume besar?"
+    jawaban: "Ya, tersedia penawaran istimewa untuk order dalam jumlah besar. Untuk proyek pabrik, gudang, atau pengembang yang membutuhkan ratusan hingga ribuan batang, kami berikan harga terbaik dengan sistem tagihan/tempo. Hubungi tim kami untuk negosiasi."
     icon: "bi-percent"
 
 # ============================================================================
 # FAQ - PRODUK (REQUIRED - min 2 items)
 # ============================================================================
 faq_produk:
-  - pertanyaan: "Apakah kayu dolken perlu perawatan khusus di Karawang?"
-    jawaban: "Tidak perlu perawatan khusus. Kayu dolken gelam sangat cocok untuk iklim Karawang yang cenderung panas dan lembab. Untuk aplikasi outdoor di area industri yang terkena hujan dan panas ekstrem, kayu ini tetap awet tanpa treatment tambahan. Opsional bisa tambah coating untuk estetika."
+  - pertanyaan: "Apakah kayu dolken memerlukan pemeliharaan khusus di Karawang?"
+    jawaban: "Tidak memerlukan pemeliharaan khusus. Kayu dolken gelam sangat sesuai untuk iklim Karawang yang cenderung panas dan lembab. Untuk penggunaan outdoor di zona industri yang terpapar hujan dan panas ekstrem, kayu ini tetap awet tanpa perlakuan tambahan. Opsional bisa tambah lapisan pelindung untuk estetika."
     icon: "bi-tools"
-  - pertanyaan: "Apakah bisa custom panjang kayu dolken?"
-    jawaban: "Ya, bisa custom panjang sesuai kebutuhan proyek. Standar kami 4 meter, tapi bisa disesuaikan untuk proyek spesifik seperti warehouse, pabrik, atau konstruksi khusus di Karawang. Diskusikan kebutuhan Anda dengan tim kami di 081311400177."
+  - pertanyaan: "Apakah bisa menyesuaikan panjang kayu dolken?"
+    jawaban: "Ya, bisa menyesuaikan panjang sesuai keperluan proyek. Standar kami 4 meter, tapi bisa dimodifikasi untuk proyek spesifik seperti gudang, fasilitas manufaktur, atau pembangunan khusus di Karawang. Diskusikan keperluan Anda dengan tim kami di 081311400177."
     icon: "bi-rulers"
-  - pertanyaan: "Bagaimana membedakan kayu dolken asli gelam dengan imitasi?"
-    jawaban: "Kayu dolken gelam asli memiliki ciri khas: warna coklat natural konsisten, tekstur sangat padat dan berat, tidak mudah tergores, dan beraroma khas kayu natural. Kami jamin 100% kayu gelam asli Grade A, cocok untuk aplikasi industri yang membutuhkan kekuatan maksimal."
+  - pertanyaan: "Bagaimana membedakan kayu dolken gelam asli dengan tiruan?"
+    jawaban: "Kayu dolken gelam asli memiliki ciri khas: warna coklat natural konsisten, struktur sangat rapat dan berat, tidak gampang tergores, dan beraroma khas kayu natural. Kami jamin 100% kayu gelam asli Grade A, sesuai untuk penggunaan industri yang memerlukan kapasitas maksimal."
     icon: "bi-patch-check"
 
 # ============================================================================
 # FAQ - PENGIRIMAN (REQUIRED - min 1 item)
 # ============================================================================
 faq_pengiriman:
-  - pertanyaan: "Berapa lama pengiriman ke Karawang?"
-    jawaban: "Untuk area Karawang, pengiriman memakan waktu 1-3 hari kerja tergantung lokasi. Area pusat kota seperti Karawang Barat/Timur dan Telukjambe biasanya 1-2 hari. Area KIIC, Surya Cipta, dan Cikampek maksimal 3 hari kerja. Gratis ongkir untuk seluruh wilayah Karawang."
+  - pertanyaan: "Berapa lama waktu pengantaran ke Karawang?"
+    jawaban: "Untuk area Karawang, pengantaran memakan waktu 1-3 hari kerja tergantung lokasi. Zona pusat kota seperti Karawang Barat/Timur dan Telukjambe biasanya 1-2 hari. Zona KIIC, Surya Cipta, dan Cikampek maksimal 3 hari kerja. Bebas biaya kirim untuk seluruh wilayah Karawang."
     icon: "bi-truck"
-  - pertanyaan: "Apakah bisa pengiriman ke kawasan industri KIIC atau Surya Cipta?"
-    jawaban: "Ya, tentu bisa! Kami sangat berpengalaman mengirim ke kawasan industri KIIC, Surya Cipta, dan area pabrik lainnya. Armada kami familiar dengan prosedur keamanan dan akses ke kawasan industri. Tetap gratis ongkir untuk minimal pembelian tertentu."
+  - pertanyaan: "Apakah bisa pengantaran ke kawasan industri KIIC atau Surya Cipta?"
+    jawaban: "Ya, tentu bisa! Kami sangat berpengalaman mengantarkan ke kawasan industri KIIC, Surya Cipta, dan zona pabrik lainnya. Armada kami familiar dengan prosedur keamanan dan akses ke kawasan industri. Tetap bebas biaya kirim untuk pembelian minimal tertentu."
     icon: "bi-geo-alt"
 
 # ============================================================================
 # RELEVANSI KAYU DOLKEN (REQUIRED)
 # ============================================================================
 relevansi_kayu_dolken:
-  karakteristik_iklim: "Karawang adalah kota industri terbesar di Indonesia dengan kawasan manufaktur seperti KIIC dan Surya Cipta yang menjadi rumah bagi ratusan pabrik multinasional. Dengan iklim tropis yang cenderung panas dan lembab, ditambah polusi industri, material konstruksi outdoor membutuhkan daya tahan ekstra. Kayu dolken gelam sangat cocok karena sifatnya yang tahan air, tahan rayap natural, tidak mudah lapuk, dan mampu menahan beban berat - ideal untuk aplikasi industri yang demanding."
-  keunggulan_lokal: "Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca ekstrem</strong> sangat cocok untuk aplikasi seperti:"
+  karakteristik_iklim: "Karawang merupakan pusat industri terbesar di Indonesia dengan zona manufaktur seperti KIIC dan Surya Cipta yang menjadi tempat beroperasinya ratusan perusahaan multinasional. Dengan kondisi tropis yang cenderung panas dan lembab, ditambah polusi industri, material konstruksi luar ruangan memerlukan ketahanan ekstra. Kayu dolken gelam sangat sesuai karena karakternya yang tahan air, kebal rayap alami, tidak gampang lapuk, dan sanggup menopang tekanan berat - ideal untuk penggunaan industri yang menantang."
+  keunggulan_lokal: "Karakter kayu yang <strong>tahan air, kebal rayap, dan tahan cuaca keras</strong> sangat sesuai untuk penggunaan seperti:"
   aplikasi_lokal:
-    - nama: "Struktur penyangga dan pembatas area warehouse di KIIC dan Surya Cipta"
+    - nama: "Penopang struktur dan pembatas zona gudang di KIIC dan Surya Cipta"
       icon: "bi-check-circle-fill"
-    - nama: "Landscaping dan taman pabrik untuk area hijau karyawan"
+    - nama: "Pertamanan dan tata hijau pabrik untuk zona hijau pekerja"
       icon: "bi-check-circle-fill"
-    - nama: "Pergola dan gazebo mess karyawan di Telukjambe dan Cikampek"
+    - nama: "Kanopi dan saung asrama pekerja di Telukjambe dan Cikampek"
       icon: "bi-check-circle-fill"
-    - nama: "Pagar dan border perumahan cluster developer di Karawang Barat/Timur"
+    - nama: "Pembatas dan tepi kompleks hunian pengembang di Karawang Barat/Timur"
       icon: "bi-check-circle-fill"
-    - nama: "Dekorasi dan furniture outdoor area kantor pabrik"
+    - nama: "Ornamen dan perabot outdoor zona kantor pabrik"
       icon: "bi-check-circle-fill"
 
 # ============================================================================
 # TENTANG KOTA (REQUIRED)
 # ============================================================================
 tentang_kota:
-  tagline: "Kota Industri Terbesar"
-  deskripsi_singkat: "Kota manufaktur terbesar di Indonesia dengan kawasan industri kelas dunia yang menjadi pusat ekonomi Jawa Barat."
-  overview: "Karawang adalah kabupaten di Provinsi Jawa Barat yang terletak sekitar 60 km sebelah timur Jakarta. Dengan luas wilayah sekitar 1.753 km² dan populasi lebih dari 2,3 juta jiwa, Karawang terbagi menjadi 30 kecamatan dan 309 desa/kelurahan. Dikenal sebagai kota industri terbesar di Indonesia dengan kawasan KIIC dan Surya Cipta yang menjadi rumah ratusan pabrik multinasional."
+  tagline: "Pusat Manufaktur Nasional"
+  deskripsi_singkat: "Pusat manufaktur terbesar di Indonesia dengan zona industri bertaraf dunia yang menjadi motor ekonomi Jawa Barat."
+  overview: "Karawang merupakan kabupaten di Provinsi Jawa Barat yang berlokasi sekitar 60 km sebelah timur Jakarta. Dengan luas wilayah sekitar 1.753 km² dan populasi lebih dari 2,3 juta jiwa, Karawang terbagi menjadi 30 kecamatan dan 309 desa/kelurahan. Dikenal sebagai pusat industri terbesar di Indonesia dengan kawasan KIIC dan Surya Cipta yang menjadi tempat beroperasinya ratusan perusahaan multinasional."
 
   tentang_kota_1:
     - judul: "Sejarah & Kemerdekaan"
       icon: "bi-clock-history"
-      subjudul: "Saksi Perjuangan Kemerdekaan Indonesia"
+      subjudul: "Saksi Perjuangan Kemerdekaan Bangsa"
       icon_subjudul: "bi-book"
-      deskripsi: "Karawang memiliki tempat penting dalam sejarah kemerdekaan Indonesia. Rengasdengklok menjadi saksi peristiwa Rengasdengklok pada 16 Agustus 1945, ketika para pemuda membawa Soekarno dan Hatta untuk mempercepat proklamasi kemerdekaan. Peristiwa ini menjadi titik balik yang menghasilkan Proklamasi Kemerdekaan RI pada 17 Agustus 1945.\n\nSelain sejarah kemerdekaan, Karawang juga dikenal sebagai lumbung padi Jawa Barat sejak masa kolonial. Transformasi dari kota agraris menjadi kota industri dimulai pada era 1980-an dengan pembangunan kawasan industri pertama. Kini Karawang menjadi backbone ekonomi nasional dengan kontribusi besar terhadap PDB Indonesia."
+      deskripsi: "Karawang menyimpan peran penting dalam sejarah kemerdekaan Indonesia. Rengasdengklok menjadi saksi peristiwa bersejarah pada 16 Agustus 1945, ketika para pemuda membawa Soekarno dan Hatta untuk mempercepat proklamasi kemerdekaan. Peristiwa ini menjadi titik balik yang menghasilkan Proklamasi Kemerdekaan RI pada 17 Agustus 1945.\n\nSelain sejarah kemerdekaan, Karawang juga dikenal sebagai lumbung padi Jawa Barat sejak era kolonial. Transformasi dari kota agraris menjadi pusat industri dimulai pada dekade 1980-an dengan pembangunan zona industri pertama. Kini Karawang menjadi tulang punggung ekonomi nasional dengan kontribusi signifikan terhadap PDB Indonesia."
       fakta:
-        - "Rengasdengklok adalah tempat bersejarah peristiwa pra-proklamasi kemerdekaan RI (16 Agustus 1945)"
-        - "Karawang dulunya dikenal sebagai lumbung padi dengan produksi padi tertinggi di Jawa Barat"
+        - "Rengasdengklok adalah lokasi bersejarah peristiwa pra-proklamasi kemerdekaan RI (16 Agustus 1945)"
+        - "Karawang dulunya dikenal sebagai lumbung padi dengan hasil padi tertinggi di Jawa Barat"
         - "Transformasi dari agraris ke industri dimulai sejak pembangunan KIIC tahun 1989"
 
     - judul: "Ekonomi & Industri"
       icon: "bi-graph-up"
-      subjudul: "Pusat Manufaktur & Industri Kelas Dunia"
+      subjudul: "Sentra Manufaktur & Industri Bertaraf Dunia"
       icon_subjudul: "bi-star"
-      deskripsi: "Karawang adalah jantung industri Indonesia dengan kawasan industri terluas dan terlengkap. KIIC (Karawang International Industrial City) dan Surya Cipta City menjadi rumah bagi lebih dari 400 perusahaan multinasional dari berbagai negara seperti Jepang, Korea, Amerika, dan Eropa. Industri otomotif mendominasi dengan pabrik Toyota, Honda, Suzuki, Yamaha, dan Kawasaki yang memproduksi jutaan kendaraan per tahun.\n\nSelain otomotif, industri elektronik juga berkembang pesat dengan kehadiran Samsung, LG, Sharp, dan Panasonic. Industri kimia, tekstil, makanan-minuman, dan logistik melengkapi ekosistem industri Karawang. Dengan investasi triliunan rupiah dan menyerap ratusan ribu tenaga kerja, Karawang berkontribusi signifikan terhadap pertumbuhan ekonomi nasional dan ekspor Indonesia."
+      deskripsi: "Karawang merupakan jantung industri Indonesia dengan zona industri terluas dan terlengkap. KIIC (Karawang International Industrial City) dan Surya Cipta City menjadi tempat beroperasinya lebih dari 400 perusahaan multinasional dari berbagai negara seperti Jepang, Korea, Amerika, dan Eropa. Industri otomotif mendominasi dengan fasilitas Toyota, Honda, Suzuki, Yamaha, dan Kawasaki yang memproduksi jutaan kendaraan per tahun.\n\nSelain otomotif, industri elektronik juga berkembang pesat dengan kehadiran Samsung, LG, Sharp, dan Panasonic. Industri kimia, tekstil, makanan-minuman, dan logistik melengkapi ekosistem industri Karawang. Dengan investasi triliunan rupiah dan menyerap ratusan ribu tenaga kerja, Karawang berkontribusi signifikan terhadap pertumbuhan ekonomi nasional dan ekspor Indonesia."
       fakta:
         - "Lebih dari 400 perusahaan multinasional beroperasi di Karawang"
-        - "Memproduksi lebih dari 50% produksi otomotif nasional Indonesia"
-        - "Kawasan industri KIIC dan Surya Cipta mencakup lebih dari 5.000 hektar"
+        - "Memproduksi lebih dari 50% output otomotif nasional Indonesia"
+        - "Zona industri KIIC dan Surya Cipta mencakup lebih dari 5.000 hektar"
 
   tentang_kota_2:
-    - judul: "Kawasan Industri Strategis"
+    - judul: "Zona Industri Strategis"
       icon: "bi-pin-map"
       subjudul: "KIIC, Surya Cipta & Zona Industri Lainnya"
       icon_subjudul: "bi-star-fill"
-      deskripsi: "Karawang memiliki beberapa kawasan industri kelas dunia yang menjadi pilihan investor global:"
+      deskripsi: "Karawang menyimpan beberapa zona industri bertaraf dunia yang menjadi pilihan investor global:"
       list_item:
-        - "<strong>KIIC (Karawang International Industrial City)</strong> Kawasan industri terbesar dengan 400+ perusahaan manufaktur multinasional"
-        - "<strong>Surya Cipta City</strong> Kawasan industri modern dengan konsep kota mandiri, dilengkapi perumahan dan fasilitas lengkap"
-        - "<strong>Kawasan Industri Cikampek</strong> Fokus pada industri logam, kimia, dan logistik di wilayah timur Karawang"
-        - "<strong>Kawasan Industri Kosambi</strong> Area industri di bagian barat dekat perbatasan Bekasi"
-        - "<strong>Pelabuhan Tanjung Pakis</strong> Pelabuhan khusus industri untuk ekspor-impor"
+        - "<strong>KIIC (Karawang International Industrial City)</strong> Zona industri terbesar dengan 400+ perusahaan manufaktur multinasional"
+        - "<strong>Surya Cipta City</strong> Zona industri modern dengan konsep kota mandiri, dilengkapi hunian dan fasilitas lengkap"
+        - "<strong>Zona Industri Cikampek</strong> Fokus pada industri logam, kimia, dan logistik di wilayah timur Karawang"
+        - "<strong>Zona Industri Kosambi</strong> Area industri di bagian barat dekat perbatasan Bekasi"
+        - "<strong>Pelabuhan Tanjung Pakis</strong> Pelabuhan khusus industri untuk kegiatan ekspor-impor"
 
     - judul: "Infrastruktur & Akses"
       icon: "bi-signpost-2"
-      subjudul: "Konektivitas Strategis & Infrastruktur Modern"
+      subjudul: "Konektivitas Strategis & Prasarana Modern"
       icon_subjudul: "bi-truck"
-      deskripsi: "Lokasi strategis Karawang didukung infrastruktur yang memadai untuk kebutuhan industri:"
+      deskripsi: "Lokasi strategis Karawang didukung prasarana yang memadai untuk keperluan industri:"
       list_item:
         - "<strong>Tol Jakarta-Cikampek</strong> Akses cepat ke Jakarta (60 km, 1 jam perjalanan) dan Bandung (100 km)"
         - "<strong>Jalur Kereta Api Pantura</strong> Konektivitas ke Jakarta, Bandung, Cirebon, dan Semarang"
-        - "<strong>Pelabuhan Tanjung Priok</strong> Akses mudah untuk ekspor-impor (60 km)"
+        - "<strong>Pelabuhan Tanjung Priok</strong> Akses mudah untuk kegiatan ekspor-impor (60 km)"
         - "<strong>Bandara Soekarno-Hatta</strong> Dekat dengan bandara internasional terbesar Indonesia (50 km)"
-      info_tambahan: "Pembangunan Patimban Port dan tol layang Jakarta-Cikampek II semakin memperkuat posisi Karawang sebagai pusat industri dan logistik nasional."
+      info_tambahan: "Pembangunan Patimban Port dan tol layang Jakarta-Cikampek II semakin memperkuat posisi Karawang sebagai sentra industri dan logistik nasional."
 
 # ============================================================================
 # SOCIAL METRICS (REQUIRED)
