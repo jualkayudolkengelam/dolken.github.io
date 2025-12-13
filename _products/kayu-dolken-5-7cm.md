@@ -9,14 +9,8 @@ image: "/assets/images/products/jual-kayu-dolken-gelam-5-7cm-001.jpeg"
 image_alt: "Kayu dolken gelam diameter 5-7 cm panjang 4 meter untuk pagar kokoh, tiang penyangga, dan konstruksi ringan dengan kekuatan optimal dan harga ekonomis gratis ongkir"
 images:
 - "/assets/images/products/jual-kayu-dolken-gelam-5-7cm-001.jpeg"
-- "/assets/images/products/jual-kayu-dolken-gelam-5-7cm-002.jpeg"
-- "/assets/images/products/jual-kayu-dolken-gelam-5-7cm-003.jpeg"
-- "/assets/images/products/jual-kayu-dolken-gelam-5-7cm-004.jpeg"
 images_alt:
-- "Tumpukan kayu dolken gelam diameter 5-7 cm panjang 4 meter untuk pagar dan konstruksi ringan menunjukkan ketebalan dan kepadatan serat yang optimal"
-- "Potongan melintang kayu dolken 5-7 cm memperlihatkan struktur internal serat padat dan kandungan minyak alami yang memberikan ketahanan terhadap air dan rayap"
-- "Kayu dolken gelam ukuran 5-7 cm ditumpuk di gudang supplier siap dikirim ke proyek konstruksi pagar dan pembatas lahan di seluruh Jawa"
-- "Penggunaan kayu dolken diameter 5-7 cm sebagai tiang pagar menunjukkan aplikasi struktural dengan daya dukung menengah dan tahan lama"
+- "Stok kayu dolken gelam diameter 5-7 cm di gudang supplier siap kirim untuk proyek pagar dan konstruksi"
 sku: DOLKEN-5-7
 popular: false
 rating: 4.7

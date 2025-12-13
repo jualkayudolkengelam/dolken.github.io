@@ -9,14 +9,8 @@ image: /assets/images/products/jual-kayu-dolken-gelam-3-5cm-001.jpeg
 image_alt: "Kayu dolken gelam diameter 3-5 cm panjang 4 meter untuk pagar ringan, penopang tanaman, dan aplikasi dekoratif dengan harga ekonomis gratis ongkir"
 images:
 - /assets/images/products/jual-kayu-dolken-gelam-3-5cm-001.jpeg
-- /assets/images/products/jual-kayu-dolken-gelam-3-5cm-002.jpeg
-- /assets/images/products/jual-kayu-dolken-gelam-3-5cm-003.jpeg
-- /assets/images/products/jual-kayu-dolken-gelam-3-5cm-004.jpeg
 images_alt:
-- "Tumpukan kayu dolken gelam diameter 3-5 cm panjang 4 meter tampak dari samping menunjukkan kualitas premium dengan tekstur serat padat ideal untuk pagar ringan"
-- "Detail permukaan kayu dolken 3-5 cm memperlihatkan karakteristik kulit dan serat alami kayu gelam yang tahan rayap dan cuaca ekstrem Indonesia"
-- "Stok kayu dolken gelam 3-5 cm tersusun rapi di area penyimpanan outdoor menunjukkan ketahanan material terhadap hujan dan panas matahari langsung"
-- "Proses pengiriman kayu dolken diameter 3-5 cm menggunakan truk untuk memastikan barang sampai dengan aman ke lokasi proyek pelanggan"
+- "Tumpukan kayu dolken gelam diameter 3-5 cm panjang 4 meter di gudang supplier siap kirim ke seluruh Indonesia"
 sku: DOLKEN-3-5
 popular: false
 rating: 4.6
