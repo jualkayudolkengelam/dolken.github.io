@@ -43,62 +43,95 @@
   ============================================================================
 {% endcomment %}
 
-{% assign hero_title = include.title | default: "Jual Kayu Dolken Gelam" %}
+{% assign hero_title = include.title | default: "Kayu Dolken Gelam" %}
+{% assign hero_subtitle = include.subtitle | default: "Berkualitas Premium" %}
 {% assign hero_description = include.description | default: "Bandar besar kayu dolken, terpercaya dengan berbagai ukuran diameter. Cocok untuk hotel, cafe, taman, dan proyek konstruksi Anda." %}
 
-<div class="container hero">
-  <div class="row align-items-center">
-    <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
-      <!-- Badge -->
-      <span class="badge bg-warning text-dark mb-3 px-3 py-2 fs-6">
-        <i class="bi bi-patch-check-fill me-1"></i>Supplier Terpercaya
-      </span>
+<div class="hero-industrial">
+  <div class="container">
+    <div class="row align-items-center min-vh-hero">
+      <!-- Left: Main Content -->
+      <div class="col-lg-7 col-xl-6">
+        <div class="hero-content">
+          <!-- Badge -->
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>SUPPLIER TERPERCAYA · 10 TAHUN PENGALAMAN</span>
+          </div>
 
-      <h1 class="display-4 fw-bold mb-3">{{ hero_title }}</h1>
+          <!-- Headline -->
+          <h1 class="hero-headline">
+            <span class="headline-main">{{ hero_title }}</span>
+            <span class="headline-accent">{{ hero_subtitle }}</span>
+          </h1>
 
-      <!-- Price highlight -->
-      <p class="fs-4 mb-3">
-        <span class="text-warning fw-bold">Mulai Rp 8.500</span>
-        <span class="text-white-50">/batang</span>
-      </p>
+          <!-- Price Highlight -->
+          <div class="hero-price">
+            <span class="price-label">Mulai dari</span>
+            <span class="price-value">Rp 8.500</span>
+            <span class="price-unit">/batang</span>
+          </div>
 
-      <p class="lead mb-4 text-white-50">{{ hero_description }}</p>
+          <!-- Description -->
+          <p class="hero-desc">{{ hero_description }}</p>
 
-      <!-- CTA Buttons -->
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
-        <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20tertarik%20dengan%20kayu%20dolken%20gelam" class="btn btn-success btn-lg px-4 me-md-2" target="_blank">
-          <i class="bi bi-whatsapp me-2"></i> 081311400177
-        </a>
-        <a href="#product" class="btn btn-outline-light btn-lg px-4">
-          <i class="bi bi-box-seam me-2"></i>Lihat Produk
-        </a>
+          <!-- Stats Row -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-label">Ukuran Diameter</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Kayu Gelam Asli</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta">
+            <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20tertarik%20dengan%20kayu%20dolken%20gelam" class="btn-cta-primary" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              <span>081311400177</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#product" class="btn-cta-secondary">
+              <span>Lihat Produk</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Trust badges -->
-      <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-        <div class="d-flex align-items-center text-white-50">
-          <i class="bi bi-building-check text-success me-2"></i>
-          <small>500+ Proyek</small>
+      <!-- Right: Product Image -->
+      <div class="col-lg-5 col-xl-6 d-none d-lg-block">
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="/assets/images/jual-kayu-dolken-gelam-product-page-001.webp"
+                 alt="Kayu Dolken Gelam Premium"
+                 class="hero-image"
+                 loading="eager">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="visual-card">
+            <div class="visual-icon">
+              <i class="bi bi-rulers"></i>
+            </div>
+            <div class="visual-content">
+              <span class="visual-label">DIAMETER TERSEDIA</span>
+              <span class="visual-value">2-3 · 4-6 · 6-8 · 8-10 · 10-12 cm</span>
+            </div>
+          </div>
         </div>
-        <div class="d-flex align-items-center text-white-50">
-          <i class="bi bi-award text-warning me-2"></i>
-          <small>10 Tahun Pengalaman</small>
-        </div>
-        <div class="d-flex align-items-center text-white-50">
-          <i class="bi bi-truck text-info me-2"></i>
-          <small>Kirim Se-Jawa</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Image -->
-    <div class="col-lg-5 d-none d-lg-block">
-      <div class="text-center">
-        <img src="/assets/images/jual-kayu-dolken-gelam-product-page-001.webp"
-             alt="Kayu Dolken Gelam Premium"
-             class="img-fluid rounded-4 shadow-lg"
-             style="max-height: 400px; object-fit: cover;">
       </div>
     </div>
   </div>
+
+  <!-- Bottom Accent Line -->
+  <div class="hero-accent-line"></div>
 </div>

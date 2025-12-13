@@ -43,64 +43,72 @@
   ============================================================================
 {% endcomment %}
 
-{% assign why_title = include.title | default: "Mengapa Memilih Kayu Dolken Gelam?" %}
-{% assign why_subtitle = include.subtitle | default: "Keunggulan kayu gelam untuk berbagai kebutuhan konstruksi" %}
+{% assign why_title = include.title | default: "Mengapa Memilih" %}
+{% assign why_subtitle = include.subtitle | default: "Kayu Dolken Gelam?" %}
 
-<div class="container why-choose-us">
-  <div class="text-center mb-5">
-    <span class="badge bg-warning bg-opacity-10 text-warning mb-2 px-3 py-2">
-      <i class="bi bi-star me-1"></i>Keunggulan Produk
-    </span>
-    <h2 class="display-6 fw-bold text-wood mb-3">{{ why_title }}</h2>
-    <p class="lead text-muted">{{ why_subtitle }}</p>
-  </div>
-
-  <div class="row g-4">
-    <!-- Tahan Air -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card border-0 shadow h-100 text-center p-4 position-relative overflow-hidden">
-        <div class="position-absolute top-0 start-0 w-100 bg-primary" style="height: 4px;"></div>
-        <div class="rounded-circle bg-primary bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
-          <i class="bi bi-droplet-half text-primary fs-2"></i>
-        </div>
-        <h5 class="fw-bold">Tahan Air</h5>
-        <p class="text-muted small mb-0">Ketahanan tinggi terhadap air dan kelembaban ekstrem</p>
+<div class="why-industrial">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header-ind">
+      <div class="header-label">
+        <span class="label-line"></span>
+        <span class="label-text">KEUNGGULAN PRODUK</span>
       </div>
+      <h2 class="section-title-ind">
+        <span class="title-main">{{ why_title }}</span>
+        <span class="title-accent">{{ why_subtitle }}</span>
+      </h2>
+      <p class="section-subtitle-ind">Keunggulan kayu gelam untuk berbagai kebutuhan konstruksi</p>
     </div>
 
-    <!-- Anti Rayap -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card border-0 shadow h-100 text-center p-4 position-relative overflow-hidden">
-        <div class="position-absolute top-0 start-0 w-100 bg-danger" style="height: 4px;"></div>
-        <div class="rounded-circle bg-danger bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
-          <i class="bi bi-shield-x text-danger fs-2"></i>
+    <!-- Benefits Grid -->
+    <div class="benefits-grid">
+      <!-- Tahan Air -->
+      <div class="benefit-card">
+        <div class="benefit-icon blue">
+          <i class="bi bi-droplet-half"></i>
         </div>
-        <h5 class="fw-bold">Anti Rayap</h5>
-        <p class="text-muted small mb-0">Serat alami anti rayap dan serangga perusak kayu</p>
+        <div class="benefit-content">
+          <h4 class="benefit-title">Tahan Air</h4>
+          <p class="benefit-desc">Ketahanan tinggi terhadap air dan kelembaban ekstrem</p>
+        </div>
+        <div class="benefit-number">01</div>
       </div>
-    </div>
 
-    <!-- Sangat Kuat -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card border-0 shadow h-100 text-center p-4 position-relative overflow-hidden">
-        <div class="position-absolute top-0 start-0 w-100 bg-success" style="height: 4px;"></div>
-        <div class="rounded-circle bg-success bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
-          <i class="bi bi-hammer text-success fs-2"></i>
+      <!-- Anti Rayap -->
+      <div class="benefit-card">
+        <div class="benefit-icon red">
+          <i class="bi bi-shield-x"></i>
         </div>
-        <h5 class="fw-bold">Sangat Kuat</h5>
-        <p class="text-muted small mb-0">Kepadatan tinggi, sangat kuat dan tahan beban berat</p>
+        <div class="benefit-content">
+          <h4 class="benefit-title">Anti Rayap</h4>
+          <p class="benefit-desc">Serat alami anti rayap dan serangga perusak kayu</p>
+        </div>
+        <div class="benefit-number">02</div>
       </div>
-    </div>
 
-    <!-- Awet -->
-    <div class="col-md-6 col-lg-3">
-      <div class="card border-0 shadow h-100 text-center p-4 position-relative overflow-hidden">
-        <div class="position-absolute top-0 start-0 w-100 bg-warning" style="height: 4px;"></div>
-        <div class="rounded-circle bg-warning bg-opacity-10 p-3 d-inline-flex mx-auto mb-3">
-          <i class="bi bi-hourglass-split text-warning fs-2"></i>
+      <!-- Sangat Kuat -->
+      <div class="benefit-card">
+        <div class="benefit-icon green">
+          <i class="bi bi-hammer"></i>
         </div>
-        <h5 class="fw-bold">Awet 20+ Tahun</h5>
-        <p class="text-muted small mb-0">Bertahan puluhan tahun dengan perawatan minimal</p>
+        <div class="benefit-content">
+          <h4 class="benefit-title">Sangat Kuat</h4>
+          <p class="benefit-desc">Kepadatan tinggi, sangat kuat dan tahan beban berat</p>
+        </div>
+        <div class="benefit-number">03</div>
+      </div>
+
+      <!-- Awet -->
+      <div class="benefit-card">
+        <div class="benefit-icon yellow">
+          <i class="bi bi-hourglass-split"></i>
+        </div>
+        <div class="benefit-content">
+          <h4 class="benefit-title">Awet 20+ Tahun</h4>
+          <p class="benefit-desc">Bertahan puluhan tahun dengan perawatan minimal</p>
+        </div>
+        <div class="benefit-number">04</div>
       </div>
     </div>
   </div>

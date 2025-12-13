@@ -39,135 +39,148 @@
   ============================================================================
 {% endcomment %}
 
-{% assign grid_title = include.title | default: "Daftar Harga Kayu Dolken Gelam" %}
-{% assign grid_subtitle = include.subtitle | default: "Panjang 4 Meter - Berbagai Ukuran Diameter" %}
+{% assign grid_title = include.title | default: "Daftar Harga" %}
+{% assign grid_subtitle = include.subtitle | default: "Kayu Dolken Gelam" %}
 
-<div class="container">
-  <div class="text-center mb-5">
-    <span class="badge bg-wood text-white mb-2 px-3 py-2">
-      <i class="bi bi-box-seam me-1"></i>Produk Kami
-    </span>
-    <h2 class="display-5 fw-bold text-wood mb-3">{{ grid_title }}</h2>
-    <p class="lead text-muted">{{ grid_subtitle }}</p>
-  </div>
+<div class="products-industrial">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header-ind">
+      <div class="header-label">
+        <span class="label-line"></span>
+        <span class="label-text">PRODUK KAMI</span>
+      </div>
+      <h2 class="section-title-ind">
+        <span class="title-main">{{ grid_title }}</span>
+        <span class="title-accent">{{ grid_subtitle }}</span>
+      </h2>
+      <p class="section-subtitle-ind">Panjang 4 Meter · Berbagai Ukuran Diameter</p>
+    </div>
 
-  <div class="row g-4">
-    {% assign sorted_products = site.products | sort: "price" %}
-    {% for product in sorted_products %}
-    <!-- {{ product.title }} -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card product-card h-100{% if product.popular %} popular border-wood{% endif %}"{% if product.popular %} style="border-width: 2px;"{% endif %}>
-        <a href="{{ product.url | relative_url }}" class="text-decoration-none">
-          {% if product.image %}
-          <picture>
-            <source srcset="{{ product.image | replace: '.jpeg', '.webp' | relative_url }}" type="image/webp">
-            <img src="{{ product.image | relative_url }}"
-                 class="card-img-top"
-                 alt="{{ product.title }}"
-                 style="height: 200px; object-fit: cover;"
-                 loading="lazy">
-          </picture>
-          {% endif %}
-        </a>
-        <div class="card-header text-center{% if product.popular %} bg-wood{% endif %}">
+    <!-- Products Grid -->
+    <div class="row g-4">
+      {% assign sorted_products = site.products | sort: "price" %}
+      {% for product in sorted_products %}
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card-ind{% if product.popular %} is-popular{% endif %}">
           {% if product.popular %}
-          <i class="bi bi-star-fill me-2"></i>{{ product.diameter }}
-          <span class="badge bg-warning text-dark ms-2">Populer</span>
-          {% else %}
-          <i class="bi bi-rulers me-2"></i>{{ product.diameter }}
+          <div class="popular-badge">TERLARIS</div>
           {% endif %}
-        </div>
-        <div class="card-body text-center">
-          <div class="product-price mb-2">Rp {{ product.price | rupiah }}</div>
-          <p class="text-muted mb-2">per batang (4 meter)</p>
 
-          {% if product.rating or product.review_count %}
-          <div class="mb-3 d-flex justify-content-center align-items-center gap-2">
-            {% if product.rating %}
-            <div class="text-warning">
-              {% assign rating_rounded = product.rating | default: 4.5 | round %}
-              {% for i in (1..5) %}
-                {% if i <= rating_rounded %}
-                  <i class="bi bi-star-fill"></i>
-                {% else %}
-                  <i class="bi bi-star"></i>
+          <!-- Product Image -->
+          <a href="{{ product.url | relative_url }}" class="product-image-link">
+            {% if product.image %}
+            <picture>
+              <source srcset="{{ product.image | replace: '.jpeg', '.webp' | relative_url }}" type="image/webp">
+              <img src="{{ product.image | relative_url }}"
+                   class="product-img-ind"
+                   alt="{{ product.title }}"
+                   loading="lazy">
+            </picture>
+            {% endif %}
+            <div class="image-overlay-ind"></div>
+          </a>
+
+          <!-- Product Info -->
+          <div class="product-info-ind">
+            <div class="row badge-price">
+              <div class="col-lg-6">
+                <!-- Diameter Badge -->
+                <div class="diameter-badge">
+                  <i class="bi bi-rulers"></i>
+                  <span>{{ product.diameter }}</span>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!-- Price -->
+                <div class="price-block">
+                  <span class="price-currency">Rp</span>
+                  <span class="price-amount">{{ product.price | rupiah }}</span>
+                  <span class="price-unit">/batang</span>
+                </div>
+
+                <!-- Rating -->
+                {% if product.rating or product.review_count %}
+                <div class="rating-block">
+                  {% if product.rating %}
+                  <div class="stars">
+                    {% assign rating_rounded = product.rating | default: 4.5 | round %}
+                    {% for i in (1..5) %}
+                      {% if i <= rating_rounded %}
+                        <i class="bi bi-star-fill"></i>
+                      {% else %}
+                        <i class="bi bi-star"></i>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                  <span class="rating-text">{{ product.rating }} ({{ product.review_count }} ulasan)</span>
+                </div>
                 {% endif %}
+              </div>
+            </div>
+
+            <!-- Features -->
+            {% if product.features %}
+            <ul class="feature-list-ind">
+              {% for feature in product.features limit:3 %}
+              <li><i class="bi bi-check2"></i>{{ feature }}</li>
               {% endfor %}
-            </div>
+            </ul>
             {% endif %}
-            {% if product.rating and product.review_count %}
-            <span class="text-muted small">
-              <strong>{{ product.rating }}</strong> ({{ product.review_count }} ulasan)
-            </span>
-            {% elsif product.review_count %}
-            <span class="text-muted small">
-              {{ product.review_count }} ulasan
-            </span>
-            {% endif %}
-          </div>
-          {% endif %}
 
-          {% if product.features %}
-          <ul class="list-unstyled text-start mb-4">
-            {% for feature in product.features limit:4 %}
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>{{ feature }}</li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          <a href="{{ product.url | relative_url }}" class="btn btn-wood w-100 mb-2">
-            <i class="bi bi-info-circle me-2"></i>Lihat Detail
-          </a>
-          <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20pesan%20{{ product.title }}%20-%20Rp%20{{ product.price }}" class="btn btn-outline-success w-100" target="_blank">
-            <i class="bi bi-whatsapp me-2"></i>Pesan Sekarang
-          </a>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-
-    <!-- Custom Order -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card product-card h-100 border-0 shadow" style="background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);">
-        <div class="card-body text-center d-flex flex-column justify-content-center text-white p-4">
-          <div class="mb-3">
-            <i class="bi bi-gear-wide-connected fs-1 opacity-75"></i>
-          </div>
-          <h4 class="fw-bold mb-3">Custom Order</h4>
-          <p class="opacity-75 mb-4">Butuh ukuran khusus atau jumlah besar? Kami siap membantu!</p>
-          <ul class="list-unstyled text-start mb-4 small">
-            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Ukuran sesuai kebutuhan</li>
-            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Harga grosir untuk jumlah besar</li>
-            <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Konsultasi gratis</li>
-          </ul>
-          <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20konsultasi%20pesanan%20custom" class="btn btn-light btn-lg w-100 text-wood fw-bold" target="_blank">
-            <i class="bi bi-whatsapp me-2"></i>Hubungi Kami
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Info Box -->
-  <div class="row mt-5">
-    <div class="col-12">
-      <div class="card border-0 bg-light">
-        <div class="card-body p-4">
-          <div class="row align-items-center">
-            <div class="col-md-1 text-center mb-3 mb-md-0">
-              <i class="bi bi-info-circle text-info fs-1"></i>
-            </div>
-            <div class="col-md-8">
-              <h5 class="fw-bold mb-2">Informasi Pemesanan</h5>
-              <p class="text-muted mb-0 small">Harga dapat berubah sewaktu-waktu. Minimal pemesanan dan ongkir dihitung berdasarkan lokasi. Hubungi kami untuk penawaran terbaik!</p>
-            </div>
-            <div class="col-md-3 text-md-end mt-3 mt-md-0">
-              <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20tanya%20harga%20dan%20ongkir" class="btn btn-success" target="_blank">
-                <i class="bi bi-whatsapp me-2"></i>Tanya Harga
+            <!-- Actions -->
+            <div class="product-actions">
+              <a href="{{ product.url | relative_url }}" class="btn-detail">
+                <span>Detail</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20pesan%20{{ product.title }}%20-%20Rp%20{{ product.price }}" class="btn-order" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+                <span>Pesan</span>
               </a>
             </div>
           </div>
         </div>
       </div>
+      {% endfor %}
+
+      <!-- Custom Order Card -->
+      <div class="col-lg-4 col-md-6">
+        <div class="custom-order-card">
+          <div class="custom-order-content">
+            <div class="custom-icon">
+              <i class="bi bi-gear-wide-connected"></i>
+            </div>
+            <h4 class="custom-title">Custom Order</h4>
+            <p class="custom-desc">Butuh ukuran khusus atau jumlah besar?</p>
+            <ul class="custom-features">
+              <li><i class="bi bi-check2"></i>Ukuran sesuai kebutuhan</li>
+              <li><i class="bi bi-check2"></i>Harga grosir jumlah besar</li>
+              <li><i class="bi bi-check2"></i>Konsultasi gratis</li>
+            </ul>
+            <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20konsultasi%20pesanan%20custom" class="btn-custom" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              <span>Hubungi Kami</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Banner -->
+    <div class="info-banner-ind">
+      <div class="info-icon">
+        <i class="bi bi-info-circle"></i>
+      </div>
+      <div class="info-content">
+        <strong>Informasi Pemesanan</strong>
+        <p>Harga dapat berubah sewaktu-waktu. Minimal order & ongkir dihitung berdasarkan lokasi.</p>
+      </div>
+      <a href="https://wa.me/{{ site.business.whatsapp }}?text=Halo,%20saya%20ingin%20tanya%20harga%20dan%20ongkir" class="info-cta" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+        <span>Tanya Harga</span>
+      </a>
     </div>
   </div>
 </div>
