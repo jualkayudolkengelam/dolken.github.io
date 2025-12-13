@@ -38,274 +38,274 @@ area_pengiriman:
 - Bojongloa Kaler (Jamika, Kopo, Babakan Asih)
 - Ujung Berung (Cigending, Pasanggrahan, Pasir Wangi)
 keunggulan_produk:
-- judul: Kualitas Premium Grade A
-  deskripsi: Kayu dolken gelam pilihan berkualitas tinggi, sangat cocok untuk iklim
-    sejuk Bandung di dataran tinggi 768 mdpl. Tekstur padat dan kuat tahan curah hujan
-    tinggi khas Bandung.
+- judul: Mutu Unggulan Kelas Satu
+  deskripsi: Kayu dolken gelam seleksi bermutu tinggi, amat sesuai untuk kondisi udara
+    sejuk Bandung di ketinggian 768 mdpl. Struktur padat dan kokoh bertahan terhadap intensitas hujan
+    tinggi khas Parahyangan.
   warna: warning
   icon: bi-award-fill
-- judul: Harga Terbaik Se-Bandung
-  deskripsi: Harga kompetitif mulai dari Rp 15.000/batang dengan kualitas terjamin.
-    Dapatkan harga khusus untuk pembelian partai besar di wilayah Bandung Raya.
+- judul: Penawaran Terbaik Bandung Raya
+  deskripsi: Penawaran bersaing mulai dari Rp 15.000/batang dengan mutu terjamin.
+    Dapatkan penawaran istimewa untuk pembelian kuantitas besar di seantero Bandung Raya.
   warna: danger
   icon: bi-cash-coin
-- judul: Stok Selalu Ready
-  deskripsi: Tersedia berbagai ukuran diameter 2-12 cm dengan stok melimpah. Siap
-    kirim ke seluruh wilayah Bandung dari Dago hingga Ujung Berung.
+- judul: Ketersediaan Stok Terjamin
+  deskripsi: Tersedia beragam ukuran diameter 2-12 cm dengan persediaan berlimpah. Siap
+    distribusi ke seantero kawasan Bandung dari Setiabudi hingga Gedebage.
   warna: info
   icon: bi-boxes
 keunggulan_layanan:
-- judul: Gratis Ongkir Seluruh Bandung
-  deskripsi: Nikmati pengiriman gratis untuk seluruh wilayah Bandung dari pusat kota
-    hingga area Lembang. Hemat biaya transportasi untuk proyek Anda.
+- judul: Bebas Biaya Kirim Seantero Bandung
+  deskripsi: Nikmati distribusi gratis untuk seantero kawasan Bandung dari pusat kota
+    hingga kawasan Maribaya. Hemat pengeluaran logistik untuk proyek Anda.
   warna: success
   icon: bi-truck
-- judul: COD & Bayar di Tempat
-  deskripsi: Sistem pembayaran Cash on Delivery (COD) tersedia. Cek kualitas kayu
-    terlebih dahulu sebelum bayar, aman dan tanpa risiko untuk customer di Bandung.
+- judul: Bayar di Lokasi & COD
+  deskripsi: Opsi pembayaran Cash on Delivery (COD) tersedia. Periksa mutu kayu
+    terlebih dahulu sebelum bayar, aman dan bebas risiko untuk pelanggan di Bandung.
   warna: primary
   icon: bi-shield-check
-- judul: Konsultasi Gratis 24/7
-  deskripsi: Tim kami siap membantu konsultasi kebutuhan kayu dolken untuk proyek
-    villa, cafe, atau landscaping di Bandung. Hubungi kami kapan saja untuk solusi
-    terbaik.
+- judul: Layanan Konsultasi Sepanjang Waktu
+  deskripsi: Tim kami siap mendampingi konsultasi keperluan kayu dolken untuk proyek
+    vila, kedai, atau penataan landscape di Bandung. Hubungi kami kapan saja untuk solusi
+    optimal.
   warna: secondary
   icon: bi-headset
 area_pengiriman_detail:
-  judul_jangkauan: Jangkauan Pengiriman Luas ke Seluruh Bandung
-  deskripsi_jangkauan: Kami melayani pengiriman kayu dolken gelam ke seluruh wilayah
-    Bandung mencakup 30 kecamatan dari Dago hingga Ujung Berung. Gratis ongkir untuk
-    semua area dengan minimal pembelian yang terjangkau.
-  judul_pusat: Wilayah Pusat Kota Bandung
-  deskripsi_pusat: Area strategis pusat Bandung dengan akses mudah dijangkau. Melayani
-    7 kecamatan utama di jantung kota dengan waktu pengiriman cepat 1-2 hari kerja.
-  judul_utara_selatan: Wilayah Bandung Utara & Selatan
-  deskripsi_utara_selatan: Bandung Utara mencakup area wisata Dago dan Lembang yang
-    sejuk, sangat cocok untuk proyek villa dan resort. Bandung Selatan meliputi area
-    berkembang dengan banyak perumahan baru.
-  judul_pengembangan: Area Pengembangan & Pinggiran
-  deskripsi_pengembangan: Wilayah pinggiran Bandung yang sedang berkembang pesat seperti
-    Arcamanik, Ujung Berung, dan Margahayu. Banyak proyek perumahan dan komersial
-    baru membutuhkan kayu dolken berkualitas.
+  judul_jangkauan: Cakupan Distribusi Menyeluruh ke Seantero Bandung
+  deskripsi_jangkauan: Kami mendistribusikan kayu dolken gelam ke seantero kawasan
+    Bandung meliputi 30 kecamatan dari Setiabudi hingga Gedebage. Bebas biaya kirim untuk
+    seluruh zona dengan minimum order terjangkau.
+  judul_pusat: Zona Sentral Kota Bandung
+  deskripsi_pusat: Kawasan strategis pusat Bandung dengan aksesibilitas tinggi. Melayani
+    7 kecamatan utama di jantung kota dengan durasi pengantaran 1-2 hari kerja.
+  judul_utara_selatan: Kawasan Bandung Utara & Selatan
+  deskripsi_utara_selatan: Bandung Utara mencakup kawasan wisata Setiabudi dan Maribaya yang
+    sejuk, amat sesuai untuk proyek vila dan resort. Bandung Selatan meliputi kawasan
+    bertumbuh dengan banyak komplek hunian baru.
+  judul_pengembangan: Zona Pertumbuhan & Pinggiran
+  deskripsi_pengembangan: Kawasan pinggiran Bandung yang sedang bertumbuh pesat seperti
+    Gedebage, Rancasari, dan Buah Batu. Banyak proyek hunian dan komersial
+    baru memerlukan kayu dolken berkualitas.
   judul_lainnya: Kecamatan Lainnya di Bandung Raya
-  judul_landmark: Landmark Strategis & Pusat Bisnis
-  deskripsi_landmark: Kami melayani pengiriman ke area landmark terkenal Bandung seperti
-    Gedung Sate, Asia Afrika, dan kawasan bisnis utama. Ideal untuk proyek komersial
-    dan perkantoran.
-  judul_wisata: Destinasi Wisata & Sejarah Bandung
-  deskripsi_wisata: Bandung kaya akan destinasi wisata bersejarah seperti Gedung Sate,
-    Museum Geologi, Jalan Braga, dan Alun-Alun yang membutuhkan material kayu berkualitas
-    untuk renovasi dan pemeliharaan.
-  judul_fasilitas: Fasilitas Pendidikan & Komersial
-  deskripsi_fasilitas: Melayani kebutuhan kampus seperti ITB dan UNPAD, serta pusat
-    perbelanjaan seperti Paris Van Java, Trans Studio Mall, dan Cihampelas Walk untuk
-    berbagai kebutuhan konstruksi dan dekorasi.
+  judul_landmark: Titik Penting & Kawasan Komersial
+  deskripsi_landmark: Kami mendistribusikan ke berbagai titik penting Bandung seperti
+    kawasan Dipatiukur, Trunojoyo, dan area komersial utama. Sesuai untuk proyek bisnis
+    dan gedung perkantoran.
+  judul_wisata: Lokasi Wisata & Warisan Budaya Bandung
+  deskripsi_wisata: Bandung menyimpan beragam lokasi wisata bersejarah seperti Balai Kota,
+    Museum KAA, Zona Heritage Braga, dan Taman Kota yang membutuhkan bahan kayu premium
+    untuk pemugaran dan perawatan.
+  judul_fasilitas: Institusi Pendidikan & Pusat Belanja
+  deskripsi_fasilitas: Melayani keperluan institusi pendidikan seperti ITB dan Telkom University, serta pusat
+    perbelanjaan seperti 23 Paskal, Summarecon Bandung, dan Festival Citylink untuk
+    beragam keperluan konstruksi dan dekorasi.
   wilayah_pusat:
-  - nama: Coblong
+  - nama: Cibeunying Kaler
     kelurahan:
-    - Cipaganti, Dago, Lebak Siliwangi
-    - Sadang Serang, Sekeloa
+    - Cigadung, Sukaluyu, Neglasari
+    - Cihaurgeulis, Sadang Serang
     warna: primary
-  - nama: Bandung Wetan
+  - nama: Cibeunying Kidul
     kelurahan:
-    - Citarum, Cihapit, Tamansari
-    - Ciateul
+    - Pasirlayung, Sukamaju, Cikutra
+    - Sukapada
     warna: success
   - nama: Sumur Bandung
     kelurahan:
-    - Braga, Kebon Pisang, Babakan Ciamis
+    - Kebon Pisang, Babakan Ciamis, Braga
     - Merdeka
     warna: info
-  - nama: Cicendo
+  - nama: Andir
     kelurahan:
-    - Pasirkaliki, Pajajaran, Arjuna
-    - Sukaraja, Pamoyanan
+    - Ciroyom, Garuda, Kebonjeruk
+    - Maleber, Dunguscariang
     warna: warning
-  - nama: Cidadap
+  - nama: Astana Anyar
+    kelurahan:
+    - Nyengseret, Panjunan, Cibadak
+    - Karang Anyar
+    warna: danger
+  - nama: Lengkong
+    kelurahan:
+    - Burangrang, Cijagra, Lingkar Selatan
+    - Malabar, Paledang
+    warna: primary
+  - nama: Kiaracondong
+    kelurahan:
+    - Babakan Sari, Cicaheum, Sukapura
+    - Kebon Kangkung, Babakan Surabaya
+    warna: wood
+  wilayah_utara_selatan:
+  - nama: Coblong (Bandung Utara)
+    kelurahan:
+    - Cipaganti, Dago, Lebak Siliwangi
+    - Sekeloa (dekat Punclut)
+    warna: danger
+  - nama: Cidadap (Bandung Utara)
     kelurahan:
     - Hegarmanah, Ledeng, Ciumbuleuit
-    - Cipaganti
-    warna: danger
-  - nama: Regol
+    - Isola
+    warna: primary
+  - nama: Regol (Bandung Selatan)
     kelurahan:
     - Ancol, Balonggede, Cigereleng
     - Pasirluyu, Pungkur
+    warna: warning
+  - nama: Bojongloa Kaler (Bandung Barat)
+    kelurahan:
+    - Jamika, Kopo, Babakan Asih
+    - Sukaasih, Cibaduyut
+    warna: info
+  wilayah_pengembangan:
+  - nama: Rancasari
+    kelurahan:
+    - Cipamokolan, Derwati, Manjahlega
+    - Mekarjaya
     warna: primary
-  - nama: Batununggal
+  - nama: Buah Batu
     kelurahan:
-    - Binong, Cibangkong, Gumuruh
-    - Kacapiring, Maleer, Samoja
-    warna: wood
-  wilayah_utara_selatan:
-  - nama: Sukasari (Bandung Utara)
-    kelurahan:
-    - Gegerkalong, Isola, Sukarasa
-    - Sarijadi (dekat Lembang)
-    warna: danger
-  - nama: Sukajadi (Bandung Utara)
-    kelurahan:
-    - Pasteur, Cipedes, Sukagalih
-    - Sukawarna
-    warna: primary
-  - nama: Bandung Kidul (Bandung Selatan)
+    - Cijawura, Margasari, Sekejati
+    - Jatisari
+    warna: info
+  - nama: Bandung Kidul
     kelurahan:
     - Wates, Batununggal, Mengger
     - Kujangsari
-    warna: warning
-  - nama: Bandung Kulon (Bandung Barat)
-    kelurahan:
-    - Cigondewah Kaler, Cigondewah Kidul
-    - Warung Muncang, Cijerah
-    warna: info
-  wilayah_pengembangan:
-  - nama: Antapani
-    kelurahan:
-    - Antapani Tengah, Antapani Kulon, Antapani Wetan
-    - Antapani Kidul
-    warna: primary
-  - nama: Arcamanik
-    kelurahan:
-    - Cisaranten Kulon, Sukamiskin
-    - Cisaranten Bina Harapan, Sindangjaya
-    warna: info
-  - nama: Ujung Berung
-    kelurahan:
-    - Cigending, Pasanggrahan, Pasir Wangi
-    - Pasir Jati
     warna: wood
-  - nama: Gedebage
+  - nama: Panyileukan
     kelurahan:
-    - Cimincrang, Cisaranten Kidul
-    - Rancabolang, Rancanumpang
+    - Cipadung Kidul, Cipadung Kulon
+    - Cipadung Wetan, Mekar Mulya
     warna: success
-  - nama: Margahayu
+  - nama: Cibiru
     kelurahan:
-    - Margasari, Sayati
+    - Cisurupan, Palasari, Pasir Biru
     warna: warning
   kecamatan_lainnya:
-  - Bojongloa Kaler (Jamika, Kopo, Babakan Asih)
-  - Bojongloa Kidul (Cibaduyut, Mekarwangi)
-  - Astana Anyar (Karang Anyar, Nyengseret, Panjunan)
-  - Lengkong (Burangrang, Cijagra, Malabar, Paledang)
-  - Cibeunying Kaler (Cigadung, Sukaluyu)
-  - Cibeunying Kidul (Pasirlayung, Sukamaju)
-  - Kiaracondong (Babakan Sari, Cicaheum)
+  - Sukasari (Gegerkalong, Isola, Sukarasa)
+  - Sukajadi (Pasteur, Cipedes, Sukagalih)
+  - Cicendo (Pasirkaliki, Pajajaran, Arjuna)
+  - Bandung Wetan (Citarum, Cihapit, Tamansari)
+  - Batununggal (Binong, Cibangkong, Gumuruh)
+  - Arcamanik (Cisaranten Kulon, Sukamiskin)
+  - Ujung Berung (Cigending, Pasanggrahan)
   - Mandalajati (Jatihandap, Karang Pamulang)
   landmark_wisata:
-  - nama: Gedung Sate
+  - nama: Balai Kota Bandung
     icon: bi-building
     warna: warning
-  - nama: Gedung Asia Afrika
+  - nama: Museum Konferensi Asia Afrika
     icon: bi-building
     warna: warning
-  - nama: Museum Geologi Bandung
+  - nama: Kawasan Heritage Braga
     icon: bi-building
     warna: warning
-  - nama: Jalan Braga
-    icon: bi-building
-    warna: warning
-  - nama: Alun-Alun Bandung
-    icon: bi-building
-    warna: warning
-  - nama: Masjid Raya Bandung
-    icon: bi-building
-    warna: warning
+  - nama: Taman Balai Kota
+    icon: bi-tree
+    warna: success
+  - nama: Taman Lansia Cisangkuy
+    icon: bi-tree
+    warna: success
+  - nama: Taman Film Bandung
+    icon: bi-camera-reels
+    warna: info
   landmark_fasilitas:
-  - nama: Paris Van Java Mall
+  - nama: 23 Paskal Shopping Center
     icon: bi-cart
     warna: info
-  - nama: Trans Studio Mall Bandung
+  - nama: Summarecon Bandung
     icon: bi-cart
     warna: primary
-  - nama: Cihampelas Walk (Ciwalk)
+  - nama: Bandung Indah Plaza (BIP)
     icon: bi-cart
     warna: info
-  - nama: Bandung Indah Plaza (BIP)
+  - nama: Festival Citylink Bandung
     icon: bi-cart
     warna: primary
   - nama: Institut Teknologi Bandung (ITB)
     icon: bi-mortarboard
     warna: success
-  - nama: Universitas Padjadjaran (UNPAD)
+  - nama: Telkom University
     icon: bi-mortarboard
     warna: success
 keunggulan_kayu_dolken:
-- judul: Awet 20-30 Tahun
-  deskripsi: Daya tahan luar biasa hingga 20-30 tahun tanpa treatment khusus. Sangat
-    cocok untuk iklim sejuk Bandung di dataran tinggi dengan curah hujan tinggi dan
-    suhu 18-25°C.
+- judul: Ketahanan Hingga 3 Dekade
+  deskripsi: Durabilitas luar biasa hingga 20-30 tahun tanpa perlakuan khusus. Amat
+    sesuai untuk kondisi udara sejuk Bandung di ketinggian dengan intensitas hujan tinggi serta
+    temperatur 18-25°C.
   warna: success
   icon: bi-clock-history
-- judul: Anti Rayap Natural
-  deskripsi: Tidak memerlukan obat anti rayap karena tekstur kayu yang sangat padat
-    secara alami menolak serangan rayap. Ideal untuk area lembab di Bandung seperti
-    Dago dan Lembang.
+- judul: Resisten Rayap Alami
+  deskripsi: Tidak membutuhkan cairan anti rayap berkat struktur kayu yang amat padat
+    secara alami menangkal serangan rayap. Ideal untuk kawasan lembab di Bandung seperti
+    Setiabudi dan Maribaya.
   warna: danger
   icon: bi-bug
-- judul: Tahan Cuaca Ekstrem
-  deskripsi: Cocok untuk outdoor maupun indoor, tahan terhadap hujan deras dan kelembaban
-    tinggi khas Bandung. Tidak mudah lapuk meskipun terkena air dan embun terus menerus.
+- judul: Bertahan di Kondisi Cuaca Ekstrem
+  deskripsi: Sesuai untuk ruang terbuka maupun tertutup, bertahan terhadap guyuran hujan dan kelembaban
+    tinggi khas Parahyangan. Tidak gampang lapuk walau terpapar air dan embun terus-menerus.
   warna: primary
   icon: bi-cloud-rain
-- judul: Kuat & Padat Maksimal
-  deskripsi: Kepadatan kayu sangat tinggi memberikan kekuatan maksimal untuk menahan
-    beban berat. Sempurna untuk struktur penyangga gazebo, pergola, dan konstruksi
-    villa di area pegunungan.
+- judul: Kokoh & Solid Optimal
+  deskripsi: Tingkat kepadatan kayu amat tinggi memberikan kekuatan optimal untuk menanggung
+    beban berat. Sempurna untuk struktur penopang saung, kanopi, dan konstruksi
+    vila di kawasan dataran tinggi.
   warna: warning
   icon: bi-hammer
-- judul: Ramah Lingkungan
-  deskripsi: Material natural 100% sustainable dan biodegradable. Mendukung konsep
-    green building yang banyak diterapkan di proyek-proyek modern Bandung.
+- judul: Berwawasan Lingkungan
+  deskripsi: Bahan natural 100% berkelanjutan dan dapat terurai alami. Mendukung konsep
+    green building yang banyak diaplikasikan di proyek-proyek kontemporer Bandung.
   warna: success
   icon: bi-recycle
-- judul: Estetika Natural Premium
-  deskripsi: Warna coklat natural yang indah memberikan kesan hangat dan alami. Cocok
-    untuk dekorasi modern villa, cafe instagramable, atau resort tradisional di Bandung.
+- judul: Tampilan Alami Berkelas
+  deskripsi: Warna coklat natural yang menawan memberikan nuansa hangat dan alami. Sesuai
+    untuk dekorasi modern vila, kedai instagramable, atau resort tradisional di Bandung.
   warna: info
   icon: bi-palette
 aplikasi_kayu_dolken:
-  deskripsi: Kayu dolken gelam sangat fleksibel dan dapat diaplikasikan untuk berbagai
-    kebutuhan konstruksi dan dekorasi.
+  deskripsi: Material kayu gelam menawarkan fleksibilitas tinggi untuk beragam keperluan
+    pembangunan dan penataan estetika di kawasan Bandung.
   konstruksi_dekorasi:
-  - judul: Konstruksi & Bangunan
+  - judul: Struktur & Pembangunan
     icon: bi-building
     warna: wood
     aplikasi:
-    - Tiang utama gazebo & pergola villa
-    - Struktur penyangga atap cafe & restaurant
-    - Pondasi bangunan tradisional Sunda
-    - Rangka konstruksi rumah kayu
-    - Pagar pembatas area outdoor
-  - judul: Dekorasi & Landscaping
+    - Pilar utama saung & kanopi vila pegunungan
+    - Penopang atap kedai & tempat makan
+    - Dasar bangunan arsitektur Sunda
+    - Kerangka hunian berbahan kayu
+    - Sekat pembatas zona terbuka
+  - judul: Estetika & Penataan Taman
     icon: bi-palette-fill
     warna: primary
     aplikasi:
-    - Pagar taman & border tanaman hias
-    - Dekorasi villa & resort pegunungan
-    - Elemen landscaping taman kota
-    - Pembatas area parkir outdoor
-    - Aksen natural untuk cafe & resto
+    - Pagar halaman & tepian tanaman hias
+    - Ornamen vila & resort dataran tinggi
+    - Komponen landscape ruang terbuka hijau
+    - Pembagi zona parkir outdoor
+    - Sentuhan alami kedai & tempat kuliner
   furniture_komersial:
-  - judul: Furniture & Kerajinan
+  - judul: Perabot & Kreasi Kerajinan
     icon: bi-chair-fill
     warna: info
     aplikasi:
-    - Material furniture outdoor tahan lama
-    - Rangka kursi & meja taman
-    - Kerajinan tangan khas Bandung
-    - Aksesoris dekorasi natural
-    - Standing display cafe & resto
-  - judul: Klien Komersial Terpercaya
+    - Bahan perabot outdoor berkualitas
+    - Kerangka bangku & meja halaman
+    - Kreasi handmade khas Parahyangan
+    - Ornamen dekorasi bernuansa alam
+    - Display stand kedai & tempat kuliner
+  - judul: Mitra Bisnis Terpercaya Bandung
     icon: bi-briefcase-fill
     warna: success
-    deskripsi: Dipercaya oleh berbagai klien komersial untuk proyek-proyek berkualitas
-      di Bandung.
+    deskripsi: Menjadi andalan beragam pelaku usaha untuk proyek-proyek premium
+      di kawasan Bandung Raya.
     aplikasi:
-    - Hotel & villa di area Dago
-    - Cafe & resto di Cihampelas
-    - Restoran di area Braga & Riau
-    - Mall & apartment premium
-    - Developer perumahan Bandung Timur
+    - Penginapan & vila kawasan Setiabudi
+    - Kedai & tempat kuliner Pasirkaliki
+    - Rumah makan area Trunojoyo & Sulanjana
+    - Pusat belanja & hunian vertikal premium
+    - Pengembang properti Bandung Selatan
 proses_awal_pemesanan:
   pilih_ukuran: Lihat daftar produk lengkap di atas, pilih diameter sesuai kebutuhan
     proyek Anda
@@ -322,329 +322,329 @@ finalisasi_pengiriman:
     sampai dan Anda sudah cek kualitas kayu - aman, tanpa risiko, dan terpercaya.
 studi_kasus_proyek:
   proyek_komersial:
-  - judul: Gazebo Resort Villa di Dago Pakar
+  - judul: Saung Resort Vila Setiabudi Atas
     tahun: '2024'
-    deskripsi: Pembangunan gazebo dan pergola untuk resort villa mewah di area Dago
-      Pakar, Bandung Utara. Klien membutuhkan material yang tahan terhadap kelembaban
-      tinggi dan cocok untuk iklim sejuk pegunungan.
+    deskripsi: Pengerjaan saung dan kanopi untuk resort vila premium di kawasan Setiabudi
+      Atas, Bandung Utara. Pihak resort memerlukan bahan yang tahan kelembaban tinggi
+      dan sesuai untuk kondisi sejuk dataran tinggi.
     jumlah: 200 batang
     diameter: 8-10 cm
-    hasil: Struktur gazebo kokoh dan estetis, tahan cuaca ekstrem Bandung. Klien sangat
-      puas dengan kualitas dan ketahanan kayu setelah 1 tahun pemakaian.
+    hasil: Konstruksi saung tampil solid dan menawan, bertahan terhadap kondisi cuaca Bandung.
+      Pihak resort memberikan apresiasi tinggi atas kualitas dan ketahanan kayu memasuki tahun kedua.
     warna: primary
     icon: bi-building
-  - judul: Landscaping Cafe di Cihampelas
+  - judul: Penataan Landscape Kedai Pasirkaliki
     tahun: '2024'
-    deskripsi: Proyek landscaping dan dekorasi outdoor untuk cafe instagramable di
-      kawasan Cihampelas. Menggunakan kayu dolken untuk pagar, border taman, dan aksen
-      dekorasi natural.
+    deskripsi: Pengerjaan landscape dan ornamen outdoor untuk kedai instagramable di
+      kawasan Pasirkaliki. Memanfaatkan kayu dolken untuk pagar, tepian taman, dan
+      aksen dekorasi alami.
     jumlah: 120 batang
     diameter: 4-6 cm dan 6-8 cm
-    hasil: Tampilan cafe menjadi lebih natural dan menarik pengunjung. Pemilik cafe
-      memuji daya tahan kayu terhadap hujan dan panas.
+    hasil: Tampilan kedai menjadi lebih natural dan memikat pengunjung. Pemilik kedai
+      mengapresiasi ketahanan kayu terhadap guyuran hujan dan terik.
     warna: warning
     icon: bi-tree
-  - judul: Pergola Resto di Jalan Riau
+  - judul: Kanopi Rumah Makan Trunojoyo
     tahun: '2024'
-    deskripsi: Pembangunan pergola outdoor untuk restoran fine dining di Jalan Riau.
-      Membutuhkan material premium yang elegan dan tahan lama untuk area outdoor dining.
+    deskripsi: Pembuatan kanopi outdoor untuk rumah makan fine dining di Jalan Trunojoyo.
+      Memerlukan bahan premium yang elegan dan awet untuk zona outdoor dining.
     jumlah: 150 batang
     diameter: 8-10 cm
-    hasil: Pergola megah dan kokoh, menambah nilai estetika restoran. Customer puas
-      dengan finishing natural yang indah.
+    hasil: Kanopi tampil megah dan kokoh, meningkatkan nilai estetika rumah makan.
+      Pelanggan puas dengan finishing natural yang menawan.
     warna: success
     icon: bi-shop
-  - judul: Kanopi Outdoor Mall di Paris Van Java
+  - judul: Struktur Outdoor Pusat Belanja Pasteur
     tahun: '2024'
-    deskripsi: Instalasi kanopi dan pergola untuk area outdoor seating mall Paris
-      Van Java. Menggunakan kayu dolken untuk struktur utama dengan finishing natural
-      coating premium.
+    deskripsi: Instalasi kanopi dan pergola untuk zona outdoor seating pusat belanja
+      di kawasan Pasteur. Memanfaatkan kayu dolken untuk struktur utama dengan finishing
+      coating natural premium.
     jumlah: 280 batang
     diameter: 8-10 cm dan 10-12 cm
-    hasil: Kanopi kokoh dan estetis menciptakan area outdoor yang nyaman. Tahan cuaca
-      hujan Bandung dan tetap elegan setelah 8 bulan.
+    hasil: Kanopi tampil solid dan menawan menciptakan zona outdoor yang nyaman. Bertahan
+      terhadap cuaca hujan Bandung dan tetap elegan memasuki bulan kedelapan.
     warna: danger
     icon: bi-building-add
   proyek_residensial:
-  - judul: Pagar Villa di Ciumbuleuit
+  - judul: Pagar Vila Punclut
     tahun: '2024'
-    deskripsi: Pemasangan pagar dan border taman untuk villa mewah di Ciumbuleuit,
-      Bandung Utara. Area dengan kelembaban tinggi membutuhkan kayu yang tahan rayap
-      dan tahan lama.
+    deskripsi: Instalasi pagar dan tepian taman untuk vila premium di kawasan Punclut,
+      Bandung Utara. Kawasan dengan kelembaban tinggi memerlukan kayu yang resisten rayap
+      dan bertahan lama.
     jumlah: 180 batang
     diameter: 6-8 cm
-    hasil: Pagar kokoh dan estetis, tahan cuaca ekstrem Bandung. Pemilik villa sangat
-      puas dengan kualitas dan tampilan natural yang elegan.
+    hasil: Pagar tampil kokoh dan menawan, bertahan terhadap kondisi cuaca ekstrem Bandung.
+      Pemilik vila sangat puas dengan kualitas dan tampilan natural yang elegan.
     warna: success
     icon: bi-house-door
-  - judul: Gazebo Rumah di Antapani
+  - judul: Saung Hunian Buah Batu
     tahun: '2024'
-    deskripsi: Pembangunan gazebo taman untuk rumah tinggal di area Antapani. Klien
-      menginginkan material yang kuat, awet, dan cocok untuk iklim Bandung.
+    deskripsi: Pembuatan saung taman untuk hunian pribadi di kawasan Buah Batu. Pemilik
+      menghendaki bahan yang kokoh, awet, dan sesuai untuk iklim Bandung.
     jumlah: 100 batang
     diameter: 8-10 cm
-    hasil: Gazebo berdiri kokoh dan indah, menjadi spot favorit keluarga. Setelah
-      8 bulan tidak ada tanda-tanda kerusakan atau serangan rayap.
+    hasil: Saung berdiri kokoh dan menawan, menjadi spot favorit keluarga. Memasuki
+      bulan kedelapan belum tampak tanda kerusakan maupun serangan rayap.
     warna: success
     icon: bi-sun
-  - judul: Taman Rumah di Arcamanik
+  - judul: Taman Hunian Margacinta
     tahun: '2024'
-    deskripsi: Dekorasi taman dan border landscape untuk rumah cluster baru di Arcamanik.
-      Menggunakan kayu dolken untuk aksen natural yang modern.
+    deskripsi: Dekorasi taman dan tepian landscape untuk hunian cluster baru di Margacinta.
+      Memanfaatkan kayu dolken untuk aksen natural bergaya modern.
     jumlah: 80 batang
     diameter: 4-6 cm
-    hasil: Taman terlihat lebih rapi dan natural. Kayu tetap awet meski terkena hujan
-      rutin khas Bandung.
+    hasil: Taman tampak lebih tertata dan alami. Kayu tetap awet walau terkena guyuran
+      hujan rutin khas Bandung.
     warna: info
     icon: bi-tree-fill
-  - judul: Pergola Villa di Lembang
+  - judul: Kanopi Vila Maribaya
     tahun: '2024'
-    deskripsi: Pembangunan pergola outdoor untuk villa resort di kawasan Lembang.
-      Area pegunungan dengan kelembaban tinggi dan suhu dingin membutuhkan material
-      tahan lama.
+    deskripsi: Pembuatan kanopi outdoor untuk vila resort di kawasan Maribaya.
+      Kawasan pegunungan dengan kelembaban tinggi dan suhu dingin memerlukan bahan
+      yang bertahan lama.
     jumlah: 140 batang
     diameter: 8-10 cm
-    hasil: Pergola kokoh menahan angin pegunungan dan hujan deras. Setelah 7 bulan
-      masih dalam kondisi prima tanpa perawatan.
+    hasil: Kanopi kokoh menahan hembusan angin pegunungan dan guyuran hujan deras. Memasuki
+      bulan ketujuh masih dalam kondisi prima tanpa pemeliharaan.
     warna: success
     icon: bi-house-heart-fill
   proyek_publik:
-  - judul: Taman Kota di Jalan Dago
+  - judul: Ruang Terbuka Hijau Dipatiukur
     tahun: '2023'
-    deskripsi: Proyek pembuatan gazebo dan fasilitas publik di taman kota sepanjang
-      Jalan Dago untuk warga Bandung. Membutuhkan material yang tahan lama dan minim
-      perawatan.
+    deskripsi: Pengerjaan saung dan fasilitas publik di ruang terbuka hijau sepanjang
+      Jalan Dipatiukur untuk warga Bandung. Memerlukan bahan yang awet dan minim
+      pemeliharaan.
     jumlah: 250 batang
     diameter: 8-10 cm dan 10-12 cm
-    hasil: Gazebo taman publik kokoh digunakan ribuan pengunjung. Setelah 1 tahun
-      masih dalam kondisi prima tanpa perawatan khusus.
+    hasil: Saung taman publik kokoh dimanfaatkan ribuan pengunjung. Memasuki tahun kedua
+      masih dalam kondisi prima tanpa pemeliharaan khusus.
     warna: info
     icon: bi-signpost-2
-  - judul: Landscaping Alun-Alun Bandung
+  - judul: Penataan Landscape Taman Balai Kota
     tahun: '2023'
-    deskripsi: Revitalisasi area hijau dan landscaping di sekitar Alun-Alun Bandung.
-      Menggunakan kayu dolken untuk border dan dekorasi taman publik.
+    deskripsi: Revitalisasi zona hijau dan penataan landscape di sekitar Taman Balai Kota Bandung.
+      Memanfaatkan kayu dolken untuk tepian dan ornamen taman publik.
     jumlah: 180 batang
     diameter: 6-8 cm
-    hasil: Area taman lebih tertata dan estetis. Material kayu bertahan baik meski
-      penggunaan publik yang intens.
+    hasil: Zona taman lebih tertata dan estetis. Bahan kayu bertahan baik walau
+      pemakaian publik yang intensif.
     warna: primary
     icon: bi-tree
 testimoni_residential:
-- nama: Pak Dedi Kurniawan
-  lokasi: Dago Pakar, Bandung
+- nama: Bambang Suryanto
+  lokasi: Setiabudi Atas, Bandung
   rating: 5
-  judul: Kualitas Premium Tahan Lama
-  komentar: Saya pakai kayu dolken ini untuk gazebo villa di Dago Pakar. Sudah 1 tahun
-    lebih masih kokoh dan tidak ada tanda-tanda rayap meski area sini lembab. Pengiriman
-    gratis dan pelayanan sangat memuaskan. Recommended!
+  judul: Mutu Unggul Bertahan Lama
+  komentar: Saya memakai kayu dolken ini untuk saung vila di Setiabudi Atas. Sudah 1 tahun
+    lebih masih solid dan belum tampak tanda rayap walau kawasan sini lembab. Distribusi
+    gratis dan pelayanan amat memuaskan. Direkomendasikan!
   warna: primary
-- nama: Bu Sari Wulandari
-  lokasi: Ciumbuleuit, Bandung
+- nama: Ratna Kusuma
+  lokasi: Punclut, Bandung
   rating: 5
-  judul: Pelayanan Cepat & Profesional
-  komentar: Order untuk pagar rumah di Ciumbuleuit, prosesnya mudah dan cepat. Tim
-    nya membantu konsultasi kebutuhan dengan detail. Kayu nya bagus, warna natural
-    coklat cantik. Puas dengan hasilnya!
+  judul: Layanan Sigap & Profesional
+  komentar: Order untuk pagar hunian di Punclut, prosesnya lancar dan sigap. Tim
+    nya mendampingi konsultasi keperluan dengan detail. Kayunya bagus, warna natural
+    coklat menawan. Puas dengan hasilnya!
   warna: success
 testimoni_komersial:
-- nama: Pak Anton Wijaya
-  lokasi: Owner Cafe di Cihampelas
+- nama: Firman Hidayat
+  lokasi: Pemilik Kedai di Pasirkaliki
   rating: 5
-  judul: Cocok untuk Bisnis Cafe
-  komentar: Pakai kayu dolken untuk landscaping dan dekorasi outdoor cafe saya di
-    Cihampelas. Customer suka dengan nuansa natural nya. Sudah 8 bulan masih bagus
-    kondisi nya, tahan hujan Bandung. Mantap!
+  judul: Sesuai untuk Usaha Kedai
+  komentar: Memakai kayu dolken untuk landscape dan ornamen outdoor kedai saya di
+    Pasirkaliki. Pelanggan suka dengan nuansa naturalnya. Sudah 8 bulan masih bagus
+    kondisinya, bertahan terhadap hujan Bandung. Top!
   warna: warning
-- nama: Pak Rudi Hermawan
-  lokasi: Kontraktor di Bandung
+- nama: Agus Setiawan
+  lokasi: Pelaksana Proyek di Bandung
   rating: 5
-  judul: Partner Terpercaya untuk Proyek
-  komentar: Sudah beberapa kali order untuk proyek villa dan resort di area Bandung
-    Utara. Kualitas konsisten bagus, stok selalu ready, dan pengiriman tepat waktu.
-    Jadi partner supplier terpercaya saya.
+  judul: Mitra Andal untuk Proyek
+  komentar: Sudah beberapa kali order untuk proyek vila dan resort di kawasan Bandung
+    Utara. Mutu konsisten bagus, stok selalu tersedia, dan distribusi tepat waktu.
+    Menjadi mitra supplier andalan saya.
   warna: info
-- nama: Bu Lisa Anggraini
-  lokasi: Owner Villa di Lembang
+- nama: Dewi Permatasari
+  lokasi: Pemilik Vila di Maribaya
   rating: 5
-  judul: Material Terbaik untuk Villa
-  komentar: Villa saya di Lembang pakai kayu dolken ini untuk gazebo dan pergola.
-    Sangat cocok untuk iklim dingin dan lembab Lembang. Kayu nya kuat, estetis, dan
-    tahan lama. Highly recommended untuk resort!
+  judul: Bahan Terbaik untuk Vila
+  komentar: Vila saya di Maribaya memakai kayu dolken ini untuk saung dan kanopi.
+    Amat sesuai untuk kondisi dingin dan lembab Maribaya. Kayunya kokoh, estetis, dan
+    bertahan lama. Sangat direkomendasikan untuk resort!
   warna: success
-- nama: Pak Hendra Wijaya
-  lokasi: Developer di Bandung
+- nama: Irwan Gunawan
+  lokasi: Pengembang di Bandung
   rating: 5
-  judul: Solusi Terbaik untuk Developer
-  komentar: Sebagai developer, kami butuh supplier yang reliable dengan harga terbaik.
-    Sudah pakai untuk 3 project perumahan di Bandung, hasilnya selalu memuaskan. Stok
-    ready, kualitas bagus, harga bersaing. Mantap!
+  judul: Solusi Optimal untuk Pengembang
+  komentar: Sebagai pengembang, kami memerlukan supplier yang andal dengan penawaran terbaik.
+    Sudah memakai untuk 3 proyek hunian di Bandung, hasilnya selalu memuaskan. Stok
+    tersedia, mutu bagus, harga bersaing. Top!
   warna: primary
 tips_ukuran:
-- kategori: Dekorasi Ringan
-  aplikasi: Pagar, Taman, Border
+- kategori: Ornamen Ringan
+  aplikasi: Pagar Halaman, Taman, Tepian
   diameter: 2-3 cm / 4-6 cm
   keunggulan:
-  - Ringan dan mudah dipasang
-  - Cocok untuk dekorasi taman rumah
-  - Harga ekonomis untuk proyek kecil
+  - Bobot ringan dan praktis dipasang
+  - Sesuai untuk ornamen taman hunian
+  - Penawaran ekonomis untuk proyek kecil
   warna: success
   icon: bi-tree
-- kategori: Struktur Sedang
-  aplikasi: Gazebo, Pergola, Pagar Utama
+- kategori: Konstruksi Menengah
+  aplikasi: Saung, Kanopi, Pagar Utama
   diameter: 6-8 cm
   keunggulan:
-  - Kekuatan optimal untuk beban sedang
-  - Ideal untuk gazebo & pergola cafe
-  - Balance antara kekuatan dan harga
+  - Kekuatan optimal untuk beban menengah
+  - Ideal untuk saung & kanopi kedai
+  - Keseimbangan antara kekuatan dan biaya
   warna: primary
   icon: bi-house-fill
-- kategori: Struktur Berat
-  aplikasi: Tiang Utama, Pondasi, Konstruksi
+- kategori: Konstruksi Berat
+  aplikasi: Pilar Utama, Dasar, Bangunan
   diameter: 8-10 cm / 10-12 cm
   keunggulan:
-  - Maksimal untuk beban konstruksi berat
-  - Cocok untuk tiang utama villa & resort
-  - Daya tahan ekstrem untuk proyek besar
+  - Optimal untuk beban konstruksi berat
+  - Sesuai untuk pilar utama vila & resort
+  - Durabilitas ekstrem untuk proyek besar
   warna: danger
   icon: bi-building-fill
 faq_pemesanan:
-- pertanyaan: Berapa minimal pemesanan kayu dolken?
-  jawaban: Kami melayani pemesanan mulai dari 10 batang saja. Untuk wilayah Bandung,
-    kami berikan harga khusus dengan sistem bertingkat - semakin banyak pesanan semakin
-    hemat. Hubungi 081311400177 untuk konsultasi dan penawaran terbaik.
+- pertanyaan: Berapakah jumlah minimum order kayu dolken?
+  jawaban: Kami melayani pemesanan mulai dari 10 batang saja. Untuk kawasan Bandung,
+    kami memberikan penawaran istimewa dengan sistem bertingkat - semakin banyak order semakin
+    hemat. Hubungi 081311400177 untuk konsultasi dan penawaran optimal.
   icon: bi-cart-check
-- pertanyaan: Bagaimana cara mengecek kualitas kayu dolken sebelum bayar?
-  jawaban: Kami menyediakan sistem COD (Cash on Delivery). Anda bisa cek fisik kayu
-    saat sampai lokasi - pastikan tidak bengkok, tidak ada retak, dan diameter sesuai
+- pertanyaan: Bagaimana metode pengecekan mutu kayu dolken sebelum bayar?
+  jawaban: Kami menyediakan opsi COD (Cash on Delivery). Anda dapat memeriksa fisik kayu
+    saat tiba di lokasi - pastikan tidak bengkok, tidak ada retakan, dan diameter sesuai
     pesanan. Tim kami akan mendampingi proses pengecekan untuk memastikan Anda puas
-    dengan kualitas.
+    dengan mutu.
   icon: bi-clipboard-check
-- pertanyaan: Apakah ada diskon untuk pembelian partai besar?
-  jawaban: Ya, tersedia harga khusus untuk pembelian dalam jumlah besar. Untuk proyek
-    villa, hotel, atau developer yang membutuhkan ratusan batang, kami berikan harga
-    spesial. Hubungi tim kami untuk negosiasi harga terbaik.
+- pertanyaan: Adakah penawaran khusus untuk pembelian kuantitas besar?
+  jawaban: Ya, tersedia penawaran istimewa untuk pembelian dalam kuantitas besar. Untuk proyek
+    vila, penginapan, atau pengembang yang memerlukan ratusan batang, kami berikan penawaran
+    spesial. Hubungi tim kami untuk negosiasi penawaran optimal.
   icon: bi-percent
 faq_produk:
-- pertanyaan: Apakah kayu dolken perlu perawatan khusus di Bandung?
-  jawaban: Tidak perlu perawatan khusus. Kayu dolken gelam sangat cocok untuk iklim
-    sejuk Bandung di dataran tinggi dengan curah hujan tinggi. Untuk aplikasi outdoor
-    di area lembab seperti Dago atau Lembang, Anda bisa tambahkan coating varnish
-    untuk memperpanjang usia dan menjaga warna, tapi ini opsional.
+- pertanyaan: Apakah kayu dolken memerlukan pemeliharaan khusus di Bandung?
+  jawaban: Tidak perlu pemeliharaan khusus. Kayu dolken gelam amat sesuai untuk kondisi udara
+    sejuk Bandung di ketinggian dengan intensitas hujan tinggi. Untuk aplikasi outdoor
+    di kawasan lembab seperti Setiabudi atau Maribaya, Anda dapat menambahkan coating varnish
+    untuk memperpanjang usia dan menjaga warna, namun ini opsional.
   icon: bi-tools
-- pertanyaan: Apakah bisa custom panjang kayu dolken?
-  jawaban: Ya, bisa custom panjang sesuai kebutuhan proyek. Standar kami 4 meter,
-    tapi bisa disesuaikan untuk proyek spesifik di Bandung seperti gazebo besar, pergola
-    cafe, atau konstruksi khusus. Diskusikan kebutuhan Anda dengan tim kami di 081311400177.
+- pertanyaan: Apakah tersedia custom panjang kayu dolken?
+  jawaban: Ya, tersedia custom panjang sesuai keperluan proyek. Standar kami 4 meter,
+    namun dapat disesuaikan untuk proyek spesifik di Bandung seperti saung besar, kanopi
+    kedai, atau konstruksi khusus. Diskusikan keperluan Anda dengan tim kami di 081311400177.
   icon: bi-rulers
-- pertanyaan: Bagaimana membedakan kayu dolken asli gelam dengan imitasi?
+- pertanyaan: Bagaimana cara membedakan kayu dolken gelam asli dengan tiruan?
   jawaban: 'Kayu dolken gelam asli memiliki ciri khas: warna coklat natural konsisten,
-    tekstur sangat padat dan berat, tidak mudah tergores, dan beraroma khas kayu natural.
-    Kami jamin 100% kayu gelam asli dengan kualitas Grade A, bukan campuran atau imitasi.'
+    struktur amat padat dan berat, tidak gampang tergores, dan beraroma khas kayu natural.
+    Kami jamin 100% kayu gelam asli dengan mutu Grade A, bukan campuran atau tiruan.'
   icon: bi-patch-check
 faq_pengiriman:
-- pertanyaan: Berapa lama pengiriman ke Bandung?
-  jawaban: Untuk area Bandung, pengiriman memakan waktu 1-3 hari kerja tergantung
-    lokasi. Area pusat kota seperti Dago, Cihampelas, dan Braga biasanya 1-2 hari.
-    Area pinggiran seperti Ujung Berung, Arcamanik, atau Lembang maksimal 3 hari kerja.
-    Gratis ongkir untuk seluruh wilayah Bandung menggunakan armada terpercaya.
+- pertanyaan: Berapa durasi distribusi ke Bandung?
+  jawaban: Untuk kawasan Bandung, distribusi memakan waktu 1-3 hari kerja tergantung
+    lokasi. Kawasan pusat kota seperti Dipatiukur, Pasirkaliki, dan Braga biasanya 1-2 hari.
+    Kawasan pinggiran seperti Gedebage, Rancasari, atau Maribaya maksimal 3 hari kerja.
+    Bebas biaya kirim untuk seantero kawasan Bandung menggunakan armada andal.
   icon: bi-truck
-- pertanyaan: Apakah pengiriman bisa sampai ke area pegunungan seperti Lembang?
-  jawaban: Ya, bisa! Kami melayani pengiriman hingga area Lembang, Dago Atas, dan
-    sekitarnya. Armada kami berpengalaman menangani pengiriman ke area pegunungan
-    Bandung dengan akses yang tricky sekalipun. Tetap gratis ongkir untuk minimal
+- pertanyaan: Apakah distribusi dapat menjangkau kawasan pegunungan seperti Maribaya?
+  jawaban: Ya, bisa! Kami melayani distribusi hingga kawasan Maribaya, Setiabudi Atas, dan
+    sekitarnya. Armada kami berpengalaman menangani distribusi ke kawasan pegunungan
+    Bandung dengan akses yang menantang sekalipun. Tetap bebas biaya kirim untuk minimum
     pembelian tertentu.
   icon: bi-geo-alt
 relevansi_kayu_dolken:
-  karakteristik_iklim: Bandung terletak di dataran tinggi 768 mdpl dengan iklim sejuk
-    (18-25°C) dan curah hujan tinggi mencapai 200+ hari hujan per tahun. Kelembaban
-    udara tinggi terutama di area pegunungan seperti Dago dan Lembang menjadi tantangan
-    untuk material konstruksi outdoor. Kayu dolken gelam sangat cocok karena sifatnya
-    yang tahan air, tahan rayap natural, dan tidak mudah lapuk meskipun terkena hujan
-    terus menerus.
-  keunggulan_lokal: 'Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca
-    ekstrem</strong> sangat cocok untuk aplikasi seperti:'
+  karakteristik_iklim: Kawasan Bandung berada di ketinggian 768 mdpl dengan kondisi udara
+    sejuk (18-25°C) serta intensitas hujan tinggi mencapai 200+ hari basah per tahun. Tingkat
+    kelembaban udara tinggi khususnya di kawasan pegunungan seperti Setiabudi dan Maribaya menjadi
+    tantangan tersendiri untuk bahan konstruksi ruang terbuka. Kayu dolken gelam amat sesuai berkat
+    karakternya yang kedap air, resisten rayap secara alami, dan tidak gampang lapuk walau
+    terkena guyuran hujan terus-menerus.
+  keunggulan_lokal: 'Karakter kayu yang <strong>kedap air, resisten rayap, dan tahan kondisi
+    cuaca ekstrem</strong> amat sesuai untuk keperluan seperti:'
   aplikasi_lokal:
-  - nama: Gazebo & pergola villa di area Dago dan Ciumbuleuit
+  - nama: Saung & kanopi vila di kawasan Setiabudi dan Punclut
     icon: bi-check-circle-fill
-  - nama: Landscaping cafe & resto di Cihampelas dan Riau
+  - nama: Penataan landscape kedai & tempat kuliner di Pasirkaliki dan Trunojoyo
     icon: bi-check-circle-fill
-  - nama: Pagar dan dekorasi resort di Lembang
+  - nama: Pagar dan ornamen resort di Maribaya
     icon: bi-check-circle-fill
-  - nama: Konstruksi outdoor di sekitar Gedung Sate dan Asia Afrika
+  - nama: Konstruksi outdoor di sekitar Balai Kota dan Dipatiukur
     icon: bi-check-circle-fill
-  - nama: Furniture taman untuk hotel di Pasteur dan Dago
+  - nama: Perabot taman untuk penginapan di Sukajadi dan Setiabudi
     icon: bi-check-circle-fill
 tentang_kota:
-  tagline: Paris van Java
-  deskripsi_singkat: Kota metropolitan dengan iklim sejuk yang menjadi pusat pendidikan,
-    fashion, dan kuliner di Jawa Barat.
-  overview: Bandung adalah ibukota Provinsi Jawa Barat yang terletak di dataran tinggi
-    768 mdpl dikelilingi pegunungan. Dengan luas wilayah sekitar 167 km² dan populasi
-    lebih dari 2,5 juta jiwa, Bandung terbagi menjadi 30 kecamatan dan 151 kelurahan
-    yang tersebar dari pusat kota hingga area pinggiran.
+  tagline: Kota Kembang Parahyangan
+  deskripsi_singkat: Metropolis dataran tinggi dengan udara sejuk yang menjadi sentra
+    pendidikan, fesyen, dan gastronomi di Jawa Barat.
+  overview: Bandung merupakan ibukota Provinsi Jawa Barat yang berlokasi di ketinggian
+    768 mdpl dikelilingi rangkaian pegunungan. Dengan cakupan wilayah sekitar 167 km² serta
+    populasi melebihi 2,5 juta jiwa, Bandung terdiri atas 30 kecamatan dan 151 kelurahan
+    yang tersebar dari pusat kota hingga kawasan pinggiran.
   tentang_kota_1:
-  - judul: Sejarah & Warisan Budaya
+  - judul: Warisan Sejarah & Budaya Parahyangan
     icon: bi-clock-history
-    subjudul: Kota Bersejarah dengan Arsitektur Kolonial
+    subjudul: Metropolis Bersejarah dengan Arsitektur Klasik
     icon_subjudul: bi-book
     deskripsi: |-
-      Bandung memiliki sejarah panjang sebagai kota kolonial Belanda yang dikenal dengan sebutan <em>Parijs van Java</em> atau Paris van Java. Kota ini berkembang pesat sejak awal abad ke-20 dengan pembangunan jalur kereta api dan infrastruktur modern. Warisan arsitektur kolonial Art Deco masih banyak ditemukan di sepanjang Jalan Braga, Gedung Sate, dan kawasan bersejarah lainnya.
+      Bandung menyimpan perjalanan panjang sebagai kota kolonial Hindia Belanda yang dijuluki <em>Parijs van Java</em> atau Kota Kembang. Metropolis ini berkembang pesat sejak permulaan abad ke-20 seiring pembangunan jalur kereta api serta prasarana modern. Peninggalan arsitektur Art Deco klasik masih dapat dijumpai di sepanjang Jalan Braga, Balai Kota, dan kawasan bersejarah lainnya.
 
-      Kekayaan budaya Sunda yang kental berpadu dengan modernitas menjadikan Bandung kota yang unik. Dari kuliner tradisional seperti batagor dan siomay hingga industri kreatif modern, Bandung terus berkembang sambil mempertahankan identitas budayanya.
+      Khazanah budaya Sunda yang kental berpadu dengan modernitas menjadikan Bandung metropolis yang unik. Dari sajian tradisional seperti batagor dan siomay hingga industri kreatif kontemporer, Bandung terus bertumbuh sambil memelihara jati diri budayanya.
     fakta:
-    - Gedung Sate dibangun tahun 1920 sebagai ikon arsitektur kolonial
-    - Jalan Braga menjadi pusat kehidupan sosial elite Eropa di era 1920-an
-    - Bandung menjadi kota pertama di Indonesia dengan sistem trem listrik (1906)
-  - judul: Ekonomi Kreatif & Pariwisata
+    - Balai Kota Bandung dibangun tahun 1935 sebagai ikon arsitektur Art Deco
+    - Jalan Braga menjadi pusat kehidupan sosial kaum elite Eropa di era 1920-an
+    - Bandung menjadi metropolis pertama di Indonesia dengan sistem trem listrik (1906)
+  - judul: Industri Kreatif & Pariwisata
     icon: bi-graph-up
-    subjudul: Pusat Fashion, Kuliner & Industri Kreatif
+    subjudul: Sentra Fesyen, Gastronomi & Ekonomi Kreatif
     icon_subjudul: bi-star
     deskripsi: |-
-      Bandung dikenal sebagai pusat industri kreatif Indonesia, khususnya di bidang fashion dan kuliner. Factory outlet dan distro bertebaran di Cihampelas, Dago, dan Riau menjadikan Bandung surga belanja dengan harga terjangkau. Perkembangan cafe, restoran, dan kuliner khas Bandung menarik jutaan wisatawan setiap tahunnya.
+      Bandung diakui sebagai sentra industri kreatif Indonesia, khususnya di bidang fesyen dan gastronomi. Factory outlet dan distro bertebaran di Pasirkaliki, Setiabudi, dan Trunojoyo menjadikan Bandung surga belanja dengan harga terjangkau. Perkembangan kedai, rumah makan, dan kuliner khas Bandung memikat jutaan wisatawan setiap tahunnya.
 
-      Industri pariwisata Bandung sangat beragam - dari wisata alam pegunungan di Lembang, wisata belanja di pusat kota, hingga wisata sejarah dan budaya. Destinasi seperti Tangkuban Perahu, Kawah Putih, dan berbagai villa resort di dataran tinggi menjadi daya tarik utama. Dengan iklim sejuk dan akses mudah dari Jakarta (hanya 3 jam berkendara), Bandung menjadi tujuan wisata favorit akhir pekan.
+      Industri pariwisata Bandung amat beragam - dari wisata alam pegunungan di Maribaya, wisata belanja di pusat kota, hingga wisata sejarah dan budaya. Destinasi seperti Tangkuban Parahu, Kawah Putih, dan beragam vila resort di dataran tinggi menjadi daya tarik utama. Dengan udara sejuk dan akses mudah dari Jakarta (hanya 3 jam berkendara), Bandung menjadi tujuan wisata favorit akhir pekan.
     fakta:
     - Lebih dari 5 juta wisatawan mengunjungi Bandung setiap tahun
-    - Industri fashion Bandung menyumbang triliunan rupiah untuk ekonomi lokal
-    - Bandung memiliki lebih dari 1.000 cafe dengan konsep unik dan instagramable
+    - Industri fesyen Bandung menyumbang triliunan rupiah untuk ekonomi lokal
+    - Bandung memiliki lebih dari 1.000 kedai dengan konsep unik dan instagramable
   tentang_kota_2:
-  - judul: Landmark & Destinasi Populer
+  - judul: Ikon & Destinasi Populer
     icon: bi-pin-map
-    subjudul: Ikon Kota & Tempat Wisata Terkenal
+    subjudul: Landmark Kota & Tempat Wisata Terkenal
     icon_subjudul: bi-star-fill
-    deskripsi: 'Bandung kaya akan landmark ikonik yang menjadi kebanggaan warga dan
+    deskripsi: 'Bandung kaya akan landmark ikonik yang menjadi kebanggaan warga serta
       destinasi favorit wisatawan:'
     list_item:
-    - "<strong>Gedung Sate</strong> Ikon arsitektur Art Deco dengan ornamen tusuk
-      sate di puncak menara, kini menjadi kantor Gubernur Jawa Barat"
-    - "<strong>Gedung Asia Afrika</strong> Saksi bersejarah Konferensi Asia-Afrika
+    - "<strong>Balai Kota Bandung</strong> Ikon arsitektur Art Deco yang megah dengan
+      menara jam ikonik, kini menjadi kantor Wali Kota Bandung"
+    - "<strong>Museum Konferensi Asia Afrika</strong> Saksi bersejarah pertemuan internasional
       1955 yang menghasilkan Dasasila Bandung"
-    - "<strong>Jalan Braga</strong> Kawasan heritage dengan bangunan kolonial, cafe
-      klasik, dan galeri seni"
-    - "<strong>Trans Studio Mall</strong> Mall terbesar di Bandung dengan theme park
-      indoor"
-    - "<strong>Paris Van Java (PVJ)</strong> Pusat perbelanjaan modern dengan konsep
-      terbuka yang populer"
-    - "<strong>Alun-Alun Bandung</strong> Pusat kota yang dikelilingi Masjid Raya
+    - "<strong>Kawasan Braga</strong> Zona heritage dengan bangunan klasik, kedai
+      tempo dulu, dan galeri seni"
+    - "<strong>Summarecon Bandung</strong> Kawasan terpadu modern dengan pusat belanja
+      dan hunian premium"
+    - "<strong>23 Paskal Shopping Center</strong> Pusat perbelanjaan kontemporer dengan
+      konsep terbuka yang populer"
+    - "<strong>Taman Balai Kota</strong> Pusat kota yang dikelilingi ruang terbuka hijau
       dan kawasan kuliner"
-  - judul: Pendidikan & Teknologi
+  - judul: Pendidikan & Inovasi
     icon: bi-mortarboard
-    subjudul: Kota Pendidikan dengan Kampus Terkemuka
+    subjudul: Metropolis Pendidikan dengan Kampus Unggulan
     icon_subjudul: bi-book-fill
-    deskripsi: 'Bandung dikenal sebagai kota pendidikan dengan berbagai universitas
-      dan institusi terkemuka:'
+    deskripsi: 'Bandung diakui sebagai metropolis pendidikan dengan beragam universitas
+      dan institusi unggulan:'
     list_item:
     - "<strong>Institut Teknologi Bandung (ITB)</strong> Kampus teknik terbaik di
       Indonesia dengan kampus ikonik di Jalan Ganesha"
     - "<strong>Universitas Padjadjaran (UNPAD)</strong> Salah satu universitas negeri
       terbaik dengan kampus modern di Jatinangor"
-    - "<strong>Universitas Pendidikan Indonesia (UPI)</strong> Pusat pendidikan guru
+    - "<strong>Universitas Pendidikan Indonesia (UPI)</strong> Sentra pendidikan guru
       terkemuka di Indonesia"
     - "<strong>UNPAR, UNISBA, Telkom University</strong> Kampus swasta berkualitas
       dengan ribuan mahasiswa"
-    info_tambahan: Keberadaan puluhan kampus menjadikan Bandung kota dengan populasi
-      mahasiswa terbesar di Indonesia, menciptakan ekosistem bisnis kuliner, kos-kosan,
+    info_tambahan: Keberadaan puluhan kampus menjadikan Bandung metropolis dengan populasi
+      mahasiswa terbesar di Indonesia, menciptakan ekosistem bisnis kuliner, indekos,
       dan industri kreatif yang dinamis.
 like_count: 1
 comment_count: 0
