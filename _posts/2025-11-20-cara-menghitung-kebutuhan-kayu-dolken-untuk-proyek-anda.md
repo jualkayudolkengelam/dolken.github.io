@@ -17,14 +17,8 @@ image: /assets/images/posts/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-a
 image_alt: "Panduan visual cara menghitung kebutuhan kayu dolken untuk proyek konstruksi dengan metode praktis, meliputi perhitungan pagar, gazebo, pergola dan struktur lainnya agar estimasi biaya material lebih akurat"
 images:
   - /assets/images/posts/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda-001.webp
-  - /assets/images/posts/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda-002.webp
-  - /assets/images/posts/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda-003.webp
-  - /assets/images/posts/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda/cara-menghitung-kebutuhan-kayu-dolken-untuk-proyek-anda-004.webp
 images_alt:
-  - "Ilustrasi rumus perhitungan kebutuhan kayu dolken untuk proyek pagar dengan variabel panjang area lebar jarak antar tiang dan cadangan material"
-  - "Contoh perhitungan kebutuhan kayu dolken untuk gazebo ukuran 3x3 meter dengan estimasi jumlah batang untuk tiang rangka dan finishing"
-  - "Tabel perbandingan kebutuhan kayu dolken berbagai ukuran diameter untuk aplikasi konstruksi pagar pergola dan pondasi cerucuk"
-  - "Tips menghemat biaya material dengan perhitungan akurat kebutuhan kayu dolken menghindari pemborosan dan kekurangan stok saat proyek berjalan"
+  - "Panduan visual cara menghitung kebutuhan kayu dolken untuk proyek konstruksi dengan metode praktis, meliputi perhitungan pagar, gazebo, pergola dan struktur lainnya agar estimasi biaya material lebih akurat"
 keywords: "cara menghitung kayu dolken, kebutuhan kayu dolken, perhitungan material konstruksi, estimasi biaya dolken, panduan praktis kayu dolken, tips hemat konstruksi"
 excerpt: "Panduan lengkap menghitung kebutuhan kayu dolken untuk proyek konstruksi. Hemat biaya dengan perhitungan akurat menggunakan metode praktis dan tips dari ahli."
 rating: 4.7

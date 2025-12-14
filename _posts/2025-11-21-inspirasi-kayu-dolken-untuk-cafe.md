@@ -15,10 +15,8 @@ image: "/assets/images/posts/inspirasi-kayu-dolken-untuk-cafe/inspirasi-kayu-dol
 image_alt: "Inspirasi desain interior cafe menggunakan kayu dolken gelam untuk feature wall, partisi ruangan, dan ceiling accent yang menciptakan suasana natural rustic aesthetic cocok untuk konsep biophilic design"
 images:
 - "/assets/images/posts/inspirasi-kayu-dolken-untuk-cafe/inspirasi-kayu-dolken-untuk-cafe-001.webp"
-- "/assets/images/posts/inspirasi-kayu-dolken-untuk-cafe/inspirasi-kayu-dolken-untuk-cafe-002.webp"
 images_alt:
-- "Inspirasi desain interior cafe dengan feature wall menggunakan kayu dolken gelam menciptakan suasana natural rustic yang instagramable dan nyaman untuk pengunjung"
-- "Aplikasi kayu dolken sebagai ceiling accent dan partisi ruangan cafe memberikan sentuhan biophilic design yang hangat dan menarik untuk konsep cafe modern"
+- "Inspirasi desain interior cafe menggunakan kayu dolken gelam untuk feature wall, partisi ruangan, dan ceiling accent yang menciptakan suasana natural rustic aesthetic cocok untuk konsep biophilic design"
 keywords: kayu dolken cafe, inspirasi interior cafe, desain cafe natural, dolken untuk
   cafe, tips desain cafe, material cafe modern, biophilic design cafe, cafe aesthetic
 excerpt: "Temukan inspirasi menggunakan kayu dolken untuk interior cafe Anda. Dari feature wall hingga outdoor deck, lengkap dengan tips desain dan estimasi budget."

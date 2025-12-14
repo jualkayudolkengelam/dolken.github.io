@@ -9,18 +9,12 @@ tags:
 - perbandingan
 - jenis kayu
 author: Admin
-image: "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-001.jpeg"
+image: "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-001.webp"
 image_alt: "Perbandingan karakteristik kayu gelam Melaleuca cajuputi dengan jenis kayu lain seperti jati, merbau dan ulin dari segi kepadatan, ketahanan rayap, harga dan kegunaan untuk berbagai aplikasi konstruksi"
 images:
-- "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-001.jpeg"
-- "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-002.jpeg"
-- "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-003.jpeg"
-- "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-004.jpeg"
+- "/assets/images/posts/perbedaan-kayu-gelam-dengan-kayu-lainnya/perbedaan-kayu-gelam-dengan-kayu-lainnya-001.webp"
 images_alt:
-- "Perbandingan visual tekstur serat kayu gelam dengan kayu jati menunjukkan perbedaan kepadatan warna dan karakteristik permukaan masing-masing"
-- "Tabel perbandingan spesifikasi kayu gelam merbau ulin dan jati meliputi kepadatan ketahanan rayap harga dan kegunaan utama"
-- "Ilustrasi ketahanan kayu gelam terhadap air dibandingkan kayu lain menunjukkan keunggulan untuk aplikasi outdoor dan area basah"
-- "Grafik perbandingan harga kayu gelam dengan kayu premium lainnya menunjukkan value for money terbaik untuk konstruksi dan dekorasi"
+- "Perbandingan karakteristik kayu gelam Melaleuca cajuputi dengan jenis kayu lain seperti jati, merbau dan ulin dari segi kepadatan, ketahanan rayap, harga dan kegunaan untuk berbagai aplikasi konstruksi"
 url: "/2024/03/05/perbedaan-kayu-gelam-dengan-kayu-lainnya/"
 excerpt: "Perbedaan kayu gelam dengan kayu lainnya seperti jati, ulin, merbau, dan pinus perlu Anda ketahui sebelum memulai proyek. Bandingkan kepadatan, ketahanan, harga, dan aplikasi terbaiknya."
 rating: 4.7

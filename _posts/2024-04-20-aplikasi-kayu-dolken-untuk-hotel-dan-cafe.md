@@ -11,18 +11,12 @@ tags:
 - dekorasi
 - interior
 author: Admin
-image: "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-001.jpeg"
+image: "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-001.webp"
 image_alt: "Aplikasi kayu dolken gelam pada interior hotel dan cafe menciptakan suasana natural elegan, digunakan untuk pergola outdoor, ceiling dekoratif, dan elemen arsitektur yang memberikan kesan hangat dan mewah"
 images:
-- "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-001.jpeg"
-- "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-002.jpeg"
-- "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-003.jpeg"
-- "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-004.jpeg"
+- "/assets/images/posts/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/aplikasi-kayu-dolken-untuk-hotel-dan-cafe-001.webp"
 images_alt:
-- "Desain interior hotel menggunakan kayu dolken gelam untuk ceiling dan dinding dekoratif menciptakan suasana natural mewah yang menenangkan tamu"
-- "Aplikasi kayu dolken sebagai pergola outdoor cafe memberikan area teduh dengan estetika rustic yang menarik untuk spot foto pengunjung"
-- "Feature wall kayu dolken di lobby hotel menciptakan focal point yang elegan dan memberikan kesan hangat selamat datang bagi tamu"
-- "Penggunaan kayu dolken untuk partisi dan elemen dekoratif restoran hotel memberikan sentuhan natural yang meningkatkan pengalaman bersantap"
+- "Aplikasi kayu dolken gelam pada interior hotel dan cafe menciptakan suasana natural elegan, digunakan untuk pergola outdoor, ceiling dekoratif, dan elemen arsitektur yang memberikan kesan hangat dan mewah"
 url: "/2024/04/20/aplikasi-kayu-dolken-untuk-hotel-dan-cafe/"
 excerpt: "Inspirasi aplikasi kayu dolken gelam untuk hotel dan cafe yang menghadirkan nuansa natural elegan. Mulai dari feature wall, pergola outdoor, ceiling treatment, hingga furniture accent yang Instagram-worthy."
 rating: 4.6

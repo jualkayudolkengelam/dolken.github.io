@@ -10,18 +10,12 @@ tags:
 - konstruksi
 - keunggulan
 author: Admin
-image: "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-001.jpeg"
+image: "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-001.webp"
 image_alt: "Kayu dolken gelam Melaleuca cajuputi menampilkan keunggulan struktur serat padat dan tahan rayap, ideal untuk konstruksi pondasi cerucuk, pagar, gazebo dengan ketahanan puluhan tahun di berbagai kondisi cuaca"
 images:
-- "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-001.jpeg"
-- "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-002.jpeg"
-- "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-003.jpeg"
-- "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-004.jpeg"
+- "/assets/images/posts/keunggulan-kayu-dolken-gelam-untuk-konstruksi/keunggulan-kayu-dolken-gelam-untuk-konstruksi-001.webp"
 images_alt:
-- "Struktur serat kayu dolken gelam Melaleuca cajuputi yang padat dan rapat menunjukkan keunggulan ketahanan alami terhadap serangan rayap dan jamur perusak kayu"
-- "Potongan melintang kayu dolken gelam memperlihatkan kandungan minyak kayu putih alami yang memberikan perlindungan terhadap air dan kelembaban tinggi"
-- "Aplikasi kayu dolken gelam sebagai cerucuk pondasi bangunan menunjukkan keunggulan daya dukung beban tinggi untuk konstruksi di tanah lunak dan gambut"
-- "Perbandingan ketahanan kayu dolken gelam dengan kayu lainnya menunjukkan umur pakai puluhan tahun tanpa perawatan khusus di berbagai kondisi lingkungan"
+- "Kayu dolken gelam Melaleuca cajuputi menampilkan keunggulan struktur serat padat dan tahan rayap, ideal untuk konstruksi pondasi cerucuk, pagar, gazebo dengan ketahanan puluhan tahun di berbagai kondisi cuaca"
 url: "/2024/01/15/keunggulan-kayu-dolken-gelam-untuk-konstruksi/"
 excerpt: "Keunggulan kayu dolken gelam untuk konstruksi mencakup kekuatan tinggi, tahan air, anti rayap alami, dan daya tahan puluhan tahun. Material ideal untuk pondasi, pagar, gazebo, dan berbagai proyek bangunan."
 rating: 4.6

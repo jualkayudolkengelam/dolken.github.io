@@ -10,18 +10,12 @@ tags:
 - kalkulasi
 - perencanaan
 author: Admin
-image: "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-001.jpeg"
+image: "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-001.webp"
 image_alt: "Rumus dan cara praktis menghitung jumlah kayu dolken yang dibutuhkan untuk berbagai proyek seperti pagar, gazebo, dekorasi dinding dan ceiling dengan kalkulasi akurat agar tidak terjadi pemborosan material"
 images:
-- "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-001.jpeg"
-- "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-002.jpeg"
-- "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-003.jpeg"
-- "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-004.jpeg"
+- "/assets/images/posts/hitung-kebutuhan-kayu-dolken-untuk-proyek/hitung-kebutuhan-kayu-dolken-untuk-proyek-001.webp"
 images_alt:
-- "Diagram perhitungan kebutuhan kayu dolken untuk proyek pagar dengan rumus praktis berdasarkan panjang keliling dan jarak antar tiang"
-- "Ilustrasi estimasi jumlah kayu dolken untuk gazebo dengan perhitungan tiang utama rangka atap dan finishing dekoratif"
-- "Tabel konversi kebutuhan kayu dolken per meter persegi untuk berbagai aplikasi seperti ceiling dinding dekoratif dan pagar panel"
-- "Contoh kalkulator sederhana menghitung total biaya material kayu dolken dengan variabel jumlah batang harga satuan dan cadangan"
+- "Rumus dan cara praktis menghitung jumlah kayu dolken yang dibutuhkan untuk berbagai proyek seperti pagar, gazebo, dekorasi dinding dan ceiling dengan kalkulasi akurat agar tidak terjadi pemborosan material"
 url: "/2024/06/10/hitung-kebutuhan-kayu-dolken-untuk-proyek/"
 excerpt: "Cara mudah mengestimasi kebutuhan kayu dolken untuk berbagai proyek seperti pagar, gazebo, dekorasi dinding, dan konstruksi lainnya."
 rating: 4.6

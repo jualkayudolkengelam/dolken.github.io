@@ -10,18 +10,12 @@ tags:
 - maintenance
 - kayu dolken
 author: Admin
-image: "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-001.jpeg"
+image: "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-001.webp"
 image_alt: "Tips perawatan kayu dolken gelam agar tetap awet puluhan tahun meliputi pembersihan berkala, coating pelindung, penanganan jamur dan rayap serta pemeliharaan struktur untuk menjaga kualitas dan tampilan natural"
 images:
-- "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-001.jpeg"
-- "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-002.jpeg"
-- "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-003.jpeg"
-- "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-004.jpeg"
+- "/assets/images/posts/perawatan-kayu-dolken-gelam-agar-awet/perawatan-kayu-dolken-gelam-agar-awet-001.webp"
 images_alt:
-- "Proses pembersihan kayu dolken gelam menggunakan sikat dan air bersih untuk menghilangkan debu kotoran dan lumut yang menempel pada permukaan"
-- "Aplikasi coating pelindung pada kayu dolken untuk meningkatkan ketahanan terhadap air hujan sinar UV dan serangan jamur perusak kayu"
-- "Pemeriksaan kondisi kayu dolken secara berkala untuk mendeteksi tanda kerusakan awal seperti retak lubang rayap atau perubahan warna"
-- "Hasil perawatan kayu dolken yang rutin menunjukkan kondisi tetap prima dengan warna natural terjaga dan struktur tetap kuat puluhan tahun"
+- "Tips perawatan kayu dolken gelam agar tetap awet puluhan tahun meliputi pembersihan berkala, coating pelindung, penanganan jamur dan rayap serta pemeliharaan struktur untuk menjaga kualitas dan tampilan natural"
 url: "/2024/05/15/perawatan-kayu-dolken-gelam-agar-awet/"
 excerpt: "Petunjuk praktis perawatan kayu dolken gelam supaya tetap prima dan bertahan puluhan tahun dengan treatment yang mudah dilakukan."
 rating: 4.6
