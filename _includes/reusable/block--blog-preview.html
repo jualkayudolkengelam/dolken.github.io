@@ -100,9 +100,9 @@
             </small>
           </div>
 
-          <h5 class="card-title fw-bold">
+          <h3 class="card-title fw-bold h5">
             <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark stretched-link">{{ post.title }}</a>
-          </h5>
+          </h3>
           <p class="card-text text-muted small flex-grow-1">{{ post.description | default: post.excerpt | strip_html | truncate: 100 }}</p>
 
           <!-- Engagement Stats -->
