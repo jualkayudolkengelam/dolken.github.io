@@ -1,6 +1,6 @@
 ---
 # ============================================================================
-# TEMPLATE: POST WITH PRODUCT (Format Instruksi)
+# TEMPLATE: POST WITH PRODUCT
 # ============================================================================
 # File: TEMPLATE--post-with-product.md
 # Purpose: Template untuk membuat artikel post_with_product dengan konten UNIQUE
@@ -21,8 +21,6 @@ image: /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-
 images:
   - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-001.webp
   - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-002.webp
-  - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-003.webp
-  - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-004.webp
 keywords: "kayu dolken makassar, jual kayu makassar, kayu beton makassar, kayu tahan cuaca makassar, kayu murah makassar, kayu bekisting makassar, dolken murah, kayu bulat makassar"
 show_products: true
 nama_kota: "Makassar"
