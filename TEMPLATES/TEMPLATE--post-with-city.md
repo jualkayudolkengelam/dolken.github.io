@@ -61,7 +61,15 @@ last_modified_at: YYYY-MM-DD
 keywords: "kata kunci, pisah koma, seo"
 rating: 5
 review_count: 120
+author_url: https://jualkayudolken.com
 show_products: true
+keunggulan_durabilitas:
+  tahan_lama: "Isi dengan keunggulan daya tahan (contoh: tahan 20-30 tahun, anti rayap)"
+  kuat_padat: "Isi dengan keunggulan kekuatan dan kepadatan"
+  minim_perawatan: "Isi dengan keunggulan perawatan mudah"
+keunggulan_nilai:
+  ramah_lingkungan: "Isi dengan keunggulan ramah lingkungan"
+  hemat_biaya: "Isi dengan keunggulan hemat biaya jangka panjang"
 nama_kota: "NamaKota"
 
 # ============================================================================
