@@ -26,6 +26,8 @@ images_alt:
   - "Jual Kayu Dolken Makassar — foto 1"
   - "Jual Kayu Dolken Makassar — foto 2"
 keywords: "kayu dolken makassar, jual kayu makassar, kayu beton makassar, kayu tahan cuaca makassar, kayu murah makassar, kayu bekisting makassar, dolken murah, kayu bulat makassar"
+rating: 5
+review_count: 22
 show_products: true
 nama_kota: "Makassar"
 
