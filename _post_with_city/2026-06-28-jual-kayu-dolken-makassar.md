@@ -6,34 +6,6 @@
 # Purpose: Template untuk membuat artikel post_with_product dengan konten UNIQUE
 # Version: 2.0.0 (Instruction Format)
 # Date: 2025-11-19
-#
-# CARA PENGGUNAAN:
-# 1. Copy file ini ke _post_with_city/ dengan nama: YYYY-MM-DD-jual-kayu-dolken-{kota}.md
-# 2. Siapkan 4 foto produk (PENTING: harus format WebP):
-#    a. Buat direktori:
-#       mkdir -p assets/images/posts/jual-kayu-dolken-{kota}/
-#    b. Copy 4 foto ke direktori dan rename:
-#       cp foto1.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.jpeg
-#       cp foto2.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-002.jpeg
-#       (dst untuk 003 dan 004)
-#    c. Convert semua JPEG ke WebP (akan menghasilkan file .webp baru):
-#       cd assets/images/posts/jual-kayu-dolken-{kota}/
-#       for file in *.jpeg; do cwebp -q 85 "$file" -o "${file%.jpeg}.webp"; done
-#    d. Hapus file JPEG yang lama (sekarang ada 2x file: .jpeg dan .webp):
-#       rm *.jpeg
-#    e. Pastikan hanya ada 4 file .webp: 001.webp, 002.webp, 003.webp, 004.webp
-# 3. Baca INSTRUKSI di setiap field (yang ditulis dengan huruf kecil)
-# 4. Ganti instruksi dengan konten yang sesuai untuk kota tersebut
-# 5. Field yang sudah ada teksnya (UPPERCASE) bisa dipakai langsung atau disesuaikan
-# 6. Test dengan rebuild.sh sebelum commit
-#
-# CATATAN PENTING:
-# - Field dengan "isi ..." atau "tulis ..." atau "berikan ..." = HARUS DITULIS MANUAL
-# - Field dengan teks lengkap (misal: "Kualitas Premium Grade A") = boleh pakai langsung
-# - Jangan ubah struktur frontmatter (nama field, hierarki, indentasi)
-# - Semua section dengan REQUIRED wajib diisi
-# - Section OPTIONAL boleh dihapus jika tidak relevan
-# - PENTING: Semua foto HARUS dalam format WebP (bukan JPEG/PNG) untuk optimasi performa
 # ============================================================================
 
 # ============================================================================
