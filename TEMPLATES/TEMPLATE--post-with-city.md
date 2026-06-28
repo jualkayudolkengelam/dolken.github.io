@@ -1,9 +1,9 @@
 ---
 # ============================================================================
-# TEMPLATE: POST WITH PRODUCT (Format Instruksi)
+# TEMPLATE: POST WITH CITY (Format Instruksi)
 # ============================================================================
-# File: TEMPLATE--post-with-product.md
-# Purpose: Template untuk membuat artikel post_with_product dengan konten UNIQUE
+# File: TEMPLATE--post-with-city.md
+# Purpose: Template untuk membuat artikel post_with_city dengan konten UNIQUE
 # Version: 2.0.0 (Instruction Format)
 # Date: 2025-11-19
 #
@@ -12,7 +12,7 @@
 # 2. Siapkan 4 foto produk (PENTING: harus format WebP):
 #    a. Buat direktori:
 #       mkdir -p assets/images/posts/jual-kayu-dolken-{kota}/
-#    b. Copy 4 foto ke direktori dan rename:
+#    b. Copy 1,2,3,atau 4 foto sesuai yang diberikan ke direktori dan rename:
 #       cp foto1.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.jpeg
 #       cp foto2.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-002.jpeg
 #       (dst untuk 003 dan 004)
@@ -39,21 +39,30 @@
 # ============================================================================
 # META INFORMATION (REQUIRED)
 # ============================================================================
-layout: node--post-with-product
-title: "tulis title yang menarik untuk jual kayu dolken di kota ini, mention nomor HP dan gratis ongkir"
-description: "tulis meta description untuk SEO (150-160 karakter), mention kota, produk, keunggulan utama, dan CTA"
-date: YYYY-MM-DD  # Ganti dengan tanggal publikasi, format: 2025-11-20
+layout: node--post-with-city
+title: "Judul Artikel — Nama Kota —  Hubungi 0813-1140-0177 — Tagline"
+description: "Deskripsi meta untuk SEO, 150-160 karakter."
+excerpt: "Ringkasan singkat untuk tampilan grid/card."
+date: YYYY-MM-DD
 author: Admin
-author_url: https://jualkayudolken.com
-image: /assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.webp
+image: /assets/images/posts/jual-kayu-dolken-{nama_kota}/jual-kayu-dolken-{nama_kota}-001.webp
+image_alt: "Jual Kayu Dolken {Nama Kota} — kualitas premium"
 images:
-  - /assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.webp
-  - /assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-002.webp
-  - /assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-003.webp
-  - /assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-004.webp
-keywords: "tulis 6-8 keywords untuk SEO, variasikan dengan nama kota dan area-area populer di kota ini"
+  - /assets/images/posts/jual-kayu-dolken-{nama_kota}/jual-kayu-dolken-{nama_kota}-001.webp
+  - /assets/images/posts/jual-kayu-dolken-{nama_kota}/jual-kayu-dolken-{nama_kota}-002.webp
+  - /assets/images/posts/jual-kayu-dolken-{nama_kota}/jual-kayu-dolken-{nama_kota}-003.webp
+  - /assets/images/posts/jual-kayu-dolken-{nama_kota}/jual-kayu-dolken-{nama_kota}-004.webp
+images_alt:
+  - "Jual Kayu Dolken {Nama Kota} — foto 1"
+  - "Jual Kayu Dolken {Nama Kota} — foto 2"
+  - "Jual Kayu Dolken {Nama Kota} — foto 3"
+  - "Jual Kayu Dolken {Nama Kota} — foto 4"
+last_modified_at: YYYY-MM-DD
+keywords: "kata kunci, pisah koma, seo"
+rating: 5
+review_count: 120
 show_products: true
-nama_kota: "isi nama kota lengkap (misal: Semarang, Jakarta Utara, Bandung)"
+nama_kota: "NamaKota"
 
 # ============================================================================
 # AREA PENGIRIMAN (SIMPLE LIST) - REQUIRED

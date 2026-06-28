@@ -18,9 +18,13 @@ date: 2026-06-28
 author: Admin
 author_url: https://jualkayudolken.com
 image: /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-001.webp
+image_alt: "Jual Kayu Dolken Makassar — kualitas premium"
 images:
   - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-001.webp
   - /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-002.webp
+images_alt:
+  - "Jual Kayu Dolken Makassar — foto 1"
+  - "Jual Kayu Dolken Makassar — foto 2"
 keywords: "kayu dolken makassar, jual kayu makassar, kayu beton makassar, kayu tahan cuaca makassar, kayu murah makassar, kayu bekisting makassar, dolken murah, kayu bulat makassar"
 show_products: true
 nama_kota: "Makassar"
