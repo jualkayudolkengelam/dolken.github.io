@@ -220,7 +220,7 @@ keunggulan_durabilitas:
   tahan_lama: "Kayu Dolken (gelam) tahan 20-30 tahun, ideal untuk iklim tropis Makassar yang lembap."
   anti_rayap: "Keras dan padat — tahan rayap secara natural tanpa tambahan obat kimia."
   tahan_cuaca: "Tahan hujan deras dan panas terik, cocok untuk konstruksi outdoor Makassar."
-  kuat_padat: "Kepadatan tinggi, mampu menahan beban berat hingga 500 kg per titik.
+  kuat_padat: "Kepadatan tinggi, mampu menahan beban berat hingga 500 kg per titik."
 
 keunggulan_nilai:
   ramah_lingkungan: "Kayu Dolken terbuat dari bahan alami, sustainable, tidak mengandung formaldehid."
@@ -613,64 +613,62 @@ share_count: 0
      ======================================================================== -->
 
 <section id="hero-jual-kayu-dolken">
-  {% include reusable/block--hero-jual-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--hero-jual-kayu-dolken.html %}
 </section>
 
 <section id="mengapa-memilih-kami">
-  {% include reusable/block--mengapa-memilih-kami.html %}
+  {% include reusable/post-with-city/block--mengapa-memilih-kami.html %}
 </section>
 
 <section id="area-pengiriman-kayu-dolken">
-  {% include reusable/block--area-pengiriman-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--area-pengiriman-kayu-dolken.html %}
 </section>
 
 <section id="keunggulan-kayu-dolken-gelam">
-  {% include reusable/block--keunggulan-kayu-dolken-gelam.html %}
+  {% include reusable/post-with-city/block--keunggulan-kayu-dolken-gelam.html %}
 </section>
 
 <section id="jual-kayu-dolken-terdekat">
-{% include reusable/block--jual-kayu-dolken-terdekat.html
-   nama_kota="isi nama kota (sama dengan nama_kota di frontmatter)"
-%}
+{% include reusable/post-with-city/block--jual-kayu-dolken-terdekat.html nama_kota="Makassar" %}
 </section>
 
 <section id="aplikasi-kayu-dolken-gelam">
-  {% include reusable/block--aplikasi-kayu-dolken-gelam.html %}
+  {% include reusable/post-with-city/block--aplikasi-kayu-dolken-gelam.html %}
 </section>
 
 <section id="cara-pemesanan">
-  {% include reusable/block--cara-pemesanan-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--cara-pemesanan-kayu-dolken.html %}
 </section>
 
 <section id="studi-kasus-proyek">
-  {% include reusable/block--studi-kasus-proyek.html %}
+  {% include reusable/post-with-city/block--studi-kasus-proyek.html %}
 </section>
 
 <section id="testimoni-pelanggan">
-  {% include reusable/block--testimoni-pelanggan.html %}
+  {% include reusable/post-with-city/block--testimoni-pelanggan.html %}
 </section>
 
 <section id="tips-memilih-ukuran">
-  {% include reusable/block--tips-memilih-ukuran-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--tips-memilih-ukuran-kayu-dolken.html %}
 </section>
 
 <section id="faq-kayu-dolken">
-  {% include reusable/block--faq-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--faq-kayu-dolken.html %}
 </section>
 
 <section id="tentang-kota-kami">
-  {% include reusable/block--tentang-kota-kami.html %}
+  {% include reusable/post-with-city/block--tentang-kota-kami.html %}
 </section>
 
 <section id="relevansi-kayu-dolken">
-  {% include reusable/block--relevansi-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--relevansi-kayu-dolken.html %}
 </section>
 
 <section id="hubungi-kami">
-  {% include reusable/block--hubungi-kami.html %}
+  {% include reusable/post-with-city/block--hubungi-kami.html %}
 </section>
 
 <!-- Related Products Section (Part of article content) -->
 <div id="related-products" class="article-related-products mt-5">
-  {% include reusable/block--related-product-last-modified.html %}
+  {% include reusable/post-with-city/block--related-product-last-modified.html %}
 </div>
