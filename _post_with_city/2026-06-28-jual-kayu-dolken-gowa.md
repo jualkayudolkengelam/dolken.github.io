@@ -635,7 +635,7 @@ share_count: 7
      ======================================================================== -->
 
 <section id="hero-jual-kayu-dolken">
-  {% include reusable/block--hero-jual-kayu-dolken.html %}
+  {% include reusable/post-with-city/block--hero-jual-kayu-dolken.html %}
 </section>
 
 <section id="mengapa-memilih-kami">
