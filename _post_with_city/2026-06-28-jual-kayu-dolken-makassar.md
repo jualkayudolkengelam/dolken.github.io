@@ -34,7 +34,6 @@ nama_kota: "Makassar"
 # ============================================================================
 # AREA PENGIRIMAN (SIMPLE LIST) - REQUIRED
 # ============================================================================
-# Instruksi: Isi 5-10 area/kecamatan populer di kota ini
 area_pengiriman:
   - "Ujung Pandang"
   - "Panakkukang"
@@ -44,12 +43,12 @@ area_pengiriman:
   - "Makassar"
   - "Tamalate"
   - "Bontoala"
-  # Tambahkan hingga 10 area jika perlu
+  - "Mangapa"
+  - "Balla"
 
 # ============================================================================
 # KEUNGGULAN - PRODUK (REQUIRED)
 # ============================================================================
-# Instruksi: HARUS 3 items. Tulis keunggulan produk yang disesuaikan dengan kota
 keunggulan_produk:
   - judul: "Kualitas Premium, Tahan Cuaca Ekstrem"
     deskripsi: "Kayu Dolken tahan lama hingga 30 tahun, cocok untuk iklim tropis pesisir Makassar yang lembap dan panas."
@@ -67,7 +66,6 @@ keunggulan_produk:
 # ============================================================================
 # KEUNGGULAN - LAYANAN (REQUIRED)
 # ============================================================================
-# Instruksi: HARUS 3 items. Tulis keunggulan layanan yang disesuaikan dengan kota
 keunggulan_layanan:
   - judul: "Pengiriman Gratis Makassar"
     deskripsi: "Gratis ongkir ke seluruh kecamatan Makassar, termasuk area pinggiran dan pelabuhan."
@@ -85,7 +83,6 @@ keunggulan_layanan:
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - TEKS JUDUL & DESKRIPSI (REQUIRED)
 # ============================================================================
-# Instruksi: Semua field di bawah HARUS ditulis manual sesuai karakteristik kota
 area_pengiriman_detail:
   judul_jangkauan: "Jangkauan Pengiriman ke Seluruh Makassar"
   deskripsi_jangkauan: "Kami melayani pengiriman gratis ke 15 kecamatan di Makassar — dari Ujung Pandang hingga Biringkanaya. Gratis ongkir!"
@@ -113,7 +110,6 @@ area_pengiriman_detail:
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - WILAYAH PUSAT (REQUIRED - min 3 items)
 # ============================================================================
-# Instruksi: Research kecamatan NYATA di pusat kota ini, cari kelurahan yang ada
   wilayah_pusat:
     - nama: "Ujung Pandang"
       kelurahan:
@@ -140,9 +136,7 @@ area_pengiriman_detail:
     # Tambah lebih banyak jika perlu (5-7 kecamatan ideal)
 
 # ============================================================================
-# AREA PENGIRIMAN DETAIL - WILAYAH UTARA & SELATAN (OPTIONAL)
 # ============================================================================
-# Instruksi: Hapus section ini jika kota tidak punya pembagian utara-selatan yang jelas
   wilayah_utara_selatan:
     - nama: "Panakkukang Utara"
       kelurahan:
@@ -158,7 +152,6 @@ area_pengiriman_detail:
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - WILAYAH PENGEMBANGAN (REQUIRED - min 2 items)
 # ============================================================================
-# Instruksi: Isi kecamatan yang sedang berkembang/pinggiran kota
   wilayah_pengembangan:
     - nama: "Tamalanrea"
       kelurahan:
@@ -177,9 +170,8 @@ area_pengiriman_detail:
       warna: "wood"
 
 # ============================================================================
-# AREA PENGIRIMAN DETAIL - KECAMATAN LAINNYA (OPTIONAL)
 # ============================================================================
-# Instruksi: Isi kecamatan tambahan yang tidak masuk kategori lain (OPTIONAL - bisa dihapus)
+
   kecamatan_lainnya:
     - "Rappocini"
     - "Mamajang"
@@ -188,7 +180,7 @@ area_pengiriman_detail:
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - LANDMARK WISATA (REQUIRED - min 3 items)
 # ============================================================================
-# Instruksi: Isi landmark WISATA dan sejarah yang terkenal di kota ini
+
   landmark_wisata:
     - nama: "Pelabuhan Nusantara"
       icon: "bi-building"
@@ -206,7 +198,7 @@ area_pengiriman_detail:
 # ============================================================================
 # AREA PENGIRIMAN DETAIL - LANDMARK FASILITAS (REQUIRED - min 3 items)
 # ============================================================================
-# Instruksi: Isi fasilitas strategis seperti mall, kampus, pelabuhan di kota ini
+
   landmark_fasilitas:
     - nama: "Universitas Hasanuddin (UNHAS)"
       icon: "bi-mortarboard"
@@ -219,9 +211,7 @@ area_pengiriman_detail:
       warna: "success"
 
 # ============================================================================
-# KEUNGGULAN PRODUK - DURABILITAS (OPTIONAL)
 # ============================================================================
-# Instruksi: Format lama (object), OPTIONAL - bisa dihapus jika pakai keunggulan_kayu_dolken (array) di bawah
 keunggulan_durabilitas:
   tahan_lama: "Kayu Dolken (gelam) tahan 20-30 tahun, ideal untuk iklim tropis Makassar yang lembap."
   anti_rayap: "Keras dan padat — tahan rayap secara natural tanpa tambahan obat kimia."
@@ -260,10 +250,7 @@ keunggulan_kayu_dolken:
     icon: "bi-palette"
 
 # ============================================================================
-# APLIKASI KAYU DOLKEN (OPTIONAL - tapi direkomendasikan)
 # ============================================================================
-# Instruksi: Format sudah ditentukan (jumlah kata judul, jumlah item aplikasi)
-# Tulis konten sesuai format yang sudah ditetapkan
 aplikasi_kayu_dolken:
   deskripsi: "Kayu Dolken serbaguna — dari konstruksi berat hingga dekorasi premium, cocok untuk proyek di Makassar."
 
@@ -312,7 +299,6 @@ aplikasi_kayu_dolken:
 # ============================================================================
 # PROSES PEMESANAN - TAHAP AWAL (REQUIRED) - BOLEH PAKAI LANGSUNG
 # ============================================================================
-# Instruksi: Ini generic, boleh pakai langsung
 proses_awal_pemesanan:
   pilih_ukuran: "Lihat daftar produk lengkap di atas, pilih diameter sesuai kebutuhan proyek Anda"
   hubungi: "081311400177"
@@ -321,7 +307,6 @@ proses_awal_pemesanan:
 # ============================================================================
 # PROSES PEMESANAN - FINALISASI & PENGIRIMAN (REQUIRED)
 # ============================================================================
-# Instruksi: Sesuaikan dengan nama kota
 finalisasi_pengiriman:
   konfirmasi_pesanan: "Setelah pesanan masuk, tim kami konfirmasi ulang jumlah, ukuran, dan alamat pengiriman di Makassar."
   pengiriman_gratis: "Gratis ongkir ke seluruh Makassar dan sekitarnya. Armada kami terpercaya dan tepat waktu."
@@ -330,7 +315,6 @@ finalisasi_pengiriman:
 # ============================================================================
 # STUDI KASUS PROYEK - KOMERSIAL (REQUIRED - min 4 items)
 # ============================================================================
-# Instruksi: HARUS custom per kota! Gunakan lokasi SPESIFIK yang ada di kota ini
 studi_kasus_proyek:
   proyek_komersial:
     - judul: "Renovasi Gazebo Hotel di Panakkukang"
@@ -369,7 +353,6 @@ studi_kasus_proyek:
 # ============================================================================
 # STUDI KASUS PROYEK - RESIDENSIAL (REQUIRED - min 4 items)
 # ============================================================================
-# Instruksi: HARUS custom per kota! Gunakan nama area/kecamatan NYATA di kota ini
   proyek_residensial:
     - judul: "Renovasi Rumah di Ujung Pandang"
       tahun: "2024"
@@ -397,23 +380,20 @@ studi_kasus_proyek:
       icon: "bi-house-heart-fill"
 
 # ============================================================================
-# STUDI KASUS PROYEK - PUBLIK (OPTIONAL - min 2 items)
 # ============================================================================
-# Instruksi: OPTIONAL - hapus jika tidak ada proyek publik. Gunakan lokasi NYATA
   proyek_publik:
-    - judul: "tulis nama proyek publik jika ada (misal: Taman Kota di Area X)"
-      tahun: "2023"
-      deskripsi: "jelaskan detail proyek publik"
-      jumlah: "isi jumlah batang"
-      diameter: "isi diameter"
-      hasil: "jelaskan hasil dan manfaat untuk publik"
-      warna: "info"
+    - judul: "Taman Kota Makassar di Kecamatan Tamalate"
+      tahun: "2024"
+      deskripsi: "Proyek pembangunan taman kota di pusat Kecamatan Tamalate, Makassar. Kayu dolken digunakan sebagai material pembatas taman, jalur pedestrian, dan gazebo terbuka untuk masyarakat umum."
+      jumlah: "350 batang"
+      diameter: "8-10 cm"
+      hasil: "Taman kota menjadi lebih tertata dan estetis dengan pembatas kayu dolken yang kokoh. Material bertahan di cuaca pesisir Makassar tanpa perawatan khusus."
+      warna: "success"
       icon: "bi-signpost-2"
 
 # ============================================================================
 # TESTIMONI - RESIDENTIAL (REQUIRED - min 2 items)
 # ============================================================================
-# Instruksi: HARUS custom per kota! Gunakan nama area/kecamatan NYATA di kota ini
 testimoni_residential:
   - nama: "Pak Ahmad"
     lokasi: "Ujung Pandang"
@@ -431,7 +411,6 @@ testimoni_residential:
 # ============================================================================
 # TESTIMONI - KOMERSIAL (REQUIRED - min 4 items)
 # ============================================================================
-# Instruksi: HARUS custom per kota! Gunakan profesi/bisnis yang relevan dengan kota
 testimoni_komersial:
   - nama: "Pak Anton"
     lokasi: "Owner Cafe di Ujung Pandang"
@@ -461,7 +440,6 @@ testimoni_komersial:
 # ============================================================================
 # TIPS MEMILIH UKURAN (REQUIRED) - BOLEH PAKAI LANGSUNG
 # ============================================================================
-# Instruksi: Ini teknis dan universal, boleh pakai langsung
 # Produk yang tersedia 2-3 cm, 4-6 cm, 6-8 cm, 8-10 cm, 10-12 cm.
 # jangan buat diameter diluar itu
 tips_ukuran:
@@ -496,7 +474,6 @@ tips_ukuran:
 # ============================================================================
 # FAQ - PEMESANAN (REQUIRED - min 2 items)
 # ============================================================================
-# Instruksi: Pertanyaan boleh sama, tapi sesuaikan JAWABAN dengan nama kota
 # ini Contoh, silahkan gati kata - katanya.
 faq_pemesanan:
   - pertanyaan: "Berapa minimal pemesanan kayu dolken?"
@@ -509,7 +486,6 @@ faq_pemesanan:
 # ============================================================================
 # FAQ - PRODUK (REQUIRED - min 2 items)
 # ============================================================================
-# Instruksi: Sesuaikan jawaban dengan karakteristik IKLIM dan AREA kota ini
 faq_produk:
   - pertanyaan: "Apakah kayu dolken perlu perawatan khusus di Makassar?"
     jawaban: "Tidak perlu perawatan khusus. Kayu Dolken cocok untuk iklim pesisir Makassar. Untuk outdoor di area Panakkukang atau Losari, bisa tambah coating agar lebih awet."
@@ -521,7 +497,6 @@ faq_produk:
 # ============================================================================
 # FAQ - PENGIRIMAN (REQUIRED - min 1 item)
 # ============================================================================
-# Instruksi: Sesuaikan dengan area-area NYATA di kota ini
 faq_pengiriman:
   - pertanyaan: "Berapa lama pengiriman ke Makassar?"
     jawaban: "Pengiriman 1-3 hari kerja, gratis ongkir ke seluruh Makassar — termasuk Ujung Pandang, Panakkukang, Biringkanaya, dan Manggala. Armada terpercaya."
@@ -530,7 +505,6 @@ faq_pengiriman:
 # ============================================================================
 # RELEVANSI KAYU DOLKEN (REQUIRED)
 # ============================================================================
-# Instruksi: HARUS disesuaikan dengan karakteristik UNIK kota ini
 relevansi_kayu_dolken:
   karakteristik_iklim: "Makassar adalah kota pesisir tropis dengan kelembaban tinggi (70-90%), curah hujan 2000-3000 mm/tahun, suhu 25-33°C. Kayu Dolken cocok karena tahan air, tahan rayap, dan tahan cuaca ekstrem."
   keunggulan_lokal: "Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca ekstrem</strong> sangat cocok untuk aplikasi seperti:"
@@ -547,62 +521,56 @@ relevansi_kayu_dolken:
 # ============================================================================
 # TENTANG KOTA (REQUIRED) - HARUS RESEARCH PER KOTA
 # ============================================================================
-# Instruksi:
-# - Tulis APAPUN tentang kota ini (sejarah, ekonomi, budaya, landmark, dll - bebas!)
-# - Format HARUS sesuai yang ditentukan (4 cards dengan struktur tertentu)
-# - Jangan dipaksa menulis topik spesifik, tapi format harus konsisten
 tentang_kota:
-  tagline: "tulis tagline singkat 3-5 kata untuk kota ini"
-  deskripsi_singkat: "tulis deskripsi 1 kalimat tentang peran/karakteristik kota ini"
-  overview: "tulis overview 2-3 kalimat: deskripsi umum, luas wilayah (X km²), populasi (X juta jiwa), jumlah kecamatan & kelurahan"
+  tagline: "Kota Daeng, Gerbang Timur Indonesia"
+  deskripsi_singkat: "Makassar adalah ibu kota Sulawesi Selatan dan kota metropolitan terbesar di Indonesia Timur yang menjadi pusat ekonomi, budaya, dan pendidikan."
+  overview: "Makassar (dahulu Ujung Pandang) terletak di pesisir barat Pulau Sulawesi dengan luas wilayah 175,77 km² dan populasi sekitar 1,5 juta jiwa. Kota ini terdiri dari 15 kecamatan dan 153 kelurahan, menjadikannya kota paling padat di Sulawesi."
 
-  # REQUIRED: EXACTLY 2 cards - Topik bebas, format tetap!
-  # Card bisa tentang: sejarah, ekonomi, budaya, kuliner, wisata, atau apapun menarik dari kota ini
   tentang_kota_1:
-    - judul: "tulis judul tentang aspek kota #1 (bebas topik: sejarah/ekonomi/budaya/dll)"
-      icon: "pilih icon yang sesuai (bi-clock-history, bi-shop, bi-heart, bi-cup, dll)"
-      subjudul: "tulis subjudul yang menarik tentang topik ini"
-      icon_subjudul: "pilih icon untuk subjudul (bi-book, bi-graph-up, bi-star, dll)"
-      deskripsi: "tulis 2-3 paragraf tentang topik yang dipilih, jelaskan kenapa ini penting/menarik untuk kota ini"
+    - judul: "Sejarah Maritim & Perdagangan"
+      icon: "bi-clock-history"
+      subjudul: "Dari Kerajaan Gowa hingga Gerbang Timur"
+      icon_subjudul: "bi-book"
+      deskripsi: "Makassar telah menjadi pusat perdagangan maritim sejak abad ke-16 sebagai pelabuhan utama Kerajaan Gowa-Tallo. Pelabuhan Makassar melayani kapal-kapal dari Eropa, Tiongkok, India, dan Nusantara, menjadikan kota ini kaya akan budaya campuran. Benteng Rotterdam (dahulu Benteng Ujung Pandang) menjadi saksi bisu keagungan masa lalu sebagai benteng pertahanan Kerajaan Gowa yang kemudian dikuasai VOC."
       fakta:
-        - "tulis fakta menarik #1 tentang topik ini"
-        - "tulis fakta menarik #2"
-        - "tulis fakta menarik #3"
+        - "Makassar pernah menjadi pusat perdagangan rempah-rempah terbesar di Nusantara abad ke-17"
+        - "Benteng Rotterdam dibangun pada 1545 oleh Raja Gowa ke-9, I Manriagau Daeng Bonto Karaeng Lakiung"
+        - "Nama 'Ujung Pandang' resmi diganti menjadi 'Makassar' pada 1999 melalui Keputusan Presiden"
 
-    - judul: "tulis judul tentang aspek kota #2 (bebas topik: sejarah/ekonomi/budaya/dll)"
-      icon: "pilih icon yang sesuai"
-      subjudul: "tulis subjudul yang menarik"
-      icon_subjudul: "pilih icon untuk subjudul"
-      deskripsi: "tulis 2-3 paragraf tentang topik yang dipilih"
+    - judul: "Ekonomi & Pusat Perdagangan Timur Indonesia"
+      icon: "bi-shop"
+      subjudul: "Kota Metropolitan dengan Pertumbuhan Pesat"
+      icon_subjudul: "bi-graph-up"
+      deskripsi: "Makassar tumbuh sebagai kota metropolitan modern dengan PDRB tertinggi di Sulawesi. Sektor perdagangan, jasa, dan konstruksi mendorong ekonomi. Kawasan industri seperti Makassar Industrial Estate (MIE) dan Surya Cipta menarik investasi nasional dan asing. Pelabuhan Soekarno-Hatta dan Bandara Sultan Hasanuddin menjadi gerbang logistik utama Indonesia Timur, menghubungkan pulau-pulau Maluku, Papua, dan Nusa Tenggara."
       fakta:
-        - "tulis fakta menarik #1"
-        - "tulis fakta menarik #2"
-        - "tulis fakta menarik #3"
+        - "PDRB Makassar mencapai Rp 200+ triliun (2023), tertinggi di Sulawesi"
+        - "Pelabuhan Soekarno-Hatta melayani 1,5+ juta TEU kontainer per tahun"
+        - "Bandara Sultan Hasanuddin adalah bandara tersibuk ke-5 di Indonesia"
 
-  # REQUIRED: EXACTLY 2 cards - Topik bebas, format tetap!
-  # Card bisa tentang: landmark, pendidikan, bisnis, infrastruktur, atau apapun tentang kota ini
   tentang_kota_2:
-    - judul: "tulis judul tentang aspek kota #3 (bebas topik: landmark/bisnis/wisata/dll)"
-      icon: "pilih icon yang sesuai (bi-building, bi-pin-map, bi-briefcase, dll)"
-      subjudul: "tulis subjudul yang menarik"
-      icon_subjudul: "pilih icon untuk subjudul"
-      deskripsi: "tulis 1-2 kalimat intro tentang topik ini"
+    - judul: "Landmark Ikonik & Wisata Makassar"
+      icon: "bi-pin-map"
+      subjudul: "Destinasi Wajib Kunjungi di Kota Daeng"
+      icon_subjudul: "bi-star"
+      deskripsi: "Makassar menawarkan landmark bersejarah dan wisata modern yang memadukan budaya tradisional dengan hiburan kontemporer."
       list_item:
-        - "tulis <strong>Item #1</strong> deskripsi singkat (bisa nama tempat, institusi, atau hal menarik lainnya)"
-        - "tulis <strong>Item #2</strong> deskripsi singkat"
-        - "tulis <strong>Item #3</strong> deskripsi singkat"
-        - "tulis item tambahan jika ada (opsional)"
+        - "<strong>Pantai Losari</strong> — Pantai ikonik dengan sunset terindah, spot kuliner Coto Makassar, dan monumen 'Kota Daeng'"
+        - "<strong>Benteng Rotterdam</strong> — Benteng bersejarah VOC dengan Museum La Galigo menyimpan koleksi budaya Sulawesi Selatan"
+        - "<strong>Trans Studio Makassar</strong> — Taman tema indoor terbesar di Indonesia Timur dengan wahana seru untuk keluarga"
+        - "<strong>Pulau Samalona & Kodingareng</strong> — Pulau-pulau indah di Teluk Makassar untuk snorkeling dan wisata bahari"
+      info_tambahan: "Jarak dari pusat kota ke Pelabuhan Paotere (pelabuhan tradisional pinisi) hanya 15 menit."
 
-    - judul: "tulis judul tentang aspek kota #4 (bebas topik: landmark/bisnis/wisata/dll)"
-      icon: "pilih icon yang sesuai"
-      subjudul: "tulis subjudul yang menarik"
-      icon_subjudul: "pilih icon untuk subjudul"
-      deskripsi: "tulis 1-2 kalimat tentang topik ini"
+    - judul: "Pendidikan, Kesehatan & Infrastruktur Strategis"
+      icon: "bi-building"
+      subjudul: "Pusat Pendidikan & Layanan Publik Utama"
+      icon_subjudul: "bi-book"
+      deskripsi: "Makassar adalah kota pendidikan dengan universitas terbaik di Indonesia Timur serta fasilitas kesehatan rujukan nasional."
       list_item:
-        - "tulis <strong>Item #1</strong> deskripsi singkat"
-        - "tulis <strong>Item #2</strong> deskripsi singkat"
-        - "tulis item tambahan jika perlu (opsional)"
-      info_tambahan: "tulis info tambahan 1 kalimat (opsional, bisa dihapus jika tidak perlu)"
+        - "<strong>Universitas Hasanuddin (UNHAS)</strong> — Universitas tertua dan terbaik di Indonesia Timur (akreditasi A), kampus utama di Tamalanrea"
+        - "<strong>RSUP Dr. Wahidin Sudirohusodo</strong> — Rumah sakit rujukan nasional tingkat tertinggi di Indonesia Timur"
+        - "<strong>Bandara Sultan Hasanuddin</strong> — Bandara internasional dengan koneksi ke 20+ kota domestik dan 5 rute internasional"
+        - "<strong>Mall Ratu Indah & Trans Studio Mall</strong> — Pusat perbelanjaan & hiburan terbesar di Sulawesi Selatan"
+      info_tambahan: "Proyek MRT Makassar dan LRT Bandara sedang dalam tahap perencanaan untuk mendukung mobilitas kota metropolitan."
 
 # ============================================================================
 # SOCIAL METRICS (REQUIRED)
