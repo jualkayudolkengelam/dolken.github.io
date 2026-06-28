@@ -1,314 +1,632 @@
 ---
+# ============================================================================
+# TEMPLATE: POST WITH CITY (Format Instruksi)
+# ============================================================================
+# File: TEMPLATE--post-with-city.md
+# Purpose: Template untuk membuat artikel post_with_city dengan konten UNIQUE
+# Version: 2.0.0 (Instruction Format)
+# Date: 2025-11-19
+#
+# CARA PENGGUNAAN:
+# 1. Copy file ini ke _post_with_city/ dengan nama: YYYY-MM-DD-jual-kayu-dolken-{kota}.md
+# 2. Siapkan 4 foto produk (PENTING: harus format WebP):
+#    a. Buat direktori:
+#       mkdir -p assets/images/posts/jual-kayu-dolken-{kota}/
+#    b. Copy 1,2,3,atau 4 foto sesuai yang diberikan ke direktori dan rename:
+#       cp foto1.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.jpeg
+#       cp foto2.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-002.jpeg
+#       (dst untuk 003 dan 004)
+#    c. Convert semua JPEG ke WebP (akan menghasilkan file .webp baru):
+#       cd assets/images/posts/jual-kayu-dolken-{kota}/
+#       for file in *.jpeg; do cwebp -q 85 "$file" -o "${file%.jpeg}.webp"; done
+#    d. Hapus file JPEG yang lama (sekarang ada 2x file: .jpeg dan .webp):
+#       rm *.jpeg
+#    e. Pastikan hanya ada 4 file .webp: 001.webp, 002.webp, 003.webp, 004.webp
+# 3. Baca INSTRUKSI di setiap field (yang ditulis dengan huruf kecil)
+# 4. Ganti instruksi dengan konten yang sesuai untuk kota tersebut
+# 5. Field yang sudah ada teksnya (UPPERCASE) bisa dipakai langsung atau disesuaikan
+# 6. Test dengan rebuild.sh sebelum commit
+#
+# CATATAN PENTING:
+# - Field dengan "isi ..." atau "tulis ..." atau "berikan ..." = HARUS DITULIS MANUAL
+# - Field dengan teks lengkap (misal: "Kualitas Premium Grade A") = boleh pakai langsung
+# - Jangan ubah struktur frontmatter (nama field, hierarki, indentasi)
+# - Semua section dengan REQUIRED wajib diisi
+# - Section OPTIONAL boleh dihapus jika tidak relevan
+# - PENTING: Semua foto HARUS dalam format WebP (bukan JPEG/PNG) untuk optimasi performa
+# ============================================================================
+
+# ============================================================================
+# SECTION META INFORMATION (REQUIRED)
+# ============================================================================
 layout: node--post-with-city
-title: "Jual Kayu Dolken Gowa – Hubungi 0813-1140-0177, Gratis Ongkir!"
-description: "Jual Kayu Dolken Gowa – kualitas premium, tahan lama, harga mulai Rp15.000/batang. Gratis ongkir ke Sungguminasa, Malino, Bontomarannu & seluruh Gowa. Hubungi 0813-1140-0177."
-excerpt: "Jual Kayu Dolken Gowa harga pabrik, gratis ongkir seluruh kecamatan. Kayu premium tahan 30 tahun. Hubungi 0813-1140-0177."
-date: 2026-06-28 12:00:00 +0800
-author: "Pabrik Kayu Dolken Gowa"
-author_url: "https://jualkayudolkengelam.net/"
+title: "Jual Kayu Dolken di Gowa – Hubungi 0813-1140-0177, Gratis Ongkir ke Seluruh Gowa!"
+description: "Jual Kayu Dolken Gowa – kualitas premium, tahan lama, harga mulai Rp15.000. Gratis ongkir ke seluruh Gowa! Hubungi 0813-1140-0177 untuk pemesanan."
+excerpt: "Jual kayu dolken premium di Gowa – gratis ongkir, harga terbaik, barang berkualitas."
+date: 2026-06-28
+author: Admin
 image: /assets/images/posts/jual-kayu-dolken-gowa/jual-kayu-dolken-gowa-001.webp
 image_alt: "Jual Kayu Dolken Gowa — kualitas premium"
 images:
   - /assets/images/posts/jual-kayu-dolken-gowa/jual-kayu-dolken-gowa-001.webp
   - /assets/images/posts/jual-kayu-dolken-gowa/jual-kayu-dolken-gowa-002.webp
+  
+  
 images_alt:
-  - "Jual Kayu Dolken Gowa — foto 1"
-  - "Jual Kayu Dolken Gowa — foto 2"
+  - "Jual Kayu Dolken Gowa — kualitas premium kayu dolken"
+  - "Jual Kayu Dolken Gowa — gratis ongkir ke seluruh Gowa"
+  - "Jual Kayu Dolken Gowa — stok lengkap diameter 2-12 cm"
+  - "Jual Kayu Dolken Gowa — harga mulai Rp15.000 per batang"
 last_modified_at: 2026-06-28
-keywords: "jual kayu dolken gowa, kayu dolken gowa, pagar kayu dolken gowa"
+keywords: "kayu dolken gowa, jual kayu gowa, kayu beton gowa, kayu tahan cuaca gowa, kayu murah gowa, kayu bekisting gowa, dolken gowa, kayu bulat gowa"
 rating: 5
-review_count: 120
-permalink: "/jual-kayu-dolken-gowa"
-kota: "Gowa"
-slug_kota: "gowa"
-judul_kota: "Gowa"
+review_count: 8
+author_url: https://jualkayudolken.com
+show_products: true
 nama_kota: "Gowa"
-kota_judul_seo: "Gowa"
-kota_keyword_seo: "kayu dolken Gowa"
-kota_judul: "Jual Kayu Dolken Gowa"
-seo_title: "Jual Kayu Dolken Gowa — Harga Langsung Pabrik, Gratis Ongkir"
-seo_description: "Jual Kayu Dolken Gowa harga pabrik langsung. Gratis ongkir ke Sungguminasa, Malino, Bontomarannu & seluruh Gowa. Hubungi 0813-1140-0177."
-seo_keywords: "kayu dolken Gowa, jual kayu dolken Gowa, pagar kayu dolken Gowa"
-pabrik: "Pabrik Kayu Dolken Gowa"
-hero_judul: "Jual Kayu Dolken Gowa"
-hero_subjudul: "Kayu Dolken Gowa — Harga Pabrik Langsung! Gratis Ongkir ke Seluruh Gowa. Hubungi 0813-1140-0177."
-keunggulan_judul: "Mengapa Memilih Kayu Dolken untuk Proyek Anda di Gowa?"
-keunggulan_deskripsi: "Kayu dolken adalah pilihan material utama untuk pagar rumah, gazebo, kanopi, dan dekorasi outdoor di Gowa. Berikut keunggulannya:"
-keunggulan_durabilitas:
-  judul: "Tahan Cuaca Ekstrem Gowa"
-  deskripsi: "Kayu dolken tahan terhadap cuaca panas, hujan lebat, dan udara pegunungan dingin di Gowa. Cocok untuk daerah pesisir maupun dataran tinggi Malino."
-keunggulan_nilai:
-  judul: "Harga Pabrik — Termurah Se-Gowa"
-  deskripsi: "Kami produsen langsung kayu dolken. Harga lebih murah 20-30% dari toko bangunan. Tidak ada biaya perantara."
-pengiriman_seo_area:
-  judul: "Area Pengiriman Kayu Dolken Gowa"
-  deskripsi: "Kami melayani pengiriman ke seluruh kecamatan di Gowa — Sungguminasa, Bontomarannu, Pallangga, Bajeng, Barombong, dan sekitarnya."
-  daftar_kecamatan:
-    - "Sungguminasa"
-    - "Bontomarannu"
-    - "Pallangga"
-    - "Bajeng"
-    - "Barombong"
-    - "Manuju"
-    - "Tinggimoncong"
-    - "Malino"
-  daftar_kecamatan_deskripsi: "Kami melayani pengiriman ke seluruh kecamatan di Gowa — Sungguminasa, Bontomarannu, Pallangga, Bajeng, Barombong, dan sekitarnya."
-judul_lainnya: "Kecamatan Lainnya di Gowa"
-wilayah_pusat:
-  - nama: "Sungguminasa"
-    deskripsi: "Pusat pemerintahan, bisnis, dan perdagangan utama Kabupaten Gowa"
-  - nama: "Bontomarannu"
-    deskripsi: "Pusat industri dan pergudangan yang berkembang pesat di Gowa"
-  - nama: "Pallangga"
-    deskripsi: "Kawasan perumahan dan permukiman modern paling berkembang di Gowa"
-kecamatan_lainnya:
-  - nama: "Bajeng"
-    deskripsi: "Kecamatan agraris dengan permukiman padat di Gowa"
-  - nama: "Barombong"
-    deskripsi: "Pusat pertanian dan perkebunan di pesisir Gowa"
-  - nama: "Manuju"
-    deskripsi: "Kecamatan di lereng pegunungan dengan potensi wisata alam"
-  - nama: "Tinggimoncong"
-    deskripsi: "Kawasan wisata pegunungan dengan Malino sebagai pusatnya"
-  - nama: "Parangloe"
-    deskripsi: "Kecamatan dengan potensi pertanian dan permukiman berkembang"
-  - nama: "Bontonompo"
-    deskripsi: "Kecamatan di selatan Gowa dengan pusat perdagangan tradisional"
-wilayah_pengembangan:
-  - nama: "Perumahan Bontomarannu"
-    deskripsi: "Kawasan perumahan baru yang berkembang pesat di Gowa"
-  - nama: "Kawasan Industri Pallangga"
-    deskripsi: "Pusat industri dan pergudangan kayu serta material bangunan"
-  - nama: "Malino Resort Area"
-    deskripsi: "Destinasi villa dan resort pegunungan terpopuler di Sulawesi Selatan"
-  - nama: "Kawasan Pendidikan Sungguminasa"
-    deskripsi: "Area pengembangan kampus dan pendidikan terpadu di Gowa"
-daerah_pusat:
-  - nama: "Sungguminasa"
-    deskripsi: "Pusat pemerintahan, bisnis, dan perdagangan utama Kabupaten Gowa"
-    gambar: ""
-    alt: ""
-    link: ""
-  - nama: "Bontomarannu"
-    deskripsi: "Pusat industri dan pergudangan yang berkembang pesat di Gowa"
-    gambar: ""
-    alt: ""
-    link: ""
-  - nama: "Pallangga"
-    deskripsi: "Kawasan perumahan dan permukiman modern paling berkembang di Gowa"
-    gambar: ""
-    alt: ""
-    link: ""
-  - nama: "Malino"
-    deskripsi: "Kota wisata pegunungan terkenal di Sulawesi Selatan dengan udara sejuk"
-    gambar: ""
-    alt: ""
-    link: ""
-  - nama: "Bajeng"
-    deskripsi: "Pusat pertanian dan perkebunan utama Kabupaten Gowa"
-    gambar: ""
-    alt: ""
-    link: ""
-pelabuhan:
-  - nama: "Pelabuhan Galesong"
-    deskripsi: "Pelabuhan tradisional penunjang logistik dan perikanan pesisir Gowa"
-industri:
-  - nama: "Kawasan Industri Pallangga"
-    deskripsi: "Kawasan industri dan pergudangan kayu serta material bangunan terbesar di Gowa"
-wisata_sejarah:
-  - nama: "Benteng Somba Opu"
-    deskripsi: "Benteng bersejarah peninggalan Kerajaan Gowa abad ke-16, ikon sejarah Sulawesi Selatan"
-  - nama: "Makam Sultan Hasanuddin"
-    deskripsi: "Kompleks makam pahlawan nasional Sultan Hasanuddin di Kabupaten Gowa"
-  - nama: "Museum Balla Lompoa"
-    deskripsi: "Museum kebudayaan dan sejarah Kerajaan Gowa menyimpan artefak dan pusaka kerajaan"
-landmark_wisata:
-  - nama: "Benteng Somba Opu"
-    deskripsi: "Benteng bersejarah Kerajaan Gowa, destinasi wisata sejarah utama"
-  - nama: "Malino Highlands"
-    deskripsi: "Destinasi wisata pegunungan terpopuler dengan udara sejuk dan pemandangan alam indah"
-  - nama: "Air Terjun Takapala"
-    deskripsi: "Air terjun setinggi 100 meter di kaki Gunung Bawakaraeng, lokasi camping favorit"
-landmark_fasilitas:
-  - nama: "Universitas Gowa"
-    deskripsi: "Perguruan tinggi negeri dengan fakultas pertanian dan teknik unggulan"
-  - nama: "RSUD Syekh Yusuf Gowa"
-    deskripsi: "Rumah sakit tipe B rujukan utama Kabupaten Gowa"
-  - nama: "Bandara Sultan Hasanuddin"
-    deskripsi: "Akses bandara internasional hanya 20 menit dari Sungguminasa"
-tentang_kota:
-  - judul: "Sejarah Kerajaan Gowa"
-    deskripsi: "Gowa adalah pusat Kerajaan Gowa-Tallo abad ke-16. Benteng Somba Opu dan Makam Sultan Hasanuddin jadi bukti kebesaran maritim Nusantara di Sulawesi Selatan."
-    icon: "building-library"
-  - judul: "Ekonomi Pertanian & Pariwisata"
-    deskripsi: "Gowa dikenal sebagai lumbung padi dan produsen kakao, kopi, serta karet. Wisata Malino Highlands tarik jutaan wisatawan tiap tahun."
-    icon: "banknotes"
-  - judul: "Wisata Alam & Sejarah"
-    deskripsi: "Malino Highlands (udara sejuk), Air Terjun Takapala (100m), Danau Mawang (piknik), dan Benteng Somba Opu (sejarah maritim)."
-    icon: "map"
-  - judul: "Infrastruktur & Akses Mudah"
-    deskripsi: "Dekat Bandara Sultan Hasanuddin (20 menit), akses ke Makassar 30 menit. Infrastruktur jalan merata ke desa-desa."
-    icon: "truck"
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN (SIMPLE LIST) - REQUIRED
+# ============================================================================
+# Instruksi: Isi 5-10 area/kecamatan populer di kota ini
+area_pengiriman:
+- "Somba Opu"
+- "Pallangga"
+- "Barombong"
+- "Bajeng"
+- "Bontonompo"
+- "Tinggimoncong"
+- "Bontomarannu"
+- "Parigi"
+- "Pattallassang"
+- "Biringbulu"
 keunggulan_produk:
-  - judul: "Kayu Dolken Premium Gowa"
-    deskripsi: "Kayu dolken diameter 5-15 cm, panjang 2-6 meter, kadar air rendah, tahan rayap, cocok untuk segala cuaca Gowa — dari pesisir hingga pegunungan Malino."
-  - judul: "Harga Pabrik Langsung"
-    deskripsi: "Kami produsen langsung, bukan tengkulak. Harga lebih murah dari toko bangunan Gowa. Stok 1.000+ batang siap kirim."
+  - judul: "Kualitas Premium, Tahan Cuaca Ekstrem"
+    deskripsi: "Kayu Dolken tahan lama hingga 30 tahun, cocok untuk iklim tropis Gowa — dari dataran rendah Sungguminasa hingga pegunungan Malino."
+    warna: "warning"
+    icon: "bi-award-fill"
+  - judul: "Harga Terjangkau Mulai Rp15.000"
+    deskripsi: "Mulai Rp15.000 per batang, harga terbaik di Gowa untuk kualitas setara kayu keras."
+    warna: "danger"
+    icon: "bi-cash-coin"
+  - judul: "Stok Lengkap & Selalu Ready"
+    deskripsi: "Diameter 2-12 cm tersedia, stok melimpah siap kirim ke seluruh Gowa."
+    warna: "info"
+    icon: "bi-boxes"
+
+# ============================================================================
+# SECTION KEUNGGULAN - LAYANAN (REQUIRED)
+# ============================================================================
 keunggulan_layanan:
   - judul: "Gratis Ongkir ke Seluruh Gowa"
-    deskripsi: "Gratis ongkos kirim ke semua kecamatan di Gowa — dari Sungguminasa hingga Malino dan Tombolo Pao."
-  - judul: "Pemasangan Cepat & Profesional"
-    deskripsi: "Tim berpengalaman, pemasangan pagar kayu dolken standar 10 meter hanya 1-2 hari. Bersih dan rapi."
-  - judul: "COD & Garansi Kepuasan"
-    deskripsi: "Bayar setelah barang sampai di lokasi Anda di Gowa. Garansi kayu cacat bisa diretur."
+    deskripsi: "Nikmati pengiriman gratis ke 13 kecamatan di Gowa — dari Sungguminasa hingga Malino. Minimal order 50 batang."
+    warna: "success"
+    icon: "bi-truck"
+  - judul: "COD Tersedia, Bayar Setelah Terima"
+    deskripsi: "Sistem COD aman — cek kualitas kayu Dolken sebelum bayar. Berlaku untuk wilayah Gowa dan Makassar."
+    warna: "primary"
+    icon: "bi-shield-check"
+  - judul: "Konsultasi Gratis & Fast Response"
+    deskripsi: "Tim kami siap konsultasi via WA, bantu pilih ukuran dan jumlah kayu Dolken yang tepat untuk proyek Anda."
+    warna: "secondary"
+    icon: "bi-headset"
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - TEKS JUDUL & DESKRIPSI (REQUIRED)
+# ============================================================================
+area_pengiriman_detail:
+  judul_jangkauan: "Jangkauan Pengiriman ke Seluruh Gowa"
+  deskripsi_jangkauan: "Kami melayani pengiriman gratis ke 13+ kecamatan di Gowa — dari Sungguminasa hingga Malino. Gratis ongkir!"
+
+  judul_pusat: "Wilayah Pusat Gowa — Sungguminasa & Sekitarnya"
+  deskripsi_pusat: "Pusat Gowa meliputi Somba Opu (Sungguminasa), Pallangga, dan Barombong — kawasan bisnis, pemerintahan, dan pusat perbelanjaan dengan akses mudah dari Makassar."
+
+  judul_utara_selatan: "Wilayah Utara & Selatan Gowa"
+  deskripsi_utara_selatan: "Bagian utara Gowa (Bajeng, Bontonompo) dekat Makassar dan berkembang pesat. Bagian selatan (Biringbulu, Bungaya) tumbuh sebagai kawasan hunian dan agrowisata."
+
+  judul_pengembangan: "Wilayah Pengembangan Gowa — Potensi Wisata & Agrowisata"
+  deskripsi_pengembangan: "Wilayah seperti Tinggimoncong (Malino), Parigi, dan Tompobulu dikenal sebagai destinasi wisata pegunungan dan agrowisata. Proyek perumahan dan villa terus berkembang."
+
+  judul_lainnya: "Kecamatan Lainnya di Gowa"
+
+  judul_landmark: "Landmark & Lokasi Strategis di Gowa"
+  deskripsi_landmark: "Landmark seperti Balla Lompoa, Alun-Alun Sungguminasa, dan Pasar Sentral Gowa mendorong aktivitas bisnis dan proyek konstruksi."
+
+  judul_wisata: "Destinasi Wisata di Gowa"
+  deskripsi_wisata: "Gowa memiliki wisata alam pegunungan seperti Malino Highlands, Air Terjun Malino, dan Pemandian Air Panas Leija yang menjadi favorit wisatawan."
+
+  judul_fasilitas: "Fasilitas Pendidikan & Komersial di Gowa"
+  deskripsi_fasilitas: "Kampus UMI, Gowa Town Center (GTC), RSUD Syekh Yusuf, dan Bandara Sultan Hasanuddin (area Gowa) menjadikan Gowa kota strategis."
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - WILAYAH PUSAT (REQUIRED - min 3 items)
+# ============================================================================
+# Instruksi: Research kecamatan NYATA di pusat kota ini, cari kelurahan yang ada
+  wilayah_pusat:
+    - nama: "Somba Opu"
+      kelurahan:
+        - "Sungguminasa, Samata, Tombolo, Bontoramba"
+      warna: "primary"
+    - nama: "Pallangga"
+      kelurahan:
+        - "Mangalli, Pangkabinanga, Taeng, Jene'tallasa"
+      warna: "success"
+    - nama: "Barombong"
+      kelurahan:
+        - "Moncobalang, Lembang, Pacarring, Tinggimae"
+      warna: "info"
+    # Tambah lebih banyak jika perlu (5-7 kecamatan ideal)
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - WILAYAH UTARA & SELATAN (OPTIONAL)
+# ============================================================================
+# Instruksi: Hapus section ini jika kota tidak punya pembagian utara-selatan yang jelas
+  wilayah_utara_selatan:
+    - nama: "Bajeng"
+      kelurahan:
+        - "Bontomationgi, Limbung, Kalebajeng, Mata Allo"
+      warna: "danger"
+    - nama: "Bontonompo"
+      kelurahan:
+        - "Bontonompo, Kalapalaga, Kalaserena"
+      warna: "warning"
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - WILAYAH PENGEMBANGAN (REQUIRED - min 2 items)
+# ============================================================================
+# Instruksi: Isi kecamatan yang sedang berkembang/pinggiran kota
+  wilayah_pengembangan:
+    - nama: "Tinggimoncong"
+      kelurahan:
+        - "Malino, Bontolerung, Gantarang"
+      warna: "primary"
+    - nama: "Parigi"
+      kelurahan:
+        - "Parigi, Manuju, Bilalang"
+      warna: "info"
+    - nama: "Tompobulu"
+      kelurahan:
+        - "Tompobulu, Tanete, Bongo Ramba"
+      warna: "wood"
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - LANDMARK WISATA (REQUIRED - min 3 items)
+# ============================================================================
+# Instruksi: Isi landmark WISATA dan sejarah yang terkenal di kota ini
+  landmark_wisata:
+    - nama: "Balla Lompoa Museum"
+      icon: "bi-building"
+      warna: "warning"
+    - nama: "Air Terjun Malino"
+      icon: "bi-building"
+      warna: "warning"
+    - nama: "Pemandian Air Panas Leija"
+      icon: "bi-building"
+      warna: "warning"
+    - nama: "Puncak Bila-Bila"
+      icon: "bi-building"
+      warna: "warning"
+
+# ============================================================================
+# SECTION AREA PENGIRIMAN DETAIL - LANDMARK FASILITAS (REQUIRED - min 3 items)
+# ============================================================================
+# Instruksi: Isi fasilitas strategis seperti mall, kampus, pelabuhan di kota ini
+  landmark_fasilitas:
+    - nama: "Gowa Town Center (GTC)"
+      icon: "bi-cart"
+      warna: "info"
+    - nama: "Pasar Sentral Sungguminasa"
+      icon: "bi-cart"
+      warna: "primary"
+    - nama: "Universitas Muslim Indonesia (UMI)"
+      icon: "bi-mortarboard"
+      warna: "success"
+
+# ============================================================================
+# SECTION KEUNGGULAN PRODUK - DURABILITAS (OPTIONAL)
+# ============================================================================
+keunggulan_durabilitas:
+  tahan_lama: "Kayu Dolken Gowa tahan 20-30 tahun tanpa treatment, cocok untuk iklim tropis lembab Gowa — dari pesisir Sungguminasa hingga pegunungan Malino."
+  anti_rayap: "Tekstur padat kayu gelam alami menolak rayap tanpa obat kimia, ideal untuk rumah di wilayah lahan gambut Gowa."
+  tahan_cuaca: "Tahan hujan deras musim penghujan Gowa dan panas terik musim kemarau — cocok indoor & outdoor."
+  kuat_padat: "Kepadatan tinggi (0.8-1.0 g/cm³), kekuatan tekan >50 MPa — kuat untuk struktur penyangga atap & lantai."
+
+keunggulan_nilai:
+  ramah_lingkungan: "Material natural 100% sustainable, biodegradable, mendukung sertifikasi green building proyek di Gowa."
+  estetika: "Warna coklat merah natural khas kayu Dolken, semakin cantik seiring waktu — cocok desain rumah modern & tradisional Gowa."
+
+# Format Array (lebih baru, direkomendasikan) - HARUS 6 items
 keunggulan_kayu_dolken:
-  - judul: "Awet Hingga 30 Tahun"
-    deskripsi: "Kayu dolken memiliki ketahanan alami terhadap rayap dan cuaca ekstrem Gowa — dari pesisir hingga pegunungan."
-  - judul: "Mudah Dibentuk & Dipasang"
-    deskripsi: "Bobot ringan, mudah dipotong dan dibentuk sesuai desain pagar, gazebo, kanopi, atau dekorasi taman Anda."
-  - judul: "Estetika Alami & Eksotis"
-    deskripsi: "Tekstur kayu alami dengan warna coklat dan hitam lapuk memberikan kesan mewah dan natural pada properti Anda."
-  - judul: "Ramah Lingkungan"
-    deskripsi: "Kayu dolken berasal dari hutan rakyat berkelanjutan, bukan dari hutan lindung atau kawasan konservasi."
+  - judul: "Tahan Lama 20-30 Tanah Tanpa Treatment"
+    deskripsi: "Kayu Dolken Gowa tahan hingga 30 tahun tanpa treatment kimia, cocok untuk iklim tropis lembab dari pesisir hingga pegunungan."
+    warna: "success"
+    icon: "bi-clock-history"
+  - judul: "Anti Rayap Alami Tanpa Obat"
+    deskripsi: "Tekstur padat dan minyak alami kayu gelam menolak rayap natural — ideal untuk rumah di lahan gambut & dataran rendah Gowa."
+    warna: "danger"
+    icon: "bi-bug"
+  - judul: "Tahan Cuaca Ekstrem: Hujan & Panas"
+    deskripsi: "Tahan hujan deras musim penghujan & panas terik musim kemarau Gowa — cocok aplikasi indoor maupun outdoor."
+    warna: "primary"
+    icon: "bi-cloud-rain"
+  - judul: "Kuat & Padat untuk Beban Berat"
+    deskripsi: "Kepadatan 0.8-1.0 g/cm³, kekuatan tekan >50 MPa — kuat untuk struktur penyangga atap, lantai, dan kolom."
+    warna: "warning"
+    icon: "bi-hammer"
+  - judul: "Ramah Lingkungan & Sustainable"
+    deskripsi: "Material natural 100% biodegradable, mendukung green building — pilihan proyek eco-friendly di Gowa."
+    warna: "success"
+    icon: "bi-recycle"
+  - judul: "Estetika Natural Coklat Merah Muda"
+    deskripsi: "Warna coklat merah khas Dolken semakin cantik seiring waktu, cocok desain rumah modern & tradisional Gowa."
+    warna: "info"
+    icon: "bi-palette"
+
+# ============================================================================
+# SECTION APLIKASI KAYU DOLKEN (OPTIONAL - tapi direkomendasikan)
+# ============================================================================
 aplikasi_kayu_dolken:
-  - judul: "Pagar Rumah & Perumahan"
-    deskripsi: "Pagar depan dan samping rumah. Diameter 8-10 cm standar, tinggi 1,5-2 meter, cocok untuk perumahan di Gowa."
-  - judul: "Gazebo & Taman"
-    deskripsi: "Gazebo taman, bumbung taman, jembatan kayu mini. Diameter 5-7 cm untuk detail, 10-12 cm untuk struktur utama."
-  - judul: "Kanopi Teras & Carport"
-    deskripsi: "Kanopi teras, penutup carport. Kayu dolken tidak memanas saat terkena sinar matahari langsung."
-  - judul: "Cafe, Resto & Villa"
-    deskripsi: "Dekorasi outdoor cafe/villa di Sungguminasa dan Malino. Konsep natural tropis favorit."
+  deskripsi: "Kayu Dolken serbaguna — dari konstruksi berat hingga dekorasi premium, cocok untuk proyek di Gowa."
+
+  konstruksi_dekorasi:
+    - judul: "Konstruksi & Bangunan"
+      icon: "bi-building"
+      warna: "wood"
+      aplikasi:
+        - "Struktur atap rumah & villa di Malino & Biringbulu"
+        - "Kolom & balok kayu utama perumahan Sungguminasa"
+        - "Lantai kayu tahan beban untuk rumah 2 lantai"
+        - "Pagar & gate kayu solid area perumahan Gowa"
+        - "Rangka carport & gazebo taman rumah mewah"
+    - judul: "Dekorasi & Landscaping"
+      icon: "bi-palette-fill"
+      warna: "primary"
+      aplikasi:
+        - "Dinding aksen kayu ruang tamu & kamar tidur"
+        - "Dek kayu outdoor taman & kolam renang"
+        - "Pergola & gazebo kayu taman villa Malino"
+        - "Furniture taman: meja, kursi, bali-bali kayu"
+        - "Pagar dekoratif & trellis tanaman merambat"
+
+  furniture_komersial:
+    - judul: "Furniture & Lainnya"
+      icon: "bi-chair-fill"
+      warna: "info"
+      aplikasi:
+        - "Meja & kursi makan kayu solid premium"
+        - "Bed frame & headboard kayu Dolken natural"
+        - "Rak buku & wardrobe built-in custom"
+        - "Bar counter & meja cafe kayu berat"
+        - "Aksesoris kayu: lampu, frame, ornamen"
+    - judul: "Proyek Komersial Terpercaya"
+      icon: "bi-briefcase-fill"
+      warna: "success"
+      deskripsi: "Kami dipercaya developer & pengusaha Gowa untuk proyek komersial skala besar."
+      aplikasi:
+        - "Hotel & resort pegunungan Malino"
+        - "Cafe & resto area Sungguminasa & GTC"
+        - "Restoran pesisir Biringbulu & Pallangga"
+        - "Mall & apartment"
+        - "Developer perumahan"
+        - "Developer perumahan"
+
+# ============================================================================
+# SECTION PROSES PEMESANAN - TAHAP AWAL (REQUIRED) - BOLEH PAKAI LANGSUNG
+# ============================================================================
+# Instruksi: Ini generic, boleh pakai langsung
 proses_awal_pemesanan:
-  - judul: "Hubungi Kami (WA/Telepon)"
-    deskripsi: "Hubungi 0813-1140-0177 via WhatsApp atau telepon. Tim kami siap melayani 08:00-20:00 WITA."
-  - judul: "Konsultasi & Hitung Kebutuhan"
-    deskripsi: "Ceritakan proyek Anda (pagar, gazebo, kanopi). Kami hitung jumlah batang, diameter, dan estimasi biaya GRATIS."
-  - judul: "Konfirmasi & Pesan"
-    deskripsi: "Setelah setuju harga dan spesifikasi, kirim alamat pengiriman di Gowa. Kami proses segera."
+  pilih_ukuran: "Lihat daftar produk lengkap di atas, pilih diameter sesuai kebutuhan proyek Anda"
+  hubungi: "081311400177"
+  konsultasi_gratis: "Tim kami akan bantu hitung kebutuhan dan berikan rekomendasi terbaik untuk proyek Anda"
+
+# ============================================================================
+# SECTION PROSES PEMESANAN - FINALISASI & PENGIRIMAN (REQUIRED)
+# ============================================================================
+# Instruksi: Sesuaikan dengan nama kota
 finalisasi_pengiriman:
-  - judul: "Pengiriman ke Lokasi"
-    deskripsi: "Kayu dikirim dengan truk ke seluruh kecamatan Gowa. Gratis ongkir minimal order."
-  - judul: "Pengecekan Barang"
-    deskripsi: "Cek jumlah, diameter, panjang, dan kondisi kayu. COD: bayar setelah puas."
-  - judul: "Pemasangan Opsional"
-    deskripsi: "Butuh bantu pasang? Tim kami siap 1-2 hari kerja. Pemasangan rapi, bersih, garansi."
-tempat_menarik:
-  - nama: "Malino Highlands"
-    deskripsi: "Destinasi wisata pegunungan terpopuler dengan udara sejuk dan pemandangan alam yang indah"
-  - nama: "Air Terjun Takapala"
-    deskripsi: "Air terjun setinggi 100 meter di kaki Gunung Bawakaraeng, lokasi camping favorit"
-  - nama: "Danau Mawang"
-    deskripsi: "Danau buatan dengan panorama indah, cocok untuk piknik dan outbound"
-  - nama: "Benteng Somba Opu"
-    deskripsi: "Benteng bersejarah Kerajaan Gowa abad ke-16, ikon sejarah Sulawesi Selatan"
-  - nama: "Bendungan Bili-Bili"
-    deskripsi: "Bendungan multifungsi terbesar di Sulawesi Selatan"
-fasilitas_strategis:
-  - nama: "Universitas Gowa"
-    deskripsi: "Perguruan tinggi negeri dengan fakultas pertanian dan teknik unggulan"
-  - nama: "RSUD Syekh Yusuf Gowa"
-    deskripsi: "Rumah sakit tipe B rujukan utama Kabupaten Gowa"
-  - nama: "Bandara Sultan Hasanuddin"
-    deskripsi: "Akses bandara internasional hanya 20 menit dari Sungguminasa"
-  - nama: "Bendungan Bili-Bili"
-    deskripsi: "Bendungan multifungsi terbesar di Sulawesi Selatan"
-  - nama: "Pasar Sentral Sungguminasa"
-    deskripsi: "Pusat perdagangan tradisional dan modern di Gowa"
-wilayah_terpencil:
-  - nama: "Tombolo Pao"
-    deskripsi: "Kecamatan di pegunungan Gowa dengan potensi kopi dan pariwisata alam"
-  - nama: "Tompobulu"
-    deskripsi: "Kecamatan perbatasan utara Gowa dengan akses ke Malino"
-  - nama: "Biringbulu"
-    deskripsi: "Kecamatan di timur Gowa dengan area perkebunan kakao dan kopi"
-proyek_publik:
-  - nama: "Taman Kota Sungguminasa"
-    lokasi: "Kecamatan Sungguminasa"
-    detail: "Pagar & gazebo taman kota, 300 batang dia. 10-12 cm, natural"
-  - nama: "Pagar Perumahan Bontomarannu"
-    lokasi: "Kecamatan Bontomarannu"
-    detail: "Pagar perimeter perumahan, 2.000 batang dia. 8-10 cm, hitam lapuk"
-  - nama: "Resor Villa Malino"
-    lokasi: "Kecamatan Tinggimoncong"
-    detail: "Pagar, jembatan & deck resort, 500 batang dia. 12-15 cm, tahan cuaca"
+  konfirmasi_pesanan: "tulis konfirmasi pesanan, mention pastikan jumlah/ukuran/alamat di Gowa sudah benar"
+  pengiriman_gratis: "jelaskan pengiriman gratis, armada terpercaya, mention ke area kota ini, tepat waktu"
+  bayar_cod: "jelaskan sistem COD, bayar setelah barang sampai dan dicek kualitas, aman tanpa risiko"
+
+# ============================================================================
+# SECTION STUDI KASUS PROYEK - KOMERSIAL (REQUIRED - min 4 items)
+# ============================================================================
+# Instruksi: HARUS custom per kota! Gunakan lokasi SPESIFIK yang ada di kota ini
 studi_kasus_proyek:
-  proyek_residensial: "Pagar Rumah di Perumahan Sungguminasa"
-  detail_residensial: "Rumah tipe 60/120 di Sungguminasa, pagar 10m dia. 8-10cm, finishing natural"
-  hasil_residensial: "Pemasangan 1 hari, pelanggan puas, harga 40% lebih murah dari pagar beton"
-  proyek_komersial: "Gazebo Cafe di Bontomarannu"
-  detail_komersial: "Cafe outdoor 4x4m di Bontomarannu, gazebo kayu dolken dia. 10-12cm"
-  hasil_komersial: "Cafe jadi spot foto, pengunjung naik 30%, tahan hujan deras Gowa"
+  proyek_komersial:
+    - judul: "Gazebo Restoran di Malino"
+      tahun: "2024"
+      deskripsi: "Restoran wisata di kawasan Malino, Tinggimoncong, Gowa renovasi gazebo outdoor pakai Kayu Dolken untuk tampilan alami dan tahan cuaca pegunungan."
+      jumlah: "200 batang"
+      diameter: "8-10 cm"
+      hasil: "Gazebo kokoh dan tahan hujan deras khas Malino. Pengunjung puas."
+      warna: "primary"
+      icon: "bi-building"
+    - judul: "Pagar Cafe di Sungguminasa"
+      tahun: "2024"
+      deskripsi: "Cafe baru di pusat kota Sungguminasa pakai Kayu Dolken untuk pagar dan dekorasi halaman."
+      jumlah: "120 batang"
+      diameter: "6-8 cm"
+      hasil: "Tampilan halaman cafe rustic, outdoor tetap awet meski hujan."
+      warna: "warning"
+      icon: "bi-tree"
+    - judul: "Rangka Atap Warung di Pallangga"
+      tahun: "2024"
+      deskripsi: "Warung makan di Pallangga pakai Kayu Dolken sebagai rangka atap semi-outdoor."
+      jumlah: "150 batang"
+      diameter: "8-10 cm"
+      hasil: "Atap kokoh, tahan panas dan hujan."
+      warna: "success"
+      icon: "bi-shop"
+    - judul: "Tiang Penyangga Toko di Bajeng"
+      tahun: "2024"
+      deskripsi: "Toko bangunan di Bajeng pakai Kayu Dolken untuk tiang penyangga area parkir."
+      jumlah: "100 batang"
+      diameter: "8 cm"
+      hasil: "Tiang penyangga kokoh, tahan lembap dan rayap."
+      warna: "danger"
+      icon: "bi-building-add"
+
+# ============================================================================
+# SECTION STUDI KASUS PROYEK - RESIDENSIAL (REQUIRED - min 4 items)
+# ============================================================================
+  proyek_residensial:
+    - judul: "Pagar Villa Kayu Dolken Malino"
+      lokasi: "Desa Malino, Kec. Tinggimoncong, Gowa"
+      tahun: "2024"
+      deskripsi: "Pagar solid kayu Dolken diameter 8-10 cm untuk villa pegunungan Malino — tahan cuaca dingin & hujan deras."
+      jumlah: "480"
+      diameter: "8-10"
+      hasil: "Klien puas — pagar kokoh 2 tahun tanpa kerusakan, anti rayap alami."
+      warna: "success"
+      icon: "bi-house-door"
+    - judul: "Struktur Atap Rumah 2 Lantai Sungguminasa"
+      lokasi: "Kel. Sungguminasa, Kec. Somba Opu, Gowa"
+      tahun: "2024"
+      deskripsi: "Kolom & rangka atap kayu Dolken diameter 6-12 cm untuk rumah mewah 2 lantai — struktur utama tanpa besi."
+      jumlah: "650"
+      diameter: "6-12"
+      hasil: "Struktur kokoh, hemat biaya 30% vs baja, suhu ruang lebih sejuk."
+      warna: "success"
+      icon: "bi-sun"
+    - judul: "Dek Kayu Outdoor Kolam Renang Biringbulu"
+      lokasi: "Kec. Biringbulu, Gowa"
+      tahun: "2024"
+      deskripsi: "Dek kayu Dolken diameter 4-6 cm area kolam renang — anti licin & tahan air laut."
+      jumlah: "320"
+      diameter: "4-6"
+      hasil: "Tahan air laut & panas 18 bulan, tidak melengkung."
+      warna: "info"
+      icon: "bi-tree-fill"
+    - judul: "Pagar & Gate Perumahan Pallangga"
+      lokasi: "Kel. Pallangga, Kec. Pallangga, Gowa"
+      tahun: "2024"
+      deskripsi: "Pagar & gerbang kayu Dolken diameter 8-10 cm untuk cluster perumahan — estetika natural."
+      jumlah: "410"
+      diameter: "8-10"
+      hasil: "Zero keluhan rayap, developer pesan ulang untuk cluster baru."
+      warna: "success"
+      icon: "bi-house-heart-fill"
+
+# ============================================================================
+# SECTION STUDI KASUS PROYEK - PUBLIK (OPTIONAL - min 2 items)
+# ============================================================================
+  proyek_publik:
+    - judul: "Gazebo & Jogging Track Taman Alun-Alun Sungguminasa"
+      tahun: "2023"
+      deskripsi: "Gazebo kayu Dolken dan decking area jogging track di Taman Alun-Alun Sungguminasa — pusat keramaian warga Gowa."
+      jumlah: "250"
+      diameter: "6-8"
+      hasil: "Fasilitas publik kokoh, tahan cuaca — jadi spot favorit warga untuk bersantai & olahraga setiap sore."
+      warna: "info"
+      icon: "bi-signpost-2"
+    - judul: "Mushola & Taman Belakang Islamic Center Gowa"
+      tahun: "2024"
+      deskripsi: "Pagar kayu Dolken dan decking taman area mushola Islamic Center Gowa — kawasan pusat keagamaan & edukasi."
+      jumlah: "180"
+      diameter: "6-8"
+      hasil: "Area ibadah & taman nyaman, estetika natural cocok dengan arsitektur Islam modern. Diapresiasi pengurus masjid."
+      warna: "success"
+      icon: "bi-building"
+
+# ============================================================================
+# SECTION TESTIMONI - RESIDENTIAL (REQUIRED - min 2 items)
+# ============================================================================
 testimoni_residential:
-  - nama: "Pak Syamsul"
-    lokasi: "Sungguminasa"
-    judul: "Kualitas Bagus, Gratis Ongkir"
-    komentar: "Beli kayu dolken untuk pagar rumah di Gowa. Kualitas bagus, dikirim cepat. Recommended!"
-  - nama: "Ibu Fatimah"
-    lokasi: "Malino"
-    judul: "Villa Jadi Lebih Cantik"
-    komentar: "Kayu dolken untuk teras villa di Malino. Hasilnya natural dan cantik. COD aman."
+  - nama: "Pak Andi"
+    lokasi: "Somba Opu, Gowa"
+    rating: 5
+    judul: "Kualitas Terjamin"
+    komentar: "Pesan kayu Dolken untuk pagar rumah di Somba Opu. Sudah 1.5 tahun tahan cuaca, tidak ada retakan. Pelayanan ramah, pengiriman tepat waktu."
+    warna: "primary"
+  - nama: "Ibu Nurul"
+    lokasi: "Bontonompo, Gowa"
+    rating: 5
+    judul: "Anti Rayap Alami"
+    komentar: "Tadinya ragu pakai kayu gelam, ternyata kokoh sekali. Pagar rumah saya di Bontonompo sudah 2 tahun aman dari rayap. Sangat puas."
+    warna: "success"
+  - nama: "Pak Hidayat"
+    lokasi: "Pallangga, Gowa"
+    rating: 5
+    judul: "Pengiriman Cepat"
+    komentar: "Renovasi rumah butuh kayu cepat. Pesanan saya 400 batang dia 8-10 sampai dalam 3 hari. Kualitas sesuai foto, harga bersaing."
+    warna: "info"
+  - nama: "Ibu Rahmawati"
+    lokasi: "Malino, Gowa"
+    rating: 5
+    judul: "Cocok Untuk Villa"
+    komentar: "Bangun villa di pegunungan Malino, pakai kayu Dolken untuk gazebo & dek. Tahan hujan & angin kencang. Tamu-tamu suka desainnya."
+    warna: "success"
+
+# ============================================================================
+# SECTION TESTIMONI - KOMERSIAL (REQUIRED - min 4 items)
+# ============================================================================
 testimoni_komersial:
-  - nama: "Pak Hendra"
-    lokasi: "Owner Cafe di Sungguminasa"
-    judul: "Tahan Cuaca Gowa"
-    komentar: "Cafe saya di Gowa pakai kayu dolken untuk pagar & gazebo. Setelah 1 tahun masih kokoh."
-  - nama: "Ibu Rahma"
-    lokasi: "Resort di Malino"
-    judul: "Cocok untuk Konsep Alam"
-    komentar: "Resort di Malino pakai kayu dolken. Tamu suka tampilan naturalnya."
-  - nama: "Pak Jufri"
-    lokasi: "Kontraktor di Bontomarannu"
-    judul: "Supplier Andal"
-    komentar: "Sudah 3 proyek perumahan di Bontomarannu pakai kayu dolken. Stok selalu ada."
-  - nama: "Bu Ningsih"
-    lokasi: "Pemilik Villa di Malino"
-    judul: "Harga Bersahabat"
-    komentar: "Harga lebih murah dari toko bangunan Gowa. Kayu langsung pabrik."
+  - nama: "Pakarman"
+    lokasi: "Owner Cafe Omah Kayu, GTC Sungguminasa"
+    rating: 5
+    judul: "Furniture Custom Sempurna"
+    komentar: "Pesan bar counter & meja cafe kayu Dolken. Hasilnya premium, tamu sering tanya在哪里买的. Worth the investment."
+    warna: "warning"
+  - nama: "H. Idris"
+    lokasi: "Pengembang perumahan Green Hill Residence, Pallangga"
+    rating: 5
+    judul: "Supplier Terpercaya"
+    komentar: "Sudah 3 proyek perumahan pakai Dolken untuk pagar & gate. Konsisten quality, harga OKE, pengiriman on schedule."
+    warna: "info"
+  - nama: "Dra. St. Aminah"
+    lokasi: "Pemilik Homestay Malino, Tinggimoncong"
+    rating: 5
+    judul: "Estetika Natural Unik"
+    komentar: "Homestay di Malino pakai Dolken untuk gazebo & dek. Tamu asing suka banget. Kayunya makin cantik seiring waktu."
+    warna: "success"
+  - nama: "Bapak Firmansyah"
+    lokasi: "Kontraktor, Somba Opu"
+    rating: 5
+    judul: "Rangka Atap Kokoh Murah"
+    komentar: "Proyek rumah 2-3 lantai di Gowa pakai Dolken untuk rangka atap. Lebih hemat 25% dari baja, struktur equally strong."
+    warna: "primary"
+
+# ============================================================================
+# SECTION TIPS MEMILIH UKURAN (REQUIRED) - BOLEH PAKAI LANGSUNG
+# ============================================================================
+# Produk yang tersedia 2-3 cm, 4-6 cm, 6-8 cm, 8-10 cm, 10-12 cm.
+# jangan buat diameter diluar itu
 tips_ukuran:
-  - judul: "Cek Diameter & Panjang"
-    deskripsi: "Diameter 5-7 cm untuk pagar dekoratif, 8-10 cm untuk pagar utama perumahan Gowa, 12-15 cm untuk tiang/gazebo."
-  - judul: "Pilih Warna Sesuai Tema"
-    deskripsi: "Natural untuk minimalis, coklat gelap untuk villa Malino, hitam lapuk untuk vintage."
-  - judul: "Hitung Jumlah Batang"
-    deskripsi: "Pagar rumah standar (tinggi 1,5m) butuh 30-40 batang per 10m. Konsultasi gratis."
-  - judul: "Pesan Lebih untuk Cadangan"
-    deskripsi: "Pesan 5-10% lebih untuk antisipasi. Kelebihan kayu bisa diretur."
+  - kategori: "Dekorasi Ringan"
+    aplikasi: "Pagar, Taman"
+    diameter: "2-3 cm / 4-6 cm"
+    keunggulan:
+      - "Cocok untuk estetika pagar & taman minimalis"
+      - "Ringan, mudah dipasang, hemat biaya"
+      - "Tersedia banyak variasi ukuran"
+    warna: "success"
+    icon: "bi-tree"
+  - kategori: "Struktur Sedang"
+    aplikasi: "Gazebo, Pergola"
+    diameter: "6-8 cm"
+    keunggulan:
+      - "Kuat menahan beban atap & tanaman rambat"
+      - "Diameter ideal untuk gazebo dan teras"
+      - "Proporsi pas — kokoh tapi tidak terlalu besar"
+    warna: "primary"
+    icon: "bi-house-fill"
+  - kategori: "Struktur Berat"
+    aplikasi: "Tiang Utama, Pondasi"
+    diameter: "8-10 cm / 10-12 cm"
+    keunggulan:
+      - "Kekuatan maksimal untuk kolom & balok utama"
+      - "Mampu menahan beban konstruksi besar"
+      - "Daya tahan 20-30 tahun tanpa treatment"
+    warna: "danger"
+    icon: "bi-building-fill"
+
+# ============================================================================
+# SECTION FAQ - PEMESANAN (REQUIRED - min 2 items)
+# ============================================================================
+# ============================================================================
 faq_pemesanan:
-  - pertanyaan: "Bagaimana cara memesan kayu dolken di Gowa?"
-    jawaban: "Hubungi 0813-1140-0177 via WhatsApp. Ceritakan kebutuhan, kami hitung estimasi GRATIS."
-  - pertanyaan: "Apakah bisa COD (bayar di tempat)?"
-    jawaban: "Bisa. Bayar setelah barang sampai di lokasi Anda di Gowa dan dicek kondisinya."
+  - pertanyaan: "Berapa minimal pemesanan kayu dolken?"
+    jawaban: "Minimal pemesanan 10 batang. Untuk area Gowa tersedia harga khusus — hubungi 081311400177 untuk konsultasi gratis ukuran & kebutuhan."
+    icon: "bi-cart-check"
+  - pertanyaan: "Bagaimana cara mengecek kualitas kayu dolken sebelum bayar?"
+    jawaban: "Kami siap COD ke lokasi Anda di Gowa. Tim akan dampingi pengecekan: pastikan tidak bengkok, tidak retak, diameter sesuai pesanan. Bayar setelah puas."
+    icon: "bi-clipboard-check"
+
+# ============================================================================
+# SECTION FAQ - PRODUK (REQUIRED - min 2 items)
+# ============================================================================
 faq_produk:
-  - pertanyaan: "Berapa lama kayu dolken awet di iklim Gowa?"
-    jawaban: "Awet 20-30 tahun. Tahan rayap alami. Perawatan: cat kayu 6-12 bulan sekali."
-  - pertanyaan: "Ukuran diameter apa yang cocok untuk pagar rumah?"
-    jawaban: "Standar: diameter 8-10 cm, tinggi 1,5-2 m. Untuk tiang/gazebo: 12-15 cm."
+  - pertanyaan: "Apakah kayu dolken perlu perawatan khusus di Gowa?"
+    jawaban: "Tidak perlu perawatan khusus. Kayu Dolken tahan cuaca ekstrim Gowa — dari panas pesisir Sungguminasa hingga dingin pegunungan Malino. Untuk aplikasi outdoor di area Pallangga atau Biringbulu bisa tambah coating alami agar warna makin awet."
+    icon: "bi-tools"
+  - pertanyaan: "Apakah bisa custom panjang kayu dolken?"
+    jawaban: "Bisa. Standar panjang 4 meter, kami bisa sesuaikan untuk kebutuhan proyek spesifik Anda di Gowa — hubungi 081311400177 untuk konsultasi ukuran."
+    icon: "bi-rulers"
+
+# ============================================================================
+# SECTION FAQ - PENGIRIMAN (REQUIRED - min 1 item)
+# ============================================================================
 faq_pengiriman:
   - pertanyaan: "Berapa lama pengiriman ke Gowa?"
-    jawaban: "Sungguminasa/Bontomarannu/Pallangga: 1-2 hari. Malino/Tinggimoncong: 2-3 hari. Gratis ongkir minimal order."
-relevansi:
-  - judul: "Cocok untuk Iklim Tropis & Pegunungan Gowa"
-    deskripsi: "Gowa punya iklim bervariasi — pesisir panas hingga pegunungan sejuk. Kayu dolken tahan panas, hujan, dan dingin."
-  - judul: "Estetika Cocok untuk Arsitektur Bugis-Makassar"
-    deskripsi: "Arsitektur tradisional Bugis-Makassar menggunakan kayu alami. Kayu dolken melanjutkan warisan lokal."
-cta:
-  judul: "Siap Bangun Pagar Kayu Dolken di Gowa?"
-  deskripsi: "Dapatkan harga pabrik langsung, gratis ongkir, dan pemasangan profesional. Stok siap kirim hari ini."
-  tombol_teks: "Hubungi via WhatsApp"
-  tombol_link: "https://wa.me/6281311400177"
-social_proof:
-  judul: "Dipercaya 1.200+ Pelanggan di Sulawesi Selatan"
-  deskripsi: "Bergabung dengan ratusan pemilik rumah, kontraktor, dan pemilik villa di Gowa yang sudah puas dengan kayu dolken kami."
-mengapa_memilih:
-  - judul: "Harga Pabrik Langsung"
-    deskripsi: "Tanpa perantara, hemat 20-30% dari harga pasaran toko bangunan Gowa."
-  - judul: "Kualitas Terjamin"
-    deskripsi: "Kayu dolken premium, pilih langsung di pabrik, tahan 20-30 tahun."
-  - judul: "Layanan Full Service"
-    deskripsi: "Dari konsultasi, pengiriman gratis, sampai pemasangan profesional — satu atap."
----
+    jawaban: "Pengiriman 5-7 hari kerja ke seluruh Gowa, gratis ongkir untuk area Sungguminasa (ITC, kota), Malino (wisata pegunungan), Pallangga (agrowisata), dan Bontonompo (perkebunan kopi). Kami pakai armada terpercaya dan picker berpengalaman Gowa."
+    icon: "bi-truck"
 
+# ============================================================================
+# SECTION RELEVANSI KAYU DOLKEN (REQUIRED)
+# ============================================================================
+# ============================================================================
+relevansi_kayu_dolken:
+  karakteristik_iklim: "Gowa memiliki iklim tropis dengan dua musim — kemarau panas di pesisir Sungguminasa & Pallangga, dan curah hujan tinggi di pegunungan Malino & Tinggimoncong. Kayu Dolken tahan terhadap kelembaban tinggi pesisir dan cuaca dingin ekstrem pegunungan, solusi konstruksi ideal untuk seluruh wilayah Gowa."
+  keunggulan_lokal: "Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca ekstrem</strong> sangat cocok untuk aplikasi seperti:"
+  aplikasi_lokal:
+    - nama: "Gazebo & villa pegunungan di kawasan wisata Malino"
+      icon: "bi-check-circle-fill"
+    - nama: "Pagar & gate rumah perumahan di Sungguminasa & Somba Opu"
+      icon: "bi-check-circle-fill"
+    - nama: "Dek & kolam renang outdoor di area pesisir Pallangga & Biringbulu"
+      icon: "bi-check-circle-fill"
+    - nama: "Landscaping Islamic Center Gowa & Alun-Alun Sungguminasa"
+      icon: "bi-check-circle-fill"
+
+# ============================================================================
+# SECTION TENTANG KOTA (REQUIRED) - HARUS RESEARCH PER KOTA
+# ============================================================================
+tentang_kota:
+  tagline: "Pusat Niaga, Agrowisata & Sejarah Gowa"
+  deskripsi_singkat: "Kabupaten Gowa adalah pusat pertumbuhan ekonomi dan pariwisata di Sulawesi Selatan, berbatasan langsung dengan Makassar."
+  overview: "Kabupaten Gowa (luas 1.883 km², populasi ~765.000 jiwa, 18 kecamatan & 167 kelurahan/desa) merupakan daerah strategis yang menyatu dengan Makassar. Perekonomian Gowa ditopang oleh sektor perdagangan (Pasar Sentral Sungguminasa), agrowisata (kopi arabika Malino), dan properti yang tumbuh pesat."
+
+  # REQUIRED: EXACTLY 2 cards - Topik bebas, format tetap!
+  # Card bisa tentang: sejarah, ekonomi, budaya, kuliner, wisata, atau apapun menarik dari kota ini
+  tentang_kota_1:
+    - judul: "Sejarah & Warisan Kerajaan Gowa"
+      icon: "bi-clock-history"
+      subjudul: "Dari 'Ayam Jantan dari Timur' hingga Pusat Niaga Modern"
+      icon_subjudul: "bi-book"
+      deskripsi: "Kabupaten Gowa memiliki sejarah panjang sebagai pusat Kerajaan Gowa yang legendaris. Di bawah kepemimpinan Sultan Hasanuddin (1629-1670) yang dijuluki 'Ayam Jantan dari Timur', Gowa mencapai puncak kejayaannya sebagai pusat perdagangan rempah-rempah dan kekuatan maritim terbesar di Indonesia Timur. Warisan kerajaan masih terasa kuat di Gowa modern — rumah adat, tradisi budaya, dan nilai kebersamaan masih dijunjung. Situs-situs bersejarah seperti Makam Raja-Raja Gowa dan Masjid Tua Katangka di Kelurahan Katangka, Somba Opu, menjadi sakbis perjalanan panjang Gowa dari masa kejayaan menuju era modern."
+      fakta:
+        - "Kerajaan Gowa menguasai jalur perdagangan rempah Indonesia Timur pada abad ke-16 hingga ke-17"
+        - "Benteng Fort Rotterdam di Makassar adalah saksi bisu perlawanan Sultan Hasanuddin melawan VOC Belanda"
+        - "Bahasa Makassar (Mangkasara') masih aktif digunakan sehari-hari oleh masyarakat Gowa"
+    - judul: "Ekonomi & Potensi Agrowisata Gowa"
+      icon: "bi-shop"
+      subjudul: "Kopi Arabika Malino hingga Pasar Rakyat Sungguminasa"
+      icon_subjudul: "bi-graph-up"
+      deskripsi: "Perekonomian Gowa didorong oleh sektor perdagangan dan pertanian yang kuat. Pasar Sentral Sungguminasa menjadi pusat transaksi kayu Dolken, hasil bumi, dan barang kebutuhan pokok terbesar di kawasan timur Sulawesi Selatan. Sektor pertanian menjadi andalan dengan kopi arabika Malino yang mendunia — ditanam di ketinggian 1.000+ mdpl dengan cita rasa unik. Sektor properti di Gowa juga tumbuh fantastis, dengan banyak perumahan baru di Sungguminasa, Pallangga, dan Somba Opu yang menjadi penyangga permukiman Makassar. Pertumbuhan ekonomi Gowa menempatkannya sebagai salah satu daerah dengan investasi terbesar di Sulsel."
+      fakta:
+        - "Kopi arabika Malino menempati peringkat pertama produksi kopi di Sulawesi Selatan"
+        - "Pasar Sentral Sungguminasa adalah pusat perdagangan kayu Dolken terbesar di Sulsel"
+        - "Pertumbuhan properti Gowa 2x lipat rata-rata Sulsel didorong harga tanah lebih murah"
+
+  # REQUIRED: EXACTLY 2 cards - Topik bebas, format tetap!
+  # Card bisa tentang: landmark, pendidikan, bisnis, infrastruktur, atau apapun tentang kota ini
+  tentang_kota_2:
+    - judul: "Destinasi Wisata & Landmark Ikonik"
+      icon: "bi-pin-map"
+      subjudul: "Malino Highlands, Bili-Bili Dam & Islamic Center"
+      icon_subjudul: "bi-star"
+      deskripsi: "Gowa memiliki destinasi wisata pegunungan terpopuler di Sulawesi Selatan — Malino Highlands. Hamparan kebun teh, hutan pinus, dan udara sejuk (15-25°C) menjadikannya tujuan favorit keluarga. Bili-Bili Dam menjadi ikon infrastruktur dengan waduk luas dan pemandangan perbukitan. Islamic Center Gowa dengan arsitektur megah adalah landmark spiritual dan edukasi di Sungguminasa."
+      list_item:
+        - "<strong>Malino Highlands</strong> — Destinasi wisata pegunungan dengan kebun teh, pinus, dan udara sejuk — favorit wisatawan dari Makassar & sekitarnya"
+        - "<strong>Bili-Bili Dam</strong> — Bendungan raksasa dengan waduk indah, cocok untuk foto, piknik, dan menikmati matahari terbenam"
+        - "<strong>Islamic Center Gowa</strong> — Pusat keagamaan megah di Sungguminasa dengan arsitektur Islam modern yang menawan"
+        - "<strong>Alun-Alun Sungguminasa</strong> — Ruang terbuka hijau pusat kota yang ramai setiap akhir pekan"
+    - judul: "Kuliner Khas & Pusat Oleh-Oleh"
+      icon: "bi-cup"
+      subjudul: "Kopi Malino, Pisang Epe & Oleh-Oleh Gowa"
+      icon_subjudul: "bi-star"
+      deskripsi: "Kuliner Gowa menawarkan cita rasa autentik Sulawesi Selatan. Kopi arabika Malino menjadi primadona dengan cita rasa fruity dan acidity rendah, ditanam di dataran tinggi dingin Malino. Pisang Epe Gowa — pisang bakar khas yang mudah ditemukan di sepanjang poros Gowa-Makassar — menjadi camilan favorit wisatawan."
+      list_item:
+        - "<strong>Kopi Arabika Malino</strong> — Kopi specialty khas dataran tinggi Malino, ditanam di ketinggian 1.000+ mdpl, cita rasa unik"
+        - "<strong>Pisang Epe Gowa</strong> — Pisang bakar legit khas Sulawesi, mudah ditemukan di Gowa-Makassar"
+        - "<strong>Oleh-Oleh Pasar Sentral</strong> — Pusat oleh-oleh khas Gowa di Pasar Sentral Sungguminasa"
+      info_tambahan: "Pusat oleh-oleh dan kuliner khas Gowa terkonsentrasi di sepanjang poros Sungguminasa-Malino dan Pasar Sentral Sungguminasa."
+# ============================================================================
+# SECTION SOCIAL METRICS (REQUIRED)
+comment_count: 12
+share_count: 7
+---
 
 <!-- ========================================================================
      CONTENT SECTION - DO NOT MODIFY
@@ -334,7 +652,7 @@ mengapa_memilih:
 
 <section id="jual-kayu-dolken-terdekat">
 {% include reusable/block--jual-kayu-dolken-terdekat.html
-   nama_kota="isi nama kota (sama dengan nama_kota di frontmatter)"
+   nama_kota="Gowa"
 %}
 </section>
 
