@@ -1,5 +1,42 @@
 ---
 # ============================================================================
+# TEMPLATE: POST WITH CITY (Format Instruksi)
+# ============================================================================
+# File: TEMPLATE--post-with-city.md
+# Purpose: Template untuk membuat artikel post_with_city dengan konten UNIQUE
+# Version: 2.0.0 (Instruction Format)
+# Date: 2025-11-19
+#
+# CARA PENGGUNAAN:
+# 1. Copy file ini ke _post_with_city/ dengan nama: YYYY-MM-DD-jual-kayu-dolken-{kota}.md
+# 2. Siapkan 4 foto produk (PENTING: harus format WebP):
+#    a. Buat direktori:
+#       mkdir -p assets/images/posts/jual-kayu-dolken-{kota}/
+#    b. Copy 1,2,3,atau 4 foto sesuai yang diberikan ke direktori dan rename:
+#       cp foto1.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-001.jpeg
+#       cp foto2.jpg assets/images/posts/jual-kayu-dolken-{kota}/jual-kayu-dolken-{kota}-002.jpeg
+#       (dst untuk 003 dan 004)
+#    c. Convert semua JPEG ke WebP (akan menghasilkan file .webp baru):
+#       cd assets/images/posts/jual-kayu-dolken-{kota}/
+#       for file in *.jpeg; do cwebp -q 85 "$file" -o "${file%.jpeg}.webp"; done
+#    d. Hapus file JPEG yang lama (sekarang ada 2x file: .jpeg dan .webp):
+#       rm *.jpeg
+#    e. Pastikan hanya ada 4 file .webp: 001.webp, 002.webp, 003.webp, 004.webp
+# 3. Baca INSTRUKSI di setiap field (yang ditulis dengan huruf kecil)
+# 4. Ganti instruksi dengan konten yang sesuai untuk kota tersebut
+# 5. Field yang sudah ada teksnya (UPPERCASE) bisa dipakai langsung atau disesuaikan
+# 6. Test dengan rebuild.sh sebelum commit
+#
+# CATATAN PENTING:
+# - Field dengan "isi ..." atau "tulis ..." atau "berikan ..." = HARUS DITULIS MANUAL
+# - Field dengan teks lengkap (misal: "Kualitas Premium Grade A") = boleh pakai langsung
+# - Jangan ubah struktur frontmatter (nama field, hierarki, indentasi)
+# - Semua section dengan REQUIRED wajib diisi
+# - Section OPTIONAL boleh dihapus jika tidak relevan
+# - PENTING: Semua foto HARUS dalam format WebP (bukan JPEG/PNG) untuk optimasi performa
+# ============================================================================
+
+# ============================================================================
 # META INFORMATION (REQUIRED)
 # ============================================================================
 layout: node--post-with-city
@@ -30,10 +67,10 @@ keunggulan_durabilitas:
   tahan_lama: "Isi dengan keunggulan daya tahan (contoh: tahan 20-30 tahun, anti rayap)"
   kuat_padat: "Isi dengan keunggulan kekuatan dan kepadatan"
   minim_perawatan: "Isi dengan keunggulan perawatan mudah"
-keunggulan_nilai:
+keunggulan_nilai_1:
   ramah_lingkungan: "Isi dengan keunggulan ramah lingkungan"
   hemat_biaya: "Isi dengan keunggulan hemat biaya jangka panjang"
-nama_kota: "{nama_kota}"
+nama_kota: "NamaKota"
 
 # ============================================================================
 # AREA PENGIRIMAN (SIMPLE LIST) - REQUIRED
@@ -206,13 +243,13 @@ area_pengiriman_detail:
 # KEUNGGULAN PRODUK - DURABILITAS (OPTIONAL)
 # ============================================================================
 # Instruksi: Format lama (object), OPTIONAL - bisa dihapus jika pakai keunggulan_kayu_dolken (array) di bawah
-keunggulan_durabilitas:
+keunggulan_keandalan:
   tahan_lama: "jelaskan daya tahan kayu gelam 20-30 tahun, sesuaikan dengan iklim kota ini"
   anti_rayap: "jelaskan keunggulan anti rayap natural tanpa obat"
   tahan_cuaca: "jelaskan cocok untuk outdoor/indoor, tahan hujan/panas, mention karakteristik cuaca kota ini"
   kuat_padat: "jelaskan kepadatan tinggi, cocok untuk beban berat"
 
-keunggulan_nilai:
+keunggulan_nilai_2:
   ramah_lingkungan: "jelaskan material natural, sustainable, mendukung green building"
   estetika: "jelaskan warna natural coklat, cocok untuk dekorasi modern/tradisional"
 
