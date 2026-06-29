@@ -245,7 +245,7 @@ share_count: 0
 </section>
 
 <section id="jual-kayu-dolken-terdekat">
-{% include reusable/block--jual-kayu-dolken-terdekat.html
+{% include reusable/post-with-city/block--jual-kayu-dolken-terdekat.html
    nama_kota="bogor"
 %}
 </section>
