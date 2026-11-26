@@ -354,28 +354,28 @@ studi_kasus_proyek:
     warna: success
     icon: bi-building
 testimoni_residential:
-- nama: Pelanggan 1
+- nama: Pak Slamet
   lokasi: Denpasar
   rating: 5
   judul: Kualitas Terjamin
   komentar: Pesan kayu Dolken untuk pagar rumah di Denpasar. Sudah 1.5 tahun tahan
     cuaca, tidak ada retakan. Pelayanan ramah, pengiriman tepat waktu.
   warna: primary
-- nama: Pelanggan 2
+- nama: Ibu Dewi
   lokasi: Denpasar
   rating: 5
   judul: Anti Rayap Alami
   komentar: Tadinya ragu pakai kayu gelam, ternyata kokoh sekali. Pagar rumah saya
     di Denpasar sudah 2 tahun aman dari rayap. Sangat puas.
   warna: success
-- nama: Pelanggan 3
+- nama: Pak Bambang
   lokasi: Denpasar
   rating: 5
   judul: Pengiriman Cepat
   komentar: Renovasi rumah butuh kayu cepat. Pesanan saya 400 batang dia 8-10 sampai
     dalam 3 hari. Kualitas sesuai foto, harga bersaing.
   warna: info
-- nama: Pelanggan 4
+- nama: Ibu Sri Wahyuni
   lokasi: Denpasar
   rating: 5
   judul: Cocok Untuk Villa
@@ -383,28 +383,28 @@ testimoni_residential:
     hujan & angin kencang. Tamu-tamu suka desainnya.
   warna: success
 testimoni_komersial:
-- nama: Pelanggan Komersial 1
+- nama: Pak Rizal
   lokasi: Pemilik cafe, Denpasar
   rating: 5
   judul: Furniture Custom Sempurna
   komentar: Pesan bar counter & meja cafe kayu Dolken. Hasilnya premium, tamu sering
     bertanya di mana membelinya. Worth the investment.
   warna: warning
-- nama: Pelanggan Komersial 2
+- nama: H. Mulyadi
   lokasi: Pengembang perumahan, Denpasar
   rating: 5
   judul: Supplier Terpercaya
   komentar: Sudah 3 proyek perumahan pakai Dolken untuk pagar & gate. Konsisten quality,
     harga OKE, pengiriman on schedule.
   warna: info
-- nama: Pelanggan Komersial 3
+- nama: Ibu Ratna
   lokasi: Pemilik homestay, Denpasar
   rating: 5
   judul: Estetika Natural Unik
   komentar: Homestay di Denpasar pakai Dolken untuk gazebo & dek. Tamu suka banget.
     Kayunya makin cantik seiring waktu.
   warna: success
-- nama: Pelanggan Komersial 4
+- nama: Pak Agus Setiawan
   lokasi: Kontraktor, Denpasar
   rating: 5
   judul: Rangka Atap Kokoh Murah

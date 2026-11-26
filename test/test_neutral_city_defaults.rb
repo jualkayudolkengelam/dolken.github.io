@@ -30,6 +30,17 @@ class NeutralCityDefaultsTest < Minitest::Test
     end
   end
 
+  def test_testimonials_use_indonesian_names
+    %w[testimoni_residential testimoni_komersial].each do |key|
+      names = Array(DEFAULTS[key]).map { |entry| entry["nama"].to_s }
+      refute_empty names, "#{key} tidak memiliki testimoni"
+      names.each do |name|
+        refute_match(/\APelanggan(?: Komersial)? \d+\z/, name, "#{key}: nama masih generik: #{name}")
+        refute_match(/\d/, name, "#{key}: nama tidak boleh mengandung angka: #{name}")
+      end
+    end
+  end
+
   def test_substituted_defaults_have_no_placeholders
     merged = CityProfile.merge(DEFAULTS,
                                "slug" => "tangerang",
