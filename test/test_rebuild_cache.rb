@@ -24,9 +24,16 @@ class RebuildCacheTest < Minitest::Test
     refute result[:stamp_written], "clean-build tidak boleh menulis stamp"
   end
 
+  def test_build_gagal_tidak_menyisakan_cache_yang_bisa_dipakai_ulang
+    result = isolated_rebuild("build", bundle_fails: true)
+    refute result[:status].success?
+    refute result[:stamp_written], "stamp harus dihapus setelah build gagal"
+    refute result[:metadata_exists], "metadata harus dihapus setelah build gagal"
+  end
+
   private
 
-  def isolated_rebuild(command)
+  def isolated_rebuild(command, bundle_fails: false)
     Dir.mktmpdir do |tmp|
       repo = File.join(tmp, "repo")
       FileUtils.mkdir_p(File.join(repo, "scripts/lib"))
@@ -34,11 +41,14 @@ class RebuildCacheTest < Minitest::Test
       FileUtils.cp(File.expand_path("../scripts/lib/build_cache.rb", __dir__),
                    File.join(repo, "scripts/lib/build_cache.rb"))
       File.write(File.join(repo, "_config.yml"), "title: Contoh\n")
+      File.write(File.join(repo, ".jekyll-metadata"), "lama\n")
 
       bin = File.join(tmp, "bin")
       FileUtils.mkdir_p(bin)
       bundle = File.join(bin, "bundle")
-      File.write(bundle, "#!/bin/bash\nprintf '%s\\n' \"$@\" > \"$CAPTURE\"\n")
+      script = "#!/bin/bash\nprintf '%s\\n' \"$@\" > \"$CAPTURE\"\n"
+      script += "exit 1\n" if bundle_fails
+      File.write(bundle, script)
       File.chmod(0o755, bundle)
 
       capture = File.join(tmp, "captured-args")
@@ -48,11 +58,13 @@ class RebuildCacheTest < Minitest::Test
         "CAPTURE" => capture
       }
       _out, err, status = Open3.capture3(env, "bash", "rebuild.sh", command, chdir: repo)
-      assert status.success?, "rebuild.sh gagal: #{err}"
+      assert status.success?, "rebuild.sh gagal: #{err}" unless bundle_fails
       assert File.file?(capture), "bundle tidak dipanggil"
       {
         args: File.readlines(capture).map(&:chomp),
-        stamp_written: File.file?(File.join(repo, ".jekyll-cache/build-inputs.sha256"))
+        status: status,
+        stamp_written: File.file?(File.join(repo, ".jekyll-cache/build-inputs.sha256")),
+        metadata_exists: File.file?(File.join(repo, ".jekyll-metadata"))
       }
     end
   end

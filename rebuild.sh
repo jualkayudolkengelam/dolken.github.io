@@ -106,6 +106,12 @@ build_site() {
         fi
     else
         print_error "Build failed!"
+        if [[ "$mode" == "incremental" ]]; then
+            # Jangan biarkan build gagal menyisakan metadata yang membuat
+            # attempt berikutnya melewati render dan mempertahankan HTML parsial.
+            rm -f .jekyll-metadata
+            rm -f .jekyll-cache/build-inputs.sha256
+        fi
         exit 1
     fi
 }

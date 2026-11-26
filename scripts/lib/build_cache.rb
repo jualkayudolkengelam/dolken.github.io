@@ -2,7 +2,6 @@
 
 require "digest"
 require "fileutils"
-require "yaml"
 
 # Tanda tangan input build dipakai untuk membatalkan cache inkremental Jekyll.
 # Halaman yang merender metadata atau keanggotaan koleksi (index, sitemap,
@@ -11,7 +10,6 @@ require "yaml"
 module BuildCache
   SHARED_FILES = %w[Gemfile Gemfile.lock _config.yml _config_local.yml].freeze
   SHARED_DIRS = %w[_data _includes _layouts _plugins assets/css assets/js].freeze
-  ROOT_PAGE_EXTENSIONS = %w[.html .xml .md].freeze
   STAMP = "build-inputs.sha256"
 
   module_function
@@ -55,28 +53,24 @@ module BuildCache
     :reset
   end
 
+  # Semua direktori `_...` adalah kandidat koleksi Jekyll. Memakai daftar
+  # direktori, bukan konfigurasi YAML, menghindari perbedaan parser antara
+  # script ini dan Jekyll serta mencakup koleksi dari `_config_local.yml`.
   def collection_dirs(root)
-    dirs = ["_posts"]
-    config = File.join(root, "_config.yml")
-    if File.file?(config)
-      begin
-        data = YAML.safe_load(File.read(config), aliases: true)
-        collections = data["collections"] if data.is_a?(Hash)
-        dirs.concat(collections.keys.map { |name| "_#{name}" }) if collections.is_a?(Hash)
-      rescue Psych::Exception
-        # Konfigurasi tidak terbaca; _posts tetap diperiksa.
-      end
+    dirs = Dir.children(root).select do |name|
+      name.start_with?("_") && name != "_site" && File.directory?(File.join(root, name))
     end
-    dirs.uniq
+    dirs << "_posts" unless dirs.include?("_posts")
+    dirs.sort.uniq
   end
   private_class_method :collection_dirs
 
+  # Frontmatter boleh memakai ekstensi apa pun; yang menentukan adalah baris
+  # pertama `---`. File tersembunyi (dotfile) tidak dianggap halaman.
   def root_pages(root)
     Dir.children(root).select do |name|
       absolute = File.join(root, name)
-      ROOT_PAGE_EXTENSIONS.include?(File.extname(name)) &&
-        File.file?(absolute) &&
-        File.foreach(absolute).first.to_s.strip == "---"
+      !name.start_with?(".") && File.file?(absolute) && File.foreach(absolute).first.to_s.strip == "---"
     end.sort.map { |name| [name, File.join(root, name)] }
   end
   private_class_method :root_pages
@@ -86,7 +80,7 @@ module BuildCache
       base = File.join(root, directory)
       next [] unless File.directory?(base)
 
-      Dir.glob(File.join(base, "**", "*")).select { |path| File.file?(path) }
+      Dir.glob(File.join(base, "**", "*"), File::FNM_DOTMATCH).select { |path| File.file?(path) }
     end.map { |absolute| [absolute.delete_prefix("#{root}/"), absolute] }.sort_by(&:first)
   end
   private_class_method :files_in

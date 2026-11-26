@@ -4,7 +4,9 @@
 
 **Goal:** Memangkas waktu `./rebuild.sh build` dari ~12 detik menjadi ~2 detik untuk build hangat tanpa mengubah HTML yang dihasilkan.
 
-**Architecture:** Logika checksum ditempatkan di modul Ruby `BuildCache` agar mudah diuji. `rebuild.sh` memanggilnya sebelum build; jika input bersama berubah, cache Jekyll dihapus supaya regenerasi penuh terjadi. Jekyll `--incremental` menangani per-artikel lewat mtime, sementara checksum kita menangani file yang tidak dilacak Jekyll.
+**Architecture:** Logika checksum ditempatkan di modul Ruby `BuildCache` agar mudah diuji. `rebuild.sh` memanggilnya sebelum build; jika input berubah, cache Jekyll dihapus supaya regenerasi penuh terjadi. Signature mencakup seluruh isi dokumen koleksi dan halaman root ber-frontmatter karena halaman indeks, sitemap, dan daftar blog tidak dibatalkan oleh regenerator Jekyll saat metadata koleksi berubah. Jekyll `--incremental` menangani render per-artikel setelah itu.
+
+> **Status:** rencana ini sudah dieksekusi dan diperbarui sesuai implementasi final. Tag rollback: `pre-build-cache-2026-11-26` di `bd1be50`. Jika ada perbedaan dengan kode, ikuti `docs/DESAIN-CACHE-BUILD.md` dan `scripts/lib/build_cache.rb`.
 
 **Tech Stack:** Bash (`rebuild.sh`), Ruby 3.x + Minitest, Jekyll 4.3.4, `sha256sum` tidak dipakai langsung (hash dihitung dengan `Digest::SHA256`).
 
@@ -26,6 +28,8 @@
 - Perubahan isi artikel atau halaman root harus mengubah signature → diuji di Task 1 (`test_isi_artikel_mengubah_signature`, `test_halaman_root_mengubah_signature`).
 - `build` harus memakai `--incremental`, `clean-build` tidak boleh memakainya → diuji di Task 2 (`test_build_memakai_incremental`, `test_clean_build_tanpa_incremental`).
 - Hasil build inkremental harus identik dengan build penuh → diverifikasi di Task 3 dengan `diff -rq` setelah mengecualikan `sitemap.xml`, `feed.xml`, dan 5 halaman produk yang memakai `sample: 5` (pengacakan sudah ada sebelum perubahan ini).
+- Build inkremental yang gagal harus membatalkan cache → diuji di Task 2 (`test_build_gagal_tidak_menyisakan_cache_yang_bisa_dipakai_ulang`).
+- Konfigurasi yang gagal di-parse atau file tersembunyi tidak boleh menyempitkan cakupan signature → diuji di Task 1 (`test_config_rusak_tetap_menghash_direktori_produk`, `test_file_tersembunyi_di_shared_dir_mengubah_signature`).
 
 ---
 
@@ -104,6 +108,18 @@ class BuildCacheTest < Minitest::Test
     # ubah index.html, lalu refute_equal
   end
 
+  def test_halaman_root_json_berfrontmatter_mengubah_signature
+    # buat data.json dengan baris pertama ---, ubah isinya, lalu refute_equal
+  end
+
+  def test_config_rusak_tetap_menghash_direktori_produk
+    # tulis _config.yml yang rusak, tambah _products/*.md, lalu refute_equal
+  end
+
+  def test_file_tersembunyi_di_shared_dir_mengubah_signature
+    # ubah _includes/.partial.html, lalu refute_equal
+  end
+
   def test_prepare_menghapus_cache_basih_dan_menulis_signature
     Dir.mktmpdir do |root|
       make_root(root)
@@ -126,12 +142,15 @@ class BuildCacheTest < Minitest::Test
 
   def make_root(root)
     files = {
-      "_config.yml" => "title: Contoh\n",
+      "_config.yml" => "title: Contoh\ncollections:\n  products:\n    output: true\n  post_with_city:\n    output: true\n",
       "_data/area_pengiriman.yml" => "kota: [Tangerang]\n",
       "_layouts/default.html" => "{{ content }}\n",
+      "_includes/.partial.html" => "lama\n",
       "assets/css/main.css" => "body { color: black; }\n",
       "_posts/2026-01-01-contoh.md" => "---\ntitle: Contoh\n---\n",
-      "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md" => "---\ntitle: Tangerang\n---\n"
+      "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md" => "---\ntitle: Tangerang\n---\n",
+      "_products/kayu-dolken-10-14cm.md" => "---\ntitle: 10-14cm\nprice: 100000\n---\n",
+      "index.html" => "---\nlayout: default\n---\n{{ site.products.size }}\n"
     }
     files.each do |relative, content|
       path = File.join(root, relative)
@@ -152,13 +171,16 @@ Expected: FAIL dengan `cannot load such file -- .../scripts/lib/build_cache`
 Definisikan konstanta:
 - `SHARED_FILES = %w[Gemfile Gemfile.lock _config.yml _config_local.yml]`
 - `SHARED_DIRS = %w[_data _includes _layouts _plugins assets/css assets/js]`
-- `ARTICLE_DIRS = %w[_posts _post_with_city]`
+- `STAMP = "build-inputs.sha256"`
 
 `signature(root)` bangun string secara deterministik:
 - untuk tiap path di `SHARED_FILES` yang `File.file?`, tambahkan `"F\t#{rel}\t#{Digest::SHA256.file(abs).hexdigest}\n"`
-- untuk tiap file di `SHARED_DIRS` (rekursif, `File.file?`) yang diurutkan berdasarkan path relatif, tambahkan baris `F` yang sama
-- untuk tiap `*.md` di `ARTICLE_DIRS` yang diurutkan berdasarkan path relatif, tambahkan `"N\t#{rel}\n"` (nama saja, bukan isi)
+- untuk tiap file di `SHARED_DIRS` (rekursif, termasuk dotfile) yang diurutkan berdasarkan path relatif, tambahkan baris `F` yang sama
+- untuk tiap file di semua direktori `_*` kecuali `_site` (koleksi Jekyll, termasuk dotfile), tambahkan `"C\t#{rel}\t#{Digest::SHA256.file(abs).hexdigest}\n"` — isi penuh, bukan hanya nama; `_posts` selalu disertakan
+- untuk tiap berkas root yang bukan dotfile dan baris pertamanya `---`, tambahkan `"P\t#{rel}\t#{Digest::SHA256.file(abs).hexdigest}\n"` (ekstensi apa pun)
 - kembalikan `Digest::SHA256.hexdigest(string)`
+
+Jangan parse `_config.yml` untuk menentukan daftar koleksi: gunakan direktori `_*` yang ada agar tidak ada perbedaan parser dengan Jekyll dan koleksi di `_config_local.yml` tetap tercakup.
 
 `prepare` baca `.jekyll-cache/build-inputs.sha256`; jika isinya sama dengan signature kembalikan `:reuse`. Jika berbeda atau tidak ada: `FileUtils.rm_rf` cache dir, `FileUtils.rm_f` metadata file, `mkdir_p` cache dir, tulis signature + newline, kembalikan `:reset`.
 
@@ -167,7 +189,7 @@ Tambahkan CLI di bawah file: jika `$PROGRAM_NAME == __FILE__` dan `ARGV[0] == "p
 - [ ] **Step 4: Jalankan test dan pastikan hijau**
 
 Run: `ruby test/test_build_cache.rb`
-Expected: `5 runs, ... assertions, 0 failures, 0 errors`
+Expected: `13 runs, ... assertions, 0 failures, 0 errors`
 
 - [ ] **Step 5: Commit**
 
@@ -193,22 +215,27 @@ git commit -m "feat: add build input signature and cache reset helper"
 
 - [ ] **Step 1: Tulis test yang gagal**
 
-Buat `test/test_rebuild_cache.rb` dengan `require "open3"`, `require "fileutils"`, `require "minitest/autorun"`, `require "tmpdir"` dan dua test `test_build_memakai_incremental` serta `test_clean_build_tanpa_incremental`. Helper `isolated_rebuild` harus:
+Buat `test/test_rebuild_cache.rb` dengan `require "open3"`, `require "fileutils"`, `require "minitest/autorun"`, `require "tmpdir"` dan tiga test `test_build_memakai_incremental`, `test_clean_build_tanpa_incremental`, serta `test_build_gagal_tidak_menyisakan_cache_yang_bisa_dipakai_ulang`. Helper `isolated_rebuild(command, bundle_fails: false)` harus:
 - menyalin `rebuild.sh` dan `scripts/lib/build_cache.rb` ke direktori `tmp/repo`
 - menulis `_config.yml` minimal di sana
+- menulis `.jekyll-metadata` palsu di repo agar kasus gagal punya metadata untuk dibatalkan
 - membuat `tmp/bin/bundle` berisi:
 
 ```bash
 #!/bin/bash
 printf '%s\n' "$@" > "$CAPTURE"
+# ditambahkan `exit 1` saat bundle_fails: true
 ```
 
 - menjalankan `Open3.capture3` dengan env `HOME => tmp`, `PATH => "#{tmp}/bin:#{ENV.fetch('PATH')}"`, `CAPTURE => capture_path`, `chdir => tmp/repo`, argumen `["bash", "rebuild.sh", command]`
-- mengembalikan `File.readlines(capture_path).map(&:chomp)`
+- mengembalikan hash `{ args:, status:, stamp_written:, metadata_exists: }`
 
 Assertions:
-- `test_build_memakai_incremental`: `assert_equal "build", args.first`, `assert_includes args, "--future"`, `assert_includes args, "--incremental"`
-- `test_clean_build_tanpa_incremental`: `assert_equal "build", args.first`, `assert_includes args, "--future"`, `refute_includes args, "--incremental"`
+- `test_build_memakai_incremental`: `assert_equal %w[exec jekyll build], args[0..2]`, `assert_includes args, "--future"`, `assert_includes args, "--incremental"`, `assert stamp_written`
+- `test_clean_build_tanpa_incremental`: `assert_equal %w[exec jekyll build], args[0..2]`, `assert_includes args, "--future"`, `refute_includes args, "--incremental"`, `refute stamp_written`
+- `test_build_gagal_tidak_menyisakan_cache_yang_bisa_dipakai_ulang`: `refute status.success?`, `refute stamp_written`, `refute metadata_exists`
+
+Argumen pertama yang diamati dari `bundle exec jekyll ...` adalah `exec`, bukan `build`; ini tercatat sebagai ruling di ledger eksekusi.
 
 - [ ] **Step 2: Jalankan test dan pastikan gagal**
 
@@ -225,6 +252,8 @@ local build_args=(build --config "$config_file" --destination "$OUTPUT_DIR" --fu
 if bundle exec jekyll "${build_args[@]}"; then ...
 ```
 
+Pada cabang gagal dari `bundle exec jekyll`, saat `mode == "incremental"`, hapus `.jekyll-metadata` dan `.jekyll-cache/build-inputs.sha256` sebelum `exit 1` agar percobaan berikutnya tidak mewarisi metadata dari build yang gagal.
+
 Di `main()`, ubah:
 - `build) build_site "$config" incremental ;;`
 - `clean-build|rebuild) clean_build; build_site "$config" full ;;`
@@ -234,7 +263,7 @@ Biarkan `serve|server` apa adanya.
 - [ ] **Step 4: Jalankan test dan pastikan hijau**
 
 Run: `ruby test/test_rebuild_cache.rb`
-Expected: `2 runs, ... assertions, 0 failures, 0 errors`
+Expected: `3 runs, ... assertions, 0 failures, 0 errors`
 
 - [ ] **Step 5: Commit**
 

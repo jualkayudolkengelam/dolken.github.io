@@ -70,6 +70,37 @@ class BuildCacheTest < Minitest::Test
     end
   end
 
+  def test_halaman_root_json_berfrontmatter_mengubah_signature
+    Dir.mktmpdir do |root|
+      make_root(root)
+      page = File.join(root, "data.json")
+      File.write(page, "---\nlayout: null\n---\n{}\n")
+      first = BuildCache.signature(root)
+      File.write(page, "---\nlayout: null\n---\n{\"baru\": true}\n")
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
+  def test_config_rusak_tetap_menghash_direktori_produk
+    Dir.mktmpdir do |root|
+      make_root(root)
+      File.write(File.join(root, "_config.yml"), "collections: [rusak\n")
+      first = BuildCache.signature(root)
+      FileUtils.touch(File.join(root, "_products/kayu-dolken-11-12cm.md"))
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
+  def test_file_tersembunyi_di_shared_dir_mengubah_signature
+    Dir.mktmpdir do |root|
+      make_root(root)
+      partial = File.join(root, "_includes/.partial.html")
+      first = BuildCache.signature(root)
+      File.write(partial, "baru\n")
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
   def test_prepare_menghapus_cache_basih_dan_menulis_signature
     Dir.mktmpdir do |root|
       make_root(root)
@@ -119,10 +150,12 @@ class BuildCacheTest < Minitest::Test
       "_config.yml" => "title: Contoh\ncollections:\n  products:\n    output: true\n  post_with_city:\n    output: true\n",
       "_data/area_pengiriman.yml" => "kota: [Tangerang]\n",
       "_layouts/default.html" => "{{ content }}\n",
+      "_includes/.partial.html" => "lama\n",
       "assets/css/main.css" => "body { color: black; }\n",
       "_posts/2026-01-01-contoh.md" => "---\ntitle: Contoh\n---\n",
       "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md" => "---\ntitle: Tangerang\n---\n",
       "_products/kayu-dolken-10-14cm.md" => "---\ntitle: 10-14cm\nprice: 100000\n---\n",
+      "_products/.keep" => "",
       "index.html" => "---\nlayout: default\n---\n{{ site.products.size }}\n"
     }
     files.each do |relative, content|

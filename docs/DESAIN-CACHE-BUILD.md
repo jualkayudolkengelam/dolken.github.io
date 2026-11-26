@@ -28,14 +28,18 @@ Logika checksum ditempatkan di `scripts/lib/build_cache.rb` (modul `BuildCache`)
 1. Hitung `signature` = SHA-256 dari gabungan konten:
    - `_config.yml`, `_config_local.yml`, `Gemfile`, `Gemfile.lock` (jika ada)
    - `_data/**`, `_includes/**`, `_layouts/**`, `_plugins/**`, `assets/css/**`, `assets/js/**`
-   - semua dokumen koleksi yang didefinisikan di `_config.yml` (`_posts/**`, `_post_with_city/**`, `_products/**`) — isi penuh, bukan hanya nama
-   - file root ber-frontmatter (`index.html`, `blog.html`, `sitemap.xml`, dan sejenisnya)
+   - semua berkas di direktori `_*` kecuali `_site` (`_posts/**`, `_post_with_city/**`, `_products/**`, dan koleksi lain) — isi penuh, bukan hanya nama
+   - berkas root yang baris pertamanya `---`, tanpa memandang ekstensi (`index.html`, `blog.html`, `sitemap.xml`, dan sejenisnya)
+   - file tersembunyi di dalam direktori bersama ikut di-hash (partial Sass/include yang diawali titik)
+
+Daftar direktori koleksi diambil dari direktori `_*` yang ada, bukan dari parsing YAML, agar tidak ada perbedaan perilaku dengan parser Jekyll dan koleksi di `_config_local.yml` tetap tercakup.
 2. Bandingkan `signature` dengan isi `.jekyll-cache/build-inputs.sha256`.
    - Jika berbeda atau file tidak ada: hapus `.jekyll-cache` dan `.jekyll-metadata`, lalu tulis `signature` yang baru.
 3. Mode `incremental` menjalankan `bundle exec jekyll build --config "$config_file" --destination "$OUTPUT_DIR" --future --incremental`. Mode `full` menjalankan perintah yang sama tanpa `--incremental`.
-4. `build` memakai mode `incremental`.
-5. `clean-build` tetap memanggil `clean_build()` lebih dulu, lalu `build_site "$config" full`, sehingga benar-benar build penuh.
-6. `serve` tidak diubah agar live-reload tetap berperilaku seperti sebelumnya.
+4. Jika build inkremental gagal (mode `incremental`), `.jekyll-metadata` dan stamp dihapus. Percobaan berikutnya tidak boleh mewarisi metadata yang membuat Jekyll melewati render dan mempertahankan HTML parsial.
+5. `build` memakai mode `incremental`.
+6. `clean-build` tetap memanggil `clean_build()` lebih dulu, lalu `build_site "$config" full`, sehingga benar-benar build penuh.
+7. `serve` tidak diubah agar live-reload tetap berperilaku seperti sebelumnya.
 
 ## Kenapa seluruh dokumen koleksi ikut di-hash
 
@@ -45,7 +49,7 @@ Konsekuensinya: setiap perubahan pada artikel atau produk memicu build penuh. Bu
 
 ## Verifikasi
 
-- Test Minitest memastikan: signature stabil bila tidak ada perubahan; signature berubah saat `_data/`, frontmatter artikel, isi artikel, produk, atau halaman root diubah; cache terhapus saat signature berubah; `build` menulis stamp dan `clean-build` tidak.
+- Test Minitest memastikan: signature stabil bila tidak ada perubahan; signature berubah saat `_data/`, frontmatter artikel, isi artikel, produk, halaman root (semua ekstensi), konfigurasi rusak, atau file tersembunyi diubah; cache terhapus saat signature berubah; `build` menulis stamp, `clean-build` tidak, dan build gagal menghapus stamp serta metadata.
 - Bandingkan hasil build penuh dan build inkremental ke dua direktori berbeda. HTML dan sitemap harus identik, kecuali:
   - `sitemap.xml` dan `feed.xml` yang memakai waktu build;
   - 5 halaman produk yang memakai `sample: 5` di `_includes/products/block--product-area-pengiriman.html`. Daftar kota di halaman tersebut diacak ulang pada setiap build penuh, jadi sudah tidak identik bahkan sebelum perubahan ini. Build inkremental justru mempertahankan daftar yang terakhir dihasilkan.
@@ -59,7 +63,8 @@ Konsekuensinya: setiap perubahan pada artikel atau produk memicu build penuh. Bu
 | Risiko | Mitigasi |
 |---|---|
 | Isi artikel berubah tetapi mtime tidak berubah (misalnya `git checkout` yang mempertahankan mtime) | Isi artikel masuk signature, jadi signature tetap berubah dan cache di-reset. |
-| Plugin atau layout baru mengubah cara render | Semua file `_plugins/`, `_layouts/`, `_includes/` masuk dalam signature. |
+| Plugin, layout, atau include tersembunyi baru mengubah cara render | Semua file `_plugins/`, `_layouts/`, `_includes/` termasuk dotfile masuk dalam signature. |
+| Build gagal di tengah penulisan output | Stamp dan `.jekyll-metadata` dihapus pada cabang gagal, sehingga percobaan berikutnya merender ulang. |
 | Perubahan Jekyll/Kubernetes mengubah perilaku inkremental | `Gemfile.lock` masuk signature; rollback ke tag di bawah. |
 
 ## Rollback
