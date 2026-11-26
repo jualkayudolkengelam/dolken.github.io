@@ -16,6 +16,7 @@ title: "Jual Kayu Dolken Karawang | Gratis Ongkir KIIC & Cikampek | Hub. 0813114
 description: "Jual kayu dolken gelam Karawang kualitas premium untuk industri & konstruksi. Gratis ongkir KIIC, Cikampek, Telukjambe. Harga mulai Rp 15.000/batang. COD tersedia."
 date: 2025-11-19
 author: Admin
+author_url: https://jualkayudolken.com
 image: /assets/images/posts/jual-kayu-dolken-karawang/jual-kayu-dolken-karawang-001.webp
 image_alt: "Kayu dolken gelam kualitas industri untuk proyek konstruksi Karawang, tersedia pengiriman gratis ke kawasan KIIC, Cikampek, Telukjambe dengan sistem COD, cocok untuk pagar pabrik dan konstruksi bangunan"
 images:
@@ -44,6 +45,18 @@ area_pengiriman:
   - "Purwakarta (Bungursari, Munjul, Nagrikidul)"
   - "Rengasdengklok (Kalangsari, Duren Mekar)"
   - "Kosambi (Kosambi Dalam, Kosambi Barat)"
+
+# ============================================================================
+# KEUNGGULAN - DURABILITAS & NILAI (REQUIRED)
+# ============================================================================
+keunggulan_durabilitas:
+  tahan_lama: "Ketahanan luar biasa mencapai 20-30 tahun tanpa perlakuan khusus. Sangat sesuai untuk zona industri Karawang dengan kondisi luar ruangan dan tekanan berat terus-menerus."
+  anti_rayap: "Tidak perlu obat anti rayap karena struktur kayu sangat rapat secara alami menangkal serangan rayap. Tepat untuk gudang dan tempat penyimpanan di zona lembab."
+  tahan_cuaca: "Pas untuk luar dan dalam ruangan, bertahan terhadap hujan, panas, dan kelembaban tinggi. Tidak gampang lapuk meski terpapar cuaca keras kawasan industri Karawang."
+  kuat_padat: "Kerapatan kayu sangat tinggi menghadirkan kekuatan maksimal untuk menopang tekanan berat peralatan industri. Sempurna untuk penopang struktur pabrik dan gudang."
+keunggulan_nilai:
+  ramah_lingkungan: "Material alami 100% berkelanjutan dan dapat terurai. Mendukung konsep industri hijau yang banyak diterapkan di fasilitas manufaktur modern Karawang."
+  estetika: "Warna coklat natural yang menawan menghadirkan kesan profesional dan natural. Pas untuk zona kantor pabrik, pertamanan, dan fasilitas umum perusahaan."
 
 # ============================================================================
 # KEUNGGULAN - PRODUK (REQUIRED)
