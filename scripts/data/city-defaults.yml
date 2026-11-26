@@ -1,0 +1,574 @@
+---
+layout: node--post-with-city
+title: Jual Kayu Dolken di {{nama_kota}} – Hubungi 0813-1140-0177, Gratis Ongkir ke
+  Seluruh {{nama_kota}}!
+description: Jual Kayu Dolken {{nama_kota}} – kualitas premium, tahan lama, harga
+  mulai Rp15.000. Gratis ongkir ke seluruh {{nama_kota}}! Hubungi 0813-1140-0177 untuk
+  pemesanan.
+excerpt: Jual kayu dolken premium di {{nama_kota}} – gratis ongkir, harga terbaik,
+  barang berkualitas.
+date: "{{tanggal}}"
+author: Admin
+image: "/assets/images/posts/jual-kayu-dolken-{{slug}}/jual-kayu-dolken-{{slug}}-001.webp"
+image_alt: Jual Kayu Dolken {{nama_kota}} — kualitas premium
+images:
+- "/assets/images/posts/jual-kayu-dolken-{{slug}}/jual-kayu-dolken-{{slug}}-001.webp"
+images_alt:
+- "{{nama_kota}}"
+last_modified_at: "{{tanggal}}"
+keywords: kayu dolken {{slug}}, jual kayu {{slug}}, kayu beton {{slug}}, kayu tahan
+  cuaca {{slug}}, kayu murah {{slug}}, kayu bekisting {{slug}}, dolken {{slug}}, kayu
+  bulat {{slug}}
+rating: 5
+review_count: 8
+author_url: https://jualkayudolken.com
+show_products: true
+nama_kota: "{{nama_kota}}"
+area_pengiriman:
+- Somba Opu
+- Pallangga
+- Barombong
+- Bajeng
+- Bontonompo
+- Tinggimoncong
+- Bontomarannu
+- Parigi
+- Pattallassang
+- Biringbulu
+keunggulan_produk:
+- judul: Kualitas Premium, Tahan Cuaca Ekstrem
+  deskripsi: Kayu Dolken tahan lama hingga 30 tahun, cocok untuk iklim tropis {{nama_kota}}
+    — dari dataran rendah Sungguminasa hingga pegunungan Malino.
+  warna: warning
+  icon: bi-award-fill
+- judul: Harga Terjangkau Mulai Rp15.000
+  deskripsi: Mulai Rp15.000 per batang, harga terbaik di {{nama_kota}} untuk kualitas
+    setara kayu keras.
+  warna: danger
+  icon: bi-cash-coin
+- judul: Stok Lengkap & Selalu Ready
+  deskripsi: Diameter 2-12 cm tersedia, stok melimpah siap kirim ke seluruh {{nama_kota}}.
+  warna: info
+  icon: bi-boxes
+keunggulan_layanan:
+- judul: Gratis Ongkir ke Seluruh {{nama_kota}}
+  deskripsi: Nikmati pengiriman gratis ke 13 kecamatan di {{nama_kota}} — dari Sungguminasa
+    hingga Malino. Minimal order 50 batang.
+  warna: success
+  icon: bi-truck
+- judul: COD Tersedia, Bayar Setelah Terima
+  deskripsi: Sistem COD aman — cek kualitas kayu Dolken sebelum bayar. Berlaku untuk
+    wilayah {{nama_kota}} dan Makassar.
+  warna: primary
+  icon: bi-shield-check
+- judul: Konsultasi Gratis & Fast Response
+  deskripsi: Tim kami siap konsultasi via WA, bantu pilih ukuran dan jumlah kayu Dolken
+    yang tepat untuk proyek Anda.
+  warna: secondary
+  icon: bi-headset
+area_pengiriman_detail:
+  judul_jangkauan: Jangkauan Pengiriman ke Seluruh {{nama_kota}}
+  deskripsi_jangkauan: Kami melayani pengiriman gratis ke 13+ kecamatan di {{nama_kota}}
+    — dari Sungguminasa hingga Malino. Gratis ongkir!
+  judul_pusat: Wilayah Pusat {{nama_kota}} — Sungguminasa & Sekitarnya
+  deskripsi_pusat: Pusat {{nama_kota}} meliputi Somba Opu (Sungguminasa), Pallangga,
+    dan Barombong — kawasan bisnis, pemerintahan, dan pusat perbelanjaan dengan akses
+    mudah dari Makassar.
+  judul_utara_selatan: Wilayah Utara & Selatan {{nama_kota}}
+  deskripsi_utara_selatan: Bagian utara {{nama_kota}} (Bajeng, Bontonompo) dekat Makassar
+    dan berkembang pesat. Bagian selatan (Biringbulu, Bungaya) tumbuh sebagai kawasan
+    hunian dan agrowisata.
+  judul_pengembangan: Wilayah Pengembangan {{nama_kota}} — Potensi Wisata & Agrowisata
+  deskripsi_pengembangan: Wilayah seperti Tinggimoncong (Malino), Parigi, dan Tompobulu
+    dikenal sebagai destinasi wisata pegunungan dan agrowisata. Proyek perumahan dan
+    villa terus berkembang.
+  judul_lainnya: Kecamatan Lainnya di {{nama_kota}}
+  judul_landmark: Landmark & Lokasi Strategis di {{nama_kota}}
+  deskripsi_landmark: Landmark seperti Balla Lompoa, Alun-Alun Sungguminasa, dan Pasar
+    Sentral {{nama_kota}} mendorong aktivitas bisnis dan proyek konstruksi.
+  judul_wisata: Destinasi Wisata di {{nama_kota}}
+  deskripsi_wisata: "{{nama_kota}} memiliki wisata alam pegunungan seperti Malino
+    Highlands, Air Terjun Malino, dan Pemandian Air Panas Leija yang menjadi favorit
+    wisatawan."
+  judul_fasilitas: Fasilitas Pendidikan & Komersial di {{nama_kota}}
+  deskripsi_fasilitas: Kampus UMI, {{nama_kota}} Town Center (GTC), RSUD Syekh Yusuf,
+    dan Bandara Sultan Hasanuddin (area {{nama_kota}}) menjadikan {{nama_kota}} kota
+    strategis.
+  wilayah_pusat:
+  - nama: Somba Opu
+    kelurahan:
+    - Sungguminasa, Samata, Tombolo, Bontoramba
+    warna: primary
+  - nama: Pallangga
+    kelurahan:
+    - Mangalli, Pangkabinanga, Taeng, Jene'tallasa
+    warna: success
+  - nama: Barombong
+    kelurahan:
+    - Moncobalang, Lembang, Pacarring, Tinggimae
+    warna: info
+  wilayah_utara_selatan:
+  - nama: Bajeng
+    kelurahan:
+    - Bontomationgi, Limbung, Kalebajeng, Mata Allo
+    warna: danger
+  - nama: Bontonompo
+    kelurahan:
+    - Bontonompo, Kalapalaga, Kalaserena
+    warna: warning
+  wilayah_pengembangan:
+  - nama: Tinggimoncong
+    kelurahan:
+    - Malino, Bontolerung, Gantarang
+    warna: primary
+  - nama: Parigi
+    kelurahan:
+    - Parigi, Manuju, Bilalang
+    warna: info
+  - nama: Tompobulu
+    kelurahan:
+    - Tompobulu, Tanete, Bongo Ramba
+    warna: wood
+  landmark_wisata:
+  - nama: Balla Lompoa Museum
+    icon: bi-building
+    warna: warning
+  - nama: Air Terjun Malino
+    icon: bi-building
+    warna: warning
+  - nama: Pemandian Air Panas Leija
+    icon: bi-building
+    warna: warning
+  - nama: Puncak Bila-Bila
+    icon: bi-building
+    warna: warning
+  landmark_fasilitas:
+  - nama: "{{nama_kota}} Town Center (GTC)"
+    icon: bi-cart
+    warna: info
+  - nama: Pasar Sentral Sungguminasa
+    icon: bi-cart
+    warna: primary
+  - nama: Universitas Muslim Indonesia (UMI)
+    icon: bi-mortarboard
+    warna: success
+keunggulan_durabilitas:
+  tahan_lama: Kayu Dolken {{nama_kota}} tahan 20-30 tahun tanpa treatment, cocok untuk
+    iklim tropis lembab {{nama_kota}} — dari pesisir Sungguminasa hingga pegunungan
+    Malino.
+  anti_rayap: Tekstur padat kayu gelam alami menolak rayap tanpa obat kimia, ideal
+    untuk rumah di wilayah lahan gambut {{nama_kota}}.
+  tahan_cuaca: Tahan hujan deras musim penghujan {{nama_kota}} dan panas terik musim
+    kemarau — cocok indoor & outdoor.
+  kuat_padat: Kepadatan tinggi (0.8-1.0 g/cm³), kekuatan tekan >50 MPa — kuat untuk
+    struktur penyangga atap & lantai.
+keunggulan_nilai:
+  ramah_lingkungan: Material natural 100% sustainable, biodegradable, mendukung sertifikasi
+    green building proyek di {{nama_kota}}.
+  estetika: Warna coklat merah natural khas kayu Dolken, semakin cantik seiring waktu
+    — cocok desain rumah modern & tradisional {{nama_kota}}.
+keunggulan_kayu_dolken:
+- judul: Tahan Lama 20-30 Tanah Tanpa Treatment
+  deskripsi: Kayu Dolken {{nama_kota}} tahan hingga 30 tahun tanpa treatment kimia,
+    cocok untuk iklim tropis lembab dari pesisir hingga pegunungan.
+  warna: success
+  icon: bi-clock-history
+- judul: Anti Rayap Alami Tanpa Obat
+  deskripsi: Tekstur padat dan minyak alami kayu gelam menolak rayap natural — ideal
+    untuk rumah di lahan gambut & dataran rendah {{nama_kota}}.
+  warna: danger
+  icon: bi-bug
+- judul: 'Tahan Cuaca Ekstrem: Hujan & Panas'
+  deskripsi: Tahan hujan deras musim penghujan & panas terik musim kemarau {{nama_kota}}
+    — cocok aplikasi indoor maupun outdoor.
+  warna: primary
+  icon: bi-cloud-rain
+- judul: Kuat & Padat untuk Beban Berat
+  deskripsi: Kepadatan 0.8-1.0 g/cm³, kekuatan tekan >50 MPa — kuat untuk struktur
+    penyangga atap, lantai, dan kolom.
+  warna: warning
+  icon: bi-hammer
+- judul: Ramah Lingkungan & Sustainable
+  deskripsi: Material natural 100% biodegradable, mendukung green building — pilihan
+    proyek eco-friendly di {{nama_kota}}.
+  warna: success
+  icon: bi-recycle
+- judul: Estetika Natural Coklat Merah Muda
+  deskripsi: Warna coklat merah khas Dolken semakin cantik seiring waktu, cocok desain
+    rumah modern & tradisional {{nama_kota}}.
+  warna: info
+  icon: bi-palette
+aplikasi_kayu_dolken:
+  deskripsi: Kayu Dolken serbaguna — dari konstruksi berat hingga dekorasi premium,
+    cocok untuk proyek di {{nama_kota}}.
+  konstruksi_dekorasi:
+  - judul: Konstruksi & Bangunan
+    icon: bi-building
+    warna: wood
+    aplikasi:
+    - Struktur atap rumah & villa di Malino & Biringbulu
+    - Kolom & balok kayu utama perumahan Sungguminasa
+    - Lantai kayu tahan beban untuk rumah 2 lantai
+    - Pagar & gate kayu solid area perumahan {{nama_kota}}
+    - Rangka carport & gazebo taman rumah mewah
+  - judul: Dekorasi & Landscaping
+    icon: bi-palette-fill
+    warna: primary
+    aplikasi:
+    - Dinding aksen kayu ruang tamu & kamar tidur
+    - Dek kayu outdoor taman & kolam renang
+    - Pergola & gazebo kayu taman villa Malino
+    - 'Furniture taman: meja, kursi, bali-bali kayu'
+    - Pagar dekoratif & trellis tanaman merambat
+  furniture_komersial:
+  - judul: Furniture & Lainnya
+    icon: bi-chair-fill
+    warna: info
+    aplikasi:
+    - Meja & kursi makan kayu solid premium
+    - Bed frame & headboard kayu Dolken natural
+    - Rak buku & wardrobe built-in custom
+    - Bar counter & meja cafe kayu berat
+    - 'Aksesoris kayu: lampu, frame, ornamen'
+  - judul: Proyek Komersial Terpercaya
+    icon: bi-briefcase-fill
+    warna: success
+    deskripsi: Kami dipercaya developer & pengusaha {{nama_kota}} untuk proyek komersial
+      skala besar.
+    aplikasi:
+    - Hotel & resort pegunungan Malino
+    - Cafe & resto area Sungguminasa & GTC
+    - Restoran pesisir Biringbulu & Pallangga
+    - Mall & apartment
+    - Developer perumahan
+    - Developer perumahan
+proses_awal_pemesanan:
+  pilih_ukuran: Lihat daftar produk lengkap di atas, pilih diameter sesuai kebutuhan
+    proyek Anda
+  hubungi: '081311400177'
+  konsultasi_gratis: Tim kami akan bantu hitung kebutuhan dan berikan rekomendasi
+    terbaik untuk proyek Anda
+finalisasi_pengiriman:
+  konfirmasi_pesanan: tulis konfirmasi pesanan, mention pastikan jumlah/ukuran/alamat
+    di {{nama_kota}} sudah benar
+  pengiriman_gratis: jelaskan pengiriman gratis, armada terpercaya, mention ke area
+    kota ini, tepat waktu
+  bayar_cod: jelaskan sistem COD, bayar setelah barang sampai dan dicek kualitas,
+    aman tanpa risiko
+studi_kasus_proyek:
+  proyek_komersial:
+  - judul: Gazebo Restoran di Malino
+    tahun: '2024'
+    deskripsi: Restoran wisata di kawasan Malino, Tinggimoncong, {{nama_kota}} renovasi
+      gazebo outdoor pakai Kayu Dolken untuk tampilan alami dan tahan cuaca pegunungan.
+    jumlah: 200 batang
+    diameter: 8-10 cm
+    hasil: Gazebo kokoh dan tahan hujan deras khas Malino. Pengunjung puas.
+    warna: primary
+    icon: bi-building
+  - judul: Pagar Cafe di Sungguminasa
+    tahun: '2024'
+    deskripsi: Cafe baru di pusat kota Sungguminasa pakai Kayu Dolken untuk pagar
+      dan dekorasi halaman.
+    jumlah: 120 batang
+    diameter: 6-8 cm
+    hasil: Tampilan halaman cafe rustic, outdoor tetap awet meski hujan.
+    warna: warning
+    icon: bi-tree
+  - judul: Rangka Atap Warung di Pallangga
+    tahun: '2024'
+    deskripsi: Warung makan di Pallangga pakai Kayu Dolken sebagai rangka atap semi-outdoor.
+    jumlah: 150 batang
+    diameter: 8-10 cm
+    hasil: Atap kokoh, tahan panas dan hujan.
+    warna: success
+    icon: bi-shop
+  - judul: Tiang Penyangga Toko di Bajeng
+    tahun: '2024'
+    deskripsi: Toko bangunan di Bajeng pakai Kayu Dolken untuk tiang penyangga area
+      parkir.
+    jumlah: 100 batang
+    diameter: 8 cm
+    hasil: Tiang penyangga kokoh, tahan lembap dan rayap.
+    warna: danger
+    icon: bi-building-add
+  proyek_residensial:
+  - judul: Pagar Villa Kayu Dolken Malino
+    lokasi: Desa Malino, Kec. Tinggimoncong, {{nama_kota}}
+    tahun: '2024'
+    deskripsi: Pagar solid kayu Dolken diameter 8-10 cm untuk villa pegunungan Malino
+      — tahan cuaca dingin & hujan deras.
+    jumlah: '480'
+    diameter: 8-10
+    hasil: Klien puas — pagar kokoh 2 tahun tanpa kerusakan, anti rayap alami.
+    warna: success
+    icon: bi-house-door
+  - judul: Struktur Atap Rumah 2 Lantai Sungguminasa
+    lokasi: Kel. Sungguminasa, Kec. Somba Opu, {{nama_kota}}
+    tahun: '2024'
+    deskripsi: Kolom & rangka atap kayu Dolken diameter 6-12 cm untuk rumah mewah
+      2 lantai — struktur utama tanpa besi.
+    jumlah: '650'
+    diameter: 6-12
+    hasil: Struktur kokoh, hemat biaya 30% vs baja, suhu ruang lebih sejuk.
+    warna: success
+    icon: bi-sun
+  - judul: Dek Kayu Outdoor Kolam Renang Biringbulu
+    lokasi: Kec. Biringbulu, {{nama_kota}}
+    tahun: '2024'
+    deskripsi: Dek kayu Dolken diameter 4-6 cm area kolam renang — anti licin & tahan
+      air laut.
+    jumlah: '320'
+    diameter: 4-6
+    hasil: Tahan air laut & panas 18 bulan, tidak melengkung.
+    warna: info
+    icon: bi-tree-fill
+  - judul: Pagar & Gate Perumahan Pallangga
+    lokasi: Kel. Pallangga, Kec. Pallangga, {{nama_kota}}
+    tahun: '2024'
+    deskripsi: Pagar & gerbang kayu Dolken diameter 8-10 cm untuk cluster perumahan
+      — estetika natural.
+    jumlah: '410'
+    diameter: 8-10
+    hasil: Zero keluhan rayap, developer pesan ulang untuk cluster baru.
+    warna: success
+    icon: bi-house-heart-fill
+  proyek_publik:
+  - judul: Gazebo & Jogging Track Taman Alun-Alun Sungguminasa
+    tahun: '2023'
+    deskripsi: Gazebo kayu Dolken dan decking area jogging track di Taman Alun-Alun
+      Sungguminasa — pusat keramaian warga {{nama_kota}}.
+    jumlah: '250'
+    diameter: 6-8
+    hasil: Fasilitas publik kokoh, tahan cuaca — jadi spot favorit warga untuk bersantai
+      & olahraga setiap sore.
+    warna: info
+    icon: bi-signpost-2
+  - judul: Mushola & Taman Belakang Islamic Center {{nama_kota}}
+    tahun: '2024'
+    deskripsi: Pagar kayu Dolken dan decking taman area mushola Islamic Center {{nama_kota}}
+      — kawasan pusat keagamaan & edukasi.
+    jumlah: '180'
+    diameter: 6-8
+    hasil: Area ibadah & taman nyaman, estetika natural cocok dengan arsitektur Islam
+      modern. Diapresiasi pengurus masjid.
+    warna: success
+    icon: bi-building
+testimoni_residential:
+- nama: Pak Andi
+  lokasi: Somba Opu, {{nama_kota}}
+  rating: 5
+  judul: Kualitas Terjamin
+  komentar: Pesan kayu Dolken untuk pagar rumah di Somba Opu. Sudah 1.5 tahun tahan
+    cuaca, tidak ada retakan. Pelayanan ramah, pengiriman tepat waktu.
+  warna: primary
+- nama: Ibu Nurul
+  lokasi: Bontonompo, {{nama_kota}}
+  rating: 5
+  judul: Anti Rayap Alami
+  komentar: Tadinya ragu pakai kayu gelam, ternyata kokoh sekali. Pagar rumah saya
+    di Bontonompo sudah 2 tahun aman dari rayap. Sangat puas.
+  warna: success
+- nama: Pak Hidayat
+  lokasi: Pallangga, {{nama_kota}}
+  rating: 5
+  judul: Pengiriman Cepat
+  komentar: Renovasi rumah butuh kayu cepat. Pesanan saya 400 batang dia 8-10 sampai
+    dalam 3 hari. Kualitas sesuai foto, harga bersaing.
+  warna: info
+- nama: Ibu Rahmawati
+  lokasi: Malino, {{nama_kota}}
+  rating: 5
+  judul: Cocok Untuk Villa
+  komentar: Bangun villa di pegunungan Malino, pakai kayu Dolken untuk gazebo & dek.
+    Tahan hujan & angin kencang. Tamu-tamu suka desainnya.
+  warna: success
+testimoni_komersial:
+- nama: Pakarman
+  lokasi: Owner Cafe Omah Kayu, GTC Sungguminasa
+  rating: 5
+  judul: Furniture Custom Sempurna
+  komentar: Pesan bar counter & meja cafe kayu Dolken. Hasilnya premium, tamu sering
+    tanya在哪里买的. Worth the investment.
+  warna: warning
+- nama: H. Idris
+  lokasi: Pengembang perumahan Green Hill Residence, Pallangga
+  rating: 5
+  judul: Supplier Terpercaya
+  komentar: Sudah 3 proyek perumahan pakai Dolken untuk pagar & gate. Konsisten quality,
+    harga OKE, pengiriman on schedule.
+  warna: info
+- nama: Dra. St. Aminah
+  lokasi: Pemilik Homestay Malino, Tinggimoncong
+  rating: 5
+  judul: Estetika Natural Unik
+  komentar: Homestay di Malino pakai Dolken untuk gazebo & dek. Tamu asing suka banget.
+    Kayunya makin cantik seiring waktu.
+  warna: success
+- nama: Bapak Firmansyah
+  lokasi: Kontraktor, Somba Opu
+  rating: 5
+  judul: Rangka Atap Kokoh Murah
+  komentar: Proyek rumah 2-3 lantai di {{nama_kota}} pakai Dolken untuk rangka atap.
+    Lebih hemat 25% dari baja, struktur equally strong.
+  warna: primary
+tips_ukuran:
+- kategori: Dekorasi Ringan
+  aplikasi: Pagar, Taman
+  diameter: 2-3 cm / 4-6 cm
+  keunggulan:
+  - Cocok untuk estetika pagar & taman minimalis
+  - Ringan, mudah dipasang, hemat biaya
+  - Tersedia banyak variasi ukuran
+  warna: success
+  icon: bi-tree
+- kategori: Struktur Sedang
+  aplikasi: Gazebo, Pergola
+  diameter: 6-8 cm
+  keunggulan:
+  - Kuat menahan beban atap & tanaman rambat
+  - Diameter ideal untuk gazebo dan teras
+  - Proporsi pas — kokoh tapi tidak terlalu besar
+  warna: primary
+  icon: bi-house-fill
+- kategori: Struktur Berat
+  aplikasi: Tiang Utama, Pondasi
+  diameter: 8-10 cm / 10-12 cm
+  keunggulan:
+  - Kekuatan maksimal untuk kolom & balok utama
+  - Mampu menahan beban konstruksi besar
+  - Daya tahan 20-30 tahun tanpa treatment
+  warna: danger
+  icon: bi-building-fill
+faq_pemesanan:
+- pertanyaan: Berapa minimal pemesanan kayu dolken?
+  jawaban: Minimal pemesanan 10 batang. Untuk area {{nama_kota}} tersedia harga khusus
+    — hubungi 081311400177 untuk konsultasi gratis ukuran & kebutuhan.
+  icon: bi-cart-check
+- pertanyaan: Bagaimana cara mengecek kualitas kayu dolken sebelum bayar?
+  jawaban: 'Kami siap COD ke lokasi Anda di {{nama_kota}}. Tim akan dampingi pengecekan:
+    pastikan tidak bengkok, tidak retak, diameter sesuai pesanan. Bayar setelah puas.'
+  icon: bi-clipboard-check
+faq_produk:
+- pertanyaan: Apakah kayu dolken perlu perawatan khusus di {{nama_kota}}?
+  jawaban: Tidak perlu perawatan khusus. Kayu Dolken tahan cuaca ekstrim {{nama_kota}}
+    — dari panas pesisir Sungguminasa hingga dingin pegunungan Malino. Untuk aplikasi
+    outdoor di area Pallangga atau Biringbulu bisa tambah coating alami agar warna
+    makin awet.
+  icon: bi-tools
+- pertanyaan: Apakah bisa custom panjang kayu dolken?
+  jawaban: Bisa. Standar panjang 4 meter, kami bisa sesuaikan untuk kebutuhan proyek
+    spesifik Anda di {{nama_kota}} — hubungi 081311400177 untuk konsultasi ukuran.
+  icon: bi-rulers
+faq_pengiriman:
+- pertanyaan: Berapa lama pengiriman ke {{nama_kota}}?
+  jawaban: Pengiriman 5-7 hari kerja ke seluruh {{nama_kota}}, gratis ongkir untuk
+    area Sungguminasa (ITC, kota), Malino (wisata pegunungan), Pallangga (agrowisata),
+    dan Bontonompo (perkebunan kopi). Kami pakai armada terpercaya dan picker berpengalaman
+    {{nama_kota}}.
+  icon: bi-truck
+relevansi_kayu_dolken:
+  karakteristik_iklim: "{{nama_kota}} memiliki iklim tropis dengan dua musim — kemarau
+    panas di pesisir Sungguminasa & Pallangga, dan curah hujan tinggi di pegunungan
+    Malino & Tinggimoncong. Kayu Dolken tahan terhadap kelembaban tinggi pesisir dan
+    cuaca dingin ekstrem pegunungan, solusi konstruksi ideal untuk seluruh wilayah
+    {{nama_kota}}."
+  keunggulan_lokal: 'Sifat kayu yang <strong>tahan air, tahan rayap, dan tahan cuaca
+    ekstrem</strong> sangat cocok untuk aplikasi seperti:'
+  aplikasi_lokal:
+  - nama: Gazebo & villa pegunungan di kawasan wisata Malino
+    icon: bi-check-circle-fill
+  - nama: Pagar & gate rumah perumahan di Sungguminasa & Somba Opu
+    icon: bi-check-circle-fill
+  - nama: Dek & kolam renang outdoor di area pesisir Pallangga & Biringbulu
+    icon: bi-check-circle-fill
+  - nama: Landscaping Islamic Center {{nama_kota}} & Alun-Alun Sungguminasa
+    icon: bi-check-circle-fill
+tentang_kota:
+  tagline: Pusat Niaga, Agrowisata & Sejarah {{nama_kota}}
+  deskripsi_singkat: Kabupaten {{nama_kota}} adalah pusat pertumbuhan ekonomi dan
+    pariwisata di Sulawesi Selatan, berbatasan langsung dengan Makassar.
+  overview: Kabupaten {{nama_kota}} (luas 1.883 km², populasi ~765.000 jiwa, 18 kecamatan
+    & 167 kelurahan/desa) merupakan daerah strategis yang menyatu dengan Makassar.
+    Perekonomian {{nama_kota}} ditopang oleh sektor perdagangan (Pasar Sentral Sungguminasa),
+    agrowisata (kopi arabika Malino), dan properti yang tumbuh pesat.
+  tentang_kota_1:
+  - judul: Sejarah & Warisan Kerajaan {{nama_kota}}
+    icon: bi-clock-history
+    subjudul: Dari 'Ayam Jantan dari Timur' hingga Pusat Niaga Modern
+    icon_subjudul: bi-book
+    deskripsi: Kabupaten {{nama_kota}} memiliki sejarah panjang sebagai pusat Kerajaan
+      {{nama_kota}} yang legendaris. Di bawah kepemimpinan Sultan Hasanuddin (1629-1670)
+      yang dijuluki 'Ayam Jantan dari Timur', {{nama_kota}} mencapai puncak kejayaannya
+      sebagai pusat perdagangan rempah-rempah dan kekuatan maritim terbesar di Indonesia
+      Timur. Warisan kerajaan masih terasa kuat di {{nama_kota}} modern — rumah adat,
+      tradisi budaya, dan nilai kebersamaan masih dijunjung. Situs-situs bersejarah
+      seperti Makam Raja-Raja {{nama_kota}} dan Masjid Tua Katangka di Kelurahan Katangka,
+      Somba Opu, menjadi sakbis perjalanan panjang {{nama_kota}} dari masa kejayaan
+      menuju era modern.
+    fakta:
+    - Kerajaan {{nama_kota}} menguasai jalur perdagangan rempah Indonesia Timur pada
+      abad ke-16 hingga ke-17
+    - Benteng Fort Rotterdam di Makassar adalah saksi bisu perlawanan Sultan Hasanuddin
+      melawan VOC Belanda
+    - Bahasa Makassar (Mangkasara') masih aktif digunakan sehari-hari oleh masyarakat
+      {{nama_kota}}
+  - judul: Ekonomi & Potensi Agrowisata {{nama_kota}}
+    icon: bi-shop
+    subjudul: Kopi Arabika Malino hingga Pasar Rakyat Sungguminasa
+    icon_subjudul: bi-graph-up
+    deskripsi: Perekonomian {{nama_kota}} didorong oleh sektor perdagangan dan pertanian
+      yang kuat. Pasar Sentral Sungguminasa menjadi pusat transaksi kayu Dolken, hasil
+      bumi, dan barang kebutuhan pokok terbesar di kawasan timur Sulawesi Selatan.
+      Sektor pertanian menjadi andalan dengan kopi arabika Malino yang mendunia —
+      ditanam di ketinggian 1.000+ mdpl dengan cita rasa unik. Sektor properti di
+      {{nama_kota}} juga tumbuh fantastis, dengan banyak perumahan baru di Sungguminasa,
+      Pallangga, dan Somba Opu yang menjadi penyangga permukiman Makassar. Pertumbuhan
+      ekonomi {{nama_kota}} menempatkannya sebagai salah satu daerah dengan investasi
+      terbesar di Sulsel.
+    fakta:
+    - Kopi arabika Malino menempati peringkat pertama produksi kopi di Sulawesi Selatan
+    - Pasar Sentral Sungguminasa adalah pusat perdagangan kayu Dolken terbesar di
+      Sulsel
+    - Pertumbuhan properti {{nama_kota}} 2x lipat rata-rata Sulsel didorong harga
+      tanah lebih murah
+  tentang_kota_2:
+  - judul: Destinasi Wisata & Landmark Ikonik
+    icon: bi-pin-map
+    subjudul: Malino Highlands, Bili-Bili Dam & Islamic Center
+    icon_subjudul: bi-star
+    deskripsi: "{{nama_kota}} memiliki destinasi wisata pegunungan terpopuler di Sulawesi
+      Selatan — Malino Highlands. Hamparan kebun teh, hutan pinus, dan udara sejuk
+      (15-25°C) menjadikannya tujuan favorit keluarga. Bili-Bili Dam menjadi ikon
+      infrastruktur dengan waduk luas dan pemandangan perbukitan. Islamic Center {{nama_kota}}
+      dengan arsitektur megah adalah landmark spiritual dan edukasi di Sungguminasa."
+    list_item:
+    - "<strong>Malino Highlands</strong> — Destinasi wisata pegunungan dengan kebun
+      teh, pinus, dan udara sejuk — favorit wisatawan dari Makassar & sekitarnya"
+    - "<strong>Bili-Bili Dam</strong> — Bendungan raksasa dengan waduk indah, cocok
+      untuk foto, piknik, dan menikmati matahari terbenam"
+    - "<strong>Islamic Center {{nama_kota}}</strong> — Pusat keagamaan megah di Sungguminasa
+      dengan arsitektur Islam modern yang menawan"
+    - "<strong>Alun-Alun Sungguminasa</strong> — Ruang terbuka hijau pusat kota yang
+      ramai setiap akhir pekan"
+  - judul: Kuliner Khas & Pusat Oleh-Oleh
+    icon: bi-cup
+    subjudul: Kopi Malino, Pisang Epe & Oleh-Oleh {{nama_kota}}
+    icon_subjudul: bi-star
+    deskripsi: Kuliner {{nama_kota}} menawarkan cita rasa autentik Sulawesi Selatan.
+      Kopi arabika Malino menjadi primadona dengan cita rasa fruity dan acidity rendah,
+      ditanam di dataran tinggi dingin Malino. Pisang Epe {{nama_kota}} — pisang bakar
+      khas yang mudah ditemukan di sepanjang poros {{nama_kota}}-Makassar — menjadi
+      camilan favorit wisatawan.
+    list_item:
+    - "<strong>Kopi Arabika Malino</strong> — Kopi specialty khas dataran tinggi Malino,
+      ditanam di ketinggian 1.000+ mdpl, cita rasa unik"
+    - "<strong>Pisang Epe {{nama_kota}}</strong> — Pisang bakar legit khas Sulawesi,
+      mudah ditemukan di {{nama_kota}}-Makassar"
+    - "<strong>Oleh-Oleh Pasar Sentral</strong> — Pusat oleh-oleh khas {{nama_kota}}
+      di Pasar Sentral Sungguminasa"
+    info_tambahan: Pusat oleh-oleh dan kuliner khas {{nama_kota}} terkonsentrasi di
+      sepanjang poros Sungguminasa-Malino dan Pasar Sentral Sungguminasa.
+comment_count: 12
+share_count: 7
+like_count: 0

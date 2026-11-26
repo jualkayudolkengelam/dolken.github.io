@@ -1,0 +1,4 @@
+# Input untuk generator artikel kota.
+# foto_source adalah path relatif terhadap direktori source-image/.
+defaults: {}
+cities: []
