@@ -82,3 +82,47 @@ cities:
     nama_kota: Madiun
     tanggal: "2026-11-26"
     foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.03.37.jpeg"
+  - slug: banjar
+    nama_kota: Banjar
+    tanggal: "2025-12-19"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.03.47.jpeg"
+  - slug: batu
+    nama_kota: Batu
+    tanggal: "2026-01-18"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.04.04.jpeg"
+  - slug: blitar
+    nama_kota: Blitar
+    tanggal: "2026-02-17"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.10.20.jpeg"
+  - slug: cilegon
+    nama_kota: Cilegon
+    tanggal: "2026-03-20"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.10.35.jpeg"
+  - slug: cimahi
+    nama_kota: Cimahi
+    tanggal: "2026-04-20"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.10.53.jpeg"
+  - slug: mojokerto
+    nama_kota: Mojokerto
+    tanggal: "2026-05-24"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.11.05.jpeg"
+  - slug: pasuruan
+    nama_kota: Pasuruan
+    tanggal: "2026-06-20"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.11.39.jpeg"
+  - slug: probolinggo
+    nama_kota: Probolinggo
+    tanggal: "2026-07-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.12.jpeg"
+  - slug: salatiga
+    nama_kota: Salatiga
+    tanggal: "2026-08-27"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.25.jpeg"
+  - slug: tasikmalaya
+    nama_kota: Tasikmalaya
+    tanggal: "2026-09-22"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.34.jpeg"
+  - slug: tegal
+    nama_kota: Tegal
+    tanggal: "2026-10-24"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.58.jpeg"
