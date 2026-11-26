@@ -36,7 +36,8 @@ Pemilik situs ingin menambah artikel `post_with_city` untuk kota di Banten, DKI,
    - `area_pengiriman`: zona umum (pusat, utara, selatan, timur, barat, industri, perumahan, komersial, pendidikan).
    - `area_pengiriman_detail`: judul/deskripsi generik; `wilayah_pusat`, `wilayah_utara_selatan`, `wilayah_pengembangan` memakai nama zona umum; `landmark_wisata`/`landmark_fasilitas` memakai label generik seperti "Taman Kota {{nama_kota}}".
    - `keunggulan_*`, `aplikasi_kayu_dolken`, `faq_*`, `relevansi_kayu_dolken`, `tentang_kota`: narasi produk tanpa nama kota/ukuran/populasi tertentu.
-   - `studi_kasus_proyek` dan `testimoni_*`: lokasi dan nama diganti label generik `{{nama_kota}}` agar tidak menyiratkan pelanggan nyata di kota tertentu.
+   - `studi_kasus_proyek`: lokasi diganti `{{nama_kota}}`, judul memakai zona umum; tidak ada nama daerah asli.
+   - `testimoni_*`: memakai nama orang Indonesia yang fiktif dan netral (Pak Slamet, Ibu Dewi, Pak Bambang, Ibu Sri Wahyuni, Pak Rizal, H. Mulyadi, Ibu Ratna, Pak Agus Setiawan), bukan label `Pelanggan 1` / `Pelanggan Komersial 1`. Lokasi tetap `{{nama_kota}}` agar tidak menyiratkan pelanggan nyata di kota tertentu. Keputusan ini menggantikan rencana awal memakai label generik, sesuai permintaan pemilik.
 2. Teks instruksi template yang tersisa di `finalisasi_pengiriman` ("tulis…", "jelaskan…", "mention…") diganti kalimat customer-facing.
 3. Bereskan konten rusak: `在哪里买的`, `sakbis`, dan duplikat "Developer perumahan".
 

@@ -26,12 +26,12 @@ cities:
 
 ### Wajib review konten spesifik kota
 
-Nilai default diambil dari artikel Gowa. Tanpa `overrides`, artikel kota lain akan memuat fakta Gowa yang salah (kecamatan, luas, populasi, landmark, dan testimoni). Tentukan `overrides` untuk field berikut sebelum generate:
+Nilai default sudah dinetralisasi: tidak memuat kecamatan, luas, populasi, atau landmark Gowa. Nama testimoni memakai nama orang Indonesia fiktif yang netral, dengan lokasi `{{nama_kota}}`. Isi `overrides` hanya jika Anda memiliki data lokal yang benar untuk kota tersebut:
 
-- `area_pengiriman`, `area_pengiriman_detail` — kecamatan dan wilayah pengiriman.
-- `tentang_kota` — luas, populasi, batas wilayah, dan landmark.
-- `testimoni_komersial`, `testimoni_residential`, `studi_kasus_proyek` — nama dan lokasi pelanggan.
-- `faq_pemesanan`, `faq_pengiriman`, `faq_produk`, `tips_ukuran`, `aplikasi_kayu_dolken` — konteks lokal.
+- `area_pengiriman`, `area_pengiriman_detail` — kecamatan dan wilayah pengiriman yang sebenarnya.
+- `tentang_kota` — luas, populasi, batas wilayah, dan landmark yang sebenarnya.
+- `testimoni_komersial`, `testimoni_residential`, `studi_kasus_proyek` — nama dan lokasi pelanggan nyata bila tersedia; jangan mengarang.
+- `faq_pemesanan`, `faq_pengiriman`, `faq_produk`, `tips_ukuran`, `aplikasi_kayu_dolken` — konteks lokal bila tersedia.
 - `title`, `description`, `excerpt`, `keywords` — pastikan tidak menyisakan nama kota lama.
 
 Review manual terhadap artikel yang dihasilkan tetap wajib sebelum commit.
