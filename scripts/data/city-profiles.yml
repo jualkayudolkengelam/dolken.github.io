@@ -126,3 +126,151 @@ cities:
     nama_kota: Tegal
     tanggal: "2026-10-24"
     foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.58.jpeg"
+  - slug: kepulauan-seribu
+    nama_kota: Kepulauan Seribu
+    tanggal: "2025-11-26"
+    foto_source: "WhatsApp Image 2026-11-26 at 11.45.20.jpeg"
+  - slug: kabupaten-bandung-barat
+    nama_kota: Kabupaten Bandung Barat
+    tanggal: "2025-12-04"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.05.jpeg"
+  - slug: kabupaten-cianjur
+    nama_kota: Kabupaten Cianjur
+    tanggal: "2025-12-18"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.20.jpeg"
+  - slug: kabupaten-purwakarta
+    nama_kota: Kabupaten Purwakarta
+    tanggal: "2025-12-24"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.28.jpeg"
+  - slug: kabupaten-subang
+    nama_kota: Kabupaten Subang
+    tanggal: "2025-12-31"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.34.jpeg"
+  - slug: kabupaten-garut
+    nama_kota: Kabupaten Garut
+    tanggal: "2026-01-14"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.52.jpeg"
+  - slug: kabupaten-ciamis
+    nama_kota: Kabupaten Ciamis
+    tanggal: "2026-01-20"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.10.58.jpeg"
+  - slug: kabupaten-kuningan
+    nama_kota: Kabupaten Kuningan
+    tanggal: "2026-02-02"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.11.05.jpeg"
+  - slug: kabupaten-pangandaran
+    nama_kota: Kabupaten Pangandaran
+    tanggal: "2026-02-15"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.11.12.jpeg"
+  - slug: kabupaten-lebak
+    nama_kota: Kabupaten Lebak
+    tanggal: "2026-02-24"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.25 (1).jpeg"
+  - slug: kabupaten-pandeglang
+    nama_kota: Kabupaten Pandeglang
+    tanggal: "2026-03-02"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.25.jpeg"
+  - slug: kabupaten-boyolali
+    nama_kota: Kabupaten Boyolali
+    tanggal: "2026-03-13"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.26 (1).jpeg"
+  - slug: kabupaten-klaten
+    nama_kota: Kabupaten Klaten
+    tanggal: "2026-03-25"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.26 (2).jpeg"
+  - slug: kabupaten-sukoharjo
+    nama_kota: Kabupaten Sukoharjo
+    tanggal: "2026-04-01"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.26.jpeg"
+  - slug: kabupaten-wonogiri
+    nama_kota: Kabupaten Wonogiri
+    tanggal: "2026-04-11"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.27 (1).jpeg"
+  - slug: kabupaten-karanganyar
+    nama_kota: Kabupaten Karanganyar
+    tanggal: "2026-04-25"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.27 (2).jpeg"
+  - slug: kabupaten-kebumen
+    nama_kota: Kabupaten Kebumen
+    tanggal: "2026-05-02"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.27 (3).jpeg"
+  - slug: kabupaten-temanggung
+    nama_kota: Kabupaten Temanggung
+    tanggal: "2026-05-14"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.27.jpeg"
+  - slug: kabupaten-kendal
+    nama_kota: Kabupaten Kendal
+    tanggal: "2026-05-20"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.28 (1).jpeg"
+  - slug: kabupaten-demak
+    nama_kota: Kabupaten Demak
+    tanggal: "2026-05-31"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.28 (2).jpeg"
+  - slug: kabupaten-brebes
+    nama_kota: Kabupaten Brebes
+    tanggal: "2026-06-09"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.28.jpeg"
+  - slug: kabupaten-sidoarjo
+    nama_kota: Kabupaten Sidoarjo
+    tanggal: "2026-06-23"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.29 (1).jpeg"
+  - slug: kabupaten-gresik
+    nama_kota: Kabupaten Gresik
+    tanggal: "2026-06-29"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.54/WhatsApp Image 2026-10-18 at 09.56.29.jpeg"
+  - slug: kabupaten-lumajang
+    nama_kota: Kabupaten Lumajang
+    tanggal: "2026-07-11"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.50.51.jpeg"
+  - slug: kabupaten-jember
+    nama_kota: Kabupaten Jember
+    tanggal: "2026-07-18"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.51.02.jpeg"
+  - slug: kabupaten-banyuwangi
+    nama_kota: Kabupaten Banyuwangi
+    tanggal: "2026-08-01"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.51.18.jpeg"
+  - slug: kabupaten-tulungagung
+    nama_kota: Kabupaten Tulungagung
+    tanggal: "2026-08-08"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.51.29.jpeg"
+  - slug: kabupaten-nganjuk
+    nama_kota: Kabupaten Nganjuk
+    tanggal: "2026-08-21"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.51.51.jpeg"
+  - slug: kabupaten-ponorogo
+    nama_kota: Kabupaten Ponorogo
+    tanggal: "2026-08-28"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.52.05.jpeg"
+  - slug: kabupaten-tuban
+    nama_kota: Kabupaten Tuban
+    tanggal: "2026-09-09"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.52.40.jpeg"
+  - slug: kabupaten-lamongan
+    nama_kota: Kabupaten Lamongan
+    tanggal: "2026-09-16"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.52.51.jpeg"
+  - slug: kabupaten-badung
+    nama_kota: Kabupaten Badung
+    tanggal: "2026-09-29"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.53.07.jpeg"
+  - slug: kabupaten-gianyar
+    nama_kota: Kabupaten Gianyar
+    tanggal: "2026-10-05"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.53.16.jpeg"
+  - slug: kabupaten-tabanan
+    nama_kota: Kabupaten Tabanan
+    tanggal: "2026-10-16"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.53.31.jpeg"
+  - slug: kabupaten-karangasem
+    nama_kota: Kabupaten Karangasem
+    tanggal: "2026-10-25"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.53.41.jpeg"
+  - slug: kabupaten-buleleng
+    nama_kota: Kabupaten Buleleng
+    tanggal: "2026-11-07"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.53.50.jpeg"
+  - slug: kabupaten-jembrana
+    nama_kota: Kabupaten Jembrana
+    tanggal: "2026-11-14"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.54.08.jpeg"
