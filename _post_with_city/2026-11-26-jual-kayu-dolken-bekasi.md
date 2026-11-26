@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Bekasi – kualitas premium, tahan lama, harga mul
   Gratis ongkir ke seluruh Bekasi! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Bekasi – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:31:41 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-bekasi/jual-kayu-dolken-bekasi-001.webp"
 image_alt: Jual Kayu Dolken Bekasi — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-bekasi/jual-kayu-dolken-bekasi-001.webp"
 images_alt:
 - Bekasi
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:23:09 +0000'
 keywords: kayu dolken bekasi, jual kayu bekasi, kayu beton bekasi, kayu tahan cuaca
   bekasi, kayu murah bekasi, kayu bekisting bekasi, dolken bekasi, kayu bulat bekasi
 rating: 5

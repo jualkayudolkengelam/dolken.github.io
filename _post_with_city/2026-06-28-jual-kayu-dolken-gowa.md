@@ -43,7 +43,7 @@ layout: node--post-with-city
 title: "Jual Kayu Dolken di Gowa – Hubungi 0813-1140-0177, Gratis Ongkir ke Seluruh Gowa!"
 description: "Jual Kayu Dolken Gowa – kualitas premium, tahan lama, harga mulai Rp15.000. Gratis ongkir ke seluruh Gowa! Hubungi 0813-1140-0177 untuk pemesanan."
 excerpt: "Jual kayu dolken premium di Gowa – gratis ongkir, harga terbaik, barang berkualitas."
-date: 2026-06-28
+date: '2026-06-28 03:49:12 +0000'
 author: Admin
 image: /assets/images/posts/jual-kayu-dolken-gowa/jual-kayu-dolken-gowa-001.webp
 image_alt: "Jual Kayu Dolken Gowa — kualitas premium"
@@ -57,7 +57,7 @@ images_alt:
   - "Jual Kayu Dolken Gowa — gratis ongkir ke seluruh Gowa"
   - "Jual Kayu Dolken Gowa — stok lengkap diameter 2-12 cm"
   - "Jual Kayu Dolken Gowa — harga mulai Rp15.000 per batang"
-last_modified_at: 2026-06-28
+last_modified_at: '2026-06-28 06:37:46 +0000'
 keywords: "kayu dolken gowa, jual kayu gowa, kayu beton gowa, kayu tahan cuaca gowa, kayu murah gowa, kayu bekisting gowa, dolken gowa, kayu bulat gowa"
 rating: 5
 review_count: 8

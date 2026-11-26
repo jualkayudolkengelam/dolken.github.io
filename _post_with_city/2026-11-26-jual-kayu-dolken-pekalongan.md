@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Pekalongan – kualitas premium, tahan lama, harga
   Rp15.000. Gratis ongkir ke seluruh Pekalongan! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Pekalongan – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 05:06:45 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-pekalongan/jual-kayu-dolken-pekalongan-001.webp"
 image_alt: Jual Kayu Dolken Pekalongan — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-pekalongan/jual-kayu-dolken-pekalongan-001.webp"
 images_alt:
 - Pekalongan
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:44:51 +0000'
 keywords: kayu dolken pekalongan, jual kayu pekalongan, kayu beton pekalongan, kayu
   tahan cuaca pekalongan, kayu murah pekalongan, kayu bekisting pekalongan, dolken
   pekalongan, kayu bulat pekalongan

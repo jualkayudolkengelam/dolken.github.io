@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Malang – kualitas premium, tahan lama, harga mul
   Gratis ongkir ke seluruh Malang! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Malang – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:53:17 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-malang/jual-kayu-dolken-malang-001.webp"
 image_alt: Jual Kayu Dolken Malang — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-malang/jual-kayu-dolken-malang-001.webp"
 images_alt:
 - Malang
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 07:40:35 +0000'
 keywords: kayu dolken malang, jual kayu malang, kayu beton malang, kayu tahan cuaca
   malang, kayu murah malang, kayu bekisting malang, dolken malang, kayu bulat malang
 rating: 5

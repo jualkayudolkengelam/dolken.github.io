@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Depok – kualitas premium, tahan lama, harga mula
   Gratis ongkir ke seluruh Depok! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Depok – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 05:18:38 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-depok/jual-kayu-dolken-depok-001.webp"
 image_alt: Jual Kayu Dolken Depok — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-depok/jual-kayu-dolken-depok-001.webp"
 images_alt:
 - Depok
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 07:06:57 +0000'
 keywords: kayu dolken depok, jual kayu depok, kayu beton depok, kayu tahan cuaca depok,
   kayu murah depok, kayu bekisting depok, dolken depok, kayu bulat depok
 rating: 5

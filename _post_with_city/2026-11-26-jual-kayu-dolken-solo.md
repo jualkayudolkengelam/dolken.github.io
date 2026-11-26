@@ -5,7 +5,7 @@ title: Jual Kayu Dolken di Solo – Hubungi 0813-1140-0177, Gratis Ongkir ke Sel
 description: Jual Kayu Dolken Solo – kualitas premium, tahan lama, harga mulai Rp15.000.
   Gratis ongkir ke seluruh Solo! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Solo – gratis ongkir, harga terbaik, barang berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:36:24 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-solo/jual-kayu-dolken-solo-001.webp"
 image_alt: Jual Kayu Dolken Solo — kualitas premium
@@ -13,7 +13,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-solo/jual-kayu-dolken-solo-001.webp"
 images_alt:
 - Solo
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:55:04 +0000'
 keywords: kayu dolken solo, jual kayu solo, kayu beton solo, kayu tahan cuaca solo,
   kayu murah solo, kayu bekisting solo, dolken solo, kayu bulat solo
 rating: 5

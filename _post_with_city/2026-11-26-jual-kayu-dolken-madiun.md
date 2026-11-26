@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Madiun – kualitas premium, tahan lama, harga mul
   Gratis ongkir ke seluruh Madiun! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Madiun – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:50:39 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-madiun/jual-kayu-dolken-madiun-001.webp"
 image_alt: Jual Kayu Dolken Madiun — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-madiun/jual-kayu-dolken-madiun-001.webp"
 images_alt:
 - Madiun
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 07:35:28 +0000'
 keywords: kayu dolken madiun, jual kayu madiun, kayu beton madiun, kayu tahan cuaca
   madiun, kayu murah madiun, kayu bekisting madiun, dolken madiun, kayu bulat madiun
 rating: 5

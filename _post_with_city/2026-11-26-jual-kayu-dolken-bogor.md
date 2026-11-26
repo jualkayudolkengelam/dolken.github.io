@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Bogor – kualitas premium, tahan lama, harga mula
   Gratis ongkir ke seluruh Bogor! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Bogor – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 03:46:18 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-bogor/jual-kayu-dolken-bogor-001.webp"
 image_alt: Jual Kayu Dolken Bogor — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-bogor/jual-kayu-dolken-bogor-001.webp"
 images_alt:
 - Bogor
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 04:47:21 +0000'
 keywords: kayu dolken bogor, jual kayu bogor, kayu beton bogor, kayu tahan cuaca bogor,
   kayu murah bogor, kayu bekisting bogor, dolken bogor, kayu bulat bogor
 rating: 5

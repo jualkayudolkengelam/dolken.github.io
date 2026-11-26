@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Kediri – kualitas premium, tahan lama, harga mul
   Gratis ongkir ke seluruh Kediri! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Kediri – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 05:26:03 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-kediri/jual-kayu-dolken-kediri-001.webp"
 image_alt: Jual Kayu Dolken Kediri — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-kediri/jual-kayu-dolken-kediri-001.webp"
 images_alt:
 - Kediri
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:40:13 +0000'
 keywords: kayu dolken kediri, jual kayu kediri, kayu beton kediri, kayu tahan cuaca
   kediri, kayu murah kediri, kayu bekisting kediri, dolken kediri, kayu bulat kediri
 rating: 5

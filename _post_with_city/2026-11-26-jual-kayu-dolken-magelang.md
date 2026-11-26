@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Magelang – kualitas premium, tahan lama, harga m
   Rp15.000. Gratis ongkir ke seluruh Magelang! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Magelang – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 01:19:05 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-magelang/jual-kayu-dolken-magelang-001.webp"
 image_alt: Jual Kayu Dolken Magelang — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-magelang/jual-kayu-dolken-magelang-001.webp"
 images_alt:
 - Magelang
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 03:06:57 +0000'
 keywords: kayu dolken magelang, jual kayu magelang, kayu beton magelang, kayu tahan
   cuaca magelang, kayu murah magelang, kayu bekisting magelang, dolken magelang, kayu
   bulat magelang

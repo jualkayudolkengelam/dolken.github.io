@@ -3,7 +3,7 @@ layout: node--post-with-city
 title: Jual Kayu Dolken Bandung | Gratis Ongkir & COD | Hub. 081311400177
 description: Jual kayu dolken gelam Bandung kualitas premium, harga mulai Rp 15.000/batang.
   Gratis ongkir seluruh Bandung, COD tersedia. Cocok untuk iklim sejuk dataran tinggi.
-date: 2025-11-19
+date: '2025-11-19 04:03:07 +0000'
 author: Admin
 author_url: https://jualkayudolken.com
 image: "/assets/images/posts/jual-kayu-dolken-bandung/jual-kayu-dolken-bandung-001.webp"
@@ -652,7 +652,7 @@ like_count: 1
 comment_count: 0
 share_count: 0
 total_updates: 1
-last_modified_at: '2025-11-24 20:32:21 +0700'
+last_modified_at: '2025-11-19 06:59:06 +0000'
 ---
 
 <!-- ========================================================================

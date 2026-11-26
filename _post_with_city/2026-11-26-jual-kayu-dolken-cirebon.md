@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Cirebon – kualitas premium, tahan lama, harga mu
   Rp15.000. Gratis ongkir ke seluruh Cirebon! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Cirebon – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 03:03:17 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-cirebon/jual-kayu-dolken-cirebon-001.webp"
 image_alt: Jual Kayu Dolken Cirebon — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-cirebon/jual-kayu-dolken-cirebon-001.webp"
 images_alt:
 - Cirebon
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 04:27:30 +0000'
 keywords: kayu dolken cirebon, jual kayu cirebon, kayu beton cirebon, kayu tahan cuaca
   cirebon, kayu murah cirebon, kayu bekisting cirebon, dolken cirebon, kayu bulat
   cirebon

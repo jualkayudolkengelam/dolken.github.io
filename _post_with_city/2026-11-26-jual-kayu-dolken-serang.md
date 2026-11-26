@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Serang – kualitas premium, tahan lama, harga mul
   Gratis ongkir ke seluruh Serang! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Serang – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 05:16:20 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-serang/jual-kayu-dolken-serang-001.webp"
 image_alt: Jual Kayu Dolken Serang — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-serang/jual-kayu-dolken-serang-001.webp"
 images_alt:
 - Serang
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 07:19:12 +0000'
 keywords: kayu dolken serang, jual kayu serang, kayu beton serang, kayu tahan cuaca
   serang, kayu murah serang, kayu bekisting serang, dolken serang, kayu bulat serang
 rating: 5

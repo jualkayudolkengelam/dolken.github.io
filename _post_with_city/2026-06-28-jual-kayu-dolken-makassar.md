@@ -15,10 +15,10 @@ layout: node--post-with-city
 title: "Jual Kayu Dolken di Makassar – Hubungi 0813‑1140‑0177, Gratis Ongkir!"
 description: "Jual Kayu Dolken Makassar – kualitas premium, tahan lama, harga mulai Rp15.000. Gratis ongkir! Hubungi 0813-1140-0177 untuk pemesanan."
 excerpt: "Jual Kayu Dolken Makassar – kualitas premium, tahan lama, harga mulai Rp15.000. Gratis ongkir! Hubungi 0813-1140-0177 untuk pemesanan."
-date: 2026-06-28
+date: '2026-06-28 04:38:23 +0000'
 author: Admin
 author_url: https://jualkayudolken.com
-last_modified_at: 2026-06-28
+last_modified_at: '2026-06-28 06:42:11 +0000'
 image: /assets/images/posts/jual-kayu-dolken-makassar/jual-kayu-dolken-makassar-001.webp
 image_alt: "Jual Kayu Dolken Makassar — kualitas premium"
 images:

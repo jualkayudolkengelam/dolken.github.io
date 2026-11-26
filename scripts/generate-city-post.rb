@@ -7,6 +7,7 @@ require "optparse"
 require "yaml"
 require_relative "lib/city_post_schema"
 require_relative "lib/city_profile"
+require_relative "lib/post_timestamps"
 
 module CityPostGenerator
   class Error < StandardError; end
@@ -50,6 +51,9 @@ module CityPostGenerator
     end
 
     merged = CityProfile.merge(defaults, city)
+    merged["date"], merged["last_modified_at"] = PostTimestamps.allocate(
+      root: root, slug: slug, tanggal: city.fetch("tanggal")
+    )
     images = Array(merged["images"])
     images = [image_path] if images.empty?
     ensure_unique_hashes(images, root: root, fallback_path: image_path, fallback_sha: sha)

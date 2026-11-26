@@ -14,7 +14,7 @@
 layout: node--post-with-city
 title: "Jual Kayu Dolken Karawang | Gratis Ongkir KIIC & Cikampek | Hub. 081311400177"
 description: "Jual kayu dolken gelam Karawang kualitas premium untuk industri & konstruksi. Gratis ongkir KIIC, Cikampek, Telukjambe. Harga mulai Rp 15.000/batang. COD tersedia."
-date: 2025-11-19
+date: '2025-11-19 01:48:00 +0000'
 author: Admin
 author_url: https://jualkayudolken.com
 image: /assets/images/posts/jual-kayu-dolken-karawang/jual-kayu-dolken-karawang-001.webp
@@ -637,7 +637,7 @@ tentang_kota:
 like_count: 3
 comment_count: 0
 share_count: 0
-last_modified_at: 2025-11-24 03:49:03 +0000
+last_modified_at: '2025-11-19 04:45:32 +0000'
 ---
 
 <!-- ========================================================================

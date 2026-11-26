@@ -60,6 +60,14 @@ Generator menolak menimpa artikel atau gambar yang sudah ada. Gunakan `--slug <s
 
 Mode `--new` ketat: field kanonik harus lengkap, tidak ada placeholder, gambar harus ada, dan hash gambar harus memiliki provenance dari `source-image/`.
 
+Validator timestamp juga wajib lolos:
+
+```bash
+ruby scripts/validate-post-timestamps.rb
+```
+
+Generator mengisi `date` dan `last_modified_at` dengan UTC berkutip sampai detik, unik lintas artikel. Tanggal kalender `date` selalu sama dengan tanggal di nama file supaya permalink tidak berubah; jam terbit berada di `08:00`–`12:30` WIB dan `last_modified_at` 1–3 jam setelahnya. Validator menolak format bukan UTC/tanpa detik, duplikat, lastmod sebelum date, dan tanggal yang tidak cocok dengan nama file.
+
 ## 5. Build situs
 
 ```bash

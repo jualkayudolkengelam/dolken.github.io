@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Surabaya – kualitas premium, tahan lama, harga m
   Rp15.000. Gratis ongkir ke seluruh Surabaya! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Surabaya – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 05:20:36 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-surabaya/jual-kayu-dolken-surabaya-001.webp"
 image_alt: Jual Kayu Dolken Surabaya — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-surabaya/jual-kayu-dolken-surabaya-001.webp"
 images_alt:
 - Surabaya
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:53:17 +0000'
 keywords: kayu dolken surabaya, jual kayu surabaya, kayu beton surabaya, kayu tahan
   cuaca surabaya, kayu murah surabaya, kayu bekisting surabaya, dolken surabaya, kayu
   bulat surabaya

@@ -7,7 +7,7 @@ description: Jual Kayu Dolken Jakarta Timur – kualitas premium, tahan lama, ha
   pemesanan.
 excerpt: Jual kayu dolken premium di Jakarta Timur – gratis ongkir, harga terbaik,
   barang berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:00:08 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-jakarta-timur/jual-kayu-dolken-jakarta-timur-001.webp"
 image_alt: Jual Kayu Dolken Jakarta Timur — kualitas premium
@@ -15,7 +15,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-jakarta-timur/jual-kayu-dolken-jakarta-timur-001.webp"
 images_alt:
 - Jakarta Timur
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 05:24:27 +0000'
 keywords: kayu dolken jakarta-timur, jual kayu jakarta-timur, kayu beton jakarta-timur,
   kayu tahan cuaca jakarta-timur, kayu murah jakarta-timur, kayu bekisting jakarta-timur,
   dolken jakarta-timur, kayu bulat jakarta-timur

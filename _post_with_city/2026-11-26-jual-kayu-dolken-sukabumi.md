@@ -6,7 +6,7 @@ description: Jual Kayu Dolken Sukabumi – kualitas premium, tahan lama, harga m
   Rp15.000. Gratis ongkir ke seluruh Sukabumi! Hubungi 0813-1140-0177 untuk pemesanan.
 excerpt: Jual kayu dolken premium di Sukabumi – gratis ongkir, harga terbaik, barang
   berkualitas.
-date: '2026-11-26'
+date: '2026-11-26 04:59:59 +0000'
 author: Admin
 image: "/assets/images/posts/jual-kayu-dolken-sukabumi/jual-kayu-dolken-sukabumi-001.webp"
 image_alt: Jual Kayu Dolken Sukabumi — kualitas premium
@@ -14,7 +14,7 @@ images:
 - "/assets/images/posts/jual-kayu-dolken-sukabumi/jual-kayu-dolken-sukabumi-001.webp"
 images_alt:
 - Sukabumi
-last_modified_at: '2026-11-26'
+last_modified_at: '2026-11-26 06:27:14 +0000'
 keywords: kayu dolken sukabumi, jual kayu sukabumi, kayu beton sukabumi, kayu tahan
   cuaca sukabumi, kayu murah sukabumi, kayu bekisting sukabumi, dolken sukabumi, kayu
   bulat sukabumi
