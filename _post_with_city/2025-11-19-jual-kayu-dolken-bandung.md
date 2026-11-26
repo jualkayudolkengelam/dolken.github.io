@@ -5,6 +5,7 @@ description: Jual kayu dolken gelam Bandung kualitas premium, harga mulai Rp 15.
   Gratis ongkir seluruh Bandung, COD tersedia. Cocok untuk iklim sejuk dataran tinggi.
 date: 2025-11-19
 author: Admin
+author_url: https://jualkayudolken.com
 image: "/assets/images/posts/jual-kayu-dolken-bandung/jual-kayu-dolken-bandung-001.webp"
 image_alt: "Tumpukan kayu dolken gelam kualitas premium siap kirim ke Bandung, tersedia berbagai ukuran diameter 4-12cm panjang 4 meter, cocok untuk konstruksi pagar, gazebo, dan dekorasi interior rumah di dataran tinggi Bandung"
 images:
@@ -30,6 +31,14 @@ area_pengiriman:
 - Bandung Kidul (Wates, Batununggal, Mengger)
 - Bojongloa Kaler (Jamika, Kopo, Babakan Asih)
 - Ujung Berung (Cigending, Pasanggrahan, Pasir Wangi)
+keunggulan_durabilitas:
+  tahan_lama: "Durabilitas luar biasa hingga 20-30 tahun tanpa perlakuan khusus. Amat sesuai untuk kondisi udara sejuk Bandung di ketinggian dengan intensitas hujan tinggi serta temperatur 18-25°C."
+  anti_rayap: "Tidak membutuhkan cairan anti rayap berkat struktur kayu yang amat padat secara alami menangkal serangan rayap. Ideal untuk kawasan lembab di Bandung seperti Setiabudi dan Maribaya."
+  tahan_cuaca: "Sesuai untuk ruang terbuka maupun tertutup, bertahan terhadap guyuran hujan dan kelembaban tinggi khas Parahyangan. Tidak gampang lapuk walau terpapar air dan embun terus-menerus."
+  kuat_padat: "Tingkat kepadatan kayu amat tinggi memberikan kekuatan optimal untuk menanggung beban berat. Sempurna untuk struktur penopang saung, kanopi, dan konstruksi vila di kawasan dataran tinggi."
+keunggulan_nilai:
+  ramah_lingkungan: "Bahan natural 100% berkelanjutan dan dapat terurai alami. Mendukung konsep green building yang banyak diaplikasikan di proyek-proyek kontemporer Bandung."
+  estetika: "Warna coklat natural yang menawan memberikan nuansa hangat dan alami. Sesuai untuk dekorasi modern vila, kedai instagramable, atau resort tradisional di Bandung."
 keunggulan_produk:
 - judul: Mutu Unggulan Kelas Satu
   deskripsi: Kayu dolken gelam seleksi bermutu tinggi, amat sesuai untuk kondisi udara
