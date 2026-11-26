@@ -8,10 +8,12 @@ require "yaml"
 require_relative "lib/city_post_schema"
 require_relative "lib/city_profile"
 require_relative "lib/post_timestamps"
+require_relative "lib/source_image"
 
 module CityPostGenerator
   class Error < StandardError; end
   class SourceImageMissingError < Error; end
+  class ArchivedSourceError < Error; end
   class OutputExistsError < Error; end
   class DuplicateImageError < Error; end
 
@@ -93,9 +95,12 @@ module CityPostGenerator
   end
 
   def source_image_path(root, foto_source)
-    source_root = File.expand_path(File.join(root, "source-image"))
-    candidate = File.expand_path(File.join(source_root, foto_source.to_s))
-    return candidate if candidate.start_with?(source_root + File::SEPARATOR) && File.file?(candidate)
+    if SourceImage.archived?(foto_source)
+      raise ArchivedSourceError, "foto sudah diarsipkan dan tidak boleh dipakai ulang: #{foto_source}"
+    end
+
+    candidate = SourceImage.path(root, foto_source)
+    return candidate if candidate
 
     raise SourceImageMissingError, "foto source-image tidak ditemukan: #{foto_source}"
   end

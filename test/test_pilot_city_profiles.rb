@@ -3,11 +3,11 @@
 require "digest"
 require "minitest/autorun"
 require_relative "../scripts/lib/city_profile"
+require_relative "../scripts/lib/source_image"
 
 class PilotCityProfilesTest < Minitest::Test
   ROOT = File.expand_path("..", __dir__)
   PROFILES_PATH = File.join(ROOT, "scripts/data/city-profiles.yml")
-  IMAGE_ROOT = File.join(ROOT, "source-image")
   EXPECTED = {
     "tangerang" => "Tangerang",
     "surabaya" => "Surabaya",
@@ -30,9 +30,8 @@ class PilotCityProfilesTest < Minitest::Test
     assert_equal sources.uniq, sources, "foto_source harus berbeda antar kota"
 
     hashes = sources.map do |source|
-      path = File.expand_path(File.join(IMAGE_ROOT, source))
-      assert path.start_with?(IMAGE_ROOT + File::SEPARATOR), "foto_source keluar dari source-image/: #{source}"
-      assert File.file?(path), "file sumber tidak ada: #{path}"
+      path = SourceImage.path(ROOT, source)
+      refute_nil path, "foto_source tidak ada di source-image/ maupun arsip: #{source}"
       Digest::SHA256.file(path).hexdigest
     end
     assert_equal hashes.uniq, hashes, "hash foto harus berbeda antar kota"

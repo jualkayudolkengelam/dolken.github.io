@@ -21,7 +21,7 @@ cities:
 - `slug`: huruf kecil dan angka, dipisahkan tanda `-` jika lebih dari satu kata. Dipakai untuk nama file artikel dan direktori gambar.
 - `nama_kota`: nama kota yang ditampilkan di artikel.
 - `tanggal`: tanggal terbit `YYYY-MM-DD`.
-- `foto_source`: path relatif terhadap direktori `source-image/`. Semua gambar artikel **wajib** berasal dari sana.
+- `foto_source`: path relatif terhadap direktori `source-image/` (tanpa prefiks `sudah-terpakai/`). Semua gambar artikel **wajib** berasal dari foto baru di sana; generator menolak foto yang sudah diarsipkan.
 - `overrides`: opsional, menimpa nilai default kanonik secara nested.
 
 ### Wajib review konten spesifik kota
@@ -86,10 +86,13 @@ git add _post_with_city/2026-12-01-jual-kayu-dolken-bogor.md \
 git commit -m "post: tambah artikel kota Bogor"
 ```
 
-`source-image/` sengaja tidak ikut di-commit (terdaftar di `.gitignore`).
+`source-image/` sengaja tidak ikut di-commit (terdaftar di `.gitignore`), termasuk submodule `sudah-terpakai/`.
 
 ## Aturan gambar
 
-- Foto yang sama **boleh** dipakai ulang di kota lain.
+- Foto baru ditaruh di root `source-image/`. Setelah dipakai, pindahkan ke `source-image/sudah-terpakai/` supaya tidak terpilih lagi sebagai sumber artikel berikutnya.
+- Generator menolak `foto_source` yang diawali `sudah-terpakai/` dengan `ArchivedSourceError`.
+- Provenance artikel lama tetap mencatat path asal `source-image/...`; test dan pemeriksa provenance mencarinya di folder arsip bila file sudah dipindah.
+- Foto yang sama **boleh** dipakai ulang di kota lain, tetapi foto di arsip tidak boleh dijadikan sumber baru.
 - Hash gambar yang sama **tidak boleh** muncul dua kali dalam satu artikel; generator dan validator akan menolaknya.
 - Setiap gambar artikel harus berasal dari file di dalam `source-image/` dan dikonversi ke WebP oleh generator.

@@ -5,6 +5,7 @@ require "digest"
 require "json"
 require "minitest/autorun"
 require_relative "../scripts/lib/post_timestamps"
+require_relative "../scripts/lib/source_image"
 require_relative "../scripts/validate-city-post"
 
 class MoreCityPostsTest < Minitest::Test
@@ -108,7 +109,9 @@ class MoreCityPostsTest < Minitest::Test
       refute_nil entry, "provenance tidak ada untuk #{slug}"
       assert_equal tanggal, entry["tanggal"], "#{slug}: tanggal provenance salah"
       assert_equal source, entry["source"], "#{slug}: sumber provenance salah"
-      assert_equal Digest::SHA256.file(File.join(ROOT, source)).hexdigest, entry["sha256"]
+      source_path = SourceImage.path(ROOT, source.sub(%r{\Asource-image/}, ""))
+      refute_nil source_path, "#{slug}: file sumber tidak ada"
+      assert_equal Digest::SHA256.file(source_path).hexdigest, entry["sha256"]
       assert_equal entry["sha256"], entry["source_sha256"]
       assert_equal Digest::SHA256.file(File.join(ROOT, output.sub(%r{\A/}, ""))).hexdigest, entry["output_sha256"]
     end

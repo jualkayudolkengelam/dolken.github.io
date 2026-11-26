@@ -3,6 +3,7 @@
 require "digest"
 require "json"
 require "minitest/autorun"
+require_relative "../scripts/lib/source_image"
 require_relative "../scripts/validate-city-post"
 
 class PilotCityPostsTest < Minitest::Test
@@ -62,7 +63,8 @@ class PilotCityPostsTest < Minitest::Test
       entry = entries.find { |item| item["slug"] == slug && item["output"] == output }
       refute_nil entry, "provenance tidak ada untuk #{slug}"
       assert entry["source"].to_s.start_with?("source-image/"), "source bukan dari source-image/: #{slug}"
-      assert File.file?(File.join(ROOT, entry["source"])), "file sumber provenance tidak ada: #{slug}"
+      source = SourceImage.path(ROOT, entry["source"].sub(%r{\Asource-image/}, ""))
+      refute_nil source, "file sumber provenance tidak ada: #{slug}"
       assert_equal Digest::SHA256.file(File.join(ROOT, output.sub(%r{\A/}, ""))).hexdigest,
                    entry["output_sha256"], "sha256 output tidak cocok: #{slug}"
     end
