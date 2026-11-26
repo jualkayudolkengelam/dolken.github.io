@@ -74,6 +74,13 @@ clean_build() {
 # Function to build Jekyll site
 build_site() {
     local config_file="${1:-_config.yml}"
+    local mode="${2:-incremental}"
+
+    if [[ "$mode" == "incremental" ]]; then
+        local cache_status
+        cache_status="$(ruby scripts/lib/build_cache.rb prepare)"
+        print_info "Build cache: $cache_status"
+    fi
 
     print_info "Building Jekyll site..."
     print_info "Config: $config_file"
@@ -82,7 +89,12 @@ build_site() {
     # Pastikan output directory exists
     mkdir -p "$OUTPUT_DIR"
 
-    if bundle exec jekyll build --config "$config_file" --destination "$OUTPUT_DIR" --future; then
+    local build_args=(build --config "$config_file" --destination "$OUTPUT_DIR" --future)
+    if [[ "$mode" == "incremental" ]]; then
+        build_args+=(--incremental)
+    fi
+
+    if bundle exec jekyll "${build_args[@]}"; then
         print_success "Build completed successfully!"
 
         # Show build info
@@ -185,7 +197,7 @@ main() {
             install_deps
             ;;
         build)
-            build_site "$config"
+            build_site "$config" incremental
             ;;
         serve|server)
             serve_site "$config" "$port"
@@ -196,7 +208,7 @@ main() {
         clean-build|rebuild)
             clean_build
             echo ""
-            build_site "$config"
+            build_site "$config" full
             ;;
         help|--help|-h)
             show_usage
