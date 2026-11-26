@@ -21,7 +21,7 @@ module CityPostGenerator
   end
 
   def convert_to_webp(src, dest)
-    ok = system("ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+    ok = system("ffmpeg", "-hide_banner", "-loglevel", "error",
                 "-i", src, "-c:v", "libwebp", "-quality", "85", dest,
                 out: File::NULL, err: File::NULL)
     raise Error, "ffmpeg gagal mengonversi #{src}" unless ok
@@ -42,21 +42,28 @@ module CityPostGenerator
     article_rel = "_post_with_city/#{city.fetch('tanggal')}-jual-kayu-dolken-#{slug}.md"
     raise OutputExistsError, "artikel sudah ada: #{article_rel}" if File.exist?(File.join(root, article_rel))
 
-    merged = CityProfile.merge(defaults, city)
     image_path = "/assets/images/posts/jual-kayu-dolken-#{slug}/jual-kayu-dolken-#{slug}-001.webp"
+    webp_path = File.join(root, image_path.sub(%r{\A/}, ""))
+    jpeg_copy = File.join(File.dirname(webp_path), "#{File.basename(image_path, '.webp')}.jpeg")
+    if File.exist?(webp_path) || File.exist?(jpeg_copy)
+      raise OutputExistsError, "gambar sudah ada: #{image_path}"
+    end
+
+    merged = CityProfile.merge(defaults, city)
     images = Array(merged["images"])
     images = [image_path] if images.empty?
     ensure_unique_hashes(images, root: root, fallback_path: image_path, fallback_sha: sha)
 
     return article_rel if dry_run
 
-    output_dir = File.join(root, File.dirname(image_path.sub(%r{\A/}, "")))
-    FileUtils.mkdir_p(output_dir)
-    jpeg_copy = File.join(output_dir, "#{File.basename(image_path, '.webp')}.jpeg")
-    webp_path = File.join(root, image_path.sub(%r{\A/}, ""))
-    FileUtils.cp(source, jpeg_copy)
-    convert_to_webp(jpeg_copy, webp_path)
-    FileUtils.rm(jpeg_copy)
+    FileUtils.mkdir_p(File.dirname(webp_path))
+    begin
+      FileUtils.cp(source, jpeg_copy)
+      convert_to_webp(jpeg_copy, webp_path)
+    ensure
+      FileUtils.rm_f(jpeg_copy)
+    end
+    output_sha = image_sha256(webp_path)
 
     merged["image"] = image_path
     merged["images"] = [image_path]
@@ -70,6 +77,8 @@ module CityPostGenerator
       root: root,
       entry: {
         "sha256" => sha,
+        "source_sha256" => sha,
+        "output_sha256" => output_sha,
         "source" => File.join("source-image", city.fetch("foto_source")),
         "output" => image_path,
         "slug" => slug,

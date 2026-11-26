@@ -113,4 +113,18 @@ class GenerateCityPostTest < Minitest::Test
     end
     assert_equal before, File.read(article)
   end
+
+  def test_same_slug_different_date_does_not_overwrite_existing_image
+    CityPostGenerator.generate(@city, root: @root, defaults: @defaults)
+    webp = File.join(@root, IMAGE_PATH.sub(%r{\A/}, ""))
+    before = File.binread(webp)
+
+    other_date = @city.merge("tanggal" => "2027-01-15")
+    assert_raises(CityPostGenerator::OutputExistsError) do
+      CityPostGenerator.generate(other_date, root: @root, defaults: @defaults)
+    end
+
+    assert_equal before, File.binread(webp)
+    refute File.exist?(File.join(@root, "_post_with_city/2027-01-15-jual-kayu-dolken-bogor.md"))
+  end
 end

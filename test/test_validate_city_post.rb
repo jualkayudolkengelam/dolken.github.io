@@ -103,6 +103,17 @@ class ValidateCityPostTest < Minitest::Test
     refute_empty CityPostValidator.validate_file(@valid_path, root: @root, strict: true).errors
   end
 
+  def test_strict_mode_accepts_freshly_generated_article
+    result = CityPostValidator.validate_file(@valid_path, root: @root, strict: true)
+    assert_empty result.errors, "generated article harus lolos mode --new: #{result.errors.join('; ')}"
+  end
+
+  def test_strict_mode_does_not_require_source_photo_on_disk
+    FileUtils.rm(@photo)
+    result = CityPostValidator.validate_file(@valid_path, root: @root, strict: true)
+    assert_empty result.errors, "provenance harus diverifikasi dari hash tanpa foto sumber: #{result.errors.join('; ')}"
+  end
+
   def test_strict_mode_requires_exactly_one_image
     other = "/assets/images/posts/other.webp"
     File.binwrite(File.join(@root, other.sub(%r{\A/}, "")), "berbeda")

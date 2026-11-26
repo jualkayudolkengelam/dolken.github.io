@@ -24,6 +24,18 @@ cities:
 - `foto_source`: path relatif terhadap direktori `source-image/`. Semua gambar artikel **wajib** berasal dari sana.
 - `overrides`: opsional, menimpa nilai default kanonik secara nested.
 
+### Wajib review konten spesifik kota
+
+Nilai default diambil dari artikel Gowa. Tanpa `overrides`, artikel kota lain akan memuat fakta Gowa yang salah (kecamatan, luas, populasi, landmark, dan testimoni). Tentukan `overrides` untuk field berikut sebelum generate:
+
+- `area_pengiriman`, `area_pengiriman_detail` — kecamatan dan wilayah pengiriman.
+- `tentang_kota` — luas, populasi, batas wilayah, dan landmark.
+- `testimoni_komersial`, `testimoni_residential`, `studi_kasus_proyek` — nama dan lokasi pelanggan.
+- `faq_pemesanan`, `faq_pengiriman`, `faq_produk`, `tips_ukuran`, `aplikasi_kayu_dolken` — konteks lokal.
+- `title`, `description`, `excerpt`, `keywords` — pastikan tidak menyisakan nama kota lama.
+
+Review manual terhadap artikel yang dihasilkan tetap wajib sebelum commit.
+
 ## 2. Uji dulu dengan dry-run
 
 ```bash
@@ -55,6 +67,8 @@ Mode `--new` ketat: field kanonik harus lengkap, tidak ada placeholder, gambar h
 ```
 
 ## 6. Periksa dan commit
+
+Baca artikel hasil generate dan pastikan tidak ada lagi fakta kota lama sebelum commit.
 
 ```bash
 git status

@@ -88,9 +88,9 @@ module CityPostValidator
 
     entries = File.readlines(provenance_path).filter_map { |line| JSON.parse(line) rescue nil }
     match = entries.find do |entry|
-      entry["output"] == images.first && entry["sha256"] == hashes.first &&
-        entry["source"].to_s.start_with?("source-image/") &&
-        File.file?(File.join(root, entry["source"]))
+      entry["output"] == images.first &&
+        (entry["output_sha256"] || entry["sha256"]) == hashes.first &&
+        entry["source"].to_s.start_with?("source-image/")
     end
     errors << "gambar tidak memiliki provenance source-image yang cocok" unless match
   end
