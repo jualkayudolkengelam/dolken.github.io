@@ -624,6 +624,7 @@ tentang_kota:
       info_tambahan: "Pusat oleh-oleh dan kuliner khas Gowa terkonsentrasi di sepanjang poros Sungguminasa-Malino dan Pasar Sentral Sungguminasa."
 # ============================================================================
 # SECTION SOCIAL METRICS (REQUIRED)
+like_count: 0
 comment_count: 12
 share_count: 7
 ---
