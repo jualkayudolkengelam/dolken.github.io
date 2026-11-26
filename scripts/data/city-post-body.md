@@ -1,10 +1,4 @@
 
-<!-- ========================================================================
-     CONTENT SECTION - DO NOT MODIFY
-     Bagian ini adalah template standar untuk semua artikel post_with_product
-     HANYA ganti {NAMA_KOTA} di block--jual-kayu-dolken-terdekat.html
-     ======================================================================== -->
-
 <section id="hero-jual-kayu-dolken">
   {% include reusable/post-with-city/block--hero-jual-kayu-dolken.html %}
 </section>
