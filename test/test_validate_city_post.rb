@@ -135,11 +135,11 @@ class ValidateCityPostTest < Minitest::Test
 
   def write_variant(name)
     text = File.read(@valid_path)
-    frontmatter = YAML.safe_load(text[/\A---\n(.*?)\n---\n/m, 1], permitted_classes: [Date, Time])
+    frontmatter = YAML.safe_load(text[CityPostValidator::FRONTMATTER_PATTERN, 1], permitted_classes: [Date, Time])
     updated = yield(frontmatter)
-    body = text.sub(/\A---\n.*?\n---\n/m, "")
+    body = text.sub(/\A---[ \t]*\r?\n.*?^---[ \t]*\r?$\r?\n/m, "")
     path = File.join(@root, "_post_with_city", name)
-    File.write(path, "---\n#{YAML.dump(updated)}---\n#{body}")
+    File.write(path, "#{YAML.dump(updated)}---\n#{body}")
     path
   end
 end

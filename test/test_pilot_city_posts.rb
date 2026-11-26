@@ -18,8 +18,30 @@ class PilotCityPostsTest < Minitest::Test
 
   def test_generated_articles_have_no_template_placeholders
     SLUGS.each do |slug|
-      body = File.read(article_path(slug))[/\A---\n.*?\n---\n(.*)\z/m, 1]
-      refute_match(/\{NAMA_KOTA\}|\{\{[^}]+\}\}/, body, "#{slug}: placeholder tersisa di body artikel")
+      refute_match(/\{NAMA_KOTA\}|\{\{[^}]+\}\}/, body_of(File.read(article_path(slug))),
+                   "#{slug}: placeholder tersisa di body artikel")
+    end
+  end
+
+  def test_frontmatter_has_single_leading_marker
+    SLUGS.each do |slug|
+      lines = File.readlines(article_path(slug), chomp: true)
+      assert_equal "---", lines.first, "#{slug}: baris pertama harus ---"
+      refute_equal "---", lines[1], "#{slug}: penanda frontmatter --- ganda (Jekyll membaca kosong)"
+    end
+  end
+
+  def test_validator_rejects_double_frontmatter_marker
+    require "tmpdir"
+
+    lines = File.readlines(article_path("tangerang"))
+    broken = lines.first + "---\n" + lines.drop(1).join
+    Dir.mktmpdir do |dir|
+      path = File.join(dir, "broken.md")
+      File.write(path, broken)
+      result = CityPostValidator.validate_file(path, root: ROOT, strict: true)
+      assert result.errors.any? { |error| error.include?("frontmatter") },
+             "validator tidak menolak frontmatter ganda: #{result.errors.inspect}"
     end
   end
 
@@ -50,5 +72,9 @@ class PilotCityPostsTest < Minitest::Test
 
   def article_path(slug)
     File.join(ROOT, "_post_with_city/2026-11-26-jual-kayu-dolken-#{slug}.md")
+  end
+
+  def body_of(text)
+    text.sub(/\A---[ \t]*\r?\n.*?^---[ \t]*\r?$\r?\n/m, "")
   end
 end

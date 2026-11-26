@@ -14,6 +14,7 @@ module CityPostValidator
   end
 
   FILENAME_PATTERN = /\A\d{4}-\d{2}-\d{2}-jual-kayu-dolken-.*\.md\z/.freeze
+  FRONTMATTER_PATTERN = /\A---[ \t]*\r?\n(.*?)^---[ \t]*\r?$/m.freeze
   PROVENANCE_PATH = "scripts/data/image-provenance.jsonl"
 
   module_function
@@ -22,7 +23,8 @@ module CityPostValidator
     errors = []
     warnings = []
     text = File.read(path)
-    frontmatter = YAML.safe_load(text[/\A---\n(.*?)\n---\n/m, 1],
+    errors << "frontmatter tidak valid: penanda --- ganda atau tidak ada" unless valid_frontmatter_marker?(text)
+    frontmatter = YAML.safe_load(text[FRONTMATTER_PATTERN, 1] || "",
                                  permitted_classes: [Date, Time], aliases: true) || {}
 
     check_fields(frontmatter, errors, warnings, strict)
@@ -34,6 +36,11 @@ module CityPostValidator
     check_strict(frontmatter, root, errors, hashes) if strict
 
     Result.new(errors: errors, warnings: warnings)
+  end
+
+  def valid_frontmatter_marker?(text)
+    lines = text.lines
+    lines.first&.strip == "---" && lines[1]&.strip != "---"
   end
 
   def check_fields(frontmatter, errors, warnings, strict)

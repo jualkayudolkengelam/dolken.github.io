@@ -1,5 +1,4 @@
 ---
----
 layout: node--post-with-city
 title: Jual Kayu Dolken di Denpasar – Hubungi 0813-1140-0177, Gratis Ongkir ke Seluruh
   Denpasar!

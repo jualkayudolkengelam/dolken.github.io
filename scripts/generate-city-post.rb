@@ -71,7 +71,7 @@ module CityPostGenerator
     body = CityProfile.substitute(File.read(body_path), city)
     article_path = File.join(root, article_rel)
     FileUtils.mkdir_p(File.dirname(article_path))
-    File.write(article_path, "---\n#{YAML.dump(merged)}---\n#{body}")
+    File.write(article_path, "#{YAML.dump(merged)}---\n#{body}")
 
     append_provenance(
       root: root,
