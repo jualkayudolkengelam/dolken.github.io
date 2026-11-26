@@ -49,7 +49,9 @@ Logika checksum ditempatkan di `scripts/lib/build_cache.rb` (modul `BuildCache`)
 ## Verifikasi
 
 - Tambah test shell untuk memastikan: signature stabil bila tidak ada perubahan; signature berubah saat file `_data/` diubah; signature berubah saat nama artikel ditambah; cache terhapus saat signature berubah.
-- Bandingkan hasil build penuh dan build inkremental ke dua direktori berbeda. Semua HTML dan sitemap harus identik, kecuali field yang memang bergantung pada waktu build.
+- Bandingkan hasil build penuh dan build inkremental ke dua direktori berbeda. HTML dan sitemap harus identik, kecuali:
+  - `sitemap.xml` dan `feed.xml` yang memakai waktu build;
+  - 5 halaman produk yang memakai `sample: 5` di `_includes/products/block--product-area-pengiriman.html`. Daftar kota di halaman tersebut diacak ulang pada setiap build penuh, jadi sudah tidak identik bahkan sebelum perubahan ini. Build inkremental justru mempertahankan daftar yang terakhir dihasilkan.
 - Jalankan ulang seluruh `test/test_*.rb`, `scripts/validate-post-timestamps.rb`, `validate-post.sh _post_with_city/*.md`, dan build Jekyll `--future`.
 - Pastikan tidak ada berkas cache yang ter-commit dan `git status` bersih setelah commit.
 

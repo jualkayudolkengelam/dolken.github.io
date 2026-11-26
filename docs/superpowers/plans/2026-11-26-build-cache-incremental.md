@@ -25,7 +25,7 @@
 - Penambahan atau penghapusan artikel harus memicu regenerasi halaman indeks/sitemap → diuji di Task 1 (`test_signature_berubah_saat_nama_artikel_bertambah`).
 - Perubahan isi artikel tidak boleh mengubah signature (mtime Jekyll yang menangani) → diuji di Task 1 (`test_isi_artikel_tidak_mengubah_signature`).
 - `build` harus memakai `--incremental`, `clean-build` tidak boleh memakainya → diuji di Task 2 (`test_build_memakai_incremental`, `test_clean_build_tanpa_incremental`).
-- Hasil build inkremental harus identik dengan build penuh → diverifikasi di Task 3 dengan `diff -rq` setelah mengecualikan `sitemap.xml` dan `feed.xml`.
+- Hasil build inkremental harus identik dengan build penuh → diverifikasi di Task 3 dengan `diff -rq` setelah mengecualikan `sitemap.xml`, `feed.xml`, dan 5 halaman produk yang memakai `sample: 5` (pengacakan sudah ada sebelum perubahan ini).
 
 ---
 
@@ -267,9 +267,10 @@ rm -rf "$D"; mkdir -p "$D/full" "$D/inc"
 bundle exec jekyll build --future --destination "$D/full"
 cp -a "$D/full/." "$D/inc/"
 bundle exec jekyll build --future --incremental --destination "$D/inc"
-diff -rq --exclude=sitemap.xml --exclude=feed.xml "$D/full" "$D/inc"
+diff -rq --exclude=sitemap.xml --exclude=feed.xml "$D/full" "$D/inc" > "$D/diff.txt" || true
+grep -v -E 'product/kayu-dolken-(10-14cm|2-3cm|3-5cm|5-7cm|8-10cm)/index\.html' "$D/diff.txt" || true
 ```
-Expected: `diff` tidak mencetak apa pun dan exit 0. `sitemap.xml` dan `feed.xml` dikecualikan karena keduanya memakai waktu build.
+Expected: tidak ada baris selain 5 halaman produk tersebut. `sitemap.xml` dan `feed.xml` dikecualikan karena memakai waktu build; 5 halaman produk dikecualikan karena `_includes/products/block--product-area-pengiriman.html` memakai `sample: 5` dan mengacak daftar kota pada setiap build penuh.
 
 - [ ] **Step 4: Ukur build hangat**
 
