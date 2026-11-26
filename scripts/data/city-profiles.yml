@@ -14,3 +14,71 @@ cities:
     nama_kota: Denpasar
     tanggal: "2026-11-26"
     foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.52.27.jpeg"
+  - slug: jakarta-pusat
+    nama_kota: Jakarta Pusat
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.16.jpeg"
+  - slug: jakarta-selatan
+    nama_kota: Jakarta Selatan
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.17 (1).jpeg"
+  - slug: jakarta-barat
+    nama_kota: Jakarta Barat
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.17 (2).jpeg"
+  - slug: jakarta-timur
+    nama_kota: Jakarta Timur
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.17.jpeg"
+  - slug: serang
+    nama_kota: Serang
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.18.jpeg"
+  - slug: bogor
+    nama_kota: Bogor
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.19 (1).jpeg"
+  - slug: depok
+    nama_kota: Depok
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.19 (2).jpeg"
+  - slug: bekasi
+    nama_kota: Bekasi
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.19.jpeg"
+  - slug: tangerang-selatan
+    nama_kota: Tangerang Selatan
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.20 (1).jpeg"
+  - slug: sukabumi
+    nama_kota: Sukabumi
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.20.jpeg"
+  - slug: cirebon
+    nama_kota: Cirebon
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.21 (1).jpeg"
+  - slug: solo
+    nama_kota: Solo
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.21 (2).jpeg"
+  - slug: magelang
+    nama_kota: Magelang
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.21.jpeg"
+  - slug: pekalongan
+    nama_kota: Pekalongan
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.02.57.jpeg"
+  - slug: malang
+    nama_kota: Malang
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.03.07.jpeg"
+  - slug: kediri
+    nama_kota: Kediri
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.03.21.jpeg"
+  - slug: madiun
+    nama_kota: Madiun
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.43/WhatsApp Image 2026-10-16 at 14.03.37.jpeg"
