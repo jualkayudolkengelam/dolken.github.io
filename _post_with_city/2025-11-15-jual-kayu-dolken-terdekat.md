@@ -16,6 +16,7 @@ title: "Jual Kayu Dolken Terdekat - Hubungi 081311400177 - COD & Pengiriman Jawa
 description: "Jual kayu dolken terdekat - Hubungi 081311400177. Supplier kayu dolken gelam terpercaya, pengiriman Jakarta, Bogor, Bandung, Tangerang, Bekasi, Semarang, Surabaya. COD tersedia! Harga mulai Rp 15.000/batang."
 date: 2025-11-15
 author: Admin
+author_url: https://jualkayudolken.com
 image: /assets/images/posts/jual-kayu-dolken-terdekat/jual-kayu-dolken-terdekat-001.webp
 image_alt: "Gudang penyimpanan kayu dolken gelam supplier terdekat melayani pengiriman Jakarta, Bogor, Bandung, Tangerang, Bekasi, Semarang hingga Surabaya dengan sistem COD dan gratis ongkir untuk pembelian partai"
 images:
@@ -44,6 +45,18 @@ area_pengiriman:
   - "Semarang (Kota, Kabupaten, Ungaran)"
   - "Surabaya (Kota, Sidoarjo, Gresik)"
   - "Bali (Denpasar, Gianyar, Badung)"
+
+# ============================================================================
+# KEUNGGULAN - DURABILITAS & NILAI (REQUIRED)
+# ============================================================================
+keunggulan_durabilitas:
+  tahan_lama: "Masa pakai yang panjang hingga puluhan tahun berkat serat kayu yang rapat dan kuat. Pilihan tepat untuk investasi jangka panjang pada proyek konstruksi di berbagai wilayah Jawa dan Bali."
+  anti_rayap: "Kandungan minyak alami dan kerapatan serat tinggi membuat kayu gelam tidak disukai rayap dan serangga perusak. Solusi hemat biaya tanpa perlu treatment kimia tambahan."
+  tahan_cuaca: "Performa konsisten di kondisi basah maupun kering. Tidak mudah retak saat musim kemarau dan tetap solid meski terendam air saat musim penghujan."
+  kuat_padat: "Bobot dan kepadatan tinggi menjamin kestabilan struktur untuk aplikasi penopang atap, pondasi ringan, scaffolding, dan berbagai kebutuhan konstruksi berat."
+keunggulan_nilai:
+  ramah_lingkungan: "Berasal dari hutan tanaman yang dikelola secara berkelanjutan. Pilihan bijak untuk proyek yang mengutamakan aspek lingkungan dan keberlanjutan sumber daya alam."
+  estetika: "Tekstur dan warna kayu yang khas memberikan nilai estetika tersendiri. Banyak digunakan untuk elemen dekoratif seperti pagar, deck, pergola, dan landscape area outdoor."
 
 # ============================================================================
 # KEUNGGULAN - PRODUK (REQUIRED)
@@ -688,6 +701,7 @@ tentang_kota:
 like_count: 3
 comment_count: 2
 share_count: 3
+last_modified_at: 2025-11-15
 ---
 
 <!-- ========================================================================
