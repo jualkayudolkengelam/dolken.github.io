@@ -32,13 +32,41 @@ class BuildCacheTest < Minitest::Test
     end
   end
 
-  def test_isi_artikel_tidak_mengubah_signature
+  def test_isi_artikel_mengubah_signature
     Dir.mktmpdir do |root|
       make_root(root)
       article = File.join(root, "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md")
       first = BuildCache.signature(root)
       File.write(article, File.read(article) + "\n---\n")
-      assert_equal first, BuildCache.signature(root)
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
+  def test_frontmatter_artikel_mengubah_signature
+    Dir.mktmpdir do |root|
+      make_root(root)
+      article = File.join(root, "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md")
+      first = BuildCache.signature(root)
+      File.write(article, "---\ntitle: Tangerang Baru\n---\n")
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
+  def test_produk_baru_mengubah_signature
+    Dir.mktmpdir do |root|
+      make_root(root)
+      first = BuildCache.signature(root)
+      FileUtils.touch(File.join(root, "_products/kayu-dolken-11-12cm.md"))
+      refute_equal first, BuildCache.signature(root)
+    end
+  end
+
+  def test_halaman_root_mengubah_signature
+    Dir.mktmpdir do |root|
+      make_root(root)
+      first = BuildCache.signature(root)
+      File.write(File.join(root, "index.html"), "---\nlayout: default\n---\nbaru\n")
+      refute_equal first, BuildCache.signature(root)
     end
   end
 
@@ -60,16 +88,42 @@ class BuildCacheTest < Minitest::Test
     end
   end
 
+  def test_prepare_reset_setelah_frontmatter_artikel_diubah
+    Dir.mktmpdir do |root|
+      make_root(root)
+      assert_equal :reset, BuildCache.prepare(root: root)
+      assert_equal :reuse, BuildCache.prepare(root: root)
+
+      article = File.join(root, "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md")
+      File.write(article, "---\ntitle: Tangerang Baru\n---\n")
+      assert_equal :reset, BuildCache.prepare(root: root)
+    end
+  end
+
+  def test_prepare_reset_setelah_harga_produk_diubah
+    Dir.mktmpdir do |root|
+      make_root(root)
+      assert_equal :reset, BuildCache.prepare(root: root)
+      assert_equal :reuse, BuildCache.prepare(root: root)
+
+      product = File.join(root, "_products/kayu-dolken-10-14cm.md")
+      File.write(product, "---\ntitle: 10-14cm\nprice: 120000\n---\n")
+      assert_equal :reset, BuildCache.prepare(root: root)
+    end
+  end
+
   private
 
   def make_root(root)
     files = {
-      "_config.yml" => "title: Contoh\n",
+      "_config.yml" => "title: Contoh\ncollections:\n  products:\n    output: true\n  post_with_city:\n    output: true\n",
       "_data/area_pengiriman.yml" => "kota: [Tangerang]\n",
       "_layouts/default.html" => "{{ content }}\n",
       "assets/css/main.css" => "body { color: black; }\n",
       "_posts/2026-01-01-contoh.md" => "---\ntitle: Contoh\n---\n",
-      "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md" => "---\ntitle: Tangerang\n---\n"
+      "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md" => "---\ntitle: Tangerang\n---\n",
+      "_products/kayu-dolken-10-14cm.md" => "---\ntitle: 10-14cm\nprice: 100000\n---\n",
+      "index.html" => "---\nlayout: default\n---\n{{ site.products.size }}\n"
     }
     files.each do |relative, content|
       path = File.join(root, relative)

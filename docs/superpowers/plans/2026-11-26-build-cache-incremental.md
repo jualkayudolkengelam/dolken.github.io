@@ -22,8 +22,8 @@
 ## Review Focus
 
 - Perubahan `_data/area_pengiriman.yml` tidak boleh memakai HTML lama → diuji di Task 1 (`test_signature_berubah_saat_file_data_diubah`).
-- Penambahan atau penghapusan artikel harus memicu regenerasi halaman indeks/sitemap → diuji di Task 1 (`test_signature_berubah_saat_nama_artikel_bertambah`).
-- Perubahan isi artikel tidak boleh mengubah signature (mtime Jekyll yang menangani) → diuji di Task 1 (`test_isi_artikel_tidak_mengubah_signature`).
+- Penambahan produk atau artikel, serta perubahan frontmatter/harga, harus memicu regenerasi halaman indeks/sitemap → diuji di Task 1 (`test_produk_baru_mengubah_signature`, `test_frontmatter_artikel_mengubah_signature`, `test_prepare_reset_setelah_harga_produk_diubah`).
+- Perubahan isi artikel atau halaman root harus mengubah signature → diuji di Task 1 (`test_isi_artikel_mengubah_signature`, `test_halaman_root_mengubah_signature`).
 - `build` harus memakai `--incremental`, `clean-build` tidak boleh memakainya → diuji di Task 2 (`test_build_memakai_incremental`, `test_clean_build_tanpa_incremental`).
 - Hasil build inkremental harus identik dengan build penuh → diverifikasi di Task 3 dengan `diff -rq` setelah mengecualikan `sitemap.xml`, `feed.xml`, dan 5 halaman produk yang memakai `sample: 5` (pengacakan sudah ada sebelum perubahan ini).
 
@@ -82,14 +82,26 @@ class BuildCacheTest < Minitest::Test
     end
   end
 
-  def test_isi_artikel_tidak_mengubah_signature
+  def test_isi_artikel_mengubah_signature
     Dir.mktmpdir do |root|
       make_root(root)
       article = File.join(root, "_post_with_city/2026-11-26-jual-kayu-dolken-tangerang.md")
       first = BuildCache.signature(root)
       File.write(article, File.read(article) + "\n---\n")
-      assert_equal first, BuildCache.signature(root)
+      refute_equal first, BuildCache.signature(root)
     end
+  end
+
+  def test_frontmatter_artikel_mengubah_signature
+    # tulis frontmatter baru, lalu refute_equal
+  end
+
+  def test_produk_baru_mengubah_signature
+    # tambah _products/*.md, lalu refute_equal
+  end
+
+  def test_halaman_root_mengubah_signature
+    # ubah index.html, lalu refute_equal
   end
 
   def test_prepare_menghapus_cache_basih_dan_menulis_signature
@@ -270,7 +282,7 @@ bundle exec jekyll build --future --incremental --destination "$D/inc"
 diff -rq --exclude=sitemap.xml --exclude=feed.xml "$D/full" "$D/inc" > "$D/diff.txt" || true
 grep -v -E 'product/kayu-dolken-(10-14cm|2-3cm|3-5cm|5-7cm|8-10cm)/index\.html' "$D/diff.txt" || true
 ```
-Expected: tidak ada baris selain 5 halaman produk tersebut. `sitemap.xml` dan `feed.xml` dikecualikan karena memakai waktu build; 5 halaman produk dikecualikan karena `_includes/products/block--product-area-pengiriman.html` memakai `sample: 5` dan mengacak daftar kota pada setiap build penuh.
+Expected: tidak ada baris selain 5 halaman produk tersebut. `sitemap.xml` dan `feed.xml` dikecualikan karena memakai waktu build; 5 halaman produk dikecualikan karena `_includes/products/block--product-area-pengiriman.html` memakai `sample: 5` dan `_products/*.md` tidak memiliki `date` untuk `datePublished`, sehingga keduanya berubah pada setiap build penuh.
 
 - [ ] **Step 4: Ukur build hangat**
 

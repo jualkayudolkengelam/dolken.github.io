@@ -2,13 +2,16 @@
 
 require "digest"
 require "fileutils"
+require "yaml"
 
-# Tanda tangan input build dipakai untuk membatalkan cache inkremental Jekyll
-# ketika file yang memengaruhi semua halaman berubah.
+# Tanda tangan input build dipakai untuk membatalkan cache inkremental Jekyll.
+# Halaman yang merender metadata atau keanggotaan koleksi (index, sitemap,
+# daftar blog) tidak dibatalkan oleh regenerator Jekyll, sehingga seluruh
+# dokumen koleksi dan halaman root ber-frontmatter ikut di-hash.
 module BuildCache
   SHARED_FILES = %w[Gemfile Gemfile.lock _config.yml _config_local.yml].freeze
   SHARED_DIRS = %w[_data _includes _layouts _plugins assets/css assets/js].freeze
-  ARTICLE_DIRS = %w[_posts _post_with_city].freeze
+  ROOT_PAGE_EXTENSIONS = %w[.html .xml .md].freeze
   STAMP = "build-inputs.sha256"
 
   module_function
@@ -24,12 +27,16 @@ module BuildCache
       parts << "F\t#{relative}\t#{Digest::SHA256.file(absolute).hexdigest}\n"
     end
 
-    files_in(root, SHARED_DIRS, "**", "*").each do |relative, absolute|
+    files_in(root, SHARED_DIRS).each do |relative, absolute|
       parts << "F\t#{relative}\t#{Digest::SHA256.file(absolute).hexdigest}\n"
     end
 
-    files_in(root, ARTICLE_DIRS, "**", "*.md").each do |relative, _absolute|
-      parts << "N\t#{relative}\n"
+    files_in(root, collection_dirs(root)).each do |relative, absolute|
+      parts << "C\t#{relative}\t#{Digest::SHA256.file(absolute).hexdigest}\n"
+    end
+
+    root_pages(root).each do |relative, absolute|
+      parts << "P\t#{relative}\t#{Digest::SHA256.file(absolute).hexdigest}\n"
     end
 
     Digest::SHA256.hexdigest(parts)
@@ -48,12 +55,38 @@ module BuildCache
     :reset
   end
 
-  def files_in(root, directories, *glob)
+  def collection_dirs(root)
+    dirs = ["_posts"]
+    config = File.join(root, "_config.yml")
+    if File.file?(config)
+      begin
+        data = YAML.safe_load(File.read(config), aliases: true)
+        collections = data["collections"] if data.is_a?(Hash)
+        dirs.concat(collections.keys.map { |name| "_#{name}" }) if collections.is_a?(Hash)
+      rescue Psych::Exception
+        # Konfigurasi tidak terbaca; _posts tetap diperiksa.
+      end
+    end
+    dirs.uniq
+  end
+  private_class_method :collection_dirs
+
+  def root_pages(root)
+    Dir.children(root).select do |name|
+      absolute = File.join(root, name)
+      ROOT_PAGE_EXTENSIONS.include?(File.extname(name)) &&
+        File.file?(absolute) &&
+        File.foreach(absolute).first.to_s.strip == "---"
+    end.sort.map { |name| [name, File.join(root, name)] }
+  end
+  private_class_method :root_pages
+
+  def files_in(root, directories)
     directories.flat_map do |directory|
       base = File.join(root, directory)
       next [] unless File.directory?(base)
 
-      Dir.glob(File.join(base, *glob), File::FNM_DOTMATCH).select { |path| File.file?(path) }
+      Dir.glob(File.join(base, "**", "*")).select { |path| File.file?(path) }
     end.map { |absolute| [absolute.delete_prefix("#{root}/"), absolute] }.sort_by(&:first)
   end
   private_class_method :files_in

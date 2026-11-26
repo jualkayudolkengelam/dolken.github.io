@@ -25,12 +25,11 @@ Logika checksum ditempatkan di `scripts/lib/build_cache.rb` (modul `BuildCache`)
 
 `build_site()` menerima mode `incremental` (default) atau `full`:
 
-1. Hitung `signature` = SHA-256 dari gabungan konten file bersama dan daftar nama file artikel:
-   - `_config.yml`, `_config_local.yml` (jika ada)
-   - `_data/**`, `_includes/**`, `_layouts/**`, `_plugins/**`
-   - `assets/css/**`, `assets/js/**`
-   - `Gemfile` dan `Gemfile.lock` (jika ada)
-   - daftar nama (bukan isi) `_posts/*.md` dan `_post_with_city/*.md`, sudah diurutkan
+1. Hitung `signature` = SHA-256 dari gabungan konten:
+   - `_config.yml`, `_config_local.yml`, `Gemfile`, `Gemfile.lock` (jika ada)
+   - `_data/**`, `_includes/**`, `_layouts/**`, `_plugins/**`, `assets/css/**`, `assets/js/**`
+   - semua dokumen koleksi yang didefinisikan di `_config.yml` (`_posts/**`, `_post_with_city/**`, `_products/**`) — isi penuh, bukan hanya nama
+   - file root ber-frontmatter (`index.html`, `blog.html`, `sitemap.xml`, dan sejenisnya)
 2. Bandingkan `signature` dengan isi `.jekyll-cache/build-inputs.sha256`.
    - Jika berbeda atau file tidak ada: hapus `.jekyll-cache` dan `.jekyll-metadata`, lalu tulis `signature` yang baru.
 3. Mode `incremental` menjalankan `bundle exec jekyll build --config "$config_file" --destination "$OUTPUT_DIR" --future --incremental`. Mode `full` menjalankan perintah yang sama tanpa `--incremental`.
@@ -38,20 +37,20 @@ Logika checksum ditempatkan di `scripts/lib/build_cache.rb` (modul `BuildCache`)
 5. `clean-build` tetap memanggil `clean_build()` lebih dulu, lalu `build_site "$config" full`, sehingga benar-benar build penuh.
 6. `serve` tidak diubah agar live-reload tetap berperilaku seperti sebelumnya.
 
-## Kenapa checksum hanya untuk file bersama
+## Kenapa seluruh dokumen koleksi ikut di-hash
 
-`Regenerator` Jekyll sudah membandingkan mtime artikel dan mendaftarkan dependency untuk layout serta `{% include %}`. Namun ia **tidak** mendaftarkan `_data/` dan `_config.yml`, dan halaman indeks tidak otomatis di-render ulang saat artikel baru ditambahkan. Karena itu:
+`Regenerator` Jekyll hanya membandingkan mtime dokumen dan dependency layout serta `{% include %}`. Halaman seperti `index.html`, `sitemap.xml`, dan daftar blog merender `site.posts`/`site.products`; perubahan frontmatter atau keanggotaan koleksi **tidak** membuat halaman-halaman itu di-render ulang. Karena itu seluruh isi dokumen koleksi dan halaman root ber-frontmatter masuk dalam signature.
 
-- isi artikel cukup ditangani mtime Jekyll;
-- file bersama dan daftar nama artikel perlu checksum kita sendiri;
-- perubahan apa pun pada keduanya membatalkan cache secara global.
+Konsekuensinya: setiap perubahan pada artikel atau produk memicu build penuh. Build hangat tanpa perubahan tetap ~2 detik; biayanya adalah build ~12 detik setelah ada edit. Ini disengaja agar tidak ada HTML atau sitemap yang basi.
 
 ## Verifikasi
 
-- Tambah test shell untuk memastikan: signature stabil bila tidak ada perubahan; signature berubah saat file `_data/` diubah; signature berubah saat nama artikel ditambah; cache terhapus saat signature berubah.
+- Test Minitest memastikan: signature stabil bila tidak ada perubahan; signature berubah saat `_data/`, frontmatter artikel, isi artikel, produk, atau halaman root diubah; cache terhapus saat signature berubah; `build` menulis stamp dan `clean-build` tidak.
 - Bandingkan hasil build penuh dan build inkremental ke dua direktori berbeda. HTML dan sitemap harus identik, kecuali:
   - `sitemap.xml` dan `feed.xml` yang memakai waktu build;
   - 5 halaman produk yang memakai `sample: 5` di `_includes/products/block--product-area-pengiriman.html`. Daftar kota di halaman tersebut diacak ulang pada setiap build penuh, jadi sudah tidak identik bahkan sebelum perubahan ini. Build inkremental justru mempertahankan daftar yang terakhir dihasilkan.
+  - `datePublished` pada halaman produk memakai `product.date`, yang tidak ada di `_products/*.md`, sehingga mengikuti waktu build.
+- Uji perubahan: setelah mengubah frontmatter artikel atau harga produk, `prepare` harus mengembalikan `reset`, dan hasil build inkremental harus sama dengan build penuh untuk `index.html` dan `sitemap.xml`.
 - Jalankan ulang seluruh `test/test_*.rb`, `scripts/validate-post-timestamps.rb`, `validate-post.sh _post_with_city/*.md`, dan build Jekyll `--future`.
 - Pastikan tidak ada berkas cache yang ter-commit dan `git status` bersih setelah commit.
 
@@ -59,7 +58,7 @@ Logika checksum ditempatkan di `scripts/lib/build_cache.rb` (modul `BuildCache`)
 
 | Risiko | Mitigasi |
 |---|---|
-| Isi artikel berubah tetapi mtime tidak berubah (misalnya `git checkout` yang mempertahankan mtime) | Gunakan `clean-build` untuk deploy; `build` mengandalkan mtime Jekyll untuk artikel. |
+| Isi artikel berubah tetapi mtime tidak berubah (misalnya `git checkout` yang mempertahankan mtime) | Isi artikel masuk signature, jadi signature tetap berubah dan cache di-reset. |
 | Plugin atau layout baru mengubah cara render | Semua file `_plugins/`, `_layouts/`, `_includes/` masuk dalam signature. |
 | Perubahan Jekyll/Kubernetes mengubah perilaku inkremental | `Gemfile.lock` masuk signature; rollback ke tag di bawah. |
 
