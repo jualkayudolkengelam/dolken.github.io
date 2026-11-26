@@ -1,4 +1,16 @@
 # Input untuk generator artikel kota.
 # foto_source adalah path relatif terhadap direktori source-image/.
 defaults: {}
-cities: []
+cities:
+  - slug: tangerang
+    nama_kota: Tangerang
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.35/WhatsApp Image 2026-10-05 at 17.37.22.jpeg"
+  - slug: surabaya
+    nama_kota: Surabaya
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.33.49/WhatsApp Image 2026-10-17 at 17.09.45.jpeg"
+  - slug: denpasar
+    nama_kota: Denpasar
+    tanggal: "2026-11-26"
+    foto_source: "WhatsApp Unknown 2026-11-26 at 13.34.06/WhatsApp Image 2026-11-14 at 12.52.27.jpeg"
